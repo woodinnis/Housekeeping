@@ -176,7 +176,7 @@
     <room>rooms\RoomRoomSm</room>
     <room>rooms\RoomRoomLg</room>
   </rooms>
-  <constants number="10">
+  <constants number="13">
     <constant name="LEVEL001">30</constant>
     <constant name="LEVEL002">60</constant>
     <constant name="LEVEL003">90</constant>
@@ -187,6 +187,9 @@
     <constant name="LEVEL008">240</constant>
     <constant name="LEVEL009">270</constant>
     <constant name="LEVEL010">300</constant>
+    <constant name="SCORE001">1</constant>
+    <constant name="SCORE002">3</constant>
+    <constant name="SCORE003">5</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

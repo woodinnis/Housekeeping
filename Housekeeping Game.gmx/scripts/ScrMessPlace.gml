@@ -4,6 +4,10 @@ if(room != RoomHallway)
     switch(currentLevel)
     {
         case LEVEL001:
+        {
+            FuncMess(10);
+            break;
+        }
         case LEVEL002:
         case LEVEL003:
         case LEVEL004:
@@ -14,7 +18,7 @@ if(room != RoomHallway)
         case LEVEL009:
         case LEVEL010:
         {
-            FuncMess(10);
+            FuncMess(20);
             break;
         }
     }

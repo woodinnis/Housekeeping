@@ -319,3 +319,11 @@ Overlord sets messNum to the number of Mess Objects in a room.
 
 ObjMessParent is now responsible for collision, and object destruction
 - Decrements Overlord messNum on collision
+
+Player is now prevented from exiting a room until all Mess Objects have been collected
+- A message displays telling the player the room is not yet clean
+- The player is moved out of collision range of the door
+
+currentScore now increments when all Mess Items in a room are collected
+- SCORE Macros have been created to set goals
+- currentScore resets when a SCORE goal is reached

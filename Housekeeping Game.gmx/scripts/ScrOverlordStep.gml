@@ -1,7 +1,25 @@
 if(room != RoomHallway)
 {
-    if(messNum <= 0)
+    // Increment level based on score
+    switch(currentScore)
     {
-        show_message("All Clean!");
+        case SCORE001:
+        {
+            currentLevel = LEVEL002;
+            currentScore = 0;
+            break;
+        }
+        case SCORE002:
+        {
+            currentLevel = LEVEL003;
+            currentScore = 0;
+            break;
+        }
+        case SCORE003:
+        {
+            currentLevel = LEVEL004;
+            currentScore = 0;
+            break;
+        }
     }
 }
