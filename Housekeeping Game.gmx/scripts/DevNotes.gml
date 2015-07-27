@@ -305,3 +305,9 @@ Created a timer object, and added it to the Overlord group.
 - Scripts tested, but still in prototype
 
 Created 10 macros LEVEL001 to LEVEL010 holding timer values (in seconds)
+
+OverlordCreate now sets a globalvar currentLevel
+
+Created FuncMess
+- FuncMess is now responsible for Mess object instantiation 
+- ScrMessPlace calls FuncMess from a switch(currentLevel), passing a level-specific value

@@ -112,6 +112,7 @@
       <script>scripts\ScrOverlordCreate.gml</script>
       <script>scripts\ScrMessPlace.gml</script>
       <script>scripts\ScrCluePlace.gml</script>
+      <script>scripts\FuncMess.gml</script>
     </scripts>
     <scripts name="MainMenu">
       <script>scripts\ScrBtnHelp.gml</script>

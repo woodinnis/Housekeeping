@@ -7,11 +7,12 @@ messType = "";           // Used for setting the image index of ObjMessLg/Md/Sm
 messVar = "";            // Used for setting the image index of ObjMessLg/Md/Sm
 
 // Game level variable
+globalvar Level;
+currentLevel = LEVEL001;   // Set Starting level to 001
 
 lvlNum = 1.0;
 
 // Clue placement variables
-strLevel = "";      // 
 strClueType = "";   // Used in ScrCluePlace to hold an asset index for instance_create()
 clue = 0;           // Used when pulling level information out of the game data file
 clueType = "";      // Used for setting the image index of ObjClue
