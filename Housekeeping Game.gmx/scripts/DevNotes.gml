@@ -311,3 +311,11 @@ OverlordCreate now sets a globalvar currentLevel
 Created FuncMess
 - FuncMess is now responsible for Mess object instantiation 
 - ScrMessPlace calls FuncMess from a switch(currentLevel), passing a level-specific value
+
+ObjTimer now moves the player back into the Hallway when time runs out
+
+Overlord sets messNum to the number of Mess Objects in a room.
+- Checks to see if all objects have been collected.
+
+ObjMessParent is now responsible for collision, and object destruction
+- Decrements Overlord messNum on collision

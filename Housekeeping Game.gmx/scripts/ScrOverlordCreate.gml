@@ -1,14 +1,14 @@
-
 // Variables for the HUD to keep track of cleaning
-messCollected = false;   // Boolean for HUD use, set to true when the first ObjMess is collected
-messCount = 0;           // Used in the ScrMessPlace script to distribute ObjMess
+messCollected = true;    //false;   // Boolean for HUD use, set to true when the first ObjMess is collected
 messNum = 0;             // Used for HUD to count total number of ObjMess collected by the player
 messType = "";           // Used for setting the image index of ObjMessLg/Md/Sm
 messVar = "";            // Used for setting the image index of ObjMessLg/Md/Sm
 
 // Game level variable
-globalvar Level;
-currentLevel = LEVEL001;   // Set Starting level to 001
+globalvar currentLevel;
+globalvar currentScore;
+currentLevel = LEVEL001;    // Set Starting level to 001
+currentScore = 0;           // Set Starting score to 0;
 
 lvlNum = 1.0;
 

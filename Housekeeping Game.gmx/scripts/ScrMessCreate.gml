@@ -1,7 +1,8 @@
+// Set variables
+
 spawnX = 0;
 spawnY = 0;
 i = 100;
-
  
 while(!place_empty(spawnX,spawnY) && i >0 )
 {

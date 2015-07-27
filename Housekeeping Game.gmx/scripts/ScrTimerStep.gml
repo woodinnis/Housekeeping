@@ -1,5 +1,8 @@
 if(levelOver)
 {
-    show_message("Level Is Over!");    
+    if(room != RoomHallway)
+    {
+        room_goto(RoomHallway);
+    }
 }
 
