@@ -58,7 +58,8 @@ if(moveUp)
         }
         else
         {
-            room_goto(RoomRoomLg);
+            //room_goto(RoomRoomLg);
+            room_goto(RoomRoomSm);
         }
     }      
 }

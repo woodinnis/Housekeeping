@@ -289,3 +289,19 @@ Added sprites for all ObjMess
 Added sprites for all ObjClue
 - Added randomization of clueType to ScrCluePlace
 - sprite_index changes in ScrClueCreate
+
+
+============================================================================================
+
+// July 27, 2015 //
+
+Begin Mentor Studio DevLog Entries
+==================================
+
+Created a GitHub repository
+
+Created a timer object, and added it to the Overlord group.
+- Create, Alarm, and Step scripts all created
+- Scripts tested, but still in prototype
+
+Created 10 macros LEVEL001 to LEVEL010 holding timer values (in seconds)

@@ -417,6 +417,7 @@
     <instance objName="ObjBarrier" x="32" y="112" name="inst_01F15841" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjBarrier" x="48" y="112" name="inst_7AF44485" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjBarrier" x="64" y="112" name="inst_6111EC80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ObjTimer" x="288" y="272" name="inst_49E7F0B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

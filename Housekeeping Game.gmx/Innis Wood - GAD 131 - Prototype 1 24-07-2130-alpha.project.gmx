@@ -98,6 +98,21 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\DevNotes.gml</script>
+    <scripts name="Overlord">
+      <scripts name="Menu">
+        <script>scripts\txtBoxMouse.gml</script>
+      </scripts>
+      <scripts name="Timer">
+        <script>scripts\ScrTimerCreate.gml</script>
+        <script>scripts\ScrTimerAlarm.gml</script>
+        <script>scripts\ScrTimerStep.gml</script>
+      </scripts>
+      <script>scripts\ScrHUD.gml</script>
+      <script>scripts\ScrCall.gml</script>
+      <script>scripts\ScrOverlordCreate.gml</script>
+      <script>scripts\ScrMessPlace.gml</script>
+      <script>scripts\ScrCluePlace.gml</script>
+    </scripts>
     <scripts name="MainMenu">
       <script>scripts\ScrBtnHelp.gml</script>
     </scripts>
@@ -112,16 +127,6 @@
     <scripts name="Clues">
       <script>scripts\ScrClueCreate.gml</script>
       <script>scripts\ScrClueCollect.gml</script>
-    </scripts>
-    <scripts name="Overlord">
-      <scripts name="Menu">
-        <script>scripts\txtBoxMouse.gml</script>
-      </scripts>
-      <script>scripts\ScrHUD.gml</script>
-      <script>scripts\ScrCall.gml</script>
-      <script>scripts\ScrOverlordCreate.gml</script>
-      <script>scripts\ScrMessPlace.gml</script>
-      <script>scripts\ScrCluePlace.gml</script>
     </scripts>
     <scripts name="Mess">
       <script>scripts\ScrMessCollect.gml</script>
@@ -141,6 +146,7 @@
         <object>objects\ObjTxtBox</object>
       </objects>
       <object>objects\ObjOverlord</object>
+      <object>objects\ObjTimer</object>
     </objects>
     <objects name="Mess">
       <object>objects\ObjMessParent</object>
@@ -168,6 +174,18 @@
     <room>rooms\RoomRoomSm</room>
     <room>rooms\RoomRoomLg</room>
   </rooms>
+  <constants number="10">
+    <constant name="LEVEL001">30</constant>
+    <constant name="LEVEL002">60</constant>
+    <constant name="LEVEL003">90</constant>
+    <constant name="LEVEL004">120</constant>
+    <constant name="LEVEL005">150</constant>
+    <constant name="LEVEL006">180</constant>
+    <constant name="LEVEL007">210</constant>
+    <constant name="LEVEL008">240</constant>
+    <constant name="LEVEL009">270</constant>
+    <constant name="LEVEL010">300</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>
