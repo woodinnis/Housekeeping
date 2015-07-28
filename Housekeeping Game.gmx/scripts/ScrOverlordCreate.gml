@@ -10,6 +10,8 @@ globalvar currentScore;
 currentLevel = LEVEL001;    // Set Starting level to 001
 currentScore = 0;           // Set Starting score to 0;
 
+currentGoal = SCORE001;     // Set Starting goal
+
 lvlNum = 1.0;
 
 // Clue placement variables

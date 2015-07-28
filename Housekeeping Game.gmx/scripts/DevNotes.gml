@@ -327,3 +327,8 @@ Player is now prevented from exiting a room until all Mess Objects have been col
 currentScore now increments when all Mess Items in a room are collected
 - SCORE Macros have been created to set goals
 - currentScore resets when a SCORE goal is reached
+
+Basic escalation established
+- currentGoal is set to SCORE n on Overlord create
+- currentScore resets to 0 when each goal is reached
+- New goal set when currentLevel increments

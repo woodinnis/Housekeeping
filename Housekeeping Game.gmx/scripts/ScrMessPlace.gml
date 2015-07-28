@@ -5,11 +5,19 @@ if(room != RoomHallway)
     {
         case LEVEL001:
         {
-            FuncMess(10);
+            FuncMess(5);
             break;
         }
         case LEVEL002:
+         {
+            FuncMess(10);
+            break;
+        }
         case LEVEL003:
+         {
+            FuncMess(15);
+            break;
+        }
         case LEVEL004:
         case LEVEL005:
         case LEVEL006:
@@ -18,7 +26,7 @@ if(room != RoomHallway)
         case LEVEL009:
         case LEVEL010:
         {
-            FuncMess(20);
+            //FuncMess(20);
             break;
         }
     }
