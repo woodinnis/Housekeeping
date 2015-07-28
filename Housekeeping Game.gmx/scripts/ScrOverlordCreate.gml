@@ -4,6 +4,8 @@ messNum = 0;             // Used for HUD to count total number of ObjMess collec
 messType = "";           // Used for setting the image index of ObjMessLg/Md/Sm
 messVar = "";            // Used for setting the image index of ObjMessLg/Md/Sm
 
+debugPressed = false;
+
 // Game level variable
 globalvar currentLevel;
 globalvar currentScore;
@@ -11,6 +13,8 @@ currentLevel = LEVEL001;    // Set Starting level to 001
 currentScore = 0;           // Set Starting score to 0;
 
 currentGoal = SCORE001;     // Set Starting goal
+
+enteredRoom = false;        // Checkin to see if the player has entered a room
 
 lvlNum = 1.0;
 

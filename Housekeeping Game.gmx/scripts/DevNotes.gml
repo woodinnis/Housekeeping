@@ -332,3 +332,15 @@ Basic escalation established
 - currentGoal is set to SCORE n on Overlord create
 - currentScore resets to 0 when each goal is reached
 - New goal set when currentLevel increments
+
+// July 28, 2015 //
+
+Added a debug function
+- Press "Q" key to display important information
+- Uses Overlord Draw event
+
+Moved Timer to the Hallway.
+- Timer now starts counting down when player enters a room.
+- Timer keeps track of current remaining time when player exits a room.
+- Timer will keep counting while player enters multiple rooms
+- Timer keeps counting until the level has completed

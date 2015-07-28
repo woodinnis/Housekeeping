@@ -44,6 +44,9 @@ if(moveUp)
 {
     if (place_meeting(x,y,ObjDoor))
     {
+        // Set player as entering room
+        // This begins the timer
+        
         randomize();
         roomNumber = round(random(100));
         

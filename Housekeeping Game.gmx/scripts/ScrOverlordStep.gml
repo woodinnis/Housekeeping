@@ -1,8 +1,19 @@
+if(keyboard_check_pressed(ord("Q")))
+{
+    if(!debugPressed)
+        debugPressed = true;
+    else
+        debugPressed = false;
+}
+
 if(room != RoomHallway)
 {
     // Increment level and goals based on score
     if(currentScore >= currentGoal)
     {
+        // Reset room state
+        enteredRoom = false;
+
         switch(currentGoal)
         {
             case SCORE001:
