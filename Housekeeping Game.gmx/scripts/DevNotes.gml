@@ -344,3 +344,6 @@ Moved Timer to the Hallway.
 - Timer keeps track of current remaining time when player exits a room.
 - Timer will keep counting while player enters multiple rooms
 - Timer keeps counting until the level has completed
+
+Timer resets when a level completes
+Score now resets when player fails to successfully complete a level
