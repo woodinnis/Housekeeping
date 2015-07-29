@@ -7,3 +7,7 @@ if(room != RoomHallway)
         alarm[0] = levelTime * room_speed;
     }
 }
+else
+{
+    levelTime = currentLevel;
+}

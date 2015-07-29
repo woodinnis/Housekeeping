@@ -347,3 +347,11 @@ Moved Timer to the Hallway.
 
 Timer resets when a level completes
 Score now resets when player fails to successfully complete a level
+
+Fixed issue where timer was stuck at LEVEL001
+- Moved declaration and setting of levelTime to TimerRoomStart
+
+Added spawn points for Mess Objects
+- Removed full random spawn locations
+- Mess objects now spawn at random spawn points
+- Boolean added to prevent multiple spawns on a single point.

@@ -1,3 +1,5 @@
+randomize();
+
 // Variables for the HUD to keep track of cleaning
 messCollected = true;    //false;   // Boolean for HUD use, set to true when the first ObjMess is collected
 messNum = 0;             // Used for HUD to count total number of ObjMess collected by the player

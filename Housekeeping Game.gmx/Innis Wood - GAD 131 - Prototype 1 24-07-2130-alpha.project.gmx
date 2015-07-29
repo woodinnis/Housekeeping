@@ -88,6 +88,7 @@
     <sprite>sprites\SprDoor</sprite>
     <sprite>sprites\SprRoomDoor</sprite>
     <sprite>sprites\SprHUD</sprite>
+    <sprite>sprites\SprSpawnPt</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BG_tester</background>
@@ -171,6 +172,7 @@
     <object>objects\ObjBarrier</object>
     <object>objects\ObjDoor</object>
     <object>objects\ObjRoomDoor</object>
+    <object>objects\ObjSpawnPt</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\RoomMenu</room>
