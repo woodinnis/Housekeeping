@@ -363,3 +363,7 @@ Created ObjUI to handle HUD and UI operations
 Renamed ScrClueCreate to FuncClue
 - FuncClue is called from MessPlace after FuncMess
 - Takes one argument, Clue Type
+
+Created ClueUI script to handle the UI functions related to clues
+- Currently only displays a short message when a clue is found
+- Triggered via a bool in ClueParent

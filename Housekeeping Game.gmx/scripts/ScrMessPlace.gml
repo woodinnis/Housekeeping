@@ -2,7 +2,6 @@
 if(room != RoomHallway)
 {
     clueNum = round(random(3));
-    show_message(clueNum);
     switch(currentLevel)
     {
         case LEVEL001:

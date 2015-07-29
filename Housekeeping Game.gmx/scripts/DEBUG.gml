@@ -1,5 +1,8 @@
 high = view_yview[0];
 wide = view_xview[0];
+
+draw_set_halign(fa_left);
+
 if(debugPressed)
 {
     draw_text(wide + 20, high + 400, "Level " + string(currentLevel));

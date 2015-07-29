@@ -111,6 +111,7 @@
       </scripts>
       <scripts name="HUD-UI">
         <script>scripts\ScrHUD.gml</script>
+        <script>scripts\ScrClueUI.gml</script>
       </scripts>
       <script>scripts\ScrCall.gml</script>
       <script>scripts\ScrOverlordCreate.gml</script>

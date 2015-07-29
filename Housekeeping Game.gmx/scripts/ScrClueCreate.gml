@@ -1,4 +1,2 @@
 // Set variables
 hasBeenTouched = false;
-
-
