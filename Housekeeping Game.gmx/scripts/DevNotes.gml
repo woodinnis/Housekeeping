@@ -359,3 +359,7 @@ Added spawn points for Mess Objects
 Created ObjUI to handle HUD and UI operations
 - ScrHUD has been moved to the Draw event
 - Other operations are suspended pending game development
+
+Renamed ScrClueCreate to FuncClue
+- FuncClue is called from MessPlace after FuncMess
+- Takes one argument, Clue Type

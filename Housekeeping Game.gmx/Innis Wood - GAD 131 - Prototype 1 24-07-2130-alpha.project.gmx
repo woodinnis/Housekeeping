@@ -115,7 +115,7 @@
       <script>scripts\ScrCall.gml</script>
       <script>scripts\ScrOverlordCreate.gml</script>
       <script>scripts\ScrMessPlace.gml</script>
-      <script>scripts\ScrCluePlace.gml</script>
+      <script>scripts\FuncClue.gml</script>
       <script>scripts\FuncMess.gml</script>
       <script>scripts\ScrOverlordStep.gml</script>
     </scripts>
