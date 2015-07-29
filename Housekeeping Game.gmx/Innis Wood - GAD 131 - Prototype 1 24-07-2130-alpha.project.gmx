@@ -109,7 +109,9 @@
         <script>scripts\ScrTimerStep.gml</script>
         <script>scripts\ScrTimerRoomStart.gml</script>
       </scripts>
-      <script>scripts\ScrHUD.gml</script>
+      <scripts name="HUD-UI">
+        <script>scripts\ScrHUD.gml</script>
+      </scripts>
       <script>scripts\ScrCall.gml</script>
       <script>scripts\ScrOverlordCreate.gml</script>
       <script>scripts\ScrMessPlace.gml</script>
@@ -139,6 +141,7 @@
     <script>scripts\DEBUG.gml</script>
   </scripts>
   <objects name="objects">
+    <object>objects\ObjUI</object>
     <objects name="MainMenu">
       <object>objects\ObjBtnPlay</object>
       <object>objects\ObjBtnHelp</object>
@@ -169,10 +172,12 @@
       <object>objects\ObjClueSm</object>
       <object>objects\ObjClueParent</object>
     </objects>
-    <object>objects\ObjBarrier</object>
-    <object>objects\ObjDoor</object>
-    <object>objects\ObjRoomDoor</object>
-    <object>objects\ObjSpawnPt</object>
+    <objects name="Misc">
+      <object>objects\ObjRoomDoor</object>
+      <object>objects\ObjSpawnPt</object>
+      <object>objects\ObjDoor</object>
+      <object>objects\ObjBarrier</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\RoomMenu</room>

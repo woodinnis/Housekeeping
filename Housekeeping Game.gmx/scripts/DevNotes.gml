@@ -355,3 +355,7 @@ Added spawn points for Mess Objects
 - Removed full random spawn locations
 - Mess objects now spawn at random spawn points
 - Boolean added to prevent multiple spawns on a single point.
+
+Created ObjUI to handle HUD and UI operations
+- ScrHUD has been moved to the Draw event
+- Other operations are suspended pending game development
