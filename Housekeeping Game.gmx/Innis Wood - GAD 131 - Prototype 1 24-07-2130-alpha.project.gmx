@@ -136,6 +136,7 @@
       </scripts>
       <script>scripts\ScrHUD.gml</script>
       <script>scripts\ScrClueUI.gml</script>
+      <script>scripts\ScrTimerUI.gml</script>
     </scripts>
     <script>scripts\DEBUG_DRAW.gml</script>
     <script>scripts\DEBUG_STEP.gml</script>

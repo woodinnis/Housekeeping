@@ -383,3 +383,7 @@ Fixed FuncMess error
 
 Removed show_message when player tries to leave an incomplete room
 - Replaced with a UI draw_text
+
+On-screen time remaining display added
+- Uses ObjTimer
+- ScrTimerUI draws the clock and label
