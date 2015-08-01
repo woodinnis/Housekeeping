@@ -69,6 +69,7 @@
             <kind>1</kind>
             <string>// Set bool to true
 hasBeenTouched = true;
+ObjOverlord.clueFound = true;
 </string>
           </argument>
         </arguments>

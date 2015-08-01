@@ -2,6 +2,7 @@
 roomNum = ObjOverlord.roomNum;
 messNum = ObjOverlord.messNum;
 messCollected = ObjOverlord.messCollected;
+drawNotClean = ObjOverlord.drawNotClean;
 
 // Create a string using the room's randomly generated number
 roomName = "ROOM \#" + string(roomNum);
@@ -25,4 +26,10 @@ if(room != RoomHallway)
     thisLong = string_length(roomName);
     draw_set_halign(fa_right)
     draw_text(view_wview[0] - 20, view_yview[0] + 20, roomName);
+    
+    if(drawNotClean)
+    {
+        draw_set_halign(fa_center);
+        draw_text(view_wview[0] / 2, 40, NOTCLEAN);
+    }
 }

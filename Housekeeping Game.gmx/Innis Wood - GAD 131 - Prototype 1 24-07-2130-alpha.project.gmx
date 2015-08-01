@@ -100,18 +100,11 @@
   <scripts name="scripts">
     <script>scripts\DevNotes.gml</script>
     <scripts name="Overlord">
-      <scripts name="Menu">
-        <script>scripts\txtBoxMouse.gml</script>
-      </scripts>
       <scripts name="Timer">
         <script>scripts\ScrTimerCreate.gml</script>
         <script>scripts\ScrTimerAlarm.gml</script>
         <script>scripts\ScrTimerStep.gml</script>
         <script>scripts\ScrTimerRoomStart.gml</script>
-      </scripts>
-      <scripts name="HUD-UI">
-        <script>scripts\ScrHUD.gml</script>
-        <script>scripts\ScrClueUI.gml</script>
       </scripts>
       <script>scripts\ScrCall.gml</script>
       <script>scripts\ScrOverlordCreate.gml</script>
@@ -123,13 +116,11 @@
     <scripts name="MainMenu">
       <script>scripts\ScrBtnHelp.gml</script>
     </scripts>
-    <scripts name="Room">
-      <script>scripts\ScrRoomExit.gml</script>
-    </scripts>
     <scripts name="Player">
       <script>scripts\ScrPlayerHallMove.gml</script>
       <script>scripts\ScrPlayerRoomMove.gml</script>
       <script>scripts\ScrPlayerCreate.gml</script>
+      <script>scripts\ScrRoomExit.gml</script>
     </scripts>
     <scripts name="Clues">
       <script>scripts\ScrClueCreate.gml</script>
@@ -139,7 +130,15 @@
       <script>scripts\ScrMessCollect.gml</script>
       <script>scripts\ScrMessCreate.gml</script>
     </scripts>
-    <script>scripts\DEBUG.gml</script>
+    <scripts name="HUD-UI">
+      <scripts name="Menu">
+        <script>scripts\txtBoxMouse.gml</script>
+      </scripts>
+      <script>scripts\ScrHUD.gml</script>
+      <script>scripts\ScrClueUI.gml</script>
+    </scripts>
+    <script>scripts\DEBUG_DRAW.gml</script>
+    <script>scripts\DEBUG_STEP.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\ObjUI</object>
@@ -179,6 +178,7 @@
       <object>objects\ObjDoor</object>
       <object>objects\ObjBarrier</object>
     </objects>
+    <object>objects\DEBUG</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\RoomMenu</room>
@@ -186,7 +186,7 @@
     <room>rooms\RoomRoomSm</room>
     <room>rooms\RoomRoomLg</room>
   </rooms>
-  <constants number="13">
+  <constants number="14">
     <constant name="LEVEL001">30</constant>
     <constant name="LEVEL002">60</constant>
     <constant name="LEVEL003">90</constant>
@@ -200,6 +200,7 @@
     <constant name="SCORE001">1</constant>
     <constant name="SCORE002">3</constant>
     <constant name="SCORE003">5</constant>
+    <constant name="NOTCLEAN">"You Have Not Finished Cleaning This Room"</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

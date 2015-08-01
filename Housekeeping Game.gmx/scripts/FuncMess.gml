@@ -7,9 +7,12 @@ spawnCount = instance_number(ObjSpawnPt);
 for(i = 0; i < messCount; i++)
 {
     // Select an unoccupied spawn point
-    do
-        spawnHere = instance_find(ObjSpawnPt, random(spawnCount));
-    until(spawnHere.isOccupied == false)
+    if(instance_exists(ObjSpawnPt))
+    {
+        do
+            spawnMess = instance_find(ObjSpawnPt, irandom(spawnCount));
+        until(spawnMess != noone && spawnMess.isOccupied == false)
+    }
     
     // Pick a 0-3 random number to determine the ObjMess to be placed                   
     mess = random(3);
@@ -18,21 +21,20 @@ for(i = 0; i < messCount; i++)
     // Place the random Mess Object at the x,y coordinates of the selected unoccupied spawn point
     if(mess <= 1)
     {
-         instance_create(spawnHere.x,spawnHere.y,ObjMessLg);
-         messType = "MessLg" + messVar;
-         
+         instance_create(spawnMess.x,spawnMess.y,ObjMessLg);
+         ObjOverlord.messType = "MessLg" + messVar;
     }
     else if(mess <= 2)
     {
-         instance_create(spawnHere.x,spawnHere.y,ObjMessMd);
-         messType = "MessMd" + messVar;
+         instance_create(spawnMess.x,spawnMess.y,ObjMessMd);
+         ObjOverlord.messType = "MessMd" + messVar;
     }
     else
     {
-         instance_create(spawnHere.x,spawnHere.y,ObjMessSm);
-         messType = "MessSm" + messVar;
+         instance_create(spawnMess.x,spawnMess.y,ObjMessSm);
+         ObjOverlord.messType = "MessSm" + messVar;
     }
     
     // Set the spawn point as occupied
-    spawnHere.isOccupied = true;
+    spawnMess.isOccupied = true;
 }

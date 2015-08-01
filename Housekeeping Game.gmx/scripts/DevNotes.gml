@@ -367,3 +367,19 @@ Renamed ScrClueCreate to FuncClue
 Created ClueUI script to handle the UI functions related to clues
 - Currently only displays a short message when a clue is found
 - Triggered via a bool in ClueParent
+
+// August 1, 2015 //
+
+Rebuilt Debug as an object.
+- Allows for debug functions
+- Same UI details are still included
+
+FuncMess has developed an intermittent bug where the spawn point search will return -4
+- Lines 10-12
+- A temporary fix can be implemented with a for loop.
+
+Fixed FuncMess error
+- Added a condition to the do-until statement verifying that spawnMess was not returning 'noone'
+
+Removed show_message when player tries to leave an incomplete room
+- Replaced with a UI draw_text

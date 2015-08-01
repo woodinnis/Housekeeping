@@ -8,8 +8,7 @@ else                    // If the player is in the game
     }
     else
     {
-        show_message("You have not finished cleaning this room")
-        with(other)
-            x = x + 5;
+        ObjOverlord.drawNotClean = true;
+        x = x + 1;
     }
 }

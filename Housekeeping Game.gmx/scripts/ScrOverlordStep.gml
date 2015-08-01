@@ -1,11 +1,3 @@
-if(keyboard_check_pressed(ord("Q")))
-{
-    if(!debugPressed)
-        debugPressed = true;
-    else
-        debugPressed = false;
-}
-
 if(room != RoomHallway)
 {
     // Increment level and goals based on score
@@ -40,4 +32,12 @@ if(room != RoomHallway)
             }
         }
     }
+}
+
+if(room == RoomHallway)
+{
+    if(messNum < 0)
+        messNum = 0;
+    
+    drawNotClean = false;
 }

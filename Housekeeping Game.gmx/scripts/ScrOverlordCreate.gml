@@ -5,8 +5,7 @@ messCollected = true;    //false;   // Boolean for HUD use, set to true when the
 messNum = 0;             // Used for HUD to count total number of ObjMess collected by the player
 messType = "";           // Used for setting the image index of ObjMessLg/Md/Sm
 messVar = "";            // Used for setting the image index of ObjMessLg/Md/Sm
-
-debugPressed = false;
+drawNotClean = false;
 
 // Game level variable
 globalvar currentLevel;
@@ -24,7 +23,4 @@ lvlNum = 1.0;
 clue = 0;           // Used when pulling level information out of the game data file
 clueType = "";      // Used for setting the image index of ObjClue
 clueVar = "";       // Used for setting the image index of ObjClue
-
-// Open file containing ObjClue coordinates
-
-ini_open("ClueCoords.ini");
+clueFound = false;
