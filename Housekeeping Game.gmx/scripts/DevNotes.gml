@@ -387,3 +387,11 @@ Removed show_message when player tries to leave an incomplete room
 On-screen time remaining display added
 - Uses ObjTimer
 - ScrTimerUI draws the clock and label
+
+Started working on giving player's options to respond to finding a clue
+
+// August 04, 2015 // Bowser day
+
+Built a rudementary score display
+- Shows the current number of cleaned rooms
+- Shows a messages when all rooms (currentGoal) have been cleaned

@@ -14,6 +14,7 @@ if(room != RoomHallway)
     
     // Draw the basic HUD
     draw_set_halign(fa_left);
+    draw_set_valign(fa_top);
     draw_text(20, 20, "HOUSEKEEPING");
     
     if(messCollected)

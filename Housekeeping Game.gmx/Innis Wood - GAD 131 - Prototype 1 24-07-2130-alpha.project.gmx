@@ -135,6 +135,7 @@
         <script>scripts\txtBoxMouse.gml</script>
       </scripts>
       <script>scripts\ScrHUD.gml</script>
+      <script>scripts\ScrScoreUI.gml</script>
       <script>scripts\ScrClueUI.gml</script>
       <script>scripts\ScrTimerUI.gml</script>
     </scripts>
