@@ -399,3 +399,7 @@ Built a rudementary score display
 A message displays in the hallway showing the player which clues they have found
 - Based on booleans clueLg, clueMd, clueSm in Overlord
 - Only displays while in hallway
+
+Moved the Score display
+- Removed "HOUSEKEEPING" from in-room HUD
+- Replaced with # of Cleaned Rooms

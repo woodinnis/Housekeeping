@@ -12,11 +12,6 @@ if(room != RoomHallway)
     // Draw the HUD underlay
     draw_sprite(SprHUD, 0, 0, 0);
     
-    // Draw the basic HUD
-    draw_set_halign(fa_left);
-    draw_set_valign(fa_top);
-    draw_text(20, 20, "HOUSEKEEPING");
-    
     if(messCollected)
     {
         draw_sprite(MessSm,0,view_xview[0] + 28, view_yview[0] + 48);
