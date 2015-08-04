@@ -1,3 +1,31 @@
+// Set bool to true
+hasBeenTouched = true;
+ObjOverlord.clueFound = true;
+
+// Set clue collection information
+switch(clueType)
+{
+    case ObjClueLg:
+    {
+        ObjOverlord.clueLg = true;
+        break;
+    }
+    case ObjClueMd:
+    {
+        ObjOverlord.clueMd = true;
+        break;
+    }
+    case ObjClueSm:
+    {
+        ObjOverlord.clueSm = true;
+        break;
+    }
+    default:
+    {
+        break;
+    }
+}
+/*
 if (!other.hasBeenTouched)
 {
     other.hasBeenTouched = true;

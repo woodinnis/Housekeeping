@@ -395,3 +395,7 @@ Started working on giving player's options to respond to finding a clue
 Built a rudementary score display
 - Shows the current number of cleaned rooms
 - Shows a messages when all rooms (currentGoal) have been cleaned
+
+A message displays in the hallway showing the player which clues they have found
+- Based on booleans clueLg, clueMd, clueSm in Overlord
+- Only displays while in hallway

@@ -14,16 +14,30 @@ if(room != RoomHallway)
     }
 }
 
-// Tell the player what they have found
+// Show player which clues they have found
+// Only display this information while in the hallway
 if(room == RoomHallway)
 {
-    if(ObjOverlord.clueFound = true)
+    setX = view_wview[0];
+    setY = view_hview[0];
+    
+    draw_set_halign(fa_right);
+    draw_set_valign(fa_bottom);
+    
+    // Large    
+    if(ObjOverlord.clueLg)
     {
-        draw_set_halign(fa_center);
-        draw_text(tAlign, 20, "You found a mysterious object while cleaning.");
-        
-        reset   = draw_text(tAlign, 40, "Put it back");
-        search  = draw_text(tAlign, 60, "Search for the owner");
-        keep    = draw_text(tAlign, 80, "Keep it");
+        draw_text(setX - 20, setY - 60,"You found a large clue!");
     }
+    // Medium
+    if(ObjOverlord.clueMd)
+    {
+        draw_text(setX - 20, setY - 40,"You found a medium clue!");
+    }
+    // Small
+    if(ObjOverlord.clueSm)
+    {
+        draw_text(setX - 20, setY - 20,"You found a small clue!");
+    }
+        
 }

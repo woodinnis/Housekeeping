@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(ObjOverlord.clueFound)
+            <string>/*
+if(ObjOverlord.clueFound)
 {
 if(room == RoomHallway)
 {

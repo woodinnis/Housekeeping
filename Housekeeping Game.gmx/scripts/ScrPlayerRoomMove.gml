@@ -11,47 +11,46 @@ moveLeft = keyboard_check(vk_left)|| keyboard_check(ord("A"));
 if(moveUp)
 {
     repeat(moveSpeed)
+    {
+        if (!place_meeting(x,y-1,ObjBarrier))
         {
-            if (!place_meeting(x,y-1,ObjBarrier))
-            {
-                y -= 1;
-            }
+            y -= 1;
         }
+    }
 }
 
 // DOWN
 if(moveDown)
 {
    repeat(moveSpeed)
+    {
+        if (!place_meeting(x,y+1,ObjBarrier))
         {
-            if (!place_meeting(x,y+1,ObjBarrier))
-            {
-                y += 1;
-            }
+            y += 1;
         }
+    }
 }
 
 // RIGHT
 if(moveRight)
 {
     repeat(moveSpeed)
+    {
+        if (!place_meeting(x+1,y,ObjBarrier))
         {
-            if (!place_meeting(x+1,y,ObjBarrier))
-            {
-                x += 1;
-            }
+            x += 1;
         }
+    }
 }
 
 // LEFT
 if(moveLeft)
 {
     repeat(moveSpeed)
+    {
+        if (!place_meeting(x-1,y,ObjBarrier))
         {
-            if (!place_meeting(x-1,y,ObjBarrier))
-            {
-                x -= 1;
-            }
+            x -= 1;
         }
+    }
 }
-

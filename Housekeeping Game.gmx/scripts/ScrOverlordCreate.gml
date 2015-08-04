@@ -24,3 +24,8 @@ clue = 0;           // Used when pulling level information out of the game data 
 clueType = "";      // Used for setting the image index of ObjClue
 clueVar = "";       // Used for setting the image index of ObjClue
 clueFound = false;
+
+// Clue checklist
+clueLg = false;
+clueMd = false;
+clueSm = false;
