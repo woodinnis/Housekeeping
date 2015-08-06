@@ -3,7 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="1" name="datafiles">
+  <datafiles number="2" name="datafiles">
     <datafile>
       <name>ClueCoords.ini</name>
       <exists>-1</exists>
@@ -20,6 +20,23 @@
         </Config>
       </ConfigOptions>
       <filename>ClueCoords.ini</filename>
+    </datafile>
+    <datafile>
+      <name>clues.json</name>
+      <exists>-1</exists>
+      <size>654</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>clues.json</filename>
     </datafile>
   </datafiles>
   <NewExtensions/>
@@ -112,6 +129,7 @@
       <script>scripts\FuncClue.gml</script>
       <script>scripts\FuncMess.gml</script>
       <script>scripts\ScrOverlordStep.gml</script>
+      <script>scripts\ScrJSONRead.gml</script>
     </scripts>
     <scripts name="MainMenu">
       <script>scripts\ScrBtnHelp.gml</script>
@@ -188,7 +206,7 @@
     <room>rooms\RoomRoomSm</room>
     <room>rooms\RoomRoomLg</room>
   </rooms>
-  <constants number="14">
+  <constants number="19">
     <constant name="LEVEL001">30</constant>
     <constant name="LEVEL002">60</constant>
     <constant name="LEVEL003">90</constant>
@@ -203,6 +221,11 @@
     <constant name="SCORE002">3</constant>
     <constant name="SCORE003">5</constant>
     <constant name="NOTCLEAN">"You Have Not Finished Cleaning This Room"</constant>
+    <constant name="CRIME">0</constant>
+    <constant name="EVIDENCE">1</constant>
+    <constant name="CLUE01">2</constant>
+    <constant name="CLUE02">3</constant>
+    <constant name="CLUE03">4</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

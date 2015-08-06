@@ -1,0 +1,37 @@
+[
+  {
+    "CRIME":"CRIME001",
+    "EVIDENCE":"jewellry",
+    "CLUE01":"gloves",
+    "CLUE02":"",
+    "CLUE03":""
+  },
+  {
+    "CRIME":"CRIME002",
+    "EVIDENCE":"documents",
+    "CLUE01":"briefcase",
+    "CLUE02":"gloves",
+    "CLUE03":""
+  },
+  {
+    "CRIME":"CRIME003",
+    "EVIDENCE":"laptop",
+    "CLUE01":"gloves",
+    "CLUE02":"key card",
+    "CLUE03":""
+  },
+  {
+    "CRIME":"CRIME004",
+    "EVIDENCE":"phone",
+    "CLUE01":"key card",
+    "CLUE02":"cash",
+    "CLUE03":"laptop"
+  },
+  {
+    "CRIME":"CRIME005",
+    "EVIDENCE":"sticky note",
+    "CLUE01":"phone",
+    "CLUE02":"shirt",
+    "CLUE03":"cash"
+  }
+]
