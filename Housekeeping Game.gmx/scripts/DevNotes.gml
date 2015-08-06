@@ -403,3 +403,14 @@ A message displays in the hallway showing the player which clues they have found
 Moved the Score display
 - Removed "HOUSEKEEPING" from in-room HUD
 - Replaced with # of Cleaned Rooms
+
+Added a JSON file to store Crime and clue data
+- Still not functional
+
+// August 06, 2015 //
+
+JSON files are now being read properly.
+
+Added three new spawn point types
+- Created SpawnParent to hold mutual create event
+- Altered FuncMess to use SpawnParent locations

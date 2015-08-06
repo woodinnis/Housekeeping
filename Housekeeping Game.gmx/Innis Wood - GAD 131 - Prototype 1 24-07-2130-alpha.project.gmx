@@ -106,6 +106,9 @@
     <sprite>sprites\SprRoomDoor</sprite>
     <sprite>sprites\SprHUD</sprite>
     <sprite>sprites\SprSpawnPt</sprite>
+    <sprite>sprites\sprSpawnBath</sprite>
+    <sprite>sprites\sprSpawnBed</sprite>
+    <sprite>sprites\sprSpawnClst</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BG_tester</background>
@@ -126,8 +129,6 @@
       <script>scripts\ScrCall.gml</script>
       <script>scripts\ScrOverlordCreate.gml</script>
       <script>scripts\ScrMessPlace.gml</script>
-      <script>scripts\FuncClue.gml</script>
-      <script>scripts\FuncMess.gml</script>
       <script>scripts\ScrOverlordStep.gml</script>
       <script>scripts\ScrJSONRead.gml</script>
     </scripts>
@@ -157,11 +158,14 @@
       <script>scripts\ScrClueUI.gml</script>
       <script>scripts\ScrTimerUI.gml</script>
     </scripts>
-    <script>scripts\DEBUG_DRAW.gml</script>
     <script>scripts\DEBUG_STEP.gml</script>
+    <script>scripts\DEBUG_DRAW.gml</script>
+    <script>scripts\FuncClue.gml</script>
+    <script>scripts\FuncMess.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\ObjUI</object>
+    <object>objects\DEBUG</object>
     <objects name="MainMenu">
       <object>objects\ObjBtnPlay</object>
       <object>objects\ObjBtnHelp</object>
@@ -192,13 +196,18 @@
       <object>objects\ObjClueSm</object>
       <object>objects\ObjClueParent</object>
     </objects>
+    <objects name="Spawn">
+      <object>objects\ObjSpawnParent</object>
+      <object>objects\ObjSpawnPt</object>
+      <object>objects\ObjSpawnBath</object>
+      <object>objects\ObjSpawnBed</object>
+      <object>objects\ObjSpawnClst</object>
+    </objects>
     <objects name="Misc">
       <object>objects\ObjRoomDoor</object>
-      <object>objects\ObjSpawnPt</object>
       <object>objects\ObjDoor</object>
       <object>objects\ObjBarrier</object>
     </objects>
-    <object>objects\DEBUG</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\RoomMenu</room>

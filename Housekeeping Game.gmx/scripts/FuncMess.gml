@@ -1,16 +1,15 @@
 // Set internal variables
 messCount = argument0;
-spawnCount = instance_number(ObjSpawnPt);
-// Randomly generate the number of ObjMess objects to be distributed in the room
+spawnCount = instance_number(ObjSpawnParent);
     
 // Using messCount, begin to loop until all ObjMess are distributed
 for(i = 0; i < messCount; i++)
 {
     // Select an unoccupied spawn point
-    if(instance_exists(ObjSpawnPt))
+    if(instance_exists(ObjSpawnParent))
     {
         do
-            spawnMess = instance_find(ObjSpawnPt, irandom(spawnCount));
+            spawnMess = instance_find(ObjSpawnParent, irandom(spawnCount));
         until(spawnMess != noone && spawnMess.isOccupied == false)
     }
     

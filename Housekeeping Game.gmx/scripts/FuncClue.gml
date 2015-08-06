@@ -1,12 +1,15 @@
 // Set internal variables
 clueType = argument0;
-spawnCount = instance_number(ObjSpawnPt);
+spawnCount = instance_number(ObjSpawnParent);
 
 if(room != RoomHallway)
 {
-    do
-        spawnClue = instance_find(ObjSpawnPt, random(spawnCount));
-    until(spawnClue.isOccupied == false)
+    if(instance_exists(ObjSpawnParent))
+    {
+        do
+            spawnClue = instance_find(ObjSpawnParent, random(spawnCount));
+        until(spawnClue.isOccupied == false)
+    }
 
     switch(clueType)
     {
