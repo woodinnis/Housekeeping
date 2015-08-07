@@ -414,3 +414,15 @@ JSON files are now being read properly.
 Added three new spawn point types
 - Created SpawnParent to hold mutual create event
 - Altered FuncMess to use SpawnParent locations
+
+// August 07, 2015 //
+
+Created ObjEvidenceParent
+- Created ObjEvidenceShirt
+- Created placeholder sprite
+
+Created system to direct players while searching for clues and evidence
+- Draws a large circle originating at the Evidence
+- Uses distance to Clues to determine its radius
+- Disappears when no more clues are left in a room.
+

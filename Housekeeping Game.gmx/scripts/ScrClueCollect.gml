@@ -25,6 +25,8 @@ switch(clueType)
         break;
     }
 }
+
+instance_destroy();
 /*
 if (!other.hasBeenTouched)
 {
@@ -39,7 +41,7 @@ if (!other.hasBeenTouched)
         ObjOverlord.currentItem = self.object_index;
         ObjOverlord.currentItemX = x;
         ObjOverlord.currentItemY = y;
-        instance_destroy();        
+        
         //instance_deactivate_region(x-1,y-1,2,2,1,0);
     }
 }

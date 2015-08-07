@@ -109,6 +109,7 @@
     <sprite>sprites\sprSpawnBath</sprite>
     <sprite>sprites\sprSpawnBed</sprite>
     <sprite>sprites\sprSpawnClst</sprite>
+    <sprite>sprites\sprEvidence</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BG_tester</background>
@@ -157,11 +158,15 @@
       <script>scripts\ScrScoreUI.gml</script>
       <script>scripts\ScrClueUI.gml</script>
       <script>scripts\ScrTimerUI.gml</script>
+      <script>scripts\ScrEvidenceUI.gml</script>
     </scripts>
     <script>scripts\DEBUG_STEP.gml</script>
     <script>scripts\DEBUG_DRAW.gml</script>
     <script>scripts\FuncClue.gml</script>
     <script>scripts\FuncMess.gml</script>
+    <scripts name="Evidence">
+      <script>scripts\ScrEvidenceStep.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\ObjUI</object>
@@ -207,6 +212,10 @@
       <object>objects\ObjRoomDoor</object>
       <object>objects\ObjDoor</object>
       <object>objects\ObjBarrier</object>
+    </objects>
+    <objects name="Evidence">
+      <object>objects\ObjEvidenceParent</object>
+      <object>objects\ObjEvidenceShirt</object>
     </objects>
   </objects>
   <rooms name="rooms">
