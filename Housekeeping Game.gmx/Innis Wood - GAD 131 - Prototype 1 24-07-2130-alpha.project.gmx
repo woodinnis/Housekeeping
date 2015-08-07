@@ -132,6 +132,7 @@
       <script>scripts\ScrMessPlace.gml</script>
       <script>scripts\ScrOverlordStep.gml</script>
       <script>scripts\ScrJSONRead.gml</script>
+      <script>scripts\ScrEvidencePlace.gml</script>
     </scripts>
     <scripts name="MainMenu">
       <script>scripts\ScrBtnHelp.gml</script>
@@ -160,13 +161,13 @@
       <script>scripts\ScrTimerUI.gml</script>
       <script>scripts\ScrEvidenceUI.gml</script>
     </scripts>
-    <script>scripts\DEBUG_STEP.gml</script>
-    <script>scripts\DEBUG_DRAW.gml</script>
-    <script>scripts\FuncClue.gml</script>
-    <script>scripts\FuncMess.gml</script>
     <scripts name="Evidence">
       <script>scripts\ScrEvidenceStep.gml</script>
     </scripts>
+    <script>scripts\DEBUG_DRAW.gml</script>
+    <script>scripts\DEBUG_STEP.gml</script>
+    <script>scripts\FuncClue.gml</script>
+    <script>scripts\FuncMess.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\ObjUI</object>
@@ -224,7 +225,7 @@
     <room>rooms\RoomRoomSm</room>
     <room>rooms\RoomRoomLg</room>
   </rooms>
-  <constants number="19">
+  <constants number="23">
     <constant name="LEVEL001">30</constant>
     <constant name="LEVEL002">60</constant>
     <constant name="LEVEL003">90</constant>
@@ -244,6 +245,10 @@
     <constant name="CLUE01">2</constant>
     <constant name="CLUE02">3</constant>
     <constant name="CLUE03">4</constant>
+    <constant name="CRIME000">0</constant>
+    <constant name="CRIME001">1</constant>
+    <constant name="CRIME002">2</constant>
+    <constant name="CRIME003">3</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

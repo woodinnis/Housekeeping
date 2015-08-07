@@ -426,3 +426,9 @@ Created system to direct players while searching for clues and evidence
 - Uses distance to Clues to determine its radius
 - Disappears when no more clues are left in a room.
 
+Created ScrEvidencePlace
+- Uses RNG to pick rooms
+- Places Evidence using SpawnParent
+
+Disabled clue spawning from Overlord
+- Commented out several lines in ScrMessPlace

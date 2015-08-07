@@ -10,8 +10,10 @@ drawNotClean = false;
 // Game level variable
 globalvar currentLevel;
 globalvar currentScore;
+globalvar currentCrime;
 currentLevel = LEVEL001;    // Set Starting level to 001
 currentScore = 0;           // Set Starting score to 0;
+currentCrime = 0;           // Set Starting crime the player is inventigating
 
 currentGoal = SCORE001;     // Set Starting goal
 

@@ -14,4 +14,9 @@ if(debug)
     {
         ObjOverlord.messNum = 0;    // Clean room
     }
+    
+    if(keyboard_check_pressed(vk_space))
+    {
+        instance_create(250,250,ObjEvidenceShirt);
+    }
 }

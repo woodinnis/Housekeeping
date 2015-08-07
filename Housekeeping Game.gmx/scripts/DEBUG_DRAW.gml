@@ -12,4 +12,7 @@ if(debug)
     
     if(instance_exists(ObjClueParent))
         draw_text(20, 70, "Radius " + string(ObjEvidenceParent.radius));
+    
+    if(room != RoomHallway)
+        draw_text(20, 80, "Check True " + string(ObjOverlord.checkTrue));
 }

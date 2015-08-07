@@ -7,19 +7,19 @@ if(room != RoomHallway)
         case LEVEL001:
         {
             FuncMess(5);
-            FuncClue(clueNum);
+//            FuncClue(clueNum);
             break;
         }
         case LEVEL002:
         {
             FuncMess(10);
-            FuncClue(clueNum);
+//            FuncClue(clueNum);
             break;
         }
         case LEVEL003:
         {
             FuncMess(15);
-            FuncClue(clueNum);
+//            FuncClue(clueNum);
             break;
         }
         case LEVEL004:
