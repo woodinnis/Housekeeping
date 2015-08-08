@@ -438,3 +438,11 @@ Clues are now spawned only when a piece of evidence is present in a room
 - RNG in function call determines the number of clues spawned
 - RNG in FuncClue determines which type of clue will spawn
 - It's probably a good idea to replace a lot of this RNG with more real values soon
+
+// August 08, 2015 //
+
+Altered the function to spawn Evidence into a room
+- Now calls EvidencePlace
+
+Added a Create event to EvidenceParent
+- Sets radius = 0
