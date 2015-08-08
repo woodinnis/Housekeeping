@@ -91,7 +91,7 @@ radius = 0;
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>ScrEvidentCollect</script>
+            <script>ScrEvidenceCollect</script>
           </argument>
           <argument>
             <kind>0</kind>

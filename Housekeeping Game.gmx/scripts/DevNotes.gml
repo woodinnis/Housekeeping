@@ -453,3 +453,9 @@ Adjusted EvidencePlace to receive an argument0
 - DEBUG sends it as a 5
 
 EvidencePlace now uses ds_grid to select which piece of evidence to spawn
+
+EvidencePlace now calls FuncEvidence to spawn evidence
+- Sends currentCrime as argument0
+- FuncEvidence uses ds_grid to retrieve appropriate piece of evidence
+
+EvidenceCOllect now increments currentCrime

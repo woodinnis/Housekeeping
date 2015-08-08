@@ -2,11 +2,8 @@
 spawnCount = instance_number(ObjSpawnParent);
 checkTrue = argument0;
 
-if(ds_exists(clueData,ds_type_grid))
-{
-    // Scan the clueData ds_grid to see which piece of evidence should be spawned
-    spawnMe = asset_get_index(clueData[# 0, EVIDENCE]);
-}
+// Determine which evidence to spawn based on the current crime
+spawnMe = FuncEvidence(currentCrime);
 
 if(room != RoomHallway)
 {

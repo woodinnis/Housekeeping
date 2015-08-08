@@ -109,7 +109,8 @@
     <sprite>sprites\sprSpawnBath</sprite>
     <sprite>sprites\sprSpawnBed</sprite>
     <sprite>sprites\sprSpawnClst</sprite>
-    <sprite>sprites\sprEvidence</sprite>
+    <sprite>sprites\sprEvidenceShirt</sprite>
+    <sprite>sprites\SprEvidenceDocs</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BG_tester</background>
@@ -163,12 +164,13 @@
     </scripts>
     <scripts name="Evidence">
       <script>scripts\ScrEvidenceStep.gml</script>
-      <script>scripts\ScrEvidentCollect.gml</script>
+      <script>scripts\ScrEvidenceCollect.gml</script>
     </scripts>
     <script>scripts\DEBUG_DRAW.gml</script>
     <script>scripts\DEBUG_STEP.gml</script>
     <script>scripts\FuncClue.gml</script>
     <script>scripts\FuncMess.gml</script>
+    <script>scripts\FuncEvidence.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\ObjUI</object>
@@ -218,6 +220,7 @@
     <objects name="Evidence">
       <object>objects\ObjEvidenceParent</object>
       <object>objects\ObjEvidenceShirt</object>
+      <object>objects\ObjEvidenceDocs</object>
     </objects>
   </objects>
   <rooms name="rooms">

@@ -1,34 +1,34 @@
 [
   {
-    "CRIME":"CRIME001",
+    "CRIME":0,
     "EVIDENCE":"ObjEvidenceShirt",
     "CLUE01":"gloves",
     "CLUE02":"",
     "CLUE03":""
   },
   {
-    "CRIME":"CRIME002",
-    "EVIDENCE":"documents",
+    "CRIME":1,
+    "EVIDENCE":"ObjEvidenceDocs",
     "CLUE01":"briefcase",
     "CLUE02":"gloves",
     "CLUE03":""
   },
   {
-    "CRIME":"CRIME003",
+    "CRIME":2,
     "EVIDENCE":"laptop",
     "CLUE01":"gloves",
     "CLUE02":"key card",
     "CLUE03":""
   },
   {
-    "CRIME":"CRIME004",
+    "CRIME":3,
     "EVIDENCE":"phone",
     "CLUE01":"key card",
     "CLUE02":"cash",
     "CLUE03":"laptop"
   },
   {
-    "CRIME":"CRIME005",
+    "CRIME":4,
     "EVIDENCE":"sticky note",
     "CLUE01":"phone",
     "CLUE02":"shirt",
