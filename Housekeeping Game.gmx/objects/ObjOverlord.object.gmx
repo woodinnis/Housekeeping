@@ -213,7 +213,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string></string>
+            <string>irandom(25)</string>
           </argument>
           <argument>
             <kind>0</kind>

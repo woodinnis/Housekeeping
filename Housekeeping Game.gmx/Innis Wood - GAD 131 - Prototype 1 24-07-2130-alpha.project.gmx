@@ -163,6 +163,7 @@
     </scripts>
     <scripts name="Evidence">
       <script>scripts\ScrEvidenceStep.gml</script>
+      <script>scripts\ScrEvidentCollect.gml</script>
     </scripts>
     <script>scripts\DEBUG_DRAW.gml</script>
     <script>scripts\DEBUG_STEP.gml</script>

@@ -17,6 +17,6 @@ if(debug)
     
     if(keyboard_check_pressed(vk_space))
     {
-        script_execute(ScrEvidencePlace());
+        script_execute(ScrEvidencePlace(5));
     }
 }

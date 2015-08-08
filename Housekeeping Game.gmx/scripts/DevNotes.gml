@@ -446,3 +446,10 @@ Altered the function to spawn Evidence into a room
 
 Added a Create event to EvidenceParent
 - Sets radius = 0
+
+Adjusted EvidencePlace to receive an argument0
+- checkTrue is now sent to the script
+- Overlord sends it as irandom()
+- DEBUG sends it as a 5
+
+EvidencePlace now uses ds_grid to select which piece of evidence to spawn

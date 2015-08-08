@@ -7,8 +7,12 @@ while (!file_text_eof(cluesFile))
 }
 file_text_close(cluesFile);
 
+// Declare ds_map global variables
+globalvar totalClues;
+globalvar clueData;
+
 var cluesMap = json_decode(theData);
-var theClues = ds_map_find_value(cluesMap, "CRIME000");
+var theClues = ds_map_find_value(cluesMap, "CRIME");
 totalClues = ds_list_size(theClues);
 clueData = ds_grid_create(totalClues,5);
 
