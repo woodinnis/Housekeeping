@@ -10,7 +10,7 @@ if(debug)
     draw_text(20, 50, "Time Left " + string(ObjTimer.alarm[0]));
     draw_text(20, 60, "Level Over " + string(ObjTimer.levelOver));
     
-    if(instance_exists(ObjClueParent))
+    if(instance_exists(ObjEvidenceParent))
         draw_text(20, 70, "Radius " + string(ObjEvidenceParent.radius));
     
     if(room != RoomHallway)

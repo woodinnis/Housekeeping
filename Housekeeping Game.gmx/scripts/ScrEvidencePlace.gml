@@ -3,7 +3,7 @@ spawnCount = instance_number(ObjSpawnParent);
 
 if(room != RoomHallway)
 {
-    checkTrue = 5//irandom(50);
+    checkTrue = irandom(25);
     
     if((checkTrue mod 5) == 0)
     {   // Check for the presence of spawn points in the room
@@ -14,6 +14,9 @@ if(room != RoomHallway)
             until(spawnEvidence.isOccupied == false)
         }
         
-        instance_create(spawnEvidence.x, spawnEvidence.x,ObjEvidenceShirt);
+        instance_create(spawnEvidence.x, spawnEvidence.y,ObjEvidenceShirt);
+        
+        // Spawn clues into the room
+        FuncClue(irandom_range(1,3));
     }
 }

@@ -1,7 +1,6 @@
 // Set placement of mess objects and clues
 if(room != RoomHallway)
-{
-    clueNum = round(random(3));
+{    
     switch(currentLevel)
     {
         case LEVEL001:

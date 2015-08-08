@@ -432,3 +432,9 @@ Created ScrEvidencePlace
 
 Disabled clue spawning from Overlord
 - Commented out several lines in ScrMessPlace
+
+Clues are now spawned only when a piece of evidence is present in a room
+- ScrEvidencePlace is now presponsible for call FuncClue
+- RNG in function call determines the number of clues spawned
+- RNG in FuncClue determines which type of clue will spawn
+- It's probably a good idea to replace a lot of this RNG with more real values soon
