@@ -15,21 +15,21 @@
   },
   {
     "CRIME":2,
-    "EVIDENCE":"laptop",
+    "EVIDENCE":"ObjEvidenceLaptop",
     "CLUE01":"gloves",
     "CLUE02":"key card",
     "CLUE03":""
   },
   {
     "CRIME":3,
-    "EVIDENCE":"phone",
+    "EVIDENCE":"ObjEvidencePhone",
     "CLUE01":"key card",
     "CLUE02":"cash",
     "CLUE03":"laptop"
   },
   {
     "CRIME":4,
-    "EVIDENCE":"sticky note",
+    "EVIDENCE":"ObjEvidenceNote",
     "CLUE01":"phone",
     "CLUE02":"shirt",
     "CLUE03":"cash"

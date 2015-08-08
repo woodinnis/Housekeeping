@@ -96,6 +96,19 @@
         <sprite>sprites\ClueSm3</sprite>
       </sprites>
     </sprites>
+    <sprites name="Evidence">
+      <sprite>sprites\SprEvidenceLaptop</sprite>
+      <sprite>sprites\sprEvidenceShirt</sprite>
+      <sprite>sprites\SprEvidenceDocs</sprite>
+      <sprite>sprites\SprEvidencePhone</sprite>
+      <sprite>sprites\SprEvidenceNote</sprite>
+    </sprites>
+    <sprites name="Spawns">
+      <sprite>sprites\SprSpawnPt</sprite>
+      <sprite>sprites\sprSpawnBath</sprite>
+      <sprite>sprites\sprSpawnBed</sprite>
+      <sprite>sprites\sprSpawnClst</sprite>
+    </sprites>
     <sprites name="Player">
       <sprite>sprites\SprPlayerHallLeft</sprite>
       <sprite>sprites\SprPlayerRoom</sprite>
@@ -105,12 +118,6 @@
     <sprite>sprites\SprDoor</sprite>
     <sprite>sprites\SprRoomDoor</sprite>
     <sprite>sprites\SprHUD</sprite>
-    <sprite>sprites\SprSpawnPt</sprite>
-    <sprite>sprites\sprSpawnBath</sprite>
-    <sprite>sprites\sprSpawnBed</sprite>
-    <sprite>sprites\sprSpawnClst</sprite>
-    <sprite>sprites\sprEvidenceShirt</sprite>
-    <sprite>sprites\SprEvidenceDocs</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BG_tester</background>
@@ -221,6 +228,9 @@
       <object>objects\ObjEvidenceParent</object>
       <object>objects\ObjEvidenceShirt</object>
       <object>objects\ObjEvidenceDocs</object>
+      <object>objects\ObjEvidenceLaptop</object>
+      <object>objects\ObjEvidencePhone</object>
+      <object>objects\ObjEvidenceNote</object>
     </objects>
   </objects>
   <rooms name="rooms">
