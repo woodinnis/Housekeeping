@@ -10,8 +10,8 @@ if(debug)
     draw_text(20, bottom - 80, "Level " + string(currentLevel));
     draw_text(20, bottom - 70, "Score " + string(currentScore));
     draw_text(20, bottom - 60, "Goal " + string(ObjOverlord.currentGoal));
-    draw_text(20, bottom - 50, "Time Left " + string(ObjTimer.alarm[0]));
-    draw_text(20, bottom - 40, "Level Over " + string(ObjTimer.levelOver));
+//    draw_text(20, bottom - 50, "Time Left " + string(ObjTimer.alarm[0]));
+//    draw_text(20, bottom - 40, "Level Over " + string(ObjTimer.levelOver));
     
     if(instance_exists(ObjEvidenceParent) && instance_exists(ObjClueParent))
         draw_text(20, bottom - 30, "Radius " + string(ObjEvidenceParent.radius));

@@ -44,25 +44,7 @@ if(moveUp)
 {
     if (place_meeting(x,y,ObjDoor))
     {
-        // Set player as entering room
-        // This begins the timer
         
-        randomize();
-        roomNumber = round(random(100));
-        
-        // The 24-07-1400 build of this code worked perfectly
-        // After implementation of the ObjMess fix (spawning in inaccessable areas)
-        // it no longer functions reliably.
-        // At most, two rooms can be entered before the game freezes.
-
-        if(roomNumber mod 2 == 1)
-        {
-            room_goto(RoomRoomSm);
-        }
-        else
-        {
-            //room_goto(RoomRoomLg);
-            room_goto(RoomRoomSm);
-        }
+        script_execute(ScrRoomExit);
     }      
 }

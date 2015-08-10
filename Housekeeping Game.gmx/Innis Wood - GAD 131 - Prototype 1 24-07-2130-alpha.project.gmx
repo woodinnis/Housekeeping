@@ -118,6 +118,7 @@
     <sprite>sprites\SprDoor</sprite>
     <sprite>sprites\SprRoomDoor</sprite>
     <sprite>sprites\SprHUD</sprite>
+    <sprite>sprites\SprFrontDesk</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BG_tester</background>
@@ -223,6 +224,7 @@
       <object>objects\ObjRoomDoor</object>
       <object>objects\ObjDoor</object>
       <object>objects\ObjBarrier</object>
+      <object>objects\ObjFrontDesk</object>
     </objects>
     <objects name="Evidence">
       <object>objects\ObjEvidenceParent</object>
@@ -235,6 +237,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\RoomMenu</room>
+    <room>rooms\RoomFrontDesk</room>
     <room>rooms\RoomHallway</room>
     <room>rooms\RoomRoomSm</room>
     <room>rooms\RoomRoomLg</room>

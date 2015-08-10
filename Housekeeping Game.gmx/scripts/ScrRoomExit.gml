@@ -1,14 +1,40 @@
-if(room = RoomMenu)     // If the player is in the main menu
-    room_goto(RoomHallway)
-else                    // If the player is in the game
+// Perform basic operations moving from one room to another
+switch(room)
 {
-    if(ObjOverlord.messNum <= 0)
+    case RoomMenu:
+    {
+        room_goto(RoomFrontDesk);
+        break;
+    }
+    case RoomFrontDesk:
     {
         room_goto(RoomHallway);
+        break;
     }
-    else
+    case RoomHallway:
     {
-        ObjOverlord.drawNotClean = true;
-        x = x + 1;
+        roomNumber = round(random(100));
+        if(roomNumber mod 2 == 1)
+        {
+            room_goto(RoomRoomSm);
+        }
+        else
+        {
+            //room_goto(RoomRoomLg);
+            room_goto(RoomRoomSm);
+        }
+        break;
     }
+    case RoomRoomSm:
+    case RoomRoomLg:
+        if(ObjOverlord.messNum <= 0)
+        {
+            room_goto(RoomHallway);
+        }
+        else
+        {
+            ObjOverlord.drawNotClean = true;
+            x = x + 1;
+        }
+        break;
 }

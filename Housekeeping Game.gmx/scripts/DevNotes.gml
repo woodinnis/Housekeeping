@@ -459,3 +459,13 @@ EvidencePlace now calls FuncEvidence to spawn evidence
 - FuncEvidence uses ds_grid to retrieve appropriate piece of evidence
 
 EvidenceCOllect now increments currentCrime
+
+// August 10, 2015 //
+
+Added a new room FrontDesk
+- MainMenu now exits to FrontDesk
+- Adjusted ScrRoomExit to use new room
+
+Moved player room change code from PlayerHallMove to ScrRoomExit
+
+Disabled some UI and Debug functions
