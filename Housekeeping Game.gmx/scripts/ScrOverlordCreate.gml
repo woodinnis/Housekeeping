@@ -31,3 +31,6 @@ clueFound = false;
 clueLg = false;
 clueMd = false;
 clueSm = false;
+
+// UI variables
+drawNote = false;

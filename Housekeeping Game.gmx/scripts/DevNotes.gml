@@ -469,3 +469,9 @@ Added a new room FrontDesk
 Moved player room change code from PlayerHallMove to ScrRoomExit
 
 Disabled some UI and Debug functions
+
+Moved Collisions Events for RoomDoor and EvidenceParent to PlayerRoom object
+- Created EvidenceLMB to handle advanced collisions events
+- Plans to make this a proper LMB Click handler
+
+Player Collision with EvidenceNote now draws a note on screen

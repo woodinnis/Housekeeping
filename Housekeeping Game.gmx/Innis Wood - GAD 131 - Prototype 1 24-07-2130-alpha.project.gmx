@@ -173,6 +173,7 @@
     <scripts name="Evidence">
       <script>scripts\ScrEvidenceStep.gml</script>
       <script>scripts\ScrEvidenceCollect.gml</script>
+      <script>scripts\ScrEvidenceLMB.gml</script>
     </scripts>
     <script>scripts\DEBUG_DRAW.gml</script>
     <script>scripts\DEBUG_STEP.gml</script>
@@ -180,6 +181,10 @@
     <script>scripts\FuncMess.gml</script>
     <script>scripts\FuncEvidence.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fontDEBUG</font>
+    <font>fonts\fontMessages</font>
+  </fonts>
   <objects name="objects">
     <object>objects\ObjUI</object>
     <object>objects\DEBUG</object>

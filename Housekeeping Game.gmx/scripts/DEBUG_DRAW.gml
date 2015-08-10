@@ -1,6 +1,7 @@
 draw_set_halign(fa_left);
 draw_set_colour(c_black);
 draw_set_alpha(1);
+draw_set_font(fontDEBUG);
 
 bottom = view_hview[0];
 
@@ -16,6 +17,6 @@ if(debug)
     if(instance_exists(ObjEvidenceParent) && instance_exists(ObjClueParent))
         draw_text(20, bottom - 30, "Radius " + string(ObjEvidenceParent.radius));
     
-    if(room != RoomHallway)
+    if(room != RoomHallway && room != RoomFrontDesk)
         draw_text(20, bottom - 20, "Check True " + string(ObjOverlord.checkTrue));
 }

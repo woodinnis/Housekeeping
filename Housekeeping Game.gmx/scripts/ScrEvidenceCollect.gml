@@ -27,4 +27,5 @@ switch(currentCrime)
 }
 
 // Destroy the current instance of the object
-instance_destroy();
+with(other)
+    instance_destroy();
