@@ -475,3 +475,18 @@ Moved Collisions Events for RoomDoor and EvidenceParent to PlayerRoom object
 - Plans to make this a proper LMB Click handler
 
 Player Collision with EvidenceNote now draws a note on screen
+
+// August 11, 2015 //
+
+Fixed the problem where clicking on a piece of evidence(note) would not cause it to draw to the screen
+- Global LMB was resetting the drawNote bool
+- Created MissionChecks to handle all variables related to missions
+- Added noteFound bool, which is used to handle drawing of Note Evidence.
+
+// August 13, 2015 //
+
+Three pieces of Evidence now have LMB-Clicked responses.
+- Shirt
+- Docs
+- Note
+- Draw scaled-up images to the GUI

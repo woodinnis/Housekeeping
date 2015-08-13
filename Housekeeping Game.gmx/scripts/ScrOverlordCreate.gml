@@ -32,5 +32,7 @@ clueLg = false;
 clueMd = false;
 clueSm = false;
 
-// UI variables
+// UI variables for Evidence
+drawShirt = false;
+drawDocs = false;
 drawNote = false;

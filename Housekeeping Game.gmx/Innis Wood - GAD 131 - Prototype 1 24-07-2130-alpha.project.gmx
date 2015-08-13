@@ -98,7 +98,7 @@
     </sprites>
     <sprites name="Evidence">
       <sprite>sprites\SprEvidenceLaptop</sprite>
-      <sprite>sprites\sprEvidenceShirt</sprite>
+      <sprite>sprites\SprEvidenceShirt</sprite>
       <sprite>sprites\SprEvidenceDocs</sprite>
       <sprite>sprites\SprEvidencePhone</sprite>
       <sprite>sprites\SprEvidenceNote</sprite>
@@ -151,6 +151,7 @@
       <script>scripts\ScrPlayerRoomMove.gml</script>
       <script>scripts\ScrPlayerCreate.gml</script>
       <script>scripts\ScrRoomExit.gml</script>
+      <script>scripts\ScrMissionChecks.gml</script>
     </scripts>
     <scripts name="Clues">
       <script>scripts\ScrClueCreate.gml</script>

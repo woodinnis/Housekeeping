@@ -3,7 +3,15 @@
 switch(other.object_index)
 {
     case ObjEvidenceShirt:
+    {
+        ObjOverlord.drawShirt = true;
+        break;
+    }
     case ObjEvidenceDocs:
+    {
+        ObjOverlord.drawDocs = true;
+        break;
+    }
     case ObjEvidenceLaptop:
     case ObjEvidencePhone:
     {
@@ -20,5 +28,4 @@ switch(other.object_index)
         break;
     }
 }
-
 
