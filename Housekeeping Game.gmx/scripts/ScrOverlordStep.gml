@@ -5,7 +5,7 @@ if(room != RoomHallway)
     {
         // Reset room state
         enteredRoom = false;
-        ObjTimer.alarm[0] = -1;
+//        ObjTimer.alarm[0] = -1;
 
         switch(currentGoal)
         {

@@ -25,12 +25,12 @@ if(room != RoomHallway && room != RoomFrontDesk)
     if(ObjOverlord.drawShirt)   // Shirt
     {
         draw_sprite_ext(SprEvidenceShirt,0,wide/2,high/2,5,5,0,c_white,1);
-        ObjPlayerRoom.shirtFound = true;
+        ObjOverlord.shirtFound = true;
     }
     if(ObjOverlord.drawDocs)    // Documents
     {
         draw_sprite_ext(SprEvidenceDocs,0,wide/2,high/2,5,5,0,c_white,1);
-        ObjPlayerRoom.docsFound = true;
+        ObjOverlord.docsFound = true;
     }
     if(ObjOverlord.drawNote)    // Post-it note
     {
@@ -43,7 +43,7 @@ if(room != RoomHallway && room != RoomFrontDesk)
         draw_set_halign(fa_left);
         draw_set_font(fontMessages);
         draw_text(setX+5, setY+5, COMMUNIQUE001);
-        ObjPlayerRoom.noteFound = true;
+        ObjOverlord.noteFound = true;
     }
     
 

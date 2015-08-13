@@ -139,9 +139,11 @@
       <script>scripts\ScrCall.gml</script>
       <script>scripts\ScrOverlordCreate.gml</script>
       <script>scripts\ScrMessPlace.gml</script>
+      <script>scripts\ScrMissionChecks.gml</script>
       <script>scripts\ScrOverlordStep.gml</script>
       <script>scripts\ScrJSONRead.gml</script>
       <script>scripts\ScrEvidencePlace.gml</script>
+      <script>scripts\ScrOvlerlordGlobLMB.gml</script>
     </scripts>
     <scripts name="MainMenu">
       <script>scripts\ScrBtnHelp.gml</script>
@@ -151,7 +153,6 @@
       <script>scripts\ScrPlayerRoomMove.gml</script>
       <script>scripts\ScrPlayerCreate.gml</script>
       <script>scripts\ScrRoomExit.gml</script>
-      <script>scripts\ScrMissionChecks.gml</script>
     </scripts>
     <scripts name="Clues">
       <script>scripts\ScrClueCreate.gml</script>
@@ -212,6 +213,7 @@
     <objects name="Player">
       <object>objects\ObjPlayerRoom</object>
       <object>objects\ObjPlayerHall</object>
+      <object>objects\ObjPlayerParent</object>
     </objects>
     <objects name="Clues">
       <object>objects\ObjClueLg</object>

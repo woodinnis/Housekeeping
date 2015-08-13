@@ -490,3 +490,9 @@ Three pieces of Evidence now have LMB-Clicked responses.
 - Docs
 - Note
 - Draw scaled-up images to the GUI
+
+Shirt, Docs, & Note now spawn as a full set.
+- FuncEvidence uses nested switch->if/else->choose to pick and place the correct item
+- Moved control of [evidence]Found vars to Overlord
+
+DEBUG_DRAW now tracks the status of these items
