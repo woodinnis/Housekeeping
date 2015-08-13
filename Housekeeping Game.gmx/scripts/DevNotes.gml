@@ -496,3 +496,10 @@ Shirt, Docs, & Note now spawn as a full set.
 - Moved control of [evidence]Found vars to Overlord
 
 DEBUG_DRAW now tracks the status of these items
+
+Created Spr,ObjClerk
+- Placed in RoomFrontDesk
+- Player Collision causes a mission briefing
+- Mission briefings are based on currentCrime
+
+Added MISSION000 and VICTORY000 macros

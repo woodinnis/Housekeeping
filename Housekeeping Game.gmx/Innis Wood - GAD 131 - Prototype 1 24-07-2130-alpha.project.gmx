@@ -119,6 +119,7 @@
     <sprite>sprites\SprRoomDoor</sprite>
     <sprite>sprites\SprHUD</sprite>
     <sprite>sprites\SprFrontDesk</sprite>
+    <sprite>sprites\SprClerk</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BG_tester</background>
@@ -171,11 +172,15 @@
       <script>scripts\ScrClueUI.gml</script>
       <script>scripts\ScrTimerUI.gml</script>
       <script>scripts\ScrEvidenceUI.gml</script>
+      <script>scripts\ScrClerkUI.gml</script>
     </scripts>
     <scripts name="Evidence">
       <script>scripts\ScrEvidenceStep.gml</script>
       <script>scripts\ScrEvidenceCollect.gml</script>
       <script>scripts\ScrEvidenceLMB.gml</script>
+    </scripts>
+    <scripts name="Clerk">
+      <script>scripts\ScrClerkCreate.gml</script>
     </scripts>
     <script>scripts\DEBUG_DRAW.gml</script>
     <script>scripts\DEBUG_STEP.gml</script>
@@ -233,6 +238,7 @@
       <object>objects\ObjDoor</object>
       <object>objects\ObjBarrier</object>
       <object>objects\ObjFrontDesk</object>
+      <object>objects\ObjClerk</object>
     </objects>
     <objects name="Evidence">
       <object>objects\ObjEvidenceParent</object>

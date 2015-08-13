@@ -1,3 +1,6 @@
+// Set Player Variables
+touchingClerk = false;
+
 // Set move speed
 moveSpeed = 5;
 image_speed = 0;
@@ -18,5 +21,4 @@ if(room == RoomHallway)
     
         x = startX;
 }
-
 

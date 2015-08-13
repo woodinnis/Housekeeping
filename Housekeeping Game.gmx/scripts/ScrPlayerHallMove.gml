@@ -1,4 +1,5 @@
 // Check keyboard for valid movement keys
+event_inherited();
 
 moveLeft = keyboard_check(vk_left) || keyboard_check(ord("A"));
 moveRight = keyboard_check(vk_right) || keyboard_check(ord("D"));
