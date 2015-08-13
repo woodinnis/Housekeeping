@@ -4,10 +4,13 @@ messNum = ObjOverlord.messNum;
 messCollected = ObjOverlord.messCollected;
 drawNotClean = ObjOverlord.drawNotClean;
 
+centerX = window_get_width()/2;
+centerY = window_get_height()/2;
+
 // Create a string using the room's randomly generated number
 roomName = "ROOM \#" + string(roomNum);
 
-if(room != RoomHallway)
+if(room != RoomHallway && room != RoomFrontDesk)
 {
     // Draw the HUD underlay
     draw_sprite(SprHUD, 0, 0, 0);
@@ -27,5 +30,31 @@ if(room != RoomHallway)
     {
         draw_set_halign(fa_center);
         draw_text(view_wview[0] / 2, 40, NOTCLEAN);
+    }
+}
+
+// When in the Hallway, indicate that all items have been found
+if(room == RoomHallway)
+{
+    draw_set_font(fontMessages);
+    draw_set_colour(c_black);
+    draw_set_alpha(1);
+    draw_set_halign(fa_center);
+    
+    if(ObjOverlord.drawSolution)
+    {
+        switch(currentCrime)
+        {
+            case CRIME000:
+            {    
+                draw_text(centerX,20,SOLUTION000);   
+                break;
+            }
+            case CRIME001:
+            case CRIME002:
+            case CRIME003:
+            default:
+                break;
+        }
     }
 }

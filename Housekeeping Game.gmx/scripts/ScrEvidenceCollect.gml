@@ -5,7 +5,8 @@ switch(currentCrime)
 {
     case CRIME000:
     {
-        currentCrime = CRIME001;
+//        if(shirtFound && docsFound && noteFound)
+//        currentCrime = CRIME001;
         break;
     }
     case CRIME001:

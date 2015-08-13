@@ -503,3 +503,13 @@ Created Spr,ObjClerk
 - Mission briefings are based on currentCrime
 
 Added MISSION000 and VICTORY000 macros
+
+Player can now return to the Front Desk
+- Elevator Spr/Obj has been created
+- Script has been added to RoomExit
+
+Collecting all pieces of evidence for a crime now causes a message to appear in the hallway
+
+Spr/ObjPerson Created
+- Spawns in RoomFrontDesk
+- Serving as criminals/witnesses

@@ -33,6 +33,8 @@ clueMd = false;
 clueSm = false;
 
 // UI variables for Evidence
+drawSolution = false
+
 drawShirt = false;
 drawDocs = false;
 drawNote = false;

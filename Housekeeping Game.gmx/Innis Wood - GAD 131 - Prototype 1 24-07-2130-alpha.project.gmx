@@ -114,12 +114,16 @@
       <sprite>sprites\SprPlayerRoom</sprite>
       <sprite>sprites\SprPlayerHallRight</sprite>
     </sprites>
+    <sprites name="Door">
+      <sprite>sprites\SprDoor</sprite>
+      <sprite>sprites\SprRoomDoor</sprite>
+      <sprite>sprites\SprElevator</sprite>
+    </sprites>
     <sprite>sprites\SprBarrier</sprite>
-    <sprite>sprites\SprDoor</sprite>
-    <sprite>sprites\SprRoomDoor</sprite>
     <sprite>sprites\SprHUD</sprite>
     <sprite>sprites\SprFrontDesk</sprite>
     <sprite>sprites\SprClerk</sprite>
+    <sprite>sprites\SprPerson</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BG_tester</background>
@@ -234,11 +238,10 @@
       <object>objects\ObjSpawnClst</object>
     </objects>
     <objects name="Misc">
-      <object>objects\ObjRoomDoor</object>
-      <object>objects\ObjDoor</object>
       <object>objects\ObjBarrier</object>
       <object>objects\ObjFrontDesk</object>
       <object>objects\ObjClerk</object>
+      <object>objects\ObjPerson</object>
     </objects>
     <objects name="Evidence">
       <object>objects\ObjEvidenceParent</object>
@@ -247,6 +250,11 @@
       <object>objects\ObjEvidenceLaptop</object>
       <object>objects\ObjEvidencePhone</object>
       <object>objects\ObjEvidenceNote</object>
+    </objects>
+    <objects name="Door">
+      <object>objects\ObjDoor</object>
+      <object>objects\ObjRoomDoor</object>
+      <object>objects\ObjElevator</object>
     </objects>
   </objects>
   <rooms name="rooms">

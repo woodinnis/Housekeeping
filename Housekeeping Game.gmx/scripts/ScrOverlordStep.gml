@@ -1,4 +1,4 @@
-if(room != RoomHallway)
+if(room != RoomHallway && room != RoomFrontDesk)
 {
     // Increment level and goals based on score
     if(currentScore >= currentGoal)
@@ -34,10 +34,49 @@ if(room != RoomHallway)
     }
 }
 
+// In Hallway
 if(room == RoomHallway)
 {
+    // Reset number of mess items to zero
     if(messNum < 0)
         messNum = 0;
-    
+
+    // Reset NotClean to false
     drawNotClean = false;
+    
+    switch(currentCrime)
+    {
+        case CRIME000:
+        {
+            if(shirtFound && docsFound && noteFound)
+            {
+                drawSolution = true;
+            }
+            break;
+        }
+        case CRIME001:
+        case CRIME002:
+        case CRIME003:
+        default:
+        {
+            break;
+        }
+    }
+}
+
+// Spawn people in the lobby
+if(room == RoomFrontDesk)
+{
+    if(instance_exists(ObjSpawnParent))
+        spawnCount = instance_number(ObjSpawnParent);
+    
+    if(instance_number(ObjPerson) < 4)
+    {
+        do
+        {
+            spawnHere = instance_find(ObjSpawnParent, irandom(spawnCount));
+        }until(spawnHere != noone && spawnHere.isOccupied == false)
+
+        instance_create(spawnHere.x, spawnHere.y,ObjPerson)
+    }
 }

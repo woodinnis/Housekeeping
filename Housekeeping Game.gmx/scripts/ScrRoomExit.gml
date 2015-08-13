@@ -13,15 +13,24 @@ switch(room)
     }
     case RoomHallway:
     {
-        roomNumber = round(random(100));
-        if(roomNumber mod 2 == 1)
+        // Go to the Front Desk
+        if(place_meeting(x,y,ObjElevator))
         {
-            room_goto(RoomRoomSm);
+            room_goto(RoomFrontDesk);
         }
+        // Enter a room
         else
-        {
-            //room_goto(RoomRoomLg);
-            room_goto(RoomRoomSm);
+        {   
+            roomNumber = round(random(100));
+            if(roomNumber mod 2 == 1)
+            {
+                room_goto(RoomRoomSm);
+            }
+            else
+            {
+                //room_goto(RoomRoomLg);
+                room_goto(RoomRoomSm);
+            }
         }
         break;
     }

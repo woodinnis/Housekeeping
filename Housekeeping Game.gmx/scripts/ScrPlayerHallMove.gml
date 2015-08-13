@@ -44,8 +44,7 @@ if(moveRight)
 if(moveUp)
 {
     if (place_meeting(x,y,ObjDoor))
-    {
-        
+    {   
         script_execute(ScrRoomExit);
     }      
 }
