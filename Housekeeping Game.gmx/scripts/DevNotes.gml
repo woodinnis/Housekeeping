@@ -522,3 +522,10 @@ Collecting all CRIME000 items now causes a single instance of ObjPerson to shift
 
 Interacting (collision) with a Person.isSpy creates a victory message
 - VictoryUI script created
+
+// August 14, 2015 //
+
+Basic inventory system implemented
+- When a piece of evidence is collected it displays in inventory
+
+LMB Click on a piece of evidence now causes instance_destroy();

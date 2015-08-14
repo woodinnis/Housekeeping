@@ -71,6 +71,7 @@
     <instance objName="ObjSpawnPt" x="480" y="288" name="inst_359092DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjSpawnPt" x="896" y="288" name="inst_F5A6EF9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjElevator" x="224" y="288" name="inst_4AB8AE71" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_inventory" x="96" y="32" name="inst_A21D9CFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

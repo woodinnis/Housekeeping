@@ -3,4 +3,3 @@ ObjOverlord.messNum--;  // Increment by 1
 
 // Destroy the objMess
 instance_destroy(); 
-

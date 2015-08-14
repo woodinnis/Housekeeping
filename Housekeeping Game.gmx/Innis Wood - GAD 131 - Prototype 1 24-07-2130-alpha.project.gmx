@@ -39,7 +39,9 @@
       <filename>clues.json</filename>
     </datafile>
   </datafiles>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\Quick Edit 2D Inventory</extension>
+  </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="MainMenu">
@@ -124,6 +126,8 @@
     <sprite>sprites\SprFrontDesk</sprite>
     <sprite>sprites\SprClerk</sprite>
     <sprite>sprites\SprPerson</sprite>
+    <sprite>sprites\spr_border</sprite>
+    <sprite>sprites\spr_items</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BG_tester</background>
@@ -195,6 +199,15 @@
     <script>scripts\FuncClue.gml</script>
     <script>scripts\FuncMess.gml</script>
     <script>scripts\FuncEvidence.gml</script>
+    <scripts name="Inventory Control">
+      <script>scripts\scr_itemAdd.gml</script>
+      <script>scripts\scr_itemAdd_slot.gml</script>
+      <script>scripts\scr_itemDrop.gml</script>
+      <script>scripts\scr_itemDrop_slot.gml</script>
+      <script>scripts\scr_itemCheck.gml</script>
+      <script>scripts\scr_inventoryCreate.gml</script>
+      <script>scripts\scr_DrawGUI.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fontDEBUG</font>
@@ -259,6 +272,11 @@
       <object>objects\ObjDoor</object>
       <object>objects\ObjRoomDoor</object>
       <object>objects\ObjElevator</object>
+    </objects>
+    <objects name="Inventory System">
+      <object>objects\obj_inventory</object>
+      <object>objects\obj_invbutton</object>
+      <object>objects\obj_mouseitem</object>
     </objects>
   </objects>
   <rooms name="rooms">

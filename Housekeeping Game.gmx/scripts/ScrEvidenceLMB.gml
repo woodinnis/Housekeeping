@@ -1,15 +1,22 @@
-// Draw code executed when player clicks on a piece of evidence/information
-//if(device_mouse_check_button(0,mb_left))
+// Code executed when player clicks on a piece of evidence/information
+// Sets draw bools to true
+// Adds evidence to inventory
+// Destroys instances
+
 switch(other.object_index)
 {
     case ObjEvidenceShirt:
     {
         ObjOverlord.drawShirt = true;
+        scr_itemAdd(1);
+        instance_destroy();
         break;
     }
     case ObjEvidenceDocs:
     {
         ObjOverlord.drawDocs = true;
+        scr_itemAdd(2);
+        instance_destroy();
         break;
     }
     case ObjEvidenceLaptop:
@@ -20,12 +27,11 @@ switch(other.object_index)
     case ObjEvidenceNote:
     {
         ObjOverlord.drawNote = true;
+        scr_itemAdd(3);
+        instance_destroy();
         break;
     }
     default:
-    {
-        show_message(string(other));
         break;
-    }
 }
 

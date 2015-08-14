@@ -18,4 +18,3 @@ if(room != RoomHallway)
         draw_text(setX, setY, "ALL CLEAN");        
     }
 }
-
