@@ -14,16 +14,19 @@ if(debug)
 //    draw_text(20, bottom - 50, "Time Left " + string(ObjTimer.alarm[0]));
 //    draw_text(20, bottom - 40, "Level Over " + string(ObjTimer.levelOver));
 
-    if(ObjOverlord.shirtFound)
-        draw_text(20, bottom - 130, "SHIRT!");
-    if(ObjOverlord.docsFound)
-        draw_text(20, bottom - 120, "DOCS!");
-    if(ObjOverlord.noteFound)
-        draw_text(20, bottom - 110, "NOTE!");
-
-    if(instance_exists(ObjEvidenceParent) && instance_exists(ObjClueParent))
-        draw_text(20, bottom - 30, "Radius " + string(ObjEvidenceParent.radius));
+    if(showEvidence)
+    {
+        if(ObjOverlord.shirtFound)
+            draw_text(20, bottom - 130, "SHIRT!");
+        if(ObjOverlord.docsFound)
+            draw_text(20, bottom - 120, "DOCS!");
+        if(ObjOverlord.noteFound)
+            draw_text(20, bottom - 110, "NOTE!");
+            
+        if(instance_exists(ObjEvidenceParent) && instance_exists(ObjClueParent))
+            draw_text(20, bottom - 30, "Radius " + string(ObjEvidenceParent.radius));
     
-    if(room != RoomHallway && room != RoomFrontDesk)
-        draw_text(20, bottom - 20, "Check True " + string(ObjOverlord.checkTrue));
+        if(room != RoomHallway && room != RoomFrontDesk)
+            draw_text(20, bottom - 20, "Check True " + string(ObjOverlord.checkTrue));
+    }
 }

@@ -28,6 +28,10 @@
             <string>var item = global.inventory[slot];
 var click = mouse_check_button_pressed(mb_left);
 
+portX = view_xview[0];
+
+x = portX + 24 + item;
+
 // Draw inventory slots
 if (abs(mouse_x - x) &lt; 16) &amp;&amp; (abs(mouse_y - y) &lt; 16){
     draw_set_color(c_white);

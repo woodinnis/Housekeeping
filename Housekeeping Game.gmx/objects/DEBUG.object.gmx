@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>debug = false;
+showEvidence = false;
 </string>
           </argument>
         </arguments>

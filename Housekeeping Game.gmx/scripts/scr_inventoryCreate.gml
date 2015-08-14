@@ -14,11 +14,14 @@ showInv = true;
 globalvar maxItems;
 maxItems = 4;
 stack = 0;
+
+
 // Creates the Inventory buttons and mouseover boxes at 0,0 in the current room
 // This is what is causing the current inventory problems
 // Adjust to follow player, or spawn at view/port.x
 for (i = 0; i < maxItems; i += 1){
     global.inventory[i] = -1;
+    // Create an array of obj_invbutton with spawn coordinate 0,0
     button[i] = instance_create(0,0,obj_invbutton);
     button[i].slot = i;
 }

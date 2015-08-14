@@ -529,3 +529,8 @@ Basic inventory system implemented
 - When a piece of evidence is collected it displays in inventory
 
 LMB Click on a piece of evidence now causes instance_destroy();
+
+Inventory system abandoned
+- Full implementation, with necessary functionality will require full code breakdown
+- Uncommented, hardcoded values make the code too difficult to adapt
+- Will try to find another system
