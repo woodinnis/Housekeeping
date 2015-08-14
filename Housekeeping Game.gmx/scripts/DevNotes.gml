@@ -519,3 +519,6 @@ Spr/ObjPerson expanded
 - Full, seperate Create script
 
 Collecting all CRIME000 items now causes a single instance of ObjPerson to shift image_index in the FrontDesk
+
+Interacting (collision) with a Person.isSpy creates a victory message
+- VictoryUI script created

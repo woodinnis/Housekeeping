@@ -34,6 +34,7 @@ clueSm = false;
 
 // UI variables for Evidence
 drawSolution = false
+demoVictory = false;
 
 drawShirt = false;
 drawDocs = false;

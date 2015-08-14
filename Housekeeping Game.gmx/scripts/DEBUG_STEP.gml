@@ -15,6 +15,11 @@ if(debug)
         ObjOverlord.messNum = 0;    // Clean room
     }
     
+    if(keyboard_check_pressed(ord("S")))
+    {
+        ObjOverlord.drawSolution = true;    // Set victory conditions to true
+    }
+    
     if(keyboard_check_pressed(vk_space))
     {
         script_execute(ScrEvidencePlace(5));
