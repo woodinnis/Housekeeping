@@ -191,6 +191,9 @@
     <script>scripts\FuncClue.gml</script>
     <script>scripts\FuncMess.gml</script>
     <script>scripts\FuncEvidence.gml</script>
+    <scripts name="Person">
+      <script>scripts\ScrPersonCreate.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fontDEBUG</font>

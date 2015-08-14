@@ -513,3 +513,9 @@ Collecting all pieces of evidence for a crime now causes a message to appear in 
 Spr/ObjPerson Created
 - Spawns in RoomFrontDesk
 - Serving as criminals/witnesses
+
+Spr/ObjPerson expanded
+- 2nd sprite
+- Full, seperate Create script
+
+Collecting all CRIME000 items now causes a single instance of ObjPerson to shift image_index in the FrontDesk
