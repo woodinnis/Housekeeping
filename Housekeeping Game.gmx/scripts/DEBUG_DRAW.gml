@@ -7,7 +7,7 @@ bottom = window_get_height();
 
 if(debug)
 {   
-    draw_text(20, bottom - 100, "Mouse Item: " + string(mouseItem));
+    draw_text(20, bottom - 100, "Item: " + string(obj_invbutton.item));
     draw_text(20, bottom - 90, "Crime " + string(currentCrime));
     draw_text(20, bottom - 80, "Level " + string(currentLevel));
     draw_text(20, bottom - 70, "Score " + string(currentScore));

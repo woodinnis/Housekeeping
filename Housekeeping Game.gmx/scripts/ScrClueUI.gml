@@ -20,8 +20,9 @@ if(room != RoomHallway)
 
 // Draw large versions of the evidence on screen
 //if(room != RoomHallway && room != RoomFrontDesk)
+
+if(room != RoomMenu)
 {
-    
     if(ObjOverlord.drawShirt)   // Shirt
     {
         draw_sprite_ext(SprEvidenceShirt,0,wide/2,high/2,5,5,0,c_white,1);
@@ -45,9 +46,7 @@ if(room != RoomHallway)
         draw_text(setX+5, setY+5, COMMUNIQUE001);
         ObjOverlord.noteFound = true;
     }
-    
-
-}
+}    
 // Show player which clues they have found
 /* Only display this information while in the hallway
 if(room == RoomHallway)

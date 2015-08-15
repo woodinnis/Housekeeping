@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var item = global.inventory[slot];
+            <string>item = global.inventory[slot];
 var click = mouse_check_button_pressed(mb_left);
 
 viewX = view_xview[0];
@@ -59,7 +59,6 @@ if (abs(mouse_x - x) &lt; viewX + 16) &amp;&amp; (abs(mouse_y - y) &lt; viewY + 
             }
             default:
             {
-                show_message(string(other));
                 break;
             }
         }
