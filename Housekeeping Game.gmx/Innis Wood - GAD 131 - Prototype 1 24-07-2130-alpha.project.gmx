@@ -183,7 +183,6 @@
       <script>scripts\ScrEvidenceUI.gml</script>
       <script>scripts\ScrClerkUI.gml</script>
       <script>scripts\ScrVictoryUI.gml</script>
-      <script>scripts\ScrClock.gml</script>
     </scripts>
     <scripts name="Evidence">
       <script>scripts\ScrEvidenceStep.gml</script>

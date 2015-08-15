@@ -558,3 +558,6 @@ Replaced the code in ScrTimerUI with code for a clock
 - A clock now appears in all rooms
 - Seconds:Minutes 1:1
 - AM/PM rollover
+
+CRIME000 spy only appears at Noon (12:00PM)
+- Checks in place for Minutes, AM/PM

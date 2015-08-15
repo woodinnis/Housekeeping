@@ -19,11 +19,15 @@ if(ObjOverlord.drawSolution)
     {
         case CRIME000:
         {
-            // Show the spy for the first mission
-            if(!changeMe.isSpy)
+            // Check to see that the player is in the lobby at noon
+            if(ObjUI.minutes == 12 && ObjUI.AmPm == 0)
             {
-                changeMe.image_index = 1;
-                isSpy = true;
+                // Show the spy for the first mission
+                if(!changeMe.isSpy)
+                {
+                    changeMe.image_index = 1;
+                    isSpy = true;
+                }
             }
             break;
         }
