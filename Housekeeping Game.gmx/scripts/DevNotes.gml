@@ -543,3 +543,5 @@ Inventory system abandoned
 Inventory system rebuilt
 - Determined the critical functions of yesterday's inventory attempt
 - Inventory bar now follows player while in Hallway, FrontDesk
+
+LMB Click on a Mess now collects it (Lost in Reversion)
