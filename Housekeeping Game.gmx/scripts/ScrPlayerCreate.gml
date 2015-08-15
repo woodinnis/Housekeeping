@@ -21,4 +21,3 @@ if(room == RoomHallway)
     
         x = startX;
 }
-

@@ -522,6 +522,7 @@ Collecting all CRIME000 items now causes a single instance of ObjPerson to shift
 
 Interacting (collision) with a Person.isSpy creates a victory message
 - VictoryUI script created
+<<<<<<< HEAD
 
 // August 14, 2015 //
 
@@ -534,3 +535,11 @@ Inventory system abandoned
 - Full implementation, with necessary functionality will require full code breakdown
 - Uncommented, hardcoded values make the code too difficult to adapt
 - Will try to find another system
+=======
+>>>>>>> parent of df646da... Inventory system added
+
+// August 15, 2015 //
+
+Inventory system rebuilt
+- Determined the critical functions of yesterday's inventory attempt
+- Inventory bar now follows player while in Hallway, FrontDesk

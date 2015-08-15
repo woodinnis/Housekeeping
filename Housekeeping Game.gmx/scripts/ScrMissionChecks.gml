@@ -2,4 +2,3 @@
 shirtFound = false;
 docsFound = false;
 noteFound = false;
-

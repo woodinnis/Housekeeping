@@ -11,41 +11,47 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>9</kind>
-            <script>scr_inventoryCreate</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
+            <kind>1</kind>
+            <string>/*
+Items
+0 = sword
+1 = red potion
+2 = blue potion
+3 = key
+*/
+
+globalvar showInv;
+showInv = true;
+globalvar maxItems;
+maxItems = 4;
+stack = 4;
+for (i = 0; i &lt; maxItems; i += 1){
+    global.inventory[i] = -1;
+    button[i] = instance_create(0,0,obj_invbutton);
+    button[i].slot = i;
+}
+globalvar mouseItem;
+mouseItem = -1;
+instance_create(0,0,obj_mouseitem);
+
+globalvar fullInv;
+fullInv = 0;
+globalvar noitem;
+noitem = 0;
+</string>
           </argument>
         </arguments>
       </action>
@@ -53,41 +59,52 @@
     <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>9</kind>
-            <script>scr_DrawGUI</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
+            <kind>1</kind>
+            <string>
+// Set the background for the inventory box
+if (showInv){
+    var width,height;
+    width = 164;
+    height = 52;
+    draw_set_color(c_black);
+    draw_set_alpha(.8);
+    draw_rectangle(4,10,width,height,0);
+    draw_set_alpha(1);
+    
+// Lay out the inventory boxes in rows and columns
+    for(i = 0; i &lt; maxItems; i += 1){
+        stack = 0
+        k = 0
+        if stack &gt; 0 then k = 40*(.25*maxItems)
+        draw_sprite(spr_border,0,24+(i*40)-k,32+stack)
+        button[i].x = 24+(i*40)-k
+        button[i].y = 32+stack
+    }
+}
+if fullInv = 1{
+    draw_set_halign(fa_left)
+    draw_set_color(c_black)
+    draw_text(32,96,"Inventory is full. :(")
+}
+if noitem = 1{
+    draw_set_halign(fa_left)
+    draw_set_color(c_black)
+    draw_text(32,96,"You don't have a sword :(")
+}
+</string>
           </argument>
         </arguments>
       </action>

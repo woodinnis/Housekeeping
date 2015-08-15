@@ -28,16 +28,15 @@
             <string>var item = global.inventory[slot];
 var click = mouse_check_button_pressed(mb_left);
 
-portX = view_xview[0];
+viewX = view_xview[0];
+viewY = view_yview[0];
 
-x = portX + 24 + item;
-
-// Draw inventory slots
-if (abs(mouse_x - x) &lt; 16) &amp;&amp; (abs(mouse_y - y) &lt; 16){
+if (abs(mouse_x - x) &lt; viewX + 16) &amp;&amp; (abs(mouse_y - y) &lt; viewY + 16){
     draw_set_color(c_white);
     draw_set_alpha(.5);
     draw_rectangle(x-16,y-16,x+16,y+16,0);
     draw_set_alpha(1);
+    
     if (click) {
         if (item != -1){
             scr_itemDrop_slot(slot);
@@ -49,7 +48,6 @@ if (abs(mouse_x - x) &lt; 16) &amp;&amp; (abs(mouse_y - y) &lt; 16){
     }
 }
 
-// Draw items in inventory
 if (item != -1){
     draw_sprite(spr_items,item,x,y);
 }
