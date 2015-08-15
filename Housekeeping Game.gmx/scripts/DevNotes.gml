@@ -534,5 +534,3 @@ Inventory system abandoned
 - Full implementation, with necessary functionality will require full code breakdown
 - Uncommented, hardcoded values make the code too difficult to adapt
 - Will try to find another system
-
-LMB Click on Mess objects will now remove them from rooms
