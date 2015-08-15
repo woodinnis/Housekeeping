@@ -80,3 +80,13 @@ if(room == RoomFrontDesk)
         instance_create(spawnHere.x, spawnHere.y,ObjPerson)
     }
 }
+
+// Show or hide the inventory bar
+if(room != RoomMenu)
+{
+    if(keyboard_check_pressed(ord("I")))
+        if(showInv)
+            showInv = false;
+        else
+            showInv = true;
+}

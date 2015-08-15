@@ -19,7 +19,7 @@ if(room != RoomHallway)
 }
 
 // Draw large versions of the evidence on screen
-if(room != RoomHallway && room != RoomFrontDesk)
+//if(room != RoomHallway && room != RoomFrontDesk)
 {
     
     if(ObjOverlord.drawShirt)   // Shirt

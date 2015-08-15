@@ -545,3 +545,5 @@ Inventory system rebuilt
 - Inventory bar now follows player while in Hallway, FrontDesk
 
 LMB Click on a Mess now collects it (Lost in Reversion)
+
+Clicking on an item in the Inventory bar will now display it on screen

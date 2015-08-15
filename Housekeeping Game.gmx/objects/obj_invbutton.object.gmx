@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-1001</depth>
   <persistent>-1</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>self</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="8" enumb="64">
@@ -37,14 +37,32 @@ if (abs(mouse_x - x) &lt; viewX + 16) &amp;&amp; (abs(mouse_y - y) &lt; viewY + 
     draw_rectangle(x-16,y-16,x+16,y+16,0);
     draw_set_alpha(1);
     
-    if (click) {
-        if (item != -1){
-            scr_itemDrop_slot(slot);
+    // Click on an item in the inventory bar to show it on screen
+    if (click) 
+    {
+        switch(item)
+        {
+            case 1:
+            {
+                ObjOverlord.drawShirt = true;
+                break;
+            }
+            case 2:
+            {
+                ObjOverlord.drawDocs = true;
+                break;
+            }   
+            case 3:
+            {
+                ObjOverlord.drawNote = true;
+                break;
+            }
+            default:
+            {
+                show_message(string(other));
+                break;
+            }
         }
-        if (mouseItem != -1){
-            scr_itemAdd_slot(mouseItem,slot);
-        }
-        mouseItem = item;
     }
 }
 
