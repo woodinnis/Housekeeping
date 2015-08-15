@@ -553,3 +553,8 @@ Solved issue where clicking on Inventory bar in Hallway was not displaying item.
 Beginning state for currentCrime is now 999999
 - State change to CRIME000 occurs when player first touches the clerk
 - Evidence will not appear until currentCrime is set to CRIME000
+
+Replaced the code in ScrTimerUI with code for a clock
+- A clock now appears in all rooms
+- Seconds:Minutes 1:1
+- AM/PM rollover

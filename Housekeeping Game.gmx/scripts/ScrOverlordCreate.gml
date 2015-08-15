@@ -6,6 +6,8 @@ messNum = 0;             // Used for HUD to count total number of ObjMess collec
 messType = "";           // Used for setting the image index of ObjMessLg/Md/Sm
 messVar = "";            // Used for setting the image index of ObjMessLg/Md/Sm
 drawNotClean = false;
+clockTick = 0;
+
 
 // Game level variable
 globalvar currentLevel;
