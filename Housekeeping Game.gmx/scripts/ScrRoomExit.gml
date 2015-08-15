@@ -47,3 +47,11 @@ switch(room)
         }
         break;
 }
+
+// Turn off any full screen displays that may still be visible
+if(room != RoomMenu)
+{   
+    ObjOverlord.drawShirt = false;
+    ObjOverlord.drawDocs = false;
+    ObjOverlord.drawNote = false;
+}

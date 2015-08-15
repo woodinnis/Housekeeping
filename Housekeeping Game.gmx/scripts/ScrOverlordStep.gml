@@ -30,6 +30,8 @@ if(room != RoomHallway && room != RoomFrontDesk)
                 currentScore = 0;
                 break;
             }
+            default:
+                break;
         }
     }
 }

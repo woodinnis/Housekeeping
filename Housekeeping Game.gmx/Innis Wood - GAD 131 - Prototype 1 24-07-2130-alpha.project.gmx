@@ -162,6 +162,7 @@
       <script>scripts\ScrPlayerRoomMove.gml</script>
       <script>scripts\ScrPlayerCreate.gml</script>
       <script>scripts\ScrRoomExit.gml</script>
+      <script>scripts\ObjPlayerStep.gml</script>
     </scripts>
     <scripts name="Clues">
       <script>scripts\ScrClueCreate.gml</script>

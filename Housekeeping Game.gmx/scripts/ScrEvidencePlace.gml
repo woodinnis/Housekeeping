@@ -5,7 +5,7 @@ checkTrue = argument0;
 // Determine which evidence to spawn based on the current crime
 spawnMe = FuncEvidence(currentCrime);
 
-if(room != RoomHallway)
+if(room != RoomHallway && missionStart)
 {
     //checkTrue = irandom(25);
     

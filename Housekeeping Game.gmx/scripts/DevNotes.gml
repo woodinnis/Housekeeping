@@ -549,3 +549,7 @@ LMB Click on a Mess now collects it (Lost in Reversion)
 Clicking on an item in the Inventory bar will now display it on screen
 
 Solved issue where clicking on Inventory bar in Hallway was not displaying item.
+
+Beginning state for currentCrime is now 999999
+- State change to CRIME000 occurs when player first touches the clerk
+- Evidence will not appear until currentCrime is set to CRIME000
