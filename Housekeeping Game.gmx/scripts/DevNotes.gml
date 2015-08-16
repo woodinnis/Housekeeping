@@ -561,3 +561,6 @@ Replaced the code in ScrTimerUI with code for a clock
 
 CRIME000 spy only appears at Noon (12:00PM)
 - Checks in place for Minutes, AM/PM
+
+Clock tuned
+- Proper AM/PM rollover @ 11:59, flickers for 1 second
