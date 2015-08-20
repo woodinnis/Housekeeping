@@ -564,3 +564,15 @@ CRIME000 spy only appears at Noon (12:00PM)
 
 Clock tuned
 - Proper AM/PM rollover @ 11:59, flickers for 1 second
+
+// August 19, 2015 //
+
+Started upgrading some of the game art
+- Room Doors
+- Elevator Doors
+- Front Desk
+- Clerk
+
+// August 20, 2015 //
+
+Added a walk cycle animation to SprPerson

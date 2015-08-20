@@ -1,7 +1,7 @@
 // Move away from spawn point
 dir = choose(0,1);
 isSpy = false;
-image_speed = 0;
+image_speed = .5;
 image_index = 0;
 
 personCount = instance_number(ObjPerson);
