@@ -4,6 +4,7 @@ if(ObjPlayerParent.touchingClerk)
 {
     draw_set_font(fontMessages);
     draw_set_colour(c_black);
+    draw_set_halign(fa_center);
     
     switch(currentCrime)
     {
@@ -12,7 +13,7 @@ if(ObjPlayerParent.touchingClerk)
         case CRIME002:
         case CRIME003:
         {
-            draw_text(50,50,MISSION000);
+            draw_text(centerX,topThird,MISSION000);
             break;
         }
         default:

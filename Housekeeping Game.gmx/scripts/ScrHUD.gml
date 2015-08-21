@@ -5,8 +5,8 @@ messCollected = ObjOverlord.messCollected;
 drawNotClean = ObjOverlord.drawNotClean;
 drawMissionStart = ObjOverlord.drawMissionStart;
 
-centerX = window_get_width()/2;
-centerY = window_get_height()/2;
+draw_set_colour(c_black);
+draw_set_alpha(1);
 
 // Create a string using the room's randomly generated number
 roomName = "ROOM \#" + string(roomNum);
@@ -14,8 +14,9 @@ roomName = "ROOM \#" + string(roomNum);
 if(room != RoomHallway && room != RoomFrontDesk)
 {
     // Draw the HUD underlay
-    draw_sprite(SprHUD, 0, 0, 0);
-    
+//    draw_sprite(SprHUD, 0, 0, 0);
+
+    draw_set_font(fontDEBUG);    
     if(messCollected)
     {
         draw_sprite(MessSm,0,view_xview[0] + 28, view_yview[0] + 48);
@@ -30,7 +31,7 @@ if(room != RoomHallway && room != RoomFrontDesk)
     if(drawNotClean)
     {
         draw_set_halign(fa_center);
-        draw_text(view_wview[0] / 2, 40, NOTCLEAN);
+        draw_text(centerX, topThird, NOTCLEAN);
     }
 }
 
@@ -38,8 +39,6 @@ if(room != RoomHallway && room != RoomFrontDesk)
 if(room == RoomHallway)
 {
     draw_set_font(fontMessages);
-    draw_set_colour(c_black);
-    draw_set_alpha(1);
     draw_set_halign(fa_center);
     
     if(ObjOverlord.drawSolution)
@@ -48,7 +47,7 @@ if(room == RoomHallway)
         {
             case CRIME000:
             {    
-                draw_text(centerX,20,SOLUTION000);   
+                draw_text(centerX,topThird,SOLUTION000);   
                 break;
             }
             case CRIME001:
@@ -64,12 +63,10 @@ if(room == RoomHallway)
 if(room == RoomFrontDesk)
 {
     draw_set_font(fontMessages);
-    draw_set_colour(c_black);
-    draw_set_alpha(1);
     draw_set_halign(fa_center);
     // Show a message when trying to enter a door without an active mission    
     if(drawMissionStart)
     {
-        draw_text(centerX,20,MISSIONSTART);
+        draw_text(centerX,topThird,MISSIONSTART);
     }
 }

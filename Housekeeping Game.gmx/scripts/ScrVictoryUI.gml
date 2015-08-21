@@ -1,8 +1,5 @@
 // Display a victory message when the player completes a mission successfully
 
-centerX = window_get_width()/2;
-centerY = window_get_height()/2;
-
 if(ObjOverlord.drawSolution)
 {
     draw_set_font(fontMessages);

@@ -1,9 +1,3 @@
-// Declare and set variables
-tAlign = view_wview[0] / 2;
-
-wide = window_get_width();
-high = window_get_height();
-
 // Notify player that a clue has been found
 if(room != RoomHallway)
 {
@@ -11,9 +5,10 @@ if(room != RoomHallway)
     {
         if(ObjClueParent.hasBeenTouched)
         {
+            draw_set_font(fontMessages);
             draw_set_halign(fa_center);   
             draw_set_colour(c_black);  
-            draw_text(tAlign,20, "You Found Something!");
+            draw_text(centerX,20, "You Found Something!");
         }
     }
 }
@@ -25,12 +20,12 @@ if(room != RoomMenu)
 {
     if(ObjOverlord.drawShirt)   // Shirt
     {
-        draw_sprite_ext(SprEvidenceShirt,0,wide/2,high/2,5,5,0,c_white,1);
+        draw_sprite_ext(SprEvidenceShirt,0,centerX,centerY,5,5,0,c_white,1);
         ObjOverlord.shirtFound = true;
     }
     if(ObjOverlord.drawDocs)    // Documents
     {
-        draw_sprite_ext(SprEvidenceDocs,0,wide/2,high/2,5,5,0,c_white,1);
+        draw_sprite_ext(SprEvidenceDocs,0,centerX,centerY,5,5,0,c_white,1);
         ObjOverlord.docsFound = true;
     }
     if(ObjOverlord.drawNote)    // Post-it note
