@@ -12,3 +12,12 @@ if(place_meeting(x,y,ObjClerk))
 }
 else
     touchingClerk = false;
+
+// Show a message when trying to enter an elevator without starting a mission
+if(!ObjOverlord.missionStart)
+{   
+    if(place_meeting(x,y,ObjElevator))   
+        ObjOverlord.drawMissionStart = true;
+    else
+        ObjOverlord.drawMissionStart = false;
+}

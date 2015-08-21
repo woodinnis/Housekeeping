@@ -18,8 +18,8 @@ currentScore = 0;           // Set Starting score to 0;
 currentCrime = 999999;      // Set Starting crime the player is inventigating
 
 currentGoal = SCORE001;     // Set Starting goal
-
 enteredRoom = false;        // Checkin to see if the player has entered a room
+
 
 lvlNum = 1.0;
 
@@ -34,7 +34,8 @@ clueLg = false;
 clueMd = false;
 clueSm = false;
 
-// UI variables for Evidence
+// UI variables
+drawMissionStart = false;
 drawSolution = false
 demoVictory = false;
 

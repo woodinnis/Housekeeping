@@ -154,7 +154,6 @@
       <script>scripts\ScrMessPlace.gml</script>
       <script>scripts\ScrMissionChecks.gml</script>
       <script>scripts\ScrOverlordStep.gml</script>
-      <script>scripts\ScrJSONRead.gml</script>
       <script>scripts\ScrEvidencePlace.gml</script>
       <script>scripts\ScrOvlerlordGlobLMB.gml</script>
     </scripts>
@@ -222,6 +221,7 @@
       <scripts name="Menu">
         <script>scripts\txtBoxMouse.gml</script>
       </scripts>
+      <script>scripts\ScrJSONRead.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">

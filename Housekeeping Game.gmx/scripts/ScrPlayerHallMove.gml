@@ -43,8 +43,7 @@ if(moveRight)
 
 if(moveUp)
 {
-    if (place_meeting(x,y,ObjDoor))
-    {   
-        script_execute(ScrRoomExit);
-    }      
+    // Prevent entry to doors unless a mission has been started
+    if(ObjOverlord.missionStart)
+        script_execute(ScrRoomExit);  
 }

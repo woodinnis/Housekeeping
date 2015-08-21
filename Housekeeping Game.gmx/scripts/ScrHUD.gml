@@ -3,6 +3,7 @@ roomNum = ObjOverlord.roomNum;
 messNum = ObjOverlord.messNum;
 messCollected = ObjOverlord.messCollected;
 drawNotClean = ObjOverlord.drawNotClean;
+drawMissionStart = ObjOverlord.drawMissionStart;
 
 centerX = window_get_width()/2;
 centerY = window_get_height()/2;
@@ -56,5 +57,19 @@ if(room == RoomHallway)
             default:
                 break;
         }
+    }
+}
+
+// Front Desk messages
+if(room == RoomFrontDesk)
+{
+    draw_set_font(fontMessages);
+    draw_set_colour(c_black);
+    draw_set_alpha(1);
+    draw_set_halign(fa_center);
+    // Show a message when trying to enter a door without an active mission    
+    if(drawMissionStart)
+    {
+        draw_text(centerX,20,MISSIONSTART);
     }
 }
