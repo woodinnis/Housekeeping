@@ -606,3 +606,6 @@ Players can no longer enter the elevator without an active mission
 UI Coordinates centralized in ScrUICreate
 
 Fixed (REALLY STUPID) bug where pressing up anywhere would enter a room
+
+Changed the large Note from a draw_rectangle to scaled sprite
+- draw_text moved appropriately

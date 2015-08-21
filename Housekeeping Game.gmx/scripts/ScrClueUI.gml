@@ -30,15 +30,14 @@ if(room != RoomMenu)
     }
     if(ObjOverlord.drawNote)    // Post-it note
     {
-        setX = (wide / 2) - 100;
-        setY = (high / 2) - 100;
-        draw_set_color(c_yellow);
-        draw_rectangle(setX,setY,setX+200,setY+200,false);
+        draw_sprite_ext(SprEvidenceNote,0,centerX,centerY,15,15,0,c_white,1);
+        ObjOverlord.docsFound = true;
         
+        // Write a message on the note
         draw_set_colour(c_black);
-        draw_set_halign(fa_left);
+        draw_set_halign(fa_center);
         draw_set_font(fontMessages);
-        draw_text(setX+5, setY+5, COMMUNIQUE001);
+        draw_text(centerX, topThird, COMMUNIQUE001);
         ObjOverlord.noteFound = true;
     }
 }    

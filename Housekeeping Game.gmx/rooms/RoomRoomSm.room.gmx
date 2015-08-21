@@ -177,8 +177,6 @@
     <instance objName="ObjBarrier" x="80" y="160" name="inst_5F11FF20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjSpawnPt" x="176" y="304" name="inst_DB8898CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjSpawnPt" x="176" y="240" name="inst_E39784BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSpawnPt" x="112" y="240" name="inst_B82EA0DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSpawnPt" x="112" y="304" name="inst_EB66838B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjSpawnPt" x="304" y="112" name="inst_5D201400" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjSpawnPt" x="368" y="112" name="inst_FEDCF843" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjSpawnBath" x="224" y="32" name="inst_84D103CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
