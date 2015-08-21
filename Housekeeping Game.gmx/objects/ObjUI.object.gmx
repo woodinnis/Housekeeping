@@ -25,8 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>minutes = 0;
-hours = irandom(12);
+            <string>// Day always starts at 09:00
+hours = 9;
+minutes = 0;
 
 AmPm = 1;
 </string>

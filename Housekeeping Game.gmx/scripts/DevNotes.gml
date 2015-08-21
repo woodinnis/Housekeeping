@@ -594,3 +594,8 @@ New BG tiles
 - Wall
 - Metal
 - Applied tiles to RoomSm
+
+// August 21, 2015 //
+
+Day (clock) set to always start at 09:00
+- ObjUI Create Event

@@ -149,12 +149,6 @@
   <scripts name="scripts">
     <script>scripts\DevNotes.gml</script>
     <scripts name="Overlord">
-      <scripts name="Timer">
-        <script>scripts\ScrTimerCreate.gml</script>
-        <script>scripts\ScrTimerAlarm.gml</script>
-        <script>scripts\ScrTimerStep.gml</script>
-        <script>scripts\ScrTimerRoomStart.gml</script>
-      </scripts>
       <script>scripts\ScrCall.gml</script>
       <script>scripts\ScrOverlordCreate.gml</script>
       <script>scripts\ScrMessPlace.gml</script>
@@ -183,9 +177,6 @@
       <script>scripts\ScrMessCreate.gml</script>
     </scripts>
     <scripts name="HUD-UI">
-      <scripts name="Menu">
-        <script>scripts\txtBoxMouse.gml</script>
-      </scripts>
       <script>scripts\ScrHUD.gml</script>
       <script>scripts\ScrScoreUI.gml</script>
       <script>scripts\ScrClueUI.gml</script>
@@ -221,6 +212,17 @@
     <script>scripts\FuncClue.gml</script>
     <script>scripts\FuncMess.gml</script>
     <script>scripts\FuncEvidence.gml</script>
+    <scripts name="OBSOLETE">
+      <scripts name="Timer">
+        <script>scripts\ScrTimerCreate.gml</script>
+        <script>scripts\ScrTimerAlarm.gml</script>
+        <script>scripts\ScrTimerStep.gml</script>
+        <script>scripts\ScrTimerRoomStart.gml</script>
+      </scripts>
+      <scripts name="Menu">
+        <script>scripts\txtBoxMouse.gml</script>
+      </scripts>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fontDEBUG</font>
