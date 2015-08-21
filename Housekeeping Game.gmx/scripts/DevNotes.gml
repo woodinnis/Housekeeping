@@ -576,3 +576,21 @@ Started upgrading some of the game art
 // August 20, 2015 //
 
 Added a walk cycle animation to SprPerson
+
+Collecting Evidence using collision causes a fatal error
+- LMB collection still works.
+
+New Sprites, Objects
+- Bed
+- Toilet
+- Counter
+- Create script sets default to "dirty"
+- LMB Script allows for object to be "cleaned"
+
+New BG tiles
+- Carpet
+- Bathroom
+- Shower
+- Wall
+- Metal
+- Applied tiles to RoomSm

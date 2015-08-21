@@ -121,6 +121,11 @@
       <sprite>sprites\SprRoomDoor</sprite>
       <sprite>sprites\SprElevator</sprite>
     </sprites>
+    <sprites name="Room">
+      <sprite>sprites\SprBed</sprite>
+      <sprite>sprites\SprToilet</sprite>
+      <sprite>sprites\SprCounter</sprite>
+    </sprites>
     <sprite>sprites\SprBarrier</sprite>
     <sprite>sprites\SprHUD</sprite>
     <sprite>sprites\SprFrontDesk</sprite>
@@ -134,6 +139,11 @@
     <background>background\BGRoomSm</background>
     <background>background\BGRoomLg</background>
     <background>background\BGMainMenu</background>
+    <background>background\BGCarpet</background>
+    <background>background\BGBathroom</background>
+    <background>background\BGShower</background>
+    <background>background\BGWall</background>
+    <background>background\BGMetal</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -201,6 +211,10 @@
       <script>scripts\scr_itemDrop.gml</script>
       <script>scripts\scr_itemDrop_slot.gml</script>
       <script>scripts\scr_itemCheck.gml</script>
+    </scripts>
+    <scripts name="Room">
+      <script>scripts\ScrRoomObjectCreate.gml</script>
+      <script>scripts\ScrRoomObjectLMB.gml</script>
     </scripts>
     <script>scripts\DEBUG_DRAW.gml</script>
     <script>scripts\DEBUG_STEP.gml</script>
@@ -276,6 +290,11 @@
       <object>objects\obj_inventory</object>
       <object>objects\obj_invbutton</object>
       <object>objects\obj_mouseitem</object>
+    </objects>
+    <objects name="Room">
+      <object>objects\ObjBed</object>
+      <object>objects\ObjToilet</object>
+      <object>objects\ObjCounter</object>
     </objects>
   </objects>
   <rooms name="rooms">

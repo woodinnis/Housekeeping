@@ -7,6 +7,7 @@ bottom = window_get_height();
 
 if(debug)
 {   
+    draw_text(20, bottom - 110, "TOUCHING! " + string(ObjPlayerParent.touchingClerk));
     draw_text(20, bottom - 100, "Mission: " + string(ObjOverlord.missionStart));
     draw_text(20, bottom - 90, "Crime " + string(currentCrime));
     draw_text(20, bottom - 80, "Level " + string(currentLevel));
