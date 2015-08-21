@@ -604,3 +604,5 @@ Players can no longer enter the elevator without an active mission
 - A warning prompts them to talk to the front desk clerk
 
 UI Coordinates centralized in ScrUICreate
+
+Fixed (REALLY STUPID) bug where pressing up anywhere would enter a room
