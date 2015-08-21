@@ -433,12 +433,13 @@
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="6">
+    <constants number="7">
       <constant name="VICTORY000">"Democracy and Freedom #are free from the menace of #Soviet Oppression for another day! #Good Work!"</constant>
       <constant name="RADIUSADJUST">100</constant>
       <constant name="COMMUNIQUE001">"Познакомлюсь #в холле в 12:00"</constant>
       <constant name="MISSIONSTART">"You haven't checked in for your shift. #Talk to the clerk at the desk."</constant>
       <constant name="MISSION000">"Someone in the hotel is selling secrets to the soviets! #Find out who, and when the next exchange will happen. #We can catch two spies at once!</constant>
+      <constant name="TRANSLATE000">"This note you found. #It says 'Meet in the lobby at 12:00'"</constant>
       <constant name="SOLUTION000">"These items left behind by the Soviet #should help you find your targets."</constant>
     </constants>
   </ConfigConstants>

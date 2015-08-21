@@ -13,7 +13,11 @@ if(ObjPlayerParent.touchingClerk)
         case CRIME002:
         case CRIME003:
         {
-            draw_text(centerX,topThird,MISSION000);
+            if(ObjOverlord.noteFound)
+                sayMe = TRANSLATE000;
+            else
+                sayMe = MISSION000;
+            draw_text(centerX,topThird,sayMe);
             break;
         }
         default:

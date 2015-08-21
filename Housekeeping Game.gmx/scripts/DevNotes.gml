@@ -609,3 +609,6 @@ Fixed (REALLY STUPID) bug where pressing up anywhere would enter a room
 
 Changed the large Note from a draw_rectangle to scaled sprite
 - draw_text moved appropriately
+
+Front desk clerk now translates note once it has been found
+- ClerkUI conditions added

@@ -15,7 +15,7 @@ globalvar currentScore;
 globalvar currentCrime;
 currentLevel = LEVEL001;    // Set Starting level to 001
 currentScore = 0;           // Set Starting score to 0;
-currentCrime = 999999;      // Set Starting crime the player is inventigating
+currentCrime = CRIME000;      // Set Starting crime the player is inventigating
 
 currentGoal = SCORE001;     // Set Starting goal
 enteredRoom = false;        // Checkin to see if the player has entered a room

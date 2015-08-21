@@ -4,11 +4,13 @@
 if(place_meeting(x,y,ObjClerk))
 {
     touchingClerk = true;
-    if(currentCrime > CRIME003)
+//    event_user(0);
+    if(!missionReceived)
     {
         currentCrime = CRIME000;
         ObjOverlord.missionStart = true;
     }
+    missionReceived = true;
 }
 else
     touchingClerk = false;
