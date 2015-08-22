@@ -191,8 +191,6 @@
     <instance objName="ObjSpawnBath" x="176" y="128" name="inst_6313954D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjSpawnBath" x="176" y="80" name="inst_D5D7D821" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjSpawnBath" x="128" y="80" name="inst_8E1F3932" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSpawnBath" x="128" y="32" name="inst_F572E437" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSpawnBath" x="176" y="32" name="inst_2BACAE69" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjSpawnClst" x="64" y="432" name="inst_9FB04C8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjSpawnClst" x="112" y="432" name="inst_A9A4C07F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjSpawnClst" x="160" y="432" name="inst_D6C3411E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -778,7 +776,6 @@
     <tile bgName="BGWall" x="112" y="208" w="16" h="16" xo="0" yo="0" id="10000622" name="inst_47A7BDA5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="BGWall" x="128" y="208" w="16" h="16" xo="0" yo="0" id="10000623" name="inst_69242AF2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="BGWall" x="144" y="208" w="16" h="16" xo="0" yo="0" id="10000624" name="inst_1745F8F3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="BGBathroom" x="-128" y="144" w="32" h="32" xo="0" yo="0" id="10000625" name="inst_8B2CA39B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="BGBathroom" x="80" y="16" w="32" h="32" xo="0" yo="0" id="10000626" name="inst_F0F2C328" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="BGBathroom" x="80" y="48" w="32" h="32" xo="0" yo="0" id="10000627" name="inst_96AF76B1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="BGBathroom" x="80" y="80" w="32" h="32" xo="0" yo="0" id="10000628" name="inst_A9A8EDBE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

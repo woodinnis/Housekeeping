@@ -619,3 +619,5 @@ More art updates
 - Night table
 - Table
 - Chairs
+
+Adjusted x,y center points of all mess objects
