@@ -612,3 +612,10 @@ Changed the large Note from a draw_rectangle to scaled sprite
 
 Front desk clerk now translates note once it has been found
 - ClerkUI conditions added
+
+// August 22, 2015 //
+
+More art updates
+- Night table
+- Table
+- Chairs

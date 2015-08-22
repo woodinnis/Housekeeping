@@ -69,7 +69,6 @@
         <sprite>sprites\MessMd3</sprite>
         <sprite>sprites\MessMd4</sprite>
         <sprite>sprites\MessMd5</sprite>
-        <sprite>sprites\MessMd6</sprite>
       </sprites>
       <sprites name="Small">
         <sprite>sprites\MessSm1</sprite>
@@ -125,6 +124,9 @@
       <sprite>sprites\SprBed</sprite>
       <sprite>sprites\SprToilet</sprite>
       <sprite>sprites\SprCounter</sprite>
+      <sprite>sprites\SprNTable</sprite>
+      <sprite>sprites\SprTable</sprite>
+      <sprite>sprites\SprChair</sprite>
     </sprites>
     <sprite>sprites\SprBarrier</sprite>
     <sprite>sprites\SprHUD</sprite>
@@ -298,6 +300,9 @@
       <object>objects\ObjBed</object>
       <object>objects\ObjToilet</object>
       <object>objects\ObjCounter</object>
+      <object>objects\ObjNTable</object>
+      <object>objects\ObjTable</object>
+      <object>objects\ObjChair</object>
     </objects>
   </objects>
   <rooms name="rooms">
