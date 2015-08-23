@@ -621,3 +621,6 @@ More art updates
 - Chairs
 
 Adjusted x,y center points of all mess objects
+
+Fixed the error which caused a crash when colliding with a piece of evidence
+- ScrEvidenceLMB added with(other) before instance_destroy();

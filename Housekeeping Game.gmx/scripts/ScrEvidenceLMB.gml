@@ -31,5 +31,5 @@ switch(other.object_index)
         break;
     }
 }
-
-instance_destroy();
+with(other)
+    instance_destroy();
