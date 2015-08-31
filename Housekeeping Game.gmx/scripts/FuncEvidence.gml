@@ -66,7 +66,10 @@ else
                 spawnMe = ObjEvidenceDocs;
             // Shirt, Docs, No Note
             else if(ObjOverlord.shirtFound && ObjOverlord.docsFound && !ObjOverlord.noteFound)
-                spawnMe = ObjEvidenceNote; 
+                spawnMe = ObjEvidenceNote;
+            // If all evidence has been found, spawn nothing
+            else
+                spawnMe = 0;
         }
         case CRIME001:
         case CRIME002:

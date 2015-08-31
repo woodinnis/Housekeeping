@@ -648,3 +648,9 @@ UI Edits
 Overlord Room Start changes
 - Mess Objects no longer spawn
 - Spawn points moved to furniture and closet only
+
+Evidence no longer spawns at random spawn points
+- Spawns require an Object with RoomObjectLMB attached
+- Spawns are generated at mouseX/Y
+// Objects are occasionally not spawning on the first click, and occasionally not at all.//
+// When not spawning they still register as collected.//

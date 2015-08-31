@@ -28,4 +28,8 @@ if(debug)
     {
         script_execute(ScrEvidencePlace(5));
     }
+    if(keyboard_check_pressed(vk_escape))
+    {
+        game_restart();
+    }
 }

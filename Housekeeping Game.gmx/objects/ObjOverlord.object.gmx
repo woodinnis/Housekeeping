@@ -193,11 +193,13 @@
             <kind>1</kind>
             <string>// Assign a number to the current room the player is "working" in
 roomNum = irandom_range(100,200);
+
+/*
 if(room != RoomHallway &amp;&amp; room != RoomFrontDesk)
 {
 //    script_execute(ScrMessPlace);
 //    messNum = messCount;
-    script_execute(ScrEvidencePlace(irandom(25)));
+//    script_execute(ScrEvidencePlace(irandom(25)));
 }
 </string>
           </argument>
