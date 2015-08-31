@@ -657,3 +657,7 @@ Evidence no longer spawns at random spawn points
 
 Fixed Evidence spawn error
 - Incorrect variable setting in ClueUI
+
+Evidence spawns randomly
+- Only 1 in n clicks will spawn a piece of evidence
+- EVIDENCERANDOMIZER created to balance n

@@ -2,5 +2,7 @@
 image_index = 0;
 
 // Place evidence
-ScrEvidencePlace();
+evidenceGet = irandom(EVIDENCERANDOMIZER);
+if((evidenceGet mod 5) == 0)
+    ScrEvidencePlace();
 
