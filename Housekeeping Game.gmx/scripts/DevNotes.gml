@@ -644,3 +644,7 @@ Created drawRect()
 UI Edits
 - Background box to roundrect
 - All standard UI text alignment to alignUI()
+
+Overlord Room Start changes
+- Mess Objects no longer spawn
+- Spawn points moved to furniture and closet only

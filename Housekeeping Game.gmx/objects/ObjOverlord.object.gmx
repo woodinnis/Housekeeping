@@ -195,9 +195,9 @@
 roomNum = irandom_range(100,200);
 if(room != RoomHallway &amp;&amp; room != RoomFrontDesk)
 {
-    script_execute(ScrMessPlace);
+//    script_execute(ScrMessPlace);
+//    messNum = messCount;
     script_execute(ScrEvidencePlace(irandom(25)));
-    messNum = messCount;
 }
 </string>
           </argument>
