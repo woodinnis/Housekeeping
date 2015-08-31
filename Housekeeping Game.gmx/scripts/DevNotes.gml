@@ -654,3 +654,6 @@ Evidence no longer spawns at random spawn points
 - Spawns are generated at mouseX/Y
 // Objects are occasionally not spawning on the first click, and occasionally not at all.//
 // When not spawning they still register as collected.//
+
+Fixed Evidence spawn error
+- Incorrect variable setting in ClueUI

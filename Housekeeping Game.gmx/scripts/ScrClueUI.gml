@@ -29,7 +29,7 @@ if(room != RoomMenu)
     if(ObjOverlord.drawNote)    // Post-it note
     {
         draw_sprite_ext(SprEvidenceNote,0,centerX,centerY,15,15,0,c_white,1);
-        ObjOverlord.docsFound = true;
+        ObjOverlord.noteFound = true;
         
         // Write a message on the note
         alignUI();
