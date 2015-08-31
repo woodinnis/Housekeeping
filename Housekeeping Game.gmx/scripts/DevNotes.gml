@@ -624,3 +624,19 @@ Adjusted x,y center points of all mess objects
 
 Fixed the error which caused a crash when colliding with a piece of evidence
 - ScrEvidenceLMB added with(other) before instance_destroy();
+
+// August 25, 2015 //
+
+Adjusted the font used for fontMessages
+
+Added a background box behind the ClerkUI message
+
+// August 31, 2015 //
+
+Adjusted colour of font used in ClerkUI back to black
+
+Converted background box values to variables set in UICreate
+
+Created drawRect()
+- Draws the white background box, with a black border
+- Can be called from any UI script

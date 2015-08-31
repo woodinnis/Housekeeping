@@ -9,6 +9,11 @@ topThird = window_get_height()/3;
 wide = window_get_width();
 high = window_get_height();
 
+// Background rectangle coordinates
+drawRectX = centerX - 260;
+drawRectY = topThird - 50;
+drawRectWide = centerX + 260;
+drawRectHigh = topThird + 100;
 
 // UI Timer Create
 // Day always starts at 09:00

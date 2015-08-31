@@ -186,6 +186,7 @@
       <script>scripts\ScrClerkUI.gml</script>
       <script>scripts\ScrVictoryUI.gml</script>
       <script>scripts\ScrUICreate.gml</script>
+      <script>scripts\drawRect.gml</script>
     </scripts>
     <scripts name="Evidence">
       <script>scripts\ScrEvidenceStep.gml</script>
