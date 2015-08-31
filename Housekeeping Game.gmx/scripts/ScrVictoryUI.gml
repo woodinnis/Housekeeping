@@ -2,10 +2,7 @@
 
 if(ObjOverlord.drawSolution)
 {
-    draw_set_font(fontMessages);
-    draw_set_colour(c_black);
-    draw_set_alpha(1);
-    draw_set_halign(fa_center);
+    alignUI()
     
     switch(currentCrime)
     {

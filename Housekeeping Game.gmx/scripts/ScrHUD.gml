@@ -38,11 +38,11 @@ if(room != RoomHallway && room != RoomFrontDesk)
 // When in the Hallway, indicate that all items have been found
 if(room == RoomHallway)
 {
-    draw_set_font(fontMessages);
-    draw_set_halign(fa_center);
+    alignUI();
     
     if(ObjOverlord.drawSolution)
     {
+        drawRect();
         switch(currentCrime)
         {
             case CRIME000:
@@ -62,11 +62,11 @@ if(room == RoomHallway)
 // Front Desk messages
 if(room == RoomFrontDesk)
 {
-    draw_set_font(fontMessages);
-    draw_set_halign(fa_center);
+    alignUI();
     // Show a message when trying to enter a door without an active mission    
     if(drawMissionStart)
     {
+        drawRect();
         draw_text(centerX,topThird,MISSIONSTART);
     }
 }

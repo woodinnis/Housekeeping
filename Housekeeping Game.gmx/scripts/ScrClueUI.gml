@@ -5,9 +5,7 @@ if(room != RoomHallway)
     {
         if(ObjClueParent.hasBeenTouched)
         {
-            draw_set_font(fontMessages);
-            draw_set_halign(fa_center);   
-            draw_set_colour(c_black);  
+            alignUI();  
             draw_text(centerX,20, "You Found Something!");
         }
     }
@@ -34,9 +32,7 @@ if(room != RoomMenu)
         ObjOverlord.docsFound = true;
         
         // Write a message on the note
-        draw_set_colour(c_black);
-        draw_set_halign(fa_center);
-        draw_set_font(fontMessages);
+        alignUI();
         draw_text(centerX, topThird, COMMUNIQUE001);
         ObjOverlord.noteFound = true;
     }

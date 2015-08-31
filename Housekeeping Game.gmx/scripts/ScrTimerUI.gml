@@ -33,13 +33,12 @@ if(hours > 11 && minutes == 0)
 show_hours=string_repeat("0", 2-string_length(string(hours)))+string(hours);
 show_minutes=string_repeat("0", 2-string_length(string(minutes)))+string(minutes);
 
-draw_set_halign(fa_right);
-draw_set_colour(c_black);
-draw_set_alpha(1);
+alignUI();
+
+// Set font
 draw_set_font(fontDEBUG);
 
 if(AmPm = 1)
     draw_text(DrawX, 40,"Current Time: " + show_hours + ":" + show_minutes + "AM");
 else
     draw_text(DrawX, 40,"Current Time: " + show_hours + ":" + show_minutes + "PM");
-

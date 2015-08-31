@@ -187,6 +187,7 @@
       <script>scripts\ScrVictoryUI.gml</script>
       <script>scripts\ScrUICreate.gml</script>
       <script>scripts\drawRect.gml</script>
+      <script>scripts\alignUI.gml</script>
     </scripts>
     <scripts name="Evidence">
       <script>scripts\ScrEvidenceStep.gml</script>

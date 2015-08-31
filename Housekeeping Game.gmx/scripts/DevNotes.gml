@@ -640,3 +640,7 @@ Converted background box values to variables set in UICreate
 Created drawRect()
 - Draws the white background box, with a black border
 - Can be called from any UI script
+
+UI Edits
+- Background box to roundrect
+- All standard UI text alignment to alignUI()
