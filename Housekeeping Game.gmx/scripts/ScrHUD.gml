@@ -5,13 +5,11 @@ messCollected = ObjOverlord.messCollected;
 drawNotClean = ObjOverlord.drawNotClean;
 drawMissionStart = ObjOverlord.drawMissionStart;
 
-draw_set_colour(c_black);
-draw_set_alpha(1);
-
 // Create a string using the room's randomly generated number
 roomName = "ROOM \#" + string(roomNum);
 
-if(room != RoomHallway && room != RoomFrontDesk)
+// In Rooms
+if(room == RoomRoomSm || room == RoomRoomLg)
 {
     // Draw the HUD underlay
 //    draw_sprite(SprHUD, 0, 0, 0);
@@ -35,11 +33,12 @@ if(room != RoomHallway && room != RoomFrontDesk)
     }
 }
 
-// When in the Hallway, indicate that all items have been found
+// When in the Hallway
 if(room == RoomHallway)
 {
     alignUI();
     
+    // Indicate that all items have been found    
     if(ObjOverlord.drawSolution)
     {
         drawRect();
@@ -57,6 +56,8 @@ if(room == RoomHallway)
                 break;
         }
     }
+
+    // Indicate that a Do Not Disturb sign is on a door
     if(ObjPlayerParent.touchingDoor && !ObjPlayerParent.enterDoor)
     {
         drawRect();
@@ -64,7 +65,7 @@ if(room == RoomHallway)
     }
 }
 
-// Front Desk messages
+// At the Front Desk
 if(room == RoomFrontDesk)
 {
     alignUI();

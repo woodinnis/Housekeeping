@@ -682,3 +682,8 @@ DND Randomization fully functional
 DND Doors no longer accessible
 - Rooms which pop up a DND message cannot be entered
 - RoomExit checks enterDoor T/F state
+
+Adjusted TimerUI
+- Removed "Current Time"
+- Placed all x/y value settings in UI create
+- Placed a white circle behind the time for clarity

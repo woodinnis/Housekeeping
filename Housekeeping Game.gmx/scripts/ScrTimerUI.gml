@@ -1,6 +1,10 @@
 // Draw the current time on the HUD
 
-DrawX = view_wview[0] - 20;
+// Draw a circle behind the displayed time
+draw_set_colour(c_white);
+draw_set_alpha(0.8);        
+draw_circle(drawClockX,drawClockY,drawClockRad,false);
+draw_circle(drawClockX,drawClockY,drawClockRad,true);
 
 if alarm[0] = -1
 {
@@ -33,12 +37,14 @@ if(hours > 11 && minutes == 0)
 show_hours=string_repeat("0", 2-string_length(string(hours)))+string(hours);
 show_minutes=string_repeat("0", 2-string_length(string(minutes)))+string(minutes);
 
+// Set UI
 alignUI();
-
-// Set font
-draw_set_font(fontDEBUG);
+draw_set_valign(fa_middle); // Align middle
+draw_set_font(fontDEBUG);   // Reset font
 
 if(AmPm = 1)
-    draw_text(DrawX, 40,"Current Time: " + show_hours + ":" + show_minutes + "AM");
+    draw_text(drawClockX, drawClockY, show_hours + ":" + show_minutes + "AM");
 else
-    draw_text(DrawX, 40,"Current Time: " + show_hours + ":" + show_minutes + "PM");
+    draw_text(drawClockX, drawClockY, show_hours + ":" + show_minutes + "PM");
+
+
