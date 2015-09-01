@@ -292,6 +292,7 @@
       <object>objects\ObjDoor</object>
       <object>objects\ObjRoomDoor</object>
       <object>objects\ObjElevator</object>
+      <object>objects\ObjDoorParent</object>
     </objects>
     <objects name="Inventory System">
       <object>objects\obj_inventory</object>
@@ -314,7 +315,10 @@
     <room>rooms\RoomRoomSm</room>
     <room>rooms\RoomRoomLg</room>
   </rooms>
-  <constants number="23">
+  <constants number="26">
+    <constant name="EVIDENCERANDOM">25</constant>
+    <constant name="DONOTDISTURB">"A Sign On The Door Reads #'Do Not Disturb'"</constant>
+    <constant name="NOTCLEAN">"You Have Not Finished Cleaning This Room"</constant>
     <constant name="LEVEL001">30</constant>
     <constant name="LEVEL002">60</constant>
     <constant name="LEVEL003">90</constant>
@@ -328,7 +332,6 @@
     <constant name="SCORE001">1</constant>
     <constant name="SCORE002">3</constant>
     <constant name="SCORE003">5</constant>
-    <constant name="NOTCLEAN">"You Have Not Finished Cleaning This Room"</constant>
     <constant name="CRIME">0</constant>
     <constant name="EVIDENCE">1</constant>
     <constant name="CLUE01">2</constant>
@@ -338,6 +341,7 @@
     <constant name="CRIME001">1</constant>
     <constant name="CRIME002">2</constant>
     <constant name="CRIME003">3</constant>
+    <constant name="ENTERCHANCE">25</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

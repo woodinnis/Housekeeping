@@ -57,6 +57,13 @@ if(room == RoomHallway)
                 break;
         }
     }
+    if(drawDND)
+    {
+        drawRect();
+        draw_text(centerX, topThird, DONOTDISTURB)
+    }
+    
+//    drawDND = false;
 }
 
 // Front Desk messages

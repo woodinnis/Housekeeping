@@ -661,3 +661,8 @@ Fixed Evidence spawn error
 Evidence spawns randomly
 - Only 1 in n clicks will spawn a piece of evidence
 - EVIDENCERANDOMIZER created to balance n
+
+Started rebuilding randomization system for room entry
+- Started a "Do Not Disturb" warning system
+// DND draw is technically functional, but experiencing numerous bugs //
+// Draw only occurs on one door, and randomization of rooms must be moved //

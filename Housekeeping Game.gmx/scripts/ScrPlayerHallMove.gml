@@ -45,6 +45,6 @@ if(moveUp)
 {
     // Prevent entry to doors unless a mission has been started
     if(ObjOverlord.missionStart)
-        if(place_meeting(x,y,ObjDoor))
+        if(place_meeting(x,y,ObjDoorParent))
             script_execute(ScrRoomExit);  
 }

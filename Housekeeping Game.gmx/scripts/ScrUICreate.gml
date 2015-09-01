@@ -1,4 +1,5 @@
 // UI creation code
+drawDND = false     // Setting for the do not disturb sign
 
 // Coordinates for centering text on screen
 centerX = window_get_width()/2;
