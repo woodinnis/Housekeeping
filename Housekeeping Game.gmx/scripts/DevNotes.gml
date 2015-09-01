@@ -678,3 +678,7 @@ Do Not Disturb randomization implemented
 DND Randomization fully functional
 - DND messages appear at random on doors
 - PlayerStep now aquires the specific instance of ObjDoor with each collision
+
+DND Doors no longer accessible
+- Rooms which pop up a DND message cannot be entered
+- RoomExit checks enterDoor T/F state

@@ -32,7 +32,6 @@ if(place_meeting(x,y,ObjDoor))
     
     // Whether or not to display DND message
     touchingDoor = true;
-    show_debug_message(Door.enterMe);
     if((Door.enterMe mod 5) == 0)
         enterDoor = false;
     else

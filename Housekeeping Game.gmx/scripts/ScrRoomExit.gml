@@ -21,15 +21,19 @@ switch(room)
         // Enter a room
         else
         {   
-            roomNumber = round(random(100));
-            if(roomNumber mod 2 == 1)
+            // Enter room if door is available
+            if(enterDoor)
             {
-                room_goto(RoomRoomSm);
-            }
-            else
-            {
-                //room_goto(RoomRoomLg);
-                room_goto(RoomRoomSm);
+                roomNumber = round(random(100));
+                if(roomNumber mod 2 == 1)
+                {
+                    room_goto(RoomRoomSm);
+                }
+                else
+                {
+                    //room_goto(RoomRoomLg);
+                    room_goto(RoomRoomSm);
+                }
             }
         }
         break;
