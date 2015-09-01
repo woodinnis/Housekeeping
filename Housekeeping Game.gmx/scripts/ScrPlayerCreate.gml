@@ -1,6 +1,8 @@
 // Set Player Variables
 touchingClerk = false;
+touchingDoor = false;
 missionReceived = false;
+enterDoor = true;
 
 // Set move speed
 moveSpeed = 5;

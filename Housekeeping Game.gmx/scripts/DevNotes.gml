@@ -666,3 +666,11 @@ Started rebuilding randomization system for room entry
 - Started a "Do Not Disturb" warning system
 // DND draw is technically functional, but experiencing numerous bugs //
 // Draw only occurs on one door, and randomization of rooms must be moved //
+
+// September 01, 2015 //
+
+Do Not Disturb randomization implemented
+- DND appearance functional on all doors
+- Randomization of appearance set in Create Event
+// All doors created at once mean appearance value always the same //
+// Create sequence needs to be adjusted //

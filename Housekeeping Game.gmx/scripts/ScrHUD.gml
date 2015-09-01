@@ -57,13 +57,11 @@ if(room == RoomHallway)
                 break;
         }
     }
-    if(drawDND)
+    if(ObjPlayerParent.touchingDoor && !ObjPlayerParent.enterDoor)
     {
         drawRect();
-        draw_text(centerX, topThird, DONOTDISTURB)
+        draw_text(centerX, topThird, DONOTDISTURB);
     }
-    
-//    drawDND = false;
 }
 
 // Front Desk messages
