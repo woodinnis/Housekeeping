@@ -674,3 +674,7 @@ Do Not Disturb randomization implemented
 - Randomization of appearance set in Create Event
 // All doors created at once mean appearance value always the same //
 // Create sequence needs to be adjusted //
+
+DND Randomization fully functional
+- DND messages appear at random on doors
+- PlayerStep now aquires the specific instance of ObjDoor with each collision

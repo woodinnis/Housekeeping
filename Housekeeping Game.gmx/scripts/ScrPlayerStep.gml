@@ -27,10 +27,13 @@ if(!ObjOverlord.missionStart)
 // Show a message when trying to enter a door marked as Do Not Disturb
 if(place_meeting(x,y,ObjDoor))
 {
+    // Identify the door currently being touched
+    Door = instance_place(x,y,ObjDoor);
+    
+    // Whether or not to display DND message
     touchingDoor = true;
-    show_debug_message("touchingDoor");
-    show_debug_message(ObjDoor.enterMe);
-    if((ObjDoor.enterMe mod 5) == 0)
+    show_debug_message(Door.enterMe);
+    if((Door.enterMe mod 5) == 0)
         enterDoor = false;
     else
         enterDoor = true;
