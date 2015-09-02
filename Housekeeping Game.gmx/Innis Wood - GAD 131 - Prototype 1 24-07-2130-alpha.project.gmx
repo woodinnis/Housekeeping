@@ -306,6 +306,7 @@
       <object>objects\ObjNTable</object>
       <object>objects\ObjTable</object>
       <object>objects\ObjChair</object>
+      <object>objects\ObjRoomParent</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -315,7 +316,8 @@
     <room>rooms\RoomRoomSm</room>
     <room>rooms\RoomRoomLg</room>
   </rooms>
-  <constants number="26">
+  <constants number="27">
+    <constant name="ISCLEANSET">25</constant>
     <constant name="EVIDENCERANDOM">25</constant>
     <constant name="DONOTDISTURB">"A Sign On The Door Reads #'Do Not Disturb'"</constant>
     <constant name="NOTCLEAN">"You Have Not Finished Cleaning This Room"</constant>

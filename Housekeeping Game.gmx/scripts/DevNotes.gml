@@ -687,3 +687,8 @@ Adjusted TimerUI
 - Removed "Current Time"
 - Placed all x/y value settings in UI create
 - Placed a white circle behind the time for clarity
+
+Furniture randomization
+- Furniture will be randomly be clean or dirty at room start
+- Coinflip added to RoomObjectCreate to set image_index at creation
+- All RoomObject Events moved to RoomParent
