@@ -696,3 +696,10 @@ Furniture randomization
 Large Room Rebuild
 - Started adding new Room Objects and tiles to RoomLg
 - HUD and UI elements will need to be repositioned
+
+// September 02, 2015
+
+Added mouse movement control
+- Used window_mouse_get_x/y() and variable buffer
+- Moving mouse to edges of the screen will cause player to move in corresponding direction
+- Mouse control available in all rooms (FrontDesk, Hallway, Sm, Lg)

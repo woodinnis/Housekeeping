@@ -316,7 +316,8 @@
     <room>rooms\RoomRoomSm</room>
     <room>rooms\RoomRoomLg</room>
   </rooms>
-  <constants number="27">
+  <constants number="28">
+    <constant name="MOUSEMOVEBUFFER">40</constant>
     <constant name="ISCLEANSET">25</constant>
     <constant name="EVIDENCERANDOM">25</constant>
     <constant name="DONOTDISTURB">"A Sign On The Door Reads #'Do Not Disturb'"</constant>

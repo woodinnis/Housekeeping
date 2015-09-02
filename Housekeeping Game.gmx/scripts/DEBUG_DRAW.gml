@@ -7,6 +7,7 @@ bottom = window_get_height();
 
 if(debug)
 {   
+    draw_text(20, bottom - 130, "Mouse X/Y: " + string(window_mouse_get_x()) + "," + string(window_mouse_get_y()))
     draw_text(20, bottom - 120, "Received! " + string(ObjPlayerParent.missionReceived));
     draw_text(20, bottom - 110, "TOUCHING! " + string(ObjPlayerParent.touchingClerk));
     draw_text(20, bottom - 100, "Mission: " + string(ObjOverlord.missionStart));

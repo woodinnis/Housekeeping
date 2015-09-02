@@ -1,6 +1,16 @@
-// Check keyboard for valid movement keys
+// Player movement controls in hallways
 event_inherited();
 
+// Get the game window width and height
+wide = window_get_width();
+high = window_get_height();
+
+// Get mouse position in the game window
+moveX = window_mouse_get_x();
+moveY = window_mouse_get_y();
+buffer = MOUSEMOVEBUFFER;   // Set mousecheck buffer
+
+// Check keyboard for valid movement keys
 moveLeft = keyboard_check(vk_left) || keyboard_check(ord("A"));
 moveRight = keyboard_check(vk_right) || keyboard_check(ord("D"));
 
@@ -9,38 +19,34 @@ moveRight = keyboard_check(vk_right) || keyboard_check(ord("D"));
 moveUp = keyboard_check(vk_up) || keyboard_check(ord("W"));
 
 // Left
-if(moveLeft)
+if(moveLeft || moveX < buffer)
 {
+    
     repeat(moveSpeed)
+    {
+        if (!place_meeting(x-1,y,ObjBarrier))
         {
-            if (!place_meeting(x-1,y,ObjBarrier))
-            {
-                x -= 1;
-                sprite_index = SprPlayerHallLeft;
-            }
-            
-            
+            x -= 1;
+            sprite_index = SprPlayerHallLeft;
         }
+    }
 }
 
 // Right
-if(moveRight)
+if(moveRight || moveX > wide - buffer)
 {
     repeat(moveSpeed)
+    {
+        if (!place_meeting(x+1,y,ObjBarrier))
         {
-            if (!place_meeting(x+1,y,ObjBarrier))
-            {
-                x += 1;
-                sprite_index = SprPlayerHallRight;
-            }
-            
+            x += 1;
+            sprite_index = SprPlayerHallRight;
         }
+        
+    }
 }
 
 // Up
-// I believe the same code used to create collision/blocking volumes could be used
-// here for the doors.
-
 if(moveUp)
 {
     // Prevent entry to doors unless a mission has been started
