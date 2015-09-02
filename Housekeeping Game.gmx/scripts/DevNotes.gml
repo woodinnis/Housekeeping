@@ -692,3 +692,7 @@ Furniture randomization
 - Furniture will be randomly be clean or dirty at room start
 - Coinflip added to RoomObjectCreate to set image_index at creation
 - All RoomObject Events moved to RoomParent
+
+Large Room Rebuild
+- Started adding new Room Objects and tiles to RoomLg
+- HUD and UI elements will need to be repositioned

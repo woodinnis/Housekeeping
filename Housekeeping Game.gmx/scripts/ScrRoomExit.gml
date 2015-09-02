@@ -27,12 +27,13 @@ switch(room)
                 roomNumber = round(random(100));
                 if(roomNumber mod 2 == 1)
                 {
-                    room_goto(RoomRoomSm);
+                    //room_goto(RoomRoomSm);
+                    room_goto(RoomRoomLg);
                 }
                 else
                 {
-                    //room_goto(RoomRoomLg);
-                    room_goto(RoomRoomSm);
+                    room_goto(RoomRoomLg);
+                    //room_goto(RoomRoomSm);
                 }
             }
         }
