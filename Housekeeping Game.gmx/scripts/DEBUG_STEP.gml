@@ -32,4 +32,9 @@ if(debug)
     {
         game_restart();
     }
+    if(keyboard_check_pressed(ord("H")))
+    {
+        ObjOverlord.missionStart = true;
+        room_goto(RoomHallway);
+    }
 }

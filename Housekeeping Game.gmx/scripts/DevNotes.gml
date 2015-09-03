@@ -703,3 +703,11 @@ Added mouse movement control
 - Used window_mouse_get_x/y() and variable buffer
 - Moving mouse to edges of the screen will cause player to move in corresponding direction
 - Mouse control available in all rooms (FrontDesk, Hallway, Sm, Lg)
+
+Door entry with mouse click
+- PlayerHallMove checks for deviceLMBPressed
+- RoomExit called when player clicks a door
+
+HUD elements fixed to window
+- New variables created for HUDbufferX/Y
+- Use window width/weight +/- buffer to place HUD elements

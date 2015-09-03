@@ -1,5 +1,9 @@
 // UI creation code
 drawDND = false     // Setting for the do not disturb sign
+HUDBufferX = 60;    // Buffer for HUD elements on screen
+HUDBufferY = 80;    // Buffer for HUD elements on screen
+spriteBufferX = 60; // Buffer for Sprites on screen
+spriteBufferY = 80; // Buffer for Sprites on screen
 
 // Coordinates for centering text on screen
 centerX = window_get_width()/2;

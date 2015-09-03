@@ -17,14 +17,14 @@ if(room == RoomRoomSm || room == RoomRoomLg)
     draw_set_font(fontDEBUG);    
     if(messCollected)
     {
-        draw_sprite(MessSm,0,view_xview[0] + 28, view_yview[0] + 48);
-        draw_text(view_xview[0] + 30, view_yview[0] + 40, "x" + string(messNum));
+        draw_sprite(MessSm,0, spriteBufferX, spriteBufferY);
+        draw_text(HUDBufferX, HUDBufferY, "x" + string(messNum));
     }
     
     // Draw the room number
     thisLong = string_length(roomName);
     draw_set_halign(fa_right)
-    draw_text(view_wview[0] - 20, view_yview[0] + 20, roomName);
+    draw_text(wide - HUDBufferX, HUDBufferY, roomName);
     
     if(drawNotClean)
     {

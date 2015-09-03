@@ -15,7 +15,7 @@ moveLeft = keyboard_check(vk_left) || keyboard_check(ord("A"));
 moveRight = keyboard_check(vk_right) || keyboard_check(ord("D"));
 
 // For entry into doorways use the up keys
-
+doorClick = device_mouse_check_button_pressed(0, mb_left);
 moveUp = keyboard_check(vk_up) || keyboard_check(ord("W"));
 
 // Left
@@ -47,7 +47,7 @@ if(moveRight || moveX > wide - buffer)
 }
 
 // Up
-if(moveUp)
+if(moveUp || doorClick)
 {
     // Prevent entry to doors unless a mission has been started
     if(ObjOverlord.missionStart)
