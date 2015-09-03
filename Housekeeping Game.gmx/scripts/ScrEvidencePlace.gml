@@ -8,7 +8,7 @@ if(!instance_exists(ObjEvidenceParent))
         if(spawnMe != 0)
         {
             // Spawn a piece of evidence at the current mouse location
-            instance_create(window_mouse_get_x(),window_mouse_get_y(),spawnMe);
+            instance_create(window_view_mouse_get_x(0),window_view_mouse_get_y(0),spawnMe);
         }
     }
 }

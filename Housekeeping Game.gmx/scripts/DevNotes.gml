@@ -711,3 +711,9 @@ Door entry with mouse click
 HUD elements fixed to window
 - New variables created for HUDbufferX/Y
 - Use window width/weight +/- buffer to place HUD elements
+
+// September 03, 2015 //
+
+Evidence appearance in RoomLg
+- Changed EvidencePlace to use window_view_mouse_get_x/y()
+- Evidence now appears at correct LMB coordinates
