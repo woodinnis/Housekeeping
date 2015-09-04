@@ -717,3 +717,6 @@ HUD elements fixed to window
 Evidence appearance in RoomLg
 - Changed EvidencePlace to use window_view_mouse_get_x/y()
 - Evidence now appears at correct LMB coordinates
+
+Fonts
+- New fonts added for Dialogue, Notes

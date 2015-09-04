@@ -232,6 +232,8 @@
   <fonts name="fonts">
     <font>fonts\fontDEBUG</font>
     <font>fonts\fontMessages</font>
+    <font>fonts\fontDialogue</font>
+    <font>fonts\fontNotes</font>
   </fonts>
   <objects name="objects">
     <object>objects\ObjUI</object>

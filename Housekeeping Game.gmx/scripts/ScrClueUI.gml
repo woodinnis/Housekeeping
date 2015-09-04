@@ -33,6 +33,7 @@ if(room != RoomMenu)
         
         // Write a message on the note
         alignUI();
+        draw_set_font(fontNotes);
         draw_text(centerX, topThird, COMMUNIQUE001);
         ObjOverlord.noteFound = true;
     }
