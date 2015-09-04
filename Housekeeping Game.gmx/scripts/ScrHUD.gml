@@ -67,12 +67,16 @@ if(room == RoomHallway)
 
 // At the Front Desk
 if(room == RoomFrontDesk)
-{
-    alignUI();
-    // Show a message when trying to enter a door without an active mission    
-    if(drawMissionStart)
+{  
+    // Check for the Intro box
+    if(!ObjOverlord.showIntro)
     {
-        drawRect();
-        draw_text(centerX,topThird,MISSIONSTART);
+        // Show a message when trying to enter a door without an active mission
+        if(drawMissionStart)
+        {
+            drawRect();
+            alignUI();
+            draw_text(centerX,topThird,MISSIONSTART);
+        }
     }
 }

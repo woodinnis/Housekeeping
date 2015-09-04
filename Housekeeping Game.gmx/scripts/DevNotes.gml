@@ -731,3 +731,7 @@ Basic intro message
 
 Intro message refined
 - INTROMSG01 explains situation
+
+Message display
+- Messages no longer overlap in FrontDesk
+- UI scripts check for showIntro before drawing
