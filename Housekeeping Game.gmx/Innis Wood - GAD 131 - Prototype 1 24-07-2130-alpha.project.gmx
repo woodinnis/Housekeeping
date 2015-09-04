@@ -201,6 +201,7 @@
     </scripts>
     <scripts name="Person">
       <script>scripts\ScrPersonCreate.gml</script>
+      <script>scripts\ScrPersonStep.gml</script>
     </scripts>
     <scripts name="Inventory Control">
       <script>scripts\scr_itemAdd.gml</script>

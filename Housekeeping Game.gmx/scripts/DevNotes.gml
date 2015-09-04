@@ -743,4 +743,8 @@ Victory conditions
 - Message overlap check added to ClerkUI
 
 More messages added
-- Docs, Note,
+- Shirt, Docs, Note show messages when found
+
+Victory condition adjustment
+- Player must now click on spy to trigger victory
+- Clicking on spy destroys it
