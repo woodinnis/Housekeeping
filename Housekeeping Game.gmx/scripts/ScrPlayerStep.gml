@@ -1,4 +1,14 @@
 // Perform each frame
+if(!ObjOverlord.introRead)
+{
+    ObjOverlord.showIntro = true;
+    if(device_mouse_check_button_pressed(0, mb_left))
+    {
+        ObjOverlord.introRead = true;
+    }
+}
+else
+    ObjOverlord.showIntro = false;
 
 // Set boolean
 if(place_meeting(x,y,ObjClerk))

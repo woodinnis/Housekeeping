@@ -720,3 +720,11 @@ Evidence appearance in RoomLg
 
 Fonts
 - New fonts added for Dialogue, Notes
+
+// September 04, 2015 //
+
+Basic intro message
+- ScrIntroUI created
+- Uses INTROMSG01
+- Attempts to restrict player speed until message has been read were not successful
+- Message needs work to correctly convey instructions

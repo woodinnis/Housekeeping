@@ -21,7 +21,6 @@ moveUp = keyboard_check(vk_up) || keyboard_check(ord("W"));
 // Left
 if(moveLeft || moveX < buffer)
 {
-    
     repeat(moveSpeed)
     {
         if (!place_meeting(x-1,y,ObjBarrier))
@@ -42,7 +41,6 @@ if(moveRight || moveX > wide - buffer)
             x += 1;
             sprite_index = SprPlayerHallRight;
         }
-        
     }
 }
 

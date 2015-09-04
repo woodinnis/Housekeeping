@@ -188,6 +188,7 @@
       <script>scripts\ScrUICreate.gml</script>
       <script>scripts\drawRect.gml</script>
       <script>scripts\alignUI.gml</script>
+      <script>scripts\ScrIntroUI.gml</script>
     </scripts>
     <scripts name="Evidence">
       <script>scripts\ScrEvidenceStep.gml</script>
@@ -318,7 +319,10 @@
     <room>rooms\RoomRoomSm</room>
     <room>rooms\RoomRoomLg</room>
   </rooms>
-  <constants number="28">
+  <constants number="31">
+    <constant name="INTROMSG1">"It's 1974. #You are MI6's finest, working undercover #in Paris's poshest hotel."</constant>
+    <constant name="INTROMSG2">"Get assignments from your partner at the front desk. Help prevent a war"</constant>
+    <constant name="PLAYERSPEED">5</constant>
     <constant name="MOUSEMOVEBUFFER">40</constant>
     <constant name="ISCLEANSET">25</constant>
     <constant name="EVIDENCERANDOM">25</constant>

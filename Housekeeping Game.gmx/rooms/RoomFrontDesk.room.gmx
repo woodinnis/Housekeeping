@@ -52,7 +52,6 @@
   </views>
   <instances>
     <instance objName="ObjFrontDesk" x="736" y="384" name="inst_A59390B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjPlayerHall" x="480" y="352" name="inst_B19A328D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjBarrier" x="0" y="192" name="inst_E26968BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjBarrier" x="0" y="224" name="inst_030546F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjBarrier" x="0" y="256" name="inst_8F173088" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -72,6 +71,7 @@
     <instance objName="ObjSpawnPt" x="896" y="288" name="inst_F5A6EF9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjElevator" x="224" y="264" name="inst_4AB8AE71" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_inventory" x="96" y="32" name="inst_04A83681" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ObjPlayerHall" x="544" y="344" name="inst_C02E0B99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

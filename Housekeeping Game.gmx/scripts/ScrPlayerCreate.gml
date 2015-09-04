@@ -4,15 +4,13 @@ touchingDoor = false;
 missionReceived = false;
 enterDoor = true;
 
-// Set move speed
-moveSpeed = 5;
+moveSpeed = PLAYERSPEED;
 image_speed = 0;
 
 if(room == RoomHallway)
 {
     startX = 0;
-    
-    
+
     // Check for an empty x,y coordinate set
     while(!place_empty(startX,y))
     {

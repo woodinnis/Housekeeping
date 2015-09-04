@@ -42,3 +42,6 @@ demoVictory = false;
 drawShirt = false;
 drawDocs = false;
 drawNote = false;
+
+introRead = false;
+showIntro = false;
