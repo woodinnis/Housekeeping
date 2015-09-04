@@ -16,25 +16,38 @@ if(room != RoomHallway)
 
 if(room != RoomMenu)
 {
+    alignUI();
     if(ObjOverlord.drawShirt)   // Shirt
     {
-        draw_sprite_ext(SprEvidenceShirt,0,centerX,centerY,5,5,0,c_white,1);
+        draw_sprite_ext(SprEvidenceShirt,0,centerX,centerY,SPRSCALE,SPRSCALE,0,c_white,1);
         ObjOverlord.shirtFound = true;
+        
+        // Show a message
+        drawRect();
+        draw_text(centerX, topThird, SHIRT000);
     }
     if(ObjOverlord.drawDocs)    // Documents
     {
-        draw_sprite_ext(SprEvidenceDocs,0,centerX,centerY,5,5,0,c_white,1);
+        draw_sprite_ext(SprEvidenceDocs,0,centerX,centerY,SPRSCALE,SPRSCALE,0,c_white,1);
         ObjOverlord.docsFound = true;
+        
+        // Show a message
+        drawRect();
+        draw_text(centerX, topThird, DOCS000);
     }
     if(ObjOverlord.drawNote)    // Post-it note
     {
-        draw_sprite_ext(SprEvidenceNote,0,centerX,centerY,15,15,0,c_white,1);
+        draw_sprite_ext(SprEvidenceNote,0,centerX,centerY,SPRSCALE,SPRSCALE,0,c_white,1);
         ObjOverlord.noteFound = true;
         
         // Write a message on the note
-        alignUI();
         draw_set_font(fontNotes);
         draw_text(centerX, topThird, COMMUNIQUE001);
         ObjOverlord.noteFound = true;
+        
+        // Reset font and show a message
+        draw_set_font(fontMessages);
+        drawRect();
+        draw_text(centerX, topThird, NOTE000);
     }
 }    

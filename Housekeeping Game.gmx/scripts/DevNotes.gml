@@ -741,3 +741,6 @@ Victory conditions
 - Created new spy sprite
 - drawRect() call added to VictoryUI
 - Message overlap check added to ClerkUI
+
+More messages added
+- Docs, Note,

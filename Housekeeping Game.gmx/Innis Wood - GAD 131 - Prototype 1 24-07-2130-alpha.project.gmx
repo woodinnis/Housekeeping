@@ -320,7 +320,7 @@
     <room>rooms\RoomRoomSm</room>
     <room>rooms\RoomRoomLg</room>
   </rooms>
-  <constants number="31">
+  <constants number="32">
     <constant name="INTROMSG1">"It's the height of the Cold War. You are MI6's finest,#working undercover in Paris's poshest hotel.#Work with your partner at the front desk#to take on the Soviet threat.#Click to continue"</constant>
     <constant name="INTROMSG2">"Get assignments from your partner at the front desk. Help prevent a war"</constant>
     <constant name="PLAYERSPEED">5</constant>
@@ -352,6 +352,7 @@
     <constant name="CRIME002">2</constant>
     <constant name="CRIME003">3</constant>
     <constant name="ENTERCHANCE">25</constant>
+    <constant name="SPRSCALE">15</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
