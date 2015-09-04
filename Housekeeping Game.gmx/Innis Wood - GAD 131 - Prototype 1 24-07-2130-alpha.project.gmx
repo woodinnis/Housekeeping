@@ -136,6 +136,7 @@
     <sprite>sprites\SprSpy</sprite>
     <sprite>sprites\spr_border</sprite>
     <sprite>sprites\spr_items</sprite>
+    <sprite>sprites\SprLiftSign</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BG_tester</background>
@@ -147,6 +148,7 @@
     <background>background\BGShower</background>
     <background>background\BGWall</background>
     <background>background\BGMetal</background>
+    <background>background\BGLiftSign</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">

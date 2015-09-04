@@ -748,3 +748,6 @@ More messages added
 Victory condition adjustment
 - Player must now click on spy to trigger victory
 - Clicking on spy destroys it
+
+Added "Elevator" sign
+- Placed above elevator doors in FrontDesk/Hallway
