@@ -2,15 +2,15 @@
 
 if(ObjOverlord.drawSolution)
 {
-    alignUI()
-    
     switch(currentCrime)
     {
         case CRIME000:
         {
             if(ObjOverlord.demoVictory)
             {
-                draw_text(centerX, 20, VICTORY000);
+                alignUI();
+                drawRect();
+                draw_text(centerX, topThird, VICTORY000);
             }
             break;
         }

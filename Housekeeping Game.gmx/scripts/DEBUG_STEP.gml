@@ -37,4 +37,10 @@ if(debug)
         ObjOverlord.missionStart = true;
         room_goto(RoomHallway);
     }
+    if(keyboard_check_pressed(ord("N")))
+    {
+        ObjUI.hours = 11;
+        ObjUI.minutes = 50;
+        ObjUI.AmPm = 1;
+    }
 }

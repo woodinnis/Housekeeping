@@ -2,8 +2,8 @@
 
 if(ObjPlayerParent.touchingClerk)
 {
-    // Check for the Intro box
-    if(!ObjOverlord.showIntro)
+    // Check for other message boxes
+    if(!ObjOverlord.showIntro && !ObjOverlord.drawSolution)
     {
         // Draw a rectangle behind the on-screen text
         drawRect();

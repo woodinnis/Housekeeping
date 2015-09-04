@@ -735,3 +735,9 @@ Intro message refined
 Message display
 - Messages no longer overlap in FrontDesk
 - UI scripts check for showIntro before drawing
+
+Victory conditions
+- Reinstated victory condition
+- Created new spy sprite
+- drawRect() call added to VictoryUI
+- Message overlap check added to ClerkUI

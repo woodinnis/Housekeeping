@@ -133,6 +133,7 @@
     <sprite>sprites\SprFrontDesk</sprite>
     <sprite>sprites\SprClerk</sprite>
     <sprite>sprites\SprPerson</sprite>
+    <sprite>sprites\SprSpy</sprite>
     <sprite>sprites\spr_border</sprite>
     <sprite>sprites\spr_items</sprite>
   </sprites>
