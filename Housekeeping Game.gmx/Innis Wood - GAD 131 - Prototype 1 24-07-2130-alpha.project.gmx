@@ -320,7 +320,7 @@
     <room>rooms\RoomRoomLg</room>
   </rooms>
   <constants number="31">
-    <constant name="INTROMSG1">"It's 1974. #You are MI6's finest, working undercover #in Paris's poshest hotel."</constant>
+    <constant name="INTROMSG1">"It's the height of the Cold War. You are MI6's finest,#working undercover in Paris's poshest hotel.#Work with your partner at the front desk#to take on the Soviet threat.#Click to continue"</constant>
     <constant name="INTROMSG2">"Get assignments from your partner at the front desk. Help prevent a war"</constant>
     <constant name="PLAYERSPEED">5</constant>
     <constant name="MOUSEMOVEBUFFER">40</constant>

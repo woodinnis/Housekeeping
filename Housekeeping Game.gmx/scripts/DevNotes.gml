@@ -728,3 +728,6 @@ Basic intro message
 - Uses INTROMSG01
 - Attempts to restrict player speed until message has been read were not successful
 - Message needs work to correctly convey instructions
+
+Intro message refined
+- INTROMSG01 explains situation
