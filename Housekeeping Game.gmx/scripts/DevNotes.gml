@@ -763,3 +763,6 @@ Intro messages
 
 Instructions
 - Added navigtion instructions to the intro messages
+
+Clerk speech
+- Clerk is now click-to-talk

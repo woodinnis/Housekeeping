@@ -200,6 +200,7 @@
     </scripts>
     <scripts name="Clerk">
       <script>scripts\ScrClerkCreate.gml</script>
+      <script>scripts\ScrClerkLMB.gml</script>
     </scripts>
     <scripts name="Person">
       <script>scripts\ScrPersonCreate.gml</script>
