@@ -760,3 +760,6 @@ Adjusted messages
 Intro messages
 - Rebuilt intro message system to allow for multiple screens
 - Switch() used to check for current/total message state
+
+Instructions
+- Added navigtion instructions to the intro messages

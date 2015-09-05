@@ -27,6 +27,15 @@ switch(ObjOverlord.showIntro)
     }
     case 03:
     {
+        drawRect();
+        alignUI();
+        draw_set_valign(fa_bottom);
+    
+        draw_text(centerX, centerY, INTROMSG3);
+        break;
+    }
+    case 04:
+    {
         // Give player control once intro has been read
         ObjOverlord.introRead = true;
         ObjPlayerParent.moveSpeed = PLAYERSPEED;
