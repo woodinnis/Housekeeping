@@ -751,3 +751,8 @@ Victory condition adjustment
 
 Added "Elevator" sign
 - Placed above elevator doors in FrontDesk/Hallway
+
+// September 05, 2015 //
+
+Adjusted messages
+- SHIRT000 adjusted to clarify purpose

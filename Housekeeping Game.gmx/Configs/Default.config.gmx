@@ -443,7 +443,7 @@
       <constant name="SOLUTION000">"These items left behind by the Soviet #should help you find your targets."</constant>
       <constant name="DOCS000">"These look like the documents for the soviets."</constant>
       <constant name="NOTE000">"This note is in Russian.#Maybe your partner can translate it."</constant>
-      <constant name="SHIRT000">"This is a Red Army uniform.#The Soviet spy is still in the hotel!"</constant>
+      <constant name="SHIRT000">"This is a Red Army uniform.#Keep an eye out for the Soviet while you search the hotel!"</constant>
     </constants>
   </ConfigConstants>
 </Config>
