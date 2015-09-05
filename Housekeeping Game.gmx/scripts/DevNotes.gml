@@ -756,3 +756,7 @@ Added "Elevator" sign
 
 Adjusted messages
 - SHIRT000 adjusted to clarify purpose
+
+Intro messages
+- Rebuilt intro message system to allow for multiple screens
+- Switch() used to check for current/total message state
