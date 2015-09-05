@@ -149,6 +149,7 @@
     <background>background\BGWall</background>
     <background>background\BGMetal</background>
     <background>background\BGLiftSign</background>
+    <background>background\BGMain</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -323,6 +324,7 @@
     <room>rooms\RoomHallway</room>
     <room>rooms\RoomRoomSm</room>
     <room>rooms\RoomRoomLg</room>
+    <room>rooms\RoomMain</room>
   </rooms>
   <constants number="33">
     <constant name="INTROMSG1">"It's the height of the Cold War. You are MI6's finest,#working undercover in Paris's poshest hotel.#Work with your partner at the front desk#to take on the Soviet threat."</constant>

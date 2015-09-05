@@ -10,7 +10,8 @@ if(ObjOverlord.drawSolution)
             {
                 alignUI();
                 drawRect();
-                draw_text(centerX, topThird, VICTORY000);
+                draw_set_valign(fa_bottom);
+                draw_text(centerX, centerY, VICTORY000);
             }
             break;
         }

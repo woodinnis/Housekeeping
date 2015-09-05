@@ -772,3 +772,10 @@ RoomLg
 - Added more furniture
 - More tiles
 - Walls correctly blocked
+
+// After some consultation with Jason some significant changes are being implemented //
+
+RoomMain
+- Replaces Hallway,Lg,Sm
+- Top-down map of entire hotel floor
+- Uses PlayerRoom

@@ -434,7 +434,7 @@
   </Options>
   <ConfigConstants>
     <constants number="10">
-      <constant name="VICTORY000">"Democracy and Freedom #are free from the menace of #Soviet Oppression for another day! #Good Work!"</constant>
+      <constant name="VICTORY000">"You have caught the spy!#Democracy and Freedom are free from the menace of#Soviet Oppression for another day!##Good Work!"</constant>
       <constant name="RADIUSADJUST">100</constant>
       <constant name="COMMUNIQUE001">"Познакомлюсь #в холле в 12:00"</constant>
       <constant name="MISSIONSTART">"You haven't checked in for your shift. #Talk to the clerk at the desk."</constant>
