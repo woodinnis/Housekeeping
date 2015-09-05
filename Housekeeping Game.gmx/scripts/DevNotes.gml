@@ -766,3 +766,9 @@ Instructions
 
 Clerk speech
 - Clerk is now click-to-talk
+
+RoomLg
+- Added exit
+- Added more furniture
+- More tiles
+- Walls correctly blocked
