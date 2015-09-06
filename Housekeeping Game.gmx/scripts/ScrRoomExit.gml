@@ -14,7 +14,7 @@ switch(room)
     }
     case RoomMain:
     {
-        room_goto(RoomHallway)
+        room_goto(RoomFrontDesk)
         break;
     }
     case RoomHallway:

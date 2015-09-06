@@ -11,37 +11,13 @@ moveY = window_mouse_get_y();
 buffer = MOUSEMOVEBUFFER;   // Set mousecheck buffer
 
 // Check keyboard input for valid movement keys
-moveUp = keyboard_check(vk_up) || keyboard_check(ord("W"));
-moveDown = keyboard_check(vk_down)|| keyboard_check(ord("S"));
 moveRight = keyboard_check(vk_right)|| keyboard_check(ord("D"));
 moveLeft = keyboard_check(vk_left)|| keyboard_check(ord("A"));
+moveUp = keyboard_check(vk_up) || keyboard_check(ord("W"));
+moveDown = keyboard_check(vk_down)|| keyboard_check(ord("S"));
+
 
 // Move player by appropriate amount in the selected direction
-
-// UP
-if(moveUp || moveY < buffer)
-{
-    repeat(moveSpeed)
-    {
-        
-        if (!place_meeting(x,y-1,ObjBarrier))
-        {
-            y -= 1;
-        }
-    }
-}
-
-// DOWN
-if(moveDown || moveY > high - buffer)
-{
-   repeat(moveSpeed)
-    {
-        if (!place_meeting(x,y+1,ObjBarrier))
-        {
-            y += 1;
-        }
-    }
-}
 
 // RIGHT
 if(moveRight || moveX > wide - buffer)
@@ -51,6 +27,8 @@ if(moveRight || moveX > wide - buffer)
         if (!place_meeting(x+1,y,ObjBarrier))
         {
             x += 1;
+            if(room == RoomFrontDesk)
+                sprite_index = SprPlayerHallRight;
         }
     }
 }
@@ -63,6 +41,36 @@ if(moveLeft || moveX < buffer)
         if (!place_meeting(x-1,y,ObjBarrier))
         {
             x -= 1;
+            if(room == RoomFrontDesk)
+                sprite_index = SprPlayerHallLeft;
+        }
+    }
+}
+
+if(room == RoomMain)
+{
+    // UP
+    if(moveUp || moveY < buffer)
+    {
+        repeat(moveSpeed)
+        {
+            
+            if (!place_meeting(x,y-1,ObjBarrier))
+            {
+                y -= 1;
+            }
+        }
+    }
+    
+    // DOWN
+    if(moveDown || moveY > high - buffer)
+    {
+       repeat(moveSpeed)
+        {
+            if (!place_meeting(x,y+1,ObjBarrier))
+            {
+                y += 1;
+            }
         }
     }
 }

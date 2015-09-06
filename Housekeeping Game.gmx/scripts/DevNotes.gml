@@ -779,3 +779,7 @@ RoomMain
 - Replaces Hallway,Lg,Sm
 - Top-down map of entire hotel floor
 - Uses PlayerRoom
+
+Player Navigation
+- Player movement centralized to PlayerRoomMove
+- RoomExit called with DoorParent LMBclick Event (No longer requires place_meeting)
