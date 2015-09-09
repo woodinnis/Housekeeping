@@ -172,6 +172,7 @@
       <script>scripts\ScrPlayerCreate.gml</script>
       <script>scripts\ScrRoomExit.gml</script>
       <script>scripts\ScrPlayerStep.gml</script>
+      <script>scripts\ScrPlayerNav.gml</script>
     </scripts>
     <scripts name="Clues">
       <script>scripts\ScrClueCreate.gml</script>
@@ -235,6 +236,7 @@
       </scripts>
       <script>scripts\ScrJSONRead.gml</script>
     </scripts>
+    <script>scripts\buildGrid.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fontDEBUG</font>
@@ -317,6 +319,7 @@
       <object>objects\ObjChair</object>
       <object>objects\ObjRoomParent</object>
     </objects>
+    <object>objects\ObjMpGrid</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\RoomMenu</room>

@@ -783,3 +783,16 @@ RoomMain
 Player Navigation
 - Player movement centralized to PlayerRoomMove
 - RoomExit called with DoorParent LMBclick Event (No longer requires place_meeting)
+
+// September 07, 2015 //
+
+Started building pathfinding
+- Started work on an mp_grid
+- Several problems have arisen with mp_grid_create not building a grid of the correct size
+- Many methods have been tried to resolve this, so far none have been successful
+
+// September 08, 2015 //
+
+Basic pathfinding implemented
+- Hallway level
+- Click to move
