@@ -801,3 +801,10 @@ Basic pathfinding implemented
 
 Movement adjusted
 - Removed edge movement from RoomMain
+
+Adjusted view
+- Centered RoomMain view on player
+
+Adjusted collision
+- Reduced instance count of objBarrier in RoomMain
+- Increased scaleX,Y of remaining objBarrier
