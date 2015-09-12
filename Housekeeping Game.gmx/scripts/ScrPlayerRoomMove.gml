@@ -26,9 +26,11 @@ if(moveRight || moveX > wide - buffer)
     {
         if (!place_meeting(x+1,y,ObjBarrier))
         {
-            x += 1;
             if(room == RoomFrontDesk)
+            {
+                x += 1;
                 sprite_index = SprPlayerHallRight;
+            }
         }
     }
 }
@@ -40,13 +42,15 @@ if(moveLeft || moveX < buffer)
     {
         if (!place_meeting(x-1,y,ObjBarrier))
         {
-            x -= 1;
             if(room == RoomFrontDesk)
+            {   
+                x -= 1;
                 sprite_index = SprPlayerHallLeft;
+            }
         }
     }
 }
-
+/*
 if(room == RoomMain)
 {
     // UP

@@ -796,3 +796,8 @@ Started building pathfinding
 Basic pathfinding implemented
 - Hallway level
 - Click to move
+
+// September 12, 2015 //
+
+Movement adjusted
+- Removed edge movement from RoomMain
