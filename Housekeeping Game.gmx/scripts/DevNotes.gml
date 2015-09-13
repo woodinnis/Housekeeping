@@ -808,3 +808,7 @@ Adjusted view
 Adjusted collision
 - Reduced instance count of objBarrier in RoomMain
 - Increased scaleX,Y of remaining objBarrier
+
+Cleaning objects
+- Player must now have Line-of-Sight to an object to clean it
+- RoomObjectLMB given collision_line() condition
