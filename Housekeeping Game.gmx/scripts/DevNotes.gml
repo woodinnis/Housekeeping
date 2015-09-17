@@ -812,3 +812,6 @@ Adjusted collision
 Cleaning objects
 - Player must now have Line-of-Sight to an object to clean it
 - RoomObjectLMB given collision_line() condition
+
+Debug functions
+- Added debug function to spawn a spy using the "Enter" key
