@@ -1,14 +1,16 @@
 // Perform each frame
 if(!ObjOverlord.introRead)
 {
-    ObjOverlord.showIntro = true;
+    // Prevent player from moving until intro has been read
+    moveSpeed = 0;
+    // Move to a new message with each mouse click        
     if(device_mouse_check_button_pressed(0, mb_left))
     {
-        ObjOverlord.introRead = true;
+        ObjOverlord.showIntro++;
     }
 }
 else
-    ObjOverlord.showIntro = false;
+    ObjOverlord.introRead = false;
 
 // Set boolean
 if(place_meeting(x,y,ObjClerk))

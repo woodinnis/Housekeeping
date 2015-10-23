@@ -741,3 +741,77 @@ Victory conditions
 - Created new spy sprite
 - drawRect() call added to VictoryUI
 - Message overlap check added to ClerkUI
+
+More messages added
+- Shirt, Docs, Note show messages when found
+
+Victory condition adjustment
+- Player must now click on spy to trigger victory
+- Clicking on spy destroys it
+
+Added "Elevator" sign
+- Placed above elevator doors in FrontDesk/Hallway
+
+// September 05, 2015 //
+
+Adjusted messages
+- SHIRT000 adjusted to clarify purpose
+
+Intro messages
+- Rebuilt intro message system to allow for multiple screens
+- Switch() used to check for current/total message state
+
+Instructions
+- Added navigtion instructions to the intro messages
+
+Clerk speech
+- Clerk is now click-to-talk
+
+RoomLg
+- Added exit
+- Added more furniture
+- More tiles
+- Walls correctly blocked
+
+// After some consultation with Jason some significant changes are being implemented //
+
+RoomMain
+- Replaces Hallway,Lg,Sm
+- Top-down map of entire hotel floor
+- Uses PlayerRoom
+
+Player Navigation
+- Player movement centralized to PlayerRoomMove
+- RoomExit called with DoorParent LMBclick Event (No longer requires place_meeting)
+
+// September 07, 2015 //
+
+Started building pathfinding
+- Started work on an mp_grid
+- Several problems have arisen with mp_grid_create not building a grid of the correct size
+- Many methods have been tried to resolve this, so far none have been successful
+
+// September 08, 2015 //
+
+Basic pathfinding implemented
+- Hallway level
+- Click to move
+
+// September 12, 2015 //
+
+Movement adjusted
+- Removed edge movement from RoomMain
+
+Adjusted view
+- Centered RoomMain view on player
+
+Adjusted collision
+- Reduced instance count of objBarrier in RoomMain
+- Increased scaleX,Y of remaining objBarrier
+
+Cleaning objects
+- Player must now have Line-of-Sight to an object to clean it
+- RoomObjectLMB given collision_line() condition
+
+Debug functions
+- Added debug function to spawn a spy using the "Enter" key

@@ -44,4 +44,6 @@ drawDocs = false;
 drawNote = false;
 
 introRead = false;
-showIntro = false;
+showIntro = 00;
+
+clerkSpeak = false;

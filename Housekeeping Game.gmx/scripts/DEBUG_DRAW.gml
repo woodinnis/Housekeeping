@@ -17,7 +17,7 @@ if(debug)
     draw_text(20, bottom - 60, "Goal " + string(ObjOverlord.currentGoal));
 //    draw_text(20, bottom - 50, "Time Left " + string(ObjTimer.alarm[0]));
 //    draw_text(20, bottom - 40, "Level Over " + string(ObjTimer.levelOver));
-
+    
     if(showEvidence)
     {
         if(ObjOverlord.shirtFound)
@@ -32,5 +32,11 @@ if(debug)
     
         if(room != RoomHallway && room != RoomFrontDesk)
             draw_text(20, bottom - 20, "Check True " + string(ObjOverlord.checkTrue));
+    }
+    
+    if(room == RoomMain)
+    {
+        draw_set_alpha(0.3);
+        mp_grid_draw(ObjMpGrid.moveGrid);
     }
 }

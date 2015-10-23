@@ -136,6 +136,7 @@
     <sprite>sprites\SprSpy</sprite>
     <sprite>sprites\spr_border</sprite>
     <sprite>sprites\spr_items</sprite>
+    <sprite>sprites\SprLiftSign</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BG_tester</background>
@@ -147,6 +148,8 @@
     <background>background\BGShower</background>
     <background>background\BGWall</background>
     <background>background\BGMetal</background>
+    <background>background\BGLiftSign</background>
+    <background>background\BGMain</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -169,6 +172,7 @@
       <script>scripts\ScrPlayerCreate.gml</script>
       <script>scripts\ScrRoomExit.gml</script>
       <script>scripts\ScrPlayerStep.gml</script>
+      <script>scripts\ScrPlayerNav.gml</script>
     </scripts>
     <scripts name="Clues">
       <script>scripts\ScrClueCreate.gml</script>
@@ -187,9 +191,9 @@
       <script>scripts\ScrClerkUI.gml</script>
       <script>scripts\ScrVictoryUI.gml</script>
       <script>scripts\ScrUICreate.gml</script>
+      <script>scripts\ScrIntroUI.gml</script>
       <script>scripts\drawRect.gml</script>
       <script>scripts\alignUI.gml</script>
-      <script>scripts\ScrIntroUI.gml</script>
     </scripts>
     <scripts name="Evidence">
       <script>scripts\ScrEvidenceStep.gml</script>
@@ -198,9 +202,11 @@
     </scripts>
     <scripts name="Clerk">
       <script>scripts\ScrClerkCreate.gml</script>
+      <script>scripts\ScrClerkLMB.gml</script>
     </scripts>
     <scripts name="Person">
       <script>scripts\ScrPersonCreate.gml</script>
+      <script>scripts\ScrPersonStep.gml</script>
     </scripts>
     <scripts name="Inventory Control">
       <script>scripts\scr_itemAdd.gml</script>
@@ -230,6 +236,7 @@
       </scripts>
       <script>scripts\ScrJSONRead.gml</script>
     </scripts>
+    <script>scripts\buildGrid.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fontDEBUG</font>
@@ -312,6 +319,7 @@
       <object>objects\ObjChair</object>
       <object>objects\ObjRoomParent</object>
     </objects>
+    <object>objects\ObjMpGrid</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\RoomMenu</room>
@@ -319,10 +327,12 @@
     <room>rooms\RoomHallway</room>
     <room>rooms\RoomRoomSm</room>
     <room>rooms\RoomRoomLg</room>
+    <room>rooms\RoomMain</room>
   </rooms>
-  <constants number="31">
-    <constant name="INTROMSG1">"It's the height of the Cold War. You are MI6's finest,#working undercover in Paris's poshest hotel.#Work with your partner at the front desk#to take on the Soviet threat.#Click to continue"</constant>
-    <constant name="INTROMSG2">"Get assignments from your partner at the front desk. Help prevent a war"</constant>
+  <constants number="33">
+    <constant name="INTROMSG1">"It's the height of the Cold War. You are MI6's finest,#working undercover in Paris's poshest hotel.#Work with your partner at the front desk#to take on the Soviet threat."</constant>
+    <constant name="INTROMSG2">"Get assignments from your partner at the front desk.#Help prevent a war##Click to continue"</constant>
+    <constant name="INTROMSG3">"Move with the mouse or keyboard.##Click to interact with people or objects."</constant>
     <constant name="PLAYERSPEED">5</constant>
     <constant name="MOUSEMOVEBUFFER">40</constant>
     <constant name="ISCLEANSET">25</constant>
@@ -352,6 +362,7 @@
     <constant name="CRIME002">2</constant>
     <constant name="CRIME003">3</constant>
     <constant name="ENTERCHANCE">25</constant>
+    <constant name="SPRSCALE">15</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

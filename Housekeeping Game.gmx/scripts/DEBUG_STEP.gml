@@ -14,7 +14,6 @@ if(debug)
     {
         ObjOverlord.messNum = 0;    // Clean room
     }
-    
     if(keyboard_check_pressed(ord("S")))
     {
         ObjOverlord.drawSolution = true;    // Set victory conditions to true
@@ -42,5 +41,12 @@ if(debug)
         ObjUI.hours = 11;
         ObjUI.minutes = 50;
         ObjUI.AmPm = 1;
+    }
+    if(keyboard_check_pressed(vk_enter))
+    {
+        target = instance_find(ObjPerson,0);
+        target.sprite_index = SprSpy;
+        target.isSpy = true;
+        ObjOverlord.drawSolution = true;
     }
 }

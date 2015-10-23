@@ -22,11 +22,15 @@ if(ObjOverlord.drawSolution)
             // Check to see that the player is in the lobby at noon
             if(ObjUI.hours >= 12 && ObjUI.AmPm == 0)
             {
-                // Show the spy for the first mission
-                if(!changeMe.isSpy)
+                // Has the victory condition happened yet?
+                if(!ObjOverlord.demoVictory)
                 {
-                    changeMe.sprite_index = SprSpy;
-                    isSpy = true;
+                    // Show the spy for the first mission
+                    if(!changeMe.isSpy)
+                    {
+                        changeMe.sprite_index = SprSpy;
+                        isSpy = true;
+                    }
                 }
             }
             break;

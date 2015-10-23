@@ -1,9 +1,8 @@
 // UI Elements for the clerk, and mission briefings
 
-if(ObjPlayerParent.touchingClerk)
+if(ObjOverlord.clerkSpeak)
 {
-    // Check for other message boxes
-    if(!ObjOverlord.showIntro && !ObjOverlord.drawSolution)
+
     {
         // Draw a rectangle behind the on-screen text
         drawRect();
