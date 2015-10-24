@@ -824,3 +824,7 @@ New inventory system started
 
 Draw script updated
 - Items now draw inside appropriate boxes on inventory screen
+
+Created Parent object for object pickup
+- Collision with player adds child item to inventory
+- Will need variables to hold Key and Value of child
