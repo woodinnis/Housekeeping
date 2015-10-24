@@ -214,6 +214,7 @@
       <script>scripts\ScrItemDrop.gml</script>
       <script>scripts\ScrInventoryCreate.gml</script>
       <script>scripts\ScrPickupParentCollisionPlayer.gml</script>
+      <script>scripts\ScrPickupParentCreate.gml</script>
     </scripts>
     <scripts name="Room">
       <script>scripts\ScrRoomObjectCreate.gml</script>
@@ -308,6 +309,7 @@
     <objects name="Inventory System">
       <object>objects\ObjInventory</object>
       <object>objects\ObjPickupParent</object>
+      <object>objects\TestItem</object>
     </objects>
     <objects name="Room">
       <object>objects\ObjBed</object>

@@ -828,3 +828,7 @@ Draw script updated
 Created Parent object for object pickup
 - Collision with player adds child item to inventory
 - Will need variables to hold Key and Value of child
+
+Created test child object for object pickup
+- Created create script for PickupParent, with Key,Value variables
+- Variables can be set in Create event of child
