@@ -192,6 +192,7 @@
       <script>scripts\ScrVictoryUI.gml</script>
       <script>scripts\ScrUICreate.gml</script>
       <script>scripts\ScrIntroUI.gml</script>
+      <script>scripts\ScrInventoryDraw.gml</script>
       <script>scripts\drawRect.gml</script>
       <script>scripts\alignUI.gml</script>
     </scripts>
@@ -209,11 +210,12 @@
       <script>scripts\ScrPersonStep.gml</script>
     </scripts>
     <scripts name="Inventory Control">
-      <script>scripts\scr_itemAdd.gml</script>
+      <script>scripts\ScrItemAdd.gml</script>
       <script>scripts\scr_itemAdd_slot.gml</script>
-      <script>scripts\scr_itemDrop.gml</script>
+      <script>scripts\ScrItemDrop.gml</script>
       <script>scripts\scr_itemDrop_slot.gml</script>
       <script>scripts\scr_itemCheck.gml</script>
+      <script>scripts\scrInventoryCreate.gml</script>
     </scripts>
     <scripts name="Room">
       <script>scripts\ScrRoomObjectCreate.gml</script>
@@ -329,7 +331,7 @@
     <room>rooms\RoomRoomLg</room>
     <room>rooms\RoomMain</room>
   </rooms>
-  <constants number="33">
+  <constants number="36">
     <constant name="INTROMSG1">"It's the height of the Cold War. You are MI6's finest,#working undercover in Paris's poshest hotel.#Work with your partner at the front desk#to take on the Soviet threat."</constant>
     <constant name="INTROMSG2">"Get assignments from your partner at the front desk.#Help prevent a war##Click to continue"</constant>
     <constant name="INTROMSG3">"Move with the mouse or keyboard.##Click to interact with people or objects."</constant>
@@ -363,6 +365,9 @@
     <constant name="CRIME003">3</constant>
     <constant name="ENTERCHANCE">25</constant>
     <constant name="SPRSCALE">15</constant>
+    <constant name="MAXITEMS">12</constant>
+    <constant name="MAXTOOLS">4</constant>
+    <constant name="INVSCALE">128</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

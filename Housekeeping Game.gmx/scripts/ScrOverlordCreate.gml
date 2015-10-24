@@ -47,3 +47,7 @@ introRead = false;
 showIntro = 00;
 
 clerkSpeak = false;
+
+// System Variables
+globalvar isPaused;
+isPaused = false;

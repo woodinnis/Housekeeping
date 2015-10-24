@@ -815,3 +815,9 @@ Cleaning objects
 
 Debug functions
 - Added debug function to spawn a spy using the "Enter" key
+
+// October 24, 2015 //
+
+New inventory system started
+- Uses ds_maps rather than basic arrays
+- Basic adding, removing items functioning
