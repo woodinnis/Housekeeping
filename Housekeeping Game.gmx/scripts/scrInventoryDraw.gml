@@ -19,7 +19,7 @@ if(isPaused)
     {
         for(j = 0; j < 1; j++)
         {
-            draw_sprite_stretched(spr_border,0,(j+0)*INVSCALE+32,(i+0)*INVSCALE+32,INVSCALE,INVSCALE)//+stack)
+            draw_sprite_stretched(spr_border,0,(j+0)*INVSCALE+32,(i+0)*INVSCALE+32,INVSCALE,INVSCALE);
         }
     }
     // Display contents of inventory
@@ -27,8 +27,8 @@ if(isPaused)
     draw_set_font(fontMessages);
     for(i = 0; i < mapSize; i++)
     {
-        draw_text(100, 50 * (i + 1), string(mapFirst));
-        draw_text(100, 100 * (i + 1), ds_map_find_value(myInventory, mapFirst));
+        draw_text(INVITEMX, INVITEMY + i * INVSCALE, string(mapFirst));
+        draw_text(INVITEMX, (INVITEMY + i * INVSCALE) + 20, ds_map_find_value(myInventory, mapFirst));
         mapFirst = ds_map_find_next(myInventory, mapFirst);
     }
 }

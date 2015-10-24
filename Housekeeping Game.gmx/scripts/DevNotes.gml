@@ -821,3 +821,6 @@ Debug functions
 New inventory system started
 - Uses ds_maps rather than basic arrays
 - Basic adding, removing items functioning
+
+Draw script updated
+- Items now draw inside appropriate boxes on inventory screen
