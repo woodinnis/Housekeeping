@@ -3,7 +3,6 @@ roomNum = ObjOverlord.roomNum;
 messNum = ObjOverlord.messNum;
 messCollected = ObjOverlord.messCollected;
 drawNotClean = ObjOverlord.drawNotClean;
-drawMissionStart = ObjOverlord.drawMissionStart;
 
 // Create a string using the room's randomly generated number
 roomName = "ROOM \#" + string(roomNum);
@@ -56,13 +55,6 @@ if(room == RoomHallway)
                 break;
         }
     }
-
-    // Indicate that a Do Not Disturb sign is on a door
-    if(ObjPlayerParent.touchingDoor && !ObjPlayerParent.enterDoor)
-    {
-        drawRect();
-        draw_text(centerX, topThird, DONOTDISTURB);
-    }
 }
 
 // At the Front Desk
@@ -71,12 +63,8 @@ if(room == RoomFrontDesk)
     // Check for the Intro box
     if(!ObjOverlord.showIntro)
     {
-        // Show a message when trying to enter a door without an active mission
-        if(drawMissionStart)
-        {
-            drawRect();
-            alignUI();
-            draw_text(centerX,topThird,MISSIONSTART);
-        }
+        // This used to contain a "Mission has not started" warning
+        // It will need to be replaced with a "Shift has not started"
+        // equivalent
     }
 }

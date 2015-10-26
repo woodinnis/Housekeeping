@@ -832,3 +832,11 @@ Created Parent object for object pickup
 Created test child object for object pickup
 - Created create script for PickupParent, with Key,Value variables
 - Variables can be set in Create event of child
+
+// October 26, 2015 //
+
+Beginning to remove "Spy" theme from game
+- Removed Game intro messages, and reading requirements
+    The code is still available, and perhaps could be reimplemented
+    with a new theme.
+- Movement is now available immediately

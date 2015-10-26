@@ -54,7 +54,6 @@
     <instance objName="ObjOverlord" x="0" y="0" name="inst_7561E986" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjUI" x="32" y="32" name="inst_60B14976" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="DEBUG" x="64" y="64" name="inst_F2275C8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="96" y="32" name="inst_04A83681" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjPlayerHall" x="512" y="344" name="inst_66B32D1B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjFrontDesk" x="736" y="384" name="inst_A59390B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjClerk" x="800" y="224" name="inst_12A177A2" locked="0" code="" scaleX="2.5" scaleY="2.5" colour="4294967295" rotation="0"/>

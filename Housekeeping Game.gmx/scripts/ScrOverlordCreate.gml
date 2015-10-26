@@ -35,7 +35,6 @@ clueMd = false;
 clueSm = false;
 
 // UI variables
-drawMissionStart = false;
 drawSolution = false
 demoVictory = false;
 
