@@ -840,3 +840,8 @@ Beginning to remove "Spy" theme from game
     The code is still available, and perhaps could be reimplemented
     with a new theme.
 - Movement is now available immediately
+
+Clues have been effectively removed
+- Removed ClueCreate, Collect scripts. Items will still spawn when
+    cleaning rooms, but they no longer serve a purpose.
+- The object can be repurposed later

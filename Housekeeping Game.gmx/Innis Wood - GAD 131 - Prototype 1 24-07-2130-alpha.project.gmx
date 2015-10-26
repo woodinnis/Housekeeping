@@ -174,10 +174,6 @@
       <script>scripts\ScrPlayerStep.gml</script>
       <script>scripts\ScrPlayerNav.gml</script>
     </scripts>
-    <scripts name="Clues">
-      <script>scripts\ScrClueCreate.gml</script>
-      <script>scripts\ScrClueCollect.gml</script>
-    </scripts>
     <scripts name="Mess">
       <script>scripts\ScrMessCollect.gml</script>
       <script>scripts\ScrMessCreate.gml</script>
