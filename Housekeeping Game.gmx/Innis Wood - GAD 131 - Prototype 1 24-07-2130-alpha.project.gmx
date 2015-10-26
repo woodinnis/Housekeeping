@@ -157,7 +157,6 @@
     <scripts name="Overlord">
       <script>scripts\ScrCall.gml</script>
       <script>scripts\ScrOverlordCreate.gml</script>
-      <script>scripts\ScrMessPlace.gml</script>
       <script>scripts\ScrMissionChecks.gml</script>
       <script>scripts\ScrOverlordStep.gml</script>
       <script>scripts\ScrEvidencePlace.gml</script>
@@ -218,8 +217,6 @@
     </scripts>
     <script>scripts\DEBUG_DRAW.gml</script>
     <script>scripts\DEBUG_STEP.gml</script>
-    <script>scripts\FuncClue.gml</script>
-    <script>scripts\FuncMess.gml</script>
     <script>scripts\FuncEvidence.gml</script>
     <scripts name="OBSOLETE">
       <scripts name="Timer">

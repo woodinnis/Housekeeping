@@ -845,3 +845,8 @@ Clues have been effectively removed
 - Removed ClueCreate, Collect scripts. Items will still spawn when
     cleaning rooms, but they no longer serve a purpose.
 - The object can be repurposed later
+
+Several old functions removed
+- FuncMess, Clue, MessPlace have all been removed. These functions
+    no longer serve a purpose, and/or have duplicate functionality
+    elsewhere in the programme.
