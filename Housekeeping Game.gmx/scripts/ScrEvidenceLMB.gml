@@ -11,13 +11,13 @@ if(!ObjOverlord.drawShirt && !ObjOverlord.drawDocs && !ObjOverlord.drawNote)
     {
         case ObjEvidenceShirt:
         {
-            scr_itemAdd(1);
+//            scr_itemAdd(1);
             ObjOverlord.drawShirt = true;
             break;
         }
         case ObjEvidenceDocs:
         {
-            scr_itemAdd(2);
+//            scr_itemAdd(2);
             ObjOverlord.drawDocs = true;
             break;
         }
@@ -28,7 +28,7 @@ if(!ObjOverlord.drawShirt && !ObjOverlord.drawDocs && !ObjOverlord.drawNote)
         }   
         case ObjEvidenceNote:
         {
-            scr_itemAdd(3);
+//            scr_itemAdd(3);
             ObjOverlord.drawNote = true;
             break;
         }

@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>scrInventoryCreate</script>
+            <script>ScrInventoryCreate</script>
           </argument>
           <argument>
             <kind>0</kind>
@@ -93,6 +93,7 @@ ScrItemDrop("Petunias")
             <kind>1</kind>
             <string>// Testing functionality of ItemAdd
 ScrItemAdd("Petunias","red");
+ScrItemAdd("Hockey","Puck");
 </string>
           </argument>
         </arguments>

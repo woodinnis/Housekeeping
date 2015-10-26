@@ -815,3 +815,20 @@ Cleaning objects
 
 Debug functions
 - Added debug function to spawn a spy using the "Enter" key
+
+// October 24, 2015 //
+
+New inventory system started
+- Uses ds_maps rather than basic arrays
+- Basic adding, removing items functioning
+
+Draw script updated
+- Items now draw inside appropriate boxes on inventory screen
+
+Created Parent object for object pickup
+- Collision with player adds child item to inventory
+- Will need variables to hold Key and Value of child
+
+Created test child object for object pickup
+- Created create script for PickupParent, with Key,Value variables
+- Variables can be set in Create event of child
