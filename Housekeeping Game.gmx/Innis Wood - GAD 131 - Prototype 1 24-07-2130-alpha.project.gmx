@@ -288,9 +288,9 @@
       <object>objects\ObjEvidenceParent</object>
       <object>objects\ObjEvidenceShirt</object>
       <object>objects\ObjEvidenceDocs</object>
+      <object>objects\ObjEvidenceNote</object>
       <object>objects\ObjEvidenceLaptop</object>
       <object>objects\ObjEvidencePhone</object>
-      <object>objects\ObjEvidenceNote</object>
     </objects>
     <objects name="Door">
       <object>objects\ObjDoor</object>

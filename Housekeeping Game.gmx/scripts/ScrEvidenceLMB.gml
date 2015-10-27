@@ -3,8 +3,12 @@
 
 iAm = other.object_index;
 
+ScrItemAdd(Key,Value);
 
+with(other)
+    instance_destroy();
 
+/*
 if(!ObjOverlord.drawShirt && !ObjOverlord.drawDocs && !ObjOverlord.drawNote)
 {
     switch(iAm)
@@ -40,6 +44,5 @@ if(!ObjOverlord.drawShirt && !ObjOverlord.drawDocs && !ObjOverlord.drawNote)
     }
 }
 
-with(other)
-    instance_destroy();
+
 

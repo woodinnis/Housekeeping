@@ -855,3 +855,9 @@ Clean-up
 - Removed ScrCall, which was a long holdover from an earlier version
     also added important comments in two scripts: EvidencePlace
     and MissionChecks, on how they can be repurposed.
+    
+// October 27, 2015 //
+
+Beginning to add resource management
+- Repurposing EvidenceParent to serve as a clickable object
+    which can easily add items to inventory
