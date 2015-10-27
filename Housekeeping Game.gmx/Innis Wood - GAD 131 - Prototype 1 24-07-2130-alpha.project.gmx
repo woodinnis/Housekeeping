@@ -155,7 +155,6 @@
   <scripts name="scripts">
     <script>scripts\DevNotes.gml</script>
     <scripts name="Overlord">
-      <script>scripts\ScrCall.gml</script>
       <script>scripts\ScrOverlordCreate.gml</script>
       <script>scripts\ScrMissionChecks.gml</script>
       <script>scripts\ScrOverlordStep.gml</script>

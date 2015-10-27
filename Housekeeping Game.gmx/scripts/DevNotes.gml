@@ -850,3 +850,8 @@ Several old functions removed
 - FuncMess, Clue, MessPlace have all been removed. These functions
     no longer serve a purpose, and/or have duplicate functionality
     elsewhere in the programme.
+    
+Clean-up
+- Removed ScrCall, which was a long holdover from an earlier version
+    also added important comments in two scripts: EvidencePlace
+    and MissionChecks, on how they can be repurposed.

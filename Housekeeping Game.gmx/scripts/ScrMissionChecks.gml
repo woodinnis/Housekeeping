@@ -1,4 +1,9 @@
-// Set variables to keep track of mission status
+/* 
+*   Originally written to create mission-specific variables
+*
+*   Can be repurposed to create the same style of variables for a
+*   less mission-oriented game.
+*/
 missionStart = false;
 
 shirtFound = false;
