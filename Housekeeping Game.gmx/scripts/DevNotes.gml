@@ -861,3 +861,8 @@ Clean-up
 Beginning to add resource management
 - Repurposing EvidenceParent to serve as a clickable object
     which can easily add items to inventory
+    
+Inventory system adjustments
+- Made adjustments to ItemAdd to allow for item numbers to be
+    increased in the ds_map. Also EvidenceLMB now checks for a numeric
+    value before deleting an object.

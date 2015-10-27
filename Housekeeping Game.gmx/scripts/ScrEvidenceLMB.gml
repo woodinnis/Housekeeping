@@ -5,9 +5,11 @@ iAm = other.object_index;
 
 ScrItemAdd(Key,Value);
 
-with(other)
-    instance_destroy();
-
+if(!is_real(other.Value))
+{
+    with(other)
+        instance_destroy();
+}
 /*
 if(!ObjOverlord.drawShirt && !ObjOverlord.drawDocs && !ObjOverlord.drawNote)
 {

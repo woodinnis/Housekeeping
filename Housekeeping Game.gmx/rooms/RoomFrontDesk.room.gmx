@@ -54,6 +54,7 @@
     <instance objName="ObjOverlord" x="0" y="0" name="inst_7561E986" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjUI" x="32" y="32" name="inst_60B14976" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="DEBUG" x="64" y="64" name="inst_F2275C8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ObjInventory" x="32" y="64" name="inst_E107FA14" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjPlayerHall" x="512" y="344" name="inst_66B32D1B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjFrontDesk" x="736" y="384" name="inst_A59390B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjClerk" x="800" y="224" name="inst_12A177A2" locked="0" code="" scaleX="2.5" scaleY="2.5" colour="4294967295" rotation="0"/>
@@ -70,7 +71,8 @@
     <instance objName="ObjSpawnPt" x="32" y="288" name="inst_90BB151E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjSpawnPt" x="960" y="288" name="inst_F5A6EF9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjElevator" x="224" y="264" name="inst_4AB8AE71" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjInventory" x="32" y="64" name="inst_E107FA14" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ObjBleach" x="672" y="264" name="inst_FC321E3B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ObjEvidenceDocs" x="928" y="272" name="inst_61FE7801" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="BGLiftSign" x="160" y="8" w="128" h="32" xo="0" yo="0" id="10001823" name="inst_17335F23" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

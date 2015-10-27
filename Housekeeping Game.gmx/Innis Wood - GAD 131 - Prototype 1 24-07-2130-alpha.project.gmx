@@ -137,6 +137,7 @@
     <sprite>sprites\spr_border</sprite>
     <sprite>sprites\spr_items</sprite>
     <sprite>sprites\SprLiftSign</sprite>
+    <sprite>sprites\SprBleach</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BG_tester</background>
@@ -288,7 +289,7 @@
       <object>objects\ObjEvidenceParent</object>
       <object>objects\ObjEvidenceShirt</object>
       <object>objects\ObjEvidenceDocs</object>
-      <object>objects\ObjEvidenceNote</object>
+      <object>objects\ObjBleach</object>
       <object>objects\ObjEvidenceLaptop</object>
       <object>objects\ObjEvidencePhone</object>
     </objects>
