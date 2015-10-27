@@ -66,7 +66,7 @@ if(room == RoomHallway)
     }
 }
 
-// Spawn people in the lobby
+/* Spawn people in the lobby
 if(room == RoomFrontDesk)
 {
     if(instance_exists(ObjSpawnParent))
@@ -82,7 +82,7 @@ if(room == RoomFrontDesk)
         instance_create(spawnHere.x, spawnHere.y,ObjPerson)
     }
 }
-
+*/
 // Show or hide the inventory bar
 if(room != RoomMenu)
 {

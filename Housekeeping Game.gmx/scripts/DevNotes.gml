@@ -866,3 +866,10 @@ Inventory system adjustments
 - Made adjustments to ItemAdd to allow for item numbers to be
     increased in the ds_map. Also EvidenceLMB now checks for a numeric
     value before deleting an object.
+    
+Resource management basics implemented
+- RoomObjectLMB now checks for the presence of specific items in
+    the inventory ds_map before performing actions for each object.
+- ItemDrop adjusted to accept a second (optional) argument as a
+    value. Similar to ItemAdd the ds_map value is checked and
+    adjusted accordingly.

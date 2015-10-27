@@ -68,11 +68,10 @@
     <instance objName="ObjBarrier" x="1008" y="256" name="inst_25646FAC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjBarrier" x="1008" y="288" name="inst_0206CEEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjBarrier" x="1008" y="320" name="inst_94C25CB7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSpawnPt" x="32" y="288" name="inst_90BB151E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSpawnPt" x="960" y="288" name="inst_F5A6EF9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjElevator" x="224" y="264" name="inst_4AB8AE71" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjBleach" x="672" y="264" name="inst_FC321E3B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjEvidenceDocs" x="928" y="272" name="inst_61FE7801" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ObjBleach" x="640" y="264" name="inst_FC321E3B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ObjSheets" x="960" y="272" name="inst_61FE7801" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ObjTowels" x="800" y="280" name="inst_30C0EB72" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="BGLiftSign" x="160" y="8" w="128" h="32" xo="0" yo="0" id="10001823" name="inst_17335F23" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
