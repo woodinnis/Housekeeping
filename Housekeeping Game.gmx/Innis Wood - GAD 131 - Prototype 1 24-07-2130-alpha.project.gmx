@@ -292,7 +292,7 @@
       <object>objects\ObjTowels</object>
       <object>objects\ObjSheets</object>
       <object>objects\ObjBleach</object>
-      <object>objects\ObjEvidenceLaptop</object>
+      <object>objects\ObjLaptop</object>
       <object>objects\ObjEvidencePhone</object>
     </objects>
     <objects name="Door">
@@ -325,7 +325,7 @@
     <room>rooms\RoomRoomLg</room>
     <room>rooms\RoomMain</room>
   </rooms>
-  <constants number="41">
+  <constants number="42">
     <constant name="INTROMSG1">"It's the height of the Cold War. You are MI6's finest,#working undercover in Paris's poshest hotel.#Work with your partner at the front desk#to take on the Soviet threat."</constant>
     <constant name="INTROMSG2">"Get assignments from your partner at the front desk.#Help prevent a war##Click to continue"</constant>
     <constant name="INTROMSG3">"Move with the mouse or keyboard.##Click to interact with people or objects."</constant>
@@ -367,6 +367,7 @@
     <constant name="INVSHEETS">"Bed Sheets"</constant>
     <constant name="INVBLEACH">"Bleach"</constant>
     <constant name="INVTOWELS">"Bathroom Towels"</constant>
+    <constant name="INVLAPTOP">"Laptop"</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

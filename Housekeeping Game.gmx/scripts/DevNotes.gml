@@ -873,3 +873,7 @@ Resource management basics implemented
 - ItemDrop adjusted to accept a second (optional) argument as a
     value. Similar to ItemAdd the ds_map value is checked and
     adjusted accordingly.
+    
+Optional arguments
+- Fixed a small bug in ItemDrop that was preventing the use of single-argument calls
+    All items can now be removed from inventory.
