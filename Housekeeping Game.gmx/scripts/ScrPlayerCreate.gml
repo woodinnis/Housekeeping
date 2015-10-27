@@ -1,8 +1,6 @@
 // Set Player Variables
 touchingClerk = false;
-touchingDoor = false;
 missionReceived = false;
-enterDoor = true;
 
 moveSpeed = PLAYERSPEED;
 image_speed = 0;

@@ -1,4 +1,13 @@
-// Perform each frame
+/*
+*   Perform code on each frame
+*   
+*/
+
+/*
+*   Intro UI and Clerk interaction scripting.
+*   These could both be moved into their own scripts if/when they are
+*   reimplemented
+
 if(!ObjOverlord.introRead)
 {
     // Prevent player from moving until intro has been read
@@ -26,28 +35,4 @@ if(place_meeting(x,y,ObjClerk))
 }
 else
     touchingClerk = false;
-
-// Show a message when trying to enter an elevator without starting a mission
-if(!ObjOverlord.missionStart)
-{   
-    if(place_meeting(x,y,ObjElevator))   
-        ObjOverlord.drawMissionStart = true;
-    else
-        ObjOverlord.drawMissionStart = false;
-}
-
-// Show a message when trying to enter a door marked as Do Not Disturb
-if(place_meeting(x,y,ObjDoor))
-{
-    // Identify the door currently being touched
-    Door = instance_place(x,y,ObjDoor);
-    
-    // Whether or not to display DND message
-    touchingDoor = true;
-    if((Door.enterMe mod 5) == 0)
-        enterDoor = false;
-    else
-        enterDoor = true;
-}
-else
-    touchingDoor = false;
+*/

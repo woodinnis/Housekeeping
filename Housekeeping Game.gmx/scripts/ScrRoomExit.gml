@@ -24,25 +24,10 @@ switch(room)
         {
             room_goto(RoomFrontDesk);
         }
-        // Enter a room
-        else
-        {   
-            // Enter room if door is available
-            if(enterDoor)
-            {
-                roomNumber = round(random(100));
-                if(roomNumber mod 2 == 1)
-                {
-                    room_goto(RoomRoomSm);
-                    //room_goto(RoomRoomLg);
-                }
-                else
-                {
-                    room_goto(RoomRoomLg);
-                    //room_goto(RoomRoomSm);
-                }
-            }
-        }
+        // This used to contain the code for entering Large and Small
+        // rooms. It could still be used to add a storage room, or
+        // basement.
+        
         break;
     }
     case RoomRoomSm:

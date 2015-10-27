@@ -1,3 +1,11 @@
+/*
+*   This is for UI elements related to Items found while cleaning rooms
+*
+*   It was originally written for use with clues, as a spy game,
+*   however it can be repurposed for use simply with found objects.
+*/
+
+
 // Notify player that a clue has been found
 if(room != RoomHallway)
 {

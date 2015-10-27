@@ -832,3 +832,26 @@ Created Parent object for object pickup
 Created test child object for object pickup
 - Created create script for PickupParent, with Key,Value variables
 - Variables can be set in Create event of child
+
+// October 26, 2015 //
+
+Beginning to remove "Spy" theme from game
+- Removed Game intro messages, and reading requirements
+    The code is still available, and perhaps could be reimplemented
+    with a new theme.
+- Movement is now available immediately
+
+Clues have been effectively removed
+- Removed ClueCreate, Collect scripts. Items will still spawn when
+    cleaning rooms, but they no longer serve a purpose.
+- The object can be repurposed later
+
+Several old functions removed
+- FuncMess, Clue, MessPlace have all been removed. These functions
+    no longer serve a purpose, and/or have duplicate functionality
+    elsewhere in the programme.
+    
+Clean-up
+- Removed ScrCall, which was a long holdover from an earlier version
+    also added important comments in two scripts: EvidencePlace
+    and MissionChecks, on how they can be repurposed.
