@@ -137,6 +137,9 @@
     <sprite>sprites\spr_border</sprite>
     <sprite>sprites\spr_items</sprite>
     <sprite>sprites\SprLiftSign</sprite>
+    <sprite>sprites\SprBleach</sprite>
+    <sprite>sprites\SprTowels</sprite>
+    <sprite>sprites\SprSheets</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BG_tester</background>
@@ -286,11 +289,11 @@
     </objects>
     <objects name="Evidence">
       <object>objects\ObjEvidenceParent</object>
-      <object>objects\ObjEvidenceShirt</object>
-      <object>objects\ObjEvidenceDocs</object>
-      <object>objects\ObjEvidenceLaptop</object>
+      <object>objects\ObjTowels</object>
+      <object>objects\ObjSheets</object>
+      <object>objects\ObjBleach</object>
+      <object>objects\ObjLaptop</object>
       <object>objects\ObjEvidencePhone</object>
-      <object>objects\ObjEvidenceNote</object>
     </objects>
     <objects name="Door">
       <object>objects\ObjDoor</object>
@@ -322,7 +325,7 @@
     <room>rooms\RoomRoomLg</room>
     <room>rooms\RoomMain</room>
   </rooms>
-  <constants number="38">
+  <constants number="42">
     <constant name="INTROMSG1">"It's the height of the Cold War. You are MI6's finest,#working undercover in Paris's poshest hotel.#Work with your partner at the front desk#to take on the Soviet threat."</constant>
     <constant name="INTROMSG2">"Get assignments from your partner at the front desk.#Help prevent a war##Click to continue"</constant>
     <constant name="INTROMSG3">"Move with the mouse or keyboard.##Click to interact with people or objects."</constant>
@@ -361,6 +364,10 @@
     <constant name="INVSCALE">128</constant>
     <constant name="INVITEMX">100</constant>
     <constant name="INVITEMY">60</constant>
+    <constant name="INVSHEETS">"Bed Sheets"</constant>
+    <constant name="INVBLEACH">"Bleach"</constant>
+    <constant name="INVTOWELS">"Bathroom Towels"</constant>
+    <constant name="INVLAPTOP">"Laptop"</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

@@ -68,7 +68,7 @@
           <argument>
             <kind>1</kind>
             <string>// Testing romove function
-ScrItemDrop("Petunias")
+ScrItemDrop(INVLAPTOP)
 </string>
           </argument>
         </arguments>

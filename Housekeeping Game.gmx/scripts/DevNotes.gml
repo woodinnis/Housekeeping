@@ -855,3 +855,25 @@ Clean-up
 - Removed ScrCall, which was a long holdover from an earlier version
     also added important comments in two scripts: EvidencePlace
     and MissionChecks, on how they can be repurposed.
+    
+// October 27, 2015 //
+
+Beginning to add resource management
+- Repurposing EvidenceParent to serve as a clickable object
+    which can easily add items to inventory
+    
+Inventory system adjustments
+- Made adjustments to ItemAdd to allow for item numbers to be
+    increased in the ds_map. Also EvidenceLMB now checks for a numeric
+    value before deleting an object.
+    
+Resource management basics implemented
+- RoomObjectLMB now checks for the presence of specific items in
+    the inventory ds_map before performing actions for each object.
+- ItemDrop adjusted to accept a second (optional) argument as a
+    value. Similar to ItemAdd the ds_map value is checked and
+    adjusted accordingly.
+    
+Optional arguments
+- Fixed a small bug in ItemDrop that was preventing the use of single-argument calls
+    All items can now be removed from inventory.
