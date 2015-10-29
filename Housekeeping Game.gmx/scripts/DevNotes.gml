@@ -883,3 +883,7 @@ Optional arguments
 Mission Pickups
 - Added objects, sprites, and macros for mission pickups. All Mission pickups are
     currently parented to EvidenceParent to use click-to-add inventory function.
+    
+Pathing
+- Two paths created to use for mission NPCs. Pathing has been tested with placeholder
+    objects, and is functional both absolute and relative.

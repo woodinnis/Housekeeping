@@ -159,7 +159,10 @@
     <background>background\BGLiftSign</background>
     <background>background\BGMain</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\pathHallway</path>
+    <path>paths\pathRoom</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\DevNotes.gml</script>
     <scripts name="Overlord">
