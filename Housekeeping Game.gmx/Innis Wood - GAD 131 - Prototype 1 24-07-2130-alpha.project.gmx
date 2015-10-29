@@ -120,6 +120,14 @@
       <sprite>sprites\SprRoomDoor</sprite>
       <sprite>sprites\SprElevator</sprite>
     </sprites>
+    <sprites name="Items">
+      <sprite>sprites\SprTowels</sprite>
+      <sprite>sprites\SprBleach</sprite>
+      <sprite>sprites\SprSheets</sprite>
+      <sprite>sprites\SprDocument</sprite>
+      <sprite>sprites\SprLetter</sprite>
+      <sprite>sprites\SprAd</sprite>
+    </sprites>
     <sprites name="Room">
       <sprite>sprites\SprBed</sprite>
       <sprite>sprites\SprToilet</sprite>
@@ -137,9 +145,6 @@
     <sprite>sprites\spr_border</sprite>
     <sprite>sprites\spr_items</sprite>
     <sprite>sprites\SprLiftSign</sprite>
-    <sprite>sprites\SprBleach</sprite>
-    <sprite>sprites\SprTowels</sprite>
-    <sprite>sprites\SprSheets</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BG_tester</background>
@@ -294,6 +299,9 @@
       <object>objects\ObjBleach</object>
       <object>objects\ObjLaptop</object>
       <object>objects\ObjEvidencePhone</object>
+      <object>objects\ObjDocument</object>
+      <object>objects\ObjLetter</object>
+      <object>objects\ObjAd</object>
     </objects>
     <objects name="Door">
       <object>objects\ObjDoor</object>
@@ -325,7 +333,7 @@
     <room>rooms\RoomRoomLg</room>
     <room>rooms\RoomMain</room>
   </rooms>
-  <constants number="42">
+  <constants number="57">
     <constant name="INTROMSG1">"It's the height of the Cold War. You are MI6's finest,#working undercover in Paris's poshest hotel.#Work with your partner at the front desk#to take on the Soviet threat."</constant>
     <constant name="INTROMSG2">"Get assignments from your partner at the front desk.#Help prevent a war##Click to continue"</constant>
     <constant name="INTROMSG3">"Move with the mouse or keyboard.##Click to interact with people or objects."</constant>
@@ -368,6 +376,21 @@
     <constant name="INVBLEACH">"Bleach"</constant>
     <constant name="INVTOWELS">"Bathroom Towels"</constant>
     <constant name="INVLAPTOP">"Laptop"</constant>
+    <constant name="INVDOC">"Document"</constant>
+    <constant name="INVLETTER">"Letter"</constant>
+    <constant name="INVAD">"Advertisement"</constant>
+    <constant name="DOC1">"BigCorp Financial Records Q1"</constant>
+    <constant name="DOC2">"BigCorp Payroll Records Q1"</constant>
+    <constant name="DOC3">"Joe's Shipping Receipts August"</constant>
+    <constant name="LET1">"Dear John,"</constant>
+    <constant name="LET2">"Dear Sir,"</constant>
+    <constant name="LET3">"Dear Jane,"</constant>
+    <constant name="AD1">"Cheap, fast, 2-for-1 Pizza!"</constant>
+    <constant name="AD2">"Brick-oven pizza. Made with organic ingredients, in the traditional style."</constant>
+    <constant name="AD3">"Coin-Laundry. One-hour cycle, wash and dry! Detergent for sale at the counter."</constant>
+    <constant name="AD4">"Traditional French-style Laundry. Get your cloths clean, and smelling as fresh as the south of France!"</constant>
+    <constant name="AD5">"KwickKar Rent-a-Car! We'll get you in and out in 15 minutes, and the first day in on us!"</constant>
+    <constant name="AD6">"Luxury Auto Vehicle Rental Services. Call for an appointment with one of our rental agents, we will find the perfect vehicle for your needs. Chauffeurs available upon request."</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

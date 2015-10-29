@@ -877,3 +877,9 @@ Resource management basics implemented
 Optional arguments
 - Fixed a small bug in ItemDrop that was preventing the use of single-argument calls
     All items can now be removed from inventory.
+    
+// October 29, 2015 //
+
+Mission Pickups
+- Added objects, sprites, and macros for mission pickups. All Mission pickups are
+    currently parented to EvidenceParent to use click-to-add inventory function.
