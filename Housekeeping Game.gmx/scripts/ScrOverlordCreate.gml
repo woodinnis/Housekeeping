@@ -12,13 +12,12 @@ clockTick = 0;
 
 // Game level variable
 globalvar currentLevel;
-globalvar currentScore;
+
 globalvar shiftTime;
 currentLevel = LEVEL001;    // Set Starting level to 001
-currentScore = 0;           // Set Starting score to 0;
+
 shiftTime = SHIFTTIME;      // Set Shift length the player has to work (in minutes)
 
-currentGoal = SCORE001;     // Set Starting goal
 enteredRoom = false;        // Checkin to see if the player has entered a room
 
 

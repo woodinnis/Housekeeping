@@ -904,3 +904,8 @@ UI Elements
 - cleanCount has been made global to facilitate easier HUD integration.
 - cleanCount now increments with each valid LMB click on a Room object. This has been 
     tested both using DEBUG, and a basic draw_text on the HUD.
+    
+Progress checking
+- ScoreUI has been rewritten to display cleanCount in top left corner of the screen.
+- Several more small blocks of unused code have been removed.
+- All LEVEL macros have been adjusted to appropriate values for the new system.
