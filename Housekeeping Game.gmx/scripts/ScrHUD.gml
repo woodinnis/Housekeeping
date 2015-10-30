@@ -1,7 +1,11 @@
 // Retrive variables
-cleanCount = ObjOverlord.cleanCount;
 messCollected = ObjOverlord.messCollected;
 drawNotClean = ObjOverlord.drawNotClean;
+
+if(room == RoomFrontDesk || room == RoomMain)
+{
+    draw_text(50,50,cleanCount);
+}
 
 /* At the Front Desk
 if(room == RoomFrontDesk)

@@ -899,3 +899,8 @@ Massive code cleanup
 - Removed several blocks of unused and obsolete code in preparation for adding new
     functionality. Primarily UI and/or old mission variables. Tested for functionality.
 - Added a new variable/Macro combo for shiftTime. This will be used for shift timers.
+
+UI Elements
+- cleanCount has been made global to facilitate easier HUD integration.
+- cleanCount now increments with each valid LMB click on a Room object. This has been 
+    tested both using DEBUG, and a basic draw_text on the HUD.

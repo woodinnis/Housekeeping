@@ -1,4 +1,8 @@
-// Only change properties if object is within line-of-sight
+/* 
+*   Check to see if a clicked object is withing line-of-sight
+*   
+*   If true, change its properties to show it as cleaned, and increment cleanCount
+*/
 show_debug_message(name)
 
 
@@ -12,6 +16,7 @@ if(!collision_line(x, y,ObjPlayerRoom.x,ObjPlayerRoom.y,ObjBarrier, false,true))
             {
                 image_index = 0;
                 ScrItemDrop(INVSHEETS, 1);
+                cleanCount++;
                 break;
             }
             else
@@ -23,6 +28,7 @@ if(!collision_line(x, y,ObjPlayerRoom.x,ObjPlayerRoom.y,ObjBarrier, false,true))
             {
                 image_index = 0;
                 ScrItemDrop(INVBLEACH, 1);
+                cleanCount++;
                 break;
             }
             else
@@ -34,6 +40,7 @@ if(!collision_line(x, y,ObjPlayerRoom.x,ObjPlayerRoom.y,ObjBarrier, false,true))
             {
                 image_index = 0;
                 ScrItemDrop(INVTOWELS, 1);
+                cleanCount++;
                 break;
             }
             else
@@ -42,6 +49,7 @@ if(!collision_line(x, y,ObjPlayerRoom.x,ObjPlayerRoom.y,ObjBarrier, false,true))
         case "chair":
         {
             image_index = 0;
+            cleanCount++;
             break;
         }
         default:
