@@ -202,8 +202,6 @@
       <script>scripts\alignUI.gml</script>
     </scripts>
     <scripts name="Evidence">
-      <script>scripts\ScrEvidenceStep.gml</script>
-      <script>scripts\ScrEvidenceCollect.gml</script>
       <script>scripts\ScrEvidenceLMB.gml</script>
     </scripts>
     <scripts name="Clerk">
@@ -364,7 +362,7 @@
     <constant name="CLUE01">2</constant>
     <constant name="CLUE02">3</constant>
     <constant name="CLUE03">4</constant>
-    <constant name="CRIME000">0</constant>
+    <constant name="SHIFTTIME">8</constant>
     <constant name="CRIME001">1</constant>
     <constant name="CRIME002">2</constant>
     <constant name="CRIME003">3</constant>

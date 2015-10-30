@@ -1,4 +1,9 @@
-// Set internal variables
+/*
+*   Check the current ds_grid data against argument0, and any current items in inventory
+*   Return one of the entries in the ds_grid for use by the calling function
+*/
+
+/*
 myCrime = argument0;
 
 clueData = "";

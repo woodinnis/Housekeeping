@@ -894,3 +894,8 @@ Beginning of Daily shifts and escalation
 - Modified the former messCount variable into cleanCount. Will now track # of items
     cleaned. All functional script and object references to messCount have been
     adjusted or removed. cleanCount added to DEBUG.
+    
+Massive code cleanup
+- Removed several blocks of unused and obsolete code in preparation for adding new
+    functionality. Primarily UI and/or old mission variables. Tested for functionality.
+- Added a new variable/Macro combo for shiftTime. This will be used for shift timers.
