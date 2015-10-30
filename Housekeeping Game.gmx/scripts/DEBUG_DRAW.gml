@@ -11,7 +11,7 @@ if(debug)
     draw_text(20, bottom - 120, "Received! " + string(ObjPlayerParent.missionReceived));
     draw_text(20, bottom - 110, "TOUCHING! " + string(ObjPlayerParent.touchingClerk));
     draw_text(20, bottom - 100, "Mission: " + string(ObjOverlord.missionStart));
-    draw_text(20, bottom - 90, "Crime " + string(currentCrime));
+    draw_text(20, bottom - 90, "Objects Cleaned: " + string(ObjOverlord.cleanCount));
     draw_text(20, bottom - 80, "Level " + string(currentLevel));
     draw_text(20, bottom - 70, "Score " + string(currentScore));
     draw_text(20, bottom - 60, "Goal " + string(ObjOverlord.currentGoal));
@@ -32,11 +32,5 @@ if(debug)
     
         if(room != RoomHallway && room != RoomFrontDesk)
             draw_text(20, bottom - 20, "Check True " + string(ObjOverlord.checkTrue));
-    }
-    
-    if(room == RoomMain)
-    {
-        draw_set_alpha(0.3);
-        mp_grid_draw(ObjMpGrid.moveGrid);
     }
 }

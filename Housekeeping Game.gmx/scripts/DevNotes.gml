@@ -887,3 +887,10 @@ Mission Pickups
 Pathing
 - Two paths created to use for mission NPCs. Pathing has been tested with placeholder
     objects, and is functional both absolute and relative.
+    
+// October 30, 2015 //
+
+Beginning of Daily shifts and escalation
+- Modified the former messCount variable into cleanCount. Will now track # of items
+    cleaned. All functional script and object references to messCount have been
+    adjusted or removed. cleanCount added to DEBUG.

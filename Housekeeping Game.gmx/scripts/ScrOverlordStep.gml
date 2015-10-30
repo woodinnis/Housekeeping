@@ -36,7 +36,17 @@ if(room != RoomHallway && room != RoomFrontDesk)
     }
 }
 
-// In Hallway
+// Show or hide the inventory bar
+if(room != RoomMenu)
+{
+    if(keyboard_check_pressed(ord("I")))
+        if(showInv)
+            showInv = false;
+        else
+            showInv = true;
+}
+
+/* In Hallway
 if(room == RoomHallway)
 {
     // Reset number of mess items to zero
@@ -66,7 +76,7 @@ if(room == RoomHallway)
     }
 }
 
-/* Spawn people in the lobby
+// Spawn people in the lobby
 if(room == RoomFrontDesk)
 {
     if(instance_exists(ObjSpawnParent))
@@ -83,12 +93,4 @@ if(room == RoomFrontDesk)
     }
 }
 */
-// Show or hide the inventory bar
-if(room != RoomMenu)
-{
-    if(keyboard_check_pressed(ord("I")))
-        if(showInv)
-            showInv = false;
-        else
-            showInv = true;
-}
+

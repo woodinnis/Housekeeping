@@ -1,5 +1,5 @@
 // Retrive variables
-messNum = ObjOverlord.messNum;
+cleanCount = ObjOverlord.cleanCount;
 messCollected = ObjOverlord.messCollected;
 drawNotClean = ObjOverlord.drawNotClean;
 

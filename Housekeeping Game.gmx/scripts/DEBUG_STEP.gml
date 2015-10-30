@@ -12,7 +12,7 @@ if(debug)
 {
     if(keyboard_check_pressed(ord("P")))
     {
-        ObjOverlord.messNum = 0;    // Clean room
+        ObjOverlord.cleanCount = 0;    // Clean room
     }
     if(keyboard_check_pressed(ord("S")))
     {

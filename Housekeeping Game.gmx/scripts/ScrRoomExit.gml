@@ -32,11 +32,11 @@ switch(room)
     }
     case RoomRoomSm:
     case RoomRoomLg:
-        if(ObjOverlord.messNum <= 0)
+//        if(ObjOverlord.messNum <= 0)
         {
             room_goto(RoomHallway);
         }
-        else
+//        else
         {
             ObjOverlord.drawNotClean = true;
             x = x + 1;
