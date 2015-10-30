@@ -318,6 +318,7 @@
       <object>objects\ObjRoomParent</object>
     </objects>
     <object>objects\ObjMpGrid</object>
+    <object>objects\ObjTimer</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\RoomMenu</room>
@@ -349,7 +350,7 @@
     <constant name="LEVEL010">120</constant>
     <constant name="ROOMMSG">"Objects Cleaned: "</constant>
     <constant name="CASHMSG">"Money Available: "</constant>
-    <constant name="SCORE003">5</constant>
+    <constant name="WAGE">10</constant>
     <constant name="CRIME">0</constant>
     <constant name="EVIDENCE">1</constant>
     <constant name="CLUE01">2</constant>

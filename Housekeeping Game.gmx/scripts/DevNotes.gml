@@ -914,3 +914,9 @@ Money system
 - A basic money system has been implemented. Globale variable totalCash has been added
     and a starting amount has been set with the STARTCASH Macro. Price values have been
     given to cleaning items. Values are deducted in EvidenceLMB. Tested successfully.
+    
+Earning money
+- A simple timer has been implemented (ObjTimer) which uses Macro SHIFTTIME* to set
+    its alarm. A Macro WAGE has also been created. When Timer has counted down, the 
+    value of cleanCount is multiplied by the value of WAGE and added to totalCash.
+    cleanCount is reset, and the player is sent to RoomFrontDesk.

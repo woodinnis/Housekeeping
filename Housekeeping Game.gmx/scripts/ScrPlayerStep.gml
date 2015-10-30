@@ -3,6 +3,14 @@
 *   
 */
 
+if(!shiftStart)
+{
+    room_goto(RoomFrontDesk);
+    totalCash += (cleanCount * WAGE);
+    shiftStart = true;
+    cleanCount = 0;
+}
+
 /*
 *   Intro UI and Clerk interaction scripting.
 *   These could both be moved into their own scripts if/when they are
