@@ -5,6 +5,9 @@ iAm = other.object_index;
 
 ScrItemAdd(Key,Value);
 
+if(!is_undefined(Price))
+    totalCash -= Price;
+
 if(!is_real(other.Value))
 {
     with(other)

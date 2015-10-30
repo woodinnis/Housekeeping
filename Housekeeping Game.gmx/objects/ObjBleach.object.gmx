@@ -28,6 +28,7 @@
             <string>event_inherited();
 Key = INVBLEACH;
 Value = 1;
+Price = 5;
 </string>
           </argument>
         </arguments>

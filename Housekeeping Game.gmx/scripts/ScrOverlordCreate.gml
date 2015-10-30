@@ -12,13 +12,11 @@ clockTick = 0;
 
 // Game level variable
 globalvar currentLevel;
-
 globalvar shiftTime;
+globalvar totalCash;
 currentLevel = LEVEL001;    // Set Starting level to 001
-
-shiftTime = SHIFTTIME;      // Set Shift length the player has to work (in minutes)
-
-enteredRoom = false;        // Checkin to see if the player has entered a room
+shiftTime = SHIFTTIME01;      // Set Shift length the player has to work (in minutes)
+totalCash = STARTCASH;      // Set the amount of money available to the player at game start
 
 
 lvlNum = 1.0;

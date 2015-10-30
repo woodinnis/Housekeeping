@@ -909,3 +909,8 @@ Progress checking
 - ScoreUI has been rewritten to display cleanCount in top left corner of the screen.
 - Several more small blocks of unused code have been removed.
 - All LEVEL macros have been adjusted to appropriate values for the new system.
+
+Money system
+- A basic money system has been implemented. Globale variable totalCash has been added
+    and a starting amount has been set with the STARTCASH Macro. Price values have been
+    given to cleaning items. Values are deducted in EvidenceLMB. Tested successfully.
