@@ -233,7 +233,7 @@
     </scripts>
     <script>scripts\buildGrid.gml</script>
     <scripts name="Timer">
-      <script>scripts\ScrTimerNewLevel.gml</script>
+      <script>scripts\NewLevel.gml</script>
       <script>scripts\ScrTimerStep.gml</script>
     </scripts>
   </scripts>
@@ -359,7 +359,7 @@
     <constant name="CLUE01">2</constant>
     <constant name="CLUE02">3</constant>
     <constant name="CLUE03">4</constant>
-    <constant name="SHIFTTIME01">2</constant>
+    <constant name="SHIFTTIME01">1</constant>
     <constant name="SHIFTTIME02">4</constant>
     <constant name="SHIFTTIME03">6</constant>
     <constant name="SHIFTTIME04">8</constant>

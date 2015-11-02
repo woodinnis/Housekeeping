@@ -3,14 +3,17 @@
 *   to the next LEVEL* in progression
 */
 
-
-if(newLevel)
+if(!newLevel)
 {
+        show_debug_message("new level");
     switch(currentLevel)
     {
         case LEVEL001:
         {
             currentLevel = LEVEL002;
+            show_debug_message("level " + string(currentLevel));
+            shiftTime = SHIFTTIME04;
+            show_debug_message("Shift " + string(shiftTime));
             break;
         }
         case LEVEL002:

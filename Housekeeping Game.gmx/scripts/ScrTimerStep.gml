@@ -28,7 +28,7 @@ if(newShift)    // Perform if a new shift is starting
             if(cleanCount >= currentLevel)
             {
                 totalCash += currentLevel;
-                newLevel = true;
+                NewLevel();
             }
             
             // Adjust player variables

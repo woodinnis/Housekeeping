@@ -934,3 +934,9 @@ Escalation
     to totalCash if true, as well as throwing a switch for TimerNewLevel to increment
     LEVEL*
 - Added a function to DEBUG to manually adjust the value of cleanCount (press "S")
+
+Shift Length
+- TimerNewLevel converted to NewLevel()
+- The newLevel switch in TimerStep has been replaced with a call to NewLevel(). The
+    function performs all the same operations. NewLevel also now adjusts the value of
+    shiftTime when the player reaches certain milestones.
