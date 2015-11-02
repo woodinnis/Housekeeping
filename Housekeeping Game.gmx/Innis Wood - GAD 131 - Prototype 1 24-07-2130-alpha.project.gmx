@@ -168,7 +168,6 @@
     <scripts name="Overlord">
       <script>scripts\ScrOverlordCreate.gml</script>
       <script>scripts\ScrMissionChecks.gml</script>
-      <script>scripts\ScrOverlordStep.gml</script>
       <script>scripts\ScrEvidencePlace.gml</script>
       <script>scripts\ScrOvlerlordGlobLMB.gml</script>
     </scripts>
@@ -233,7 +232,10 @@
       <script>scripts\ScrJSONRead.gml</script>
     </scripts>
     <script>scripts\buildGrid.gml</script>
-    <script>scripts\ScrTimerStep.gml</script>
+    <scripts name="Timer">
+      <script>scripts\ScrTimerNewLevel.gml</script>
+      <script>scripts\ScrTimerStep.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fontDEBUG</font>
@@ -339,16 +341,16 @@
     <constant name="EVIDENCERANDOM">25</constant>
     <constant name="DONOTDISTURB">"A Sign On The Door Reads #'Do Not Disturb'"</constant>
     <constant name="NOTCLEAN">"You Have Not Finished Cleaning This Room"</constant>
-    <constant name="LEVEL001">30</constant>
-    <constant name="LEVEL002">40</constant>
-    <constant name="LEVEL003">50</constant>
-    <constant name="LEVEL004">60</constant>
-    <constant name="LEVEL005">70</constant>
-    <constant name="LEVEL006">80</constant>
-    <constant name="LEVEL007">90</constant>
-    <constant name="LEVEL008">100</constant>
-    <constant name="LEVEL009">110</constant>
-    <constant name="LEVEL010">120</constant>
+    <constant name="LEVEL001">20</constant>
+    <constant name="LEVEL002">30</constant>
+    <constant name="LEVEL003">40</constant>
+    <constant name="LEVEL004">50</constant>
+    <constant name="LEVEL005">60</constant>
+    <constant name="LEVEL006">70</constant>
+    <constant name="LEVEL007">80</constant>
+    <constant name="LEVEL008">90</constant>
+    <constant name="LEVEL009">100</constant>
+    <constant name="LEVEL010">110</constant>
     <constant name="ROOMMSG">"Objects Cleaned: "</constant>
     <constant name="CASHMSG">"Money Available: "</constant>
     <constant name="WAGE">10</constant>

@@ -16,7 +16,7 @@ if(debug)
     }
     if(keyboard_check_pressed(ord("S")))
     {
-        ObjOverlord.drawSolution = true;    // Set victory conditions to true
+        cleanCount = get_integer("Set Number of Cleaned Items", 0)
     }
     
     if(keyboard_check_pressed(ord("E")))

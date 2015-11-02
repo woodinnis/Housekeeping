@@ -927,3 +927,10 @@ Shifts
 - Rewrote much of ObjTimer to better facilitate the shift mechanic. Player can now go
     back to FrontDesk to purchase more supplies without resetting the shift timer.
 - All player code and logic for shift restart has been moved to the timer.
+
+Escalation
+- Repurposed OverlordStep as TimerNewLevel
+- Added a check in TimerStep for cleanCount >= LEVEL* This gives the player a bonus
+    to totalCash if true, as well as throwing a switch for TimerNewLevel to increment
+    LEVEL*
+- Added a function to DEBUG to manually adjust the value of cleanCount (press "S")

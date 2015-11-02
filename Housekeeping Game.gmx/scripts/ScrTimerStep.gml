@@ -24,6 +24,13 @@ if(newShift)    // Perform if a new shift is starting
             if(room != RoomFrontDesk)
                 room_goto(RoomFrontDesk);
             
+            // If player has reached a milestone
+            if(cleanCount >= currentLevel)
+            {
+                totalCash += currentLevel;
+                newLevel = true;
+            }
+            
             // Adjust player variables
             totalCash += (cleanCount * WAGE);
             shiftStart = true;
