@@ -920,3 +920,10 @@ Earning money
     its alarm. A Macro WAGE has also been created. When Timer has counted down, the 
     value of cleanCount is multiplied by the value of WAGE and added to totalCash.
     cleanCount is reset, and the player is sent to RoomFrontDesk.
+    
+// November 02, 2015 //
+
+Shifts
+- Rewrote much of ObjTimer to better facilitate the shift mechanic. Player can now go
+    back to FrontDesk to purchase more supplies without resetting the shift timer.
+- All player code and logic for shift restart has been moved to the timer.

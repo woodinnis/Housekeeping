@@ -233,6 +233,7 @@
       <script>scripts\ScrJSONRead.gml</script>
     </scripts>
     <script>scripts\buildGrid.gml</script>
+    <script>scripts\ScrTimerStep.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fontDEBUG</font>

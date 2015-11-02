@@ -1,7 +1,7 @@
 /*
 *   Perform code on each frame
 *   
-*/
+*
 
 if(!shiftStart)
 {
