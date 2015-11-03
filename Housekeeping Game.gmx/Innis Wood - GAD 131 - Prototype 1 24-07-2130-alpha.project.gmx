@@ -267,9 +267,9 @@
       <object>objects\ObjMessSm</object>
     </objects>
     <objects name="Player">
+      <object>objects\ObjPlayerParent</object>
       <object>objects\ObjPlayerRoom</object>
       <object>objects\ObjPlayerHall</object>
-      <object>objects\ObjPlayerParent</object>
     </objects>
     <objects name="NPCs">
       <object>objects\ObjNPCParent</object>

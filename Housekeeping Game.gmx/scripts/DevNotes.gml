@@ -949,3 +949,7 @@ Mission NPCs
     The code checks if player has had a previous collision, and tests which NPC is being 
     collided with. Operations can be expanded considerably. Tested for basic functionality.
     
+Letter Mission
+- Basic functionality of "Old Man in the Hallway" implemented and tested. Colliding with
+    the NPC once triggers a message requesting help. Colliding again, when the item has
+    been found triggers another message.

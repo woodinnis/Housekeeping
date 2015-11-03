@@ -28,6 +28,7 @@
             <string>event_inherited();
 Key = INVLETTER;
 Value = choose(LET1,LET2,LET3);
+Price = 0;
 </string>
           </argument>
         </arguments>
