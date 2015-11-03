@@ -10,44 +10,17 @@ if(!is_undefined(Price))
 
 if(!is_real(other.Value))
 {
+    switch(other.Value)
+    {
+        case LET3:
+        {
+            m = missionList[| 0];
+            m[? "Key Object"] = true;
+            break;   
+        }
+    }
+
     with(other)
         instance_destroy();
 }
-/*
-if(!ObjOverlord.drawShirt && !ObjOverlord.drawDocs && !ObjOverlord.drawNote)
-{
-    switch(iAm)
-    {
-        case ObjEvidenceShirt:
-        {
-//            scr_itemAdd(1);
-            ObjOverlord.drawShirt = true;
-            break;
-        }
-        case ObjEvidenceDocs:
-        {
-//            scr_itemAdd(2);
-            ObjOverlord.drawDocs = true;
-            break;
-        }
-        case ObjEvidenceLaptop:
-        case ObjEvidencePhone:
-        {
-            break;
-        }   
-        case ObjEvidenceNote:
-        {
-//            scr_itemAdd(3);
-            ObjOverlord.drawNote = true;
-            break;
-        }
-        default:
-        {
-            show_message(string(other));
-            break;
-        }
-    }
-}
-
-
 

@@ -12,7 +12,11 @@ with(other)
         {
             case NPC001:    // Old Man in the hallway
             {
-                show_debug_message(missionList[| 0]);
+                m = missionList[| 0];
+                if(m[? "Key Object"])
+                    show_debug_message("That looks like the letter I'm looking for");
+                else
+                    show_debug_message("I'm looking for a letter from my wife.");
                 break;
             }
             case NPC002:    // Maintenance guy
@@ -33,9 +37,11 @@ with(other)
         {
             case NPC001:    // Old man in hallway
             {
-                if(!is_undefined(ds_map_find_value(myInventory, INVLETTER)))
-                    if(ds_map_find_value(myInventory, INVLETTER) == LET3)
-                        show_debug_message("You Found it!");
+                m = missionList[| 0];
+                if(m[? "Key Object"])
+                    show_debug_message("That looks like the letter I'm looking for");
+                else
+                    show_debug_message("I'm still looking for my letter. Have you seen it?");
                 break;
             }
             case NPC002:    // Maintenance Guy
@@ -46,6 +52,5 @@ with(other)
             default:
                 break;
         }
-        NPCMet = true;
     }
 }

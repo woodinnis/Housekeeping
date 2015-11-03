@@ -1,12 +1,24 @@
 /* 
-*   Originally written to create mission-specific variables
+*   Critical mission/quest details built with a ds_List/Map set.
 *
-*   Can be repurposed to create the same style of variables for a
-*   less mission-oriented game.
+*   Each mission's details are placed into a map, which is then entered into a list for
+*   later use.   
 */
+
+quest001 = ds_map_create();
+quest001[? "Name"] = NPC001;
+quest001[? "Started"] = false;
+quest001[? "Complete"] = false;
+quest001[? "Key Object"] = false;
+
+quest002 = ds_map_create(); 
+quest001[? "Name"] = NPC002;
+quest001[? "Started"] = false;
+quest001[? "Complete"] = false;
+quest001[? "Key Object"] = false;
 
 if(ds_exists(missionList,ds_type_list))
 {
-    ds_list_add(missionList,"I've a lost a letter from my wife");
-    ds_list_add(missionList,"That's a nice necklace you have there");
+    missionList[| 0] = quest001;
+    missionList[| 1] = quest002;
 }

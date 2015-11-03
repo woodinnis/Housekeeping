@@ -953,3 +953,9 @@ Letter Mission
 - Basic functionality of "Old Man in the Hallway" implemented and tested. Colliding with
     the NPC once triggers a message requesting help. Colliding again, when the item has
     been found triggers another message.
+    
+Mission Checks
+- Rewrote mission checks to use a ds_list/map set. Each mission's details are entered into
+    a map, which is then placed in a list. The list is used to check the status of various
+    key mission details for later game functions.
+- Letter mission has been rewritten to use this new setup.     
