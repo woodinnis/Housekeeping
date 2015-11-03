@@ -940,3 +940,12 @@ Shift Length
 - The newLevel switch in TimerStep has been replaced with a call to NewLevel(). The
     function performs all the same operations. NewLevel also now adjusts the value of
     shiftTime when the player reaches certain milestones.
+    
+// November 03, 2015 //
+
+Mission NPCs
+- ClueParent has been repurposed as NPCParent
+- Created PlayerNPCCollision to handle structured mission events when colliding with NPCs
+    The code checks if player has had a previous collision, and tests which NPC is being 
+    collided with. Operations can be expanded considerably. Tested for basic functionality.
+    
