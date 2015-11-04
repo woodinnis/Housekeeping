@@ -80,7 +80,7 @@
       </sprites>
       <sprite>sprites\MessSm</sprite>
     </sprites>
-    <sprites name="Clues">
+    <sprites name="NPCs">
       <sprites name="Large">
         <sprite>sprites\ClueLg1</sprite>
         <sprite>sprites\ClueLg2</sprite>
@@ -277,9 +277,14 @@
     </objects>
     <objects name="NPCs">
       <object>objects\ObjNPCParent</object>
-      <object>objects\ObjClueLg</object>
-      <object>objects\ObjClueMd</object>
-      <object>objects\ObjClueSm</object>
+      <object>objects\ObjNPCLobbyWoman</object>
+      <object>objects\ObjNPCMaintenanceGuy</object>
+      <object>objects\ObjLaptopGuy</object>
+      <object>objects\ObjHoodieGuy</object>
+      <object>objects\ObjWhistleblower</object>
+      <object>objects\ObjManInSuit</object>
+      <object>objects\ObjNPCOldMan</object>
+      <object>objects\ObjNPCAdPerson</object>
     </objects>
     <objects name="Spawn">
       <object>objects\ObjSpawnParent</object>
@@ -336,7 +341,7 @@
     <room>rooms\RoomRoomLg</room>
     <room>rooms\RoomMain</room>
   </rooms>
-  <constants number="60">
+  <constants number="78">
     <constant name="INTROMSG1">"It's the height of the Cold War. You are MI6's finest,#working undercover in Paris's poshest hotel.#Work with your partner at the front desk#to take on the Soviet threat."</constant>
     <constant name="INTROMSG2">"Get assignments from your partner at the front desk.#Help prevent a war##Click to continue"</constant>
     <constant name="INTROMSG3">"Move with the mouse or keyboard.##Click to interact with people or objects."</constant>
@@ -395,8 +400,26 @@
     <constant name="AD5">"KwickKar Rent-a-Car! We'll get you in and out in 15 minutes, and the first day in on us!"</constant>
     <constant name="AD6">"Luxury Auto Vehicle Rental Services. Call for an appointment with one of our rental agents, we will find the perfect vehicle for your needs. Chauffeurs available upon request."</constant>
     <constant name="STARTCASH">100</constant>
-    <constant name="NPC001">"Old Man"</constant>
+    <constant name="NPC001">"Lobby Woman"</constant>
     <constant name="NPC002">"Maintenance Guy"</constant>
+    <constant name="NPC003">"Laptop Guy"</constant>
+    <constant name="NPC004">"Hoodie Guy"</constant>
+    <constant name="NPC005">""</constant>
+    <constant name="NPC006">"Whistleblower"</constant>
+    <constant name="NPC007">"Man in Suit"</constant>
+    <constant name="NPC008">""</constant>
+    <constant name="NPC009">"Old Man"</constant>
+    <constant name="NPC010">"Ad Person"</constant>
+    <constant name="NPC001SPEED">0</constant>
+    <constant name="NPC002SPEED">-3</constant>
+    <constant name="NPC003SPEED">0</constant>
+    <constant name="NPC004SPEED">0</constant>
+    <constant name="NPC005SPEED">0</constant>
+    <constant name="NPC006SPEED">0</constant>
+    <constant name="NPC007SPEED">0</constant>
+    <constant name="NPC008SPEED">0</constant>
+    <constant name="NPC009SPEED">2</constant>
+    <constant name="NPC010SPEED">0</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

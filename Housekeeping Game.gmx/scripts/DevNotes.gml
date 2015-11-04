@@ -973,3 +973,8 @@ Mission Dialogue Tree
 - NPC dialogue conditions have been properly worked out. Booleans are set and tested in
     the correct events, and can now be used in NPCDialogueUI as seen fit.
 - Native event scripts from ObjEventNPCParent have been given their own scripts and folder
+
+NPC Objects
+- Objects have been created for all current Mission NPCs Macros for names, and path speeds
+    have also been created.
+- Path settings moved to the individual create event of each NPC, and pathSpeed variable added.

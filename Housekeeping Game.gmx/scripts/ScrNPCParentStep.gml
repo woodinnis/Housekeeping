@@ -11,7 +11,7 @@ if(position_meeting(x,y,ObjPlayerParent))
 }
 else
 {
-    path_speed = 2;
+    path_speed = pathSpeed;
 }
 
 if(NPCMet)
