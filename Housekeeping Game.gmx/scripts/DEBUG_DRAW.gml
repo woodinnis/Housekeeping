@@ -18,6 +18,9 @@ if(debug)
 //    draw_text(20, bottom - 50, "Time Left " + string(ObjTimer.alarm[0]));
 //    draw_text(20, bottom - 40, "Level Over " + string(ObjTimer.levelOver));
     
+    if(position_meeting(ObjNPCParent.x,ObjNPCParent.y,ObjPlayerParent))
+        draw_text(20, bottom - 150, "TOUCHING!");
+    
     if(showEvidence)
     {
         if(ObjOverlord.shirtFound)

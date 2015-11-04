@@ -2,11 +2,12 @@ randomize();
 
 // Variables for the HUD to keep track of cleaning
 globalvar cleanCount;
+globalvar drawNPCDialogue;
 messCollected = true;    // Boolean for HUD use, set to true when the first ObjMess is collected
 cleanCount = 0;          // Used for HUD to count total number of Obj collected by the player
 messType = "";           // Used for setting the image index of ObjMessLg/Md/Sm
 messVar = "";            // Used for setting the image index of ObjMessLg/Md/Sm
-drawNotClean = false;
+drawNPCDialogue = false;
 clockTick = 0;
 
 

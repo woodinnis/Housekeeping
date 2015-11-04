@@ -1,4 +1,4 @@
-// Retrive variables
+/* Retrive variables
 messCollected = ObjOverlord.messCollected;
 drawNotClean = ObjOverlord.drawNotClean;
 

@@ -192,7 +192,7 @@
       <script>scripts\ScrScoreUI.gml</script>
       <script>scripts\ScrClueUI.gml</script>
       <script>scripts\ScrTimerUI.gml</script>
-      <script>scripts\ScrEvidenceUI.gml</script>
+      <script>scripts\ScrNPCDailogueUI.gml</script>
       <script>scripts\ScrClerkUI.gml</script>
       <script>scripts\ScrVictoryUI.gml</script>
       <script>scripts\ScrUICreate.gml</script>

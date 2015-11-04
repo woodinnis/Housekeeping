@@ -1,6 +1,8 @@
+//drawNPCDialogue = true;
+
 /*
 *   When player collides with an NPC, perform checks for mission dialogue
-*/
+*
 
 with(other)
 {
@@ -38,10 +40,19 @@ with(other)
             case NPC001:    // Old man in hallway
             {
                 m = missionList[| 0];
-                if(m[? "Key Object"])
-                    show_debug_message("That looks like the letter I'm looking for");
+                if(!m[? "Complete"])
+                {
+                    if(m[? "Started"])
+                    {
+                        if(m[? "Key Object"])
+                            show_debug_message("That looks like the letter I'm looking for");
+                        else 
+                            show_debug_message("I'm still looking for my letter. Have you seen it?");
+                    }
+                }
                 else
-                    show_debug_message("I'm still looking for my letter. Have you seen it?");
+                    show_debug_message("Thank you for finding my letter");
+                    
                 break;
             }
             case NPC002:    // Maintenance Guy

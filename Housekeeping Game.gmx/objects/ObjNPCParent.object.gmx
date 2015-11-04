@@ -40,6 +40,56 @@ NPCMet = false;
         </arguments>
       </action>
     </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/*
+*   When touching player, stop moving
+*
+*   When touching player, check which Mission the NPC is a part of,
+*   and adjust the status of the mission.
+*/
+if(position_meeting(x,y,ObjPlayerParent))
+{
+    path_speed = 0;     // Stop moving
+    n = ds_list_size(missionList);
+    
+    // Seach missionList for current NPC name
+    for(i = 0; i &lt; n; i++)
+    {
+        m = ds_map_find_value(missionList[| i], "Name");
+        if(m == NPCName)
+        {
+            m = missionList[| i];
+            break;
+        }
+    }
+    
+    // Set mission status  
+    // This is still a work in progress, a condition needs to be set, but I'm not sure what it is.
+    m[? "Complete"] = true;
+}
+else
+    path_speed = 2;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
   </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>

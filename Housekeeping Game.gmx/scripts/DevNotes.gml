@@ -958,4 +958,11 @@ Mission Checks
 - Rewrote mission checks to use a ds_list/map set. Each mission's details are entered into
     a map, which is then placed in a list. The list is used to check the status of various
     key mission details for later game functions.
-- Letter mission has been rewritten to use this new setup.     
+- Letter mission has been rewritten to use this new setup.
+
+NPC Dialogue
+- All NPC dialogue has been moved to ScrNPCDialogueUI in ObjGUI
+- Pathed NPCs will now stop moving on contact with the player. This is the first step
+    to a proper set of conditions for started and completed missions. All tests in 
+    the dialogue tree currently work, but setting the conditions based on player action
+    is still a problem.

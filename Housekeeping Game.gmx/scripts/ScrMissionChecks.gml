@@ -12,10 +12,10 @@ quest001[? "Complete"] = false;
 quest001[? "Key Object"] = false;
 
 quest002 = ds_map_create(); 
-quest001[? "Name"] = NPC002;
-quest001[? "Started"] = false;
-quest001[? "Complete"] = false;
-quest001[? "Key Object"] = false;
+quest002[? "Name"] = NPC002;
+quest002[? "Started"] = false;
+quest002[? "Complete"] = false;
+quest002[? "Key Object"] = false;
 
 if(ds_exists(missionList,ds_type_list))
 {
