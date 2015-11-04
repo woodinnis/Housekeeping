@@ -966,3 +966,10 @@ NPC Dialogue
     to a proper set of conditions for started and completed missions. All tests in 
     the dialogue tree currently work, but setting the conditions based on player action
     is still a problem.
+    
+// November 04, 2015 //
+
+Mission Dialogue Tree
+- NPC dialogue conditions have been properly worked out. Booleans are set and tested in
+    the correct events, and can now be used in NPCDialogueUI as seen fit.
+- Native event scripts from ObjEventNPCParent have been given their own scripts and folder

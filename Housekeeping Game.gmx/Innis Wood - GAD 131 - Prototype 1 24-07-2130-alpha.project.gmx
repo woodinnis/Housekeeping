@@ -237,6 +237,10 @@
       <script>scripts\NewLevel.gml</script>
       <script>scripts\ScrTimerStep.gml</script>
     </scripts>
+    <scripts name="NPCs">
+      <script>scripts\ScrNPCParentStep.gml</script>
+      <script>scripts\ScrNPCParentCreate.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fontDEBUG</font>
