@@ -978,3 +978,10 @@ NPC Objects
 - Objects have been created for all current Mission NPCs Macros for names, and path speeds
     have also been created.
 - Path settings moved to the individual create event of each NPC, and pathSpeed variable added.
+
+Mission dialogue stalled
+- While trying to implement missions and mission dialogue I've discovered that the NPCName
+    variable is inconsistently being read by the switch statement in NPCDialogueUI.
+    Collision and Debug tests have been run, and the variable is being assigned correctly
+    but for some as yet undetermined reason only values for NPC001 and NPC005 are being
+    read by NPCDialogueUI, and used in the switch statement.

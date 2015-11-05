@@ -279,10 +279,10 @@
       <object>objects\ObjNPCParent</object>
       <object>objects\ObjNPCLobbyWoman</object>
       <object>objects\ObjNPCMaintenanceGuy</object>
-      <object>objects\ObjLaptopGuy</object>
-      <object>objects\ObjHoodieGuy</object>
-      <object>objects\ObjWhistleblower</object>
-      <object>objects\ObjManInSuit</object>
+      <object>objects\ObjNPCLaptopGuy</object>
+      <object>objects\ObjNPCHoodieGuy</object>
+      <object>objects\ObjNPCWhistleblower</object>
+      <object>objects\ObjNPCManInSuit</object>
       <object>objects\ObjNPCOldMan</object>
       <object>objects\ObjNPCAdPerson</object>
     </objects>
@@ -407,7 +407,7 @@
     <constant name="NPC005">""</constant>
     <constant name="NPC006">"Whistleblower"</constant>
     <constant name="NPC007">"Man in Suit"</constant>
-    <constant name="NPC008">""</constant>
+    <constant name="NPC008">"Joe"</constant>
     <constant name="NPC009">"Old Man"</constant>
     <constant name="NPC010">"Ad Person"</constant>
     <constant name="NPC001SPEED">0</constant>
