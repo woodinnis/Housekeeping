@@ -1017,3 +1017,7 @@ Mission implementation stage 4
 - Mission Key Object spawn points configured. Spawn points can be placed anywhere in
     the game and will spawn only Key Objects that have not yet been collected by the
     player.
+    
+Mission implementation stage 4.1
+- Spawn point randomization configured. Key Objects will spawn at a randomly selected
+    spawn point, instead of in order of placement.

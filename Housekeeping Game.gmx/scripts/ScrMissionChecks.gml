@@ -45,7 +45,7 @@ quest006[? "Name"] = NPC010;
 quest006[? "Started"] = false;
 quest006[? "Complete"] = false;
 quest006[? "Key Object"] = false;
-quest006[? "Object"] = "ObjAd"
+quest006[? "Object"] = "ObjAd";
 
 if(ds_exists(missionList,ds_type_list))
 {

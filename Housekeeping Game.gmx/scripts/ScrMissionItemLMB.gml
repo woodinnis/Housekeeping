@@ -36,6 +36,8 @@ if(!is_real(other.Value))
             m[? "Key Object"] = true;
             break;   
         }
+        default:
+            break;
     }
 
     with(other)
