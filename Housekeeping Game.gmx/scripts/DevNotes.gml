@@ -1008,3 +1008,7 @@ Mission implementation stage 2
     nothing. Currently however, the test for completion affects any NPC within a mission
     structure. This means that giving a key object to one NPC will yield a positive
     response from all NPCs in that mission tree.
+    
+Mission implementation stage 3
+- Missions now use the "Name" key to set and check which NPC has completed a mission.
+    Dialogue branches accordingly. Tested.

@@ -13,6 +13,7 @@ with(other)
             if(keyboard_check_pressed(ord("Y")))
             {
                 m[? "Complete"] = true;
+                m[? "Name"] = NPC001;
                 ScrItemDrop(INVJEWELS);
                 totalCash += REWARD;
             }
@@ -25,6 +26,7 @@ with(other)
             if(keyboard_check_pressed(ord("Y")))
             {
                 m[? "Complete"] = true;
+                m[? "Name"] = NPC002;
                 ScrItemDrop(INVJEWELS);
             }
             
@@ -36,6 +38,7 @@ with(other)
             if(keyboard_check_pressed(ord("Y")))
             {
                 m[? "Complete"] = true;
+                m[? "Name"] = NPC003;
                 ScrItemDrop(INVLAPTOP);
             }
             
@@ -47,6 +50,7 @@ with(other)
             if(keyboard_check_pressed(ord("Y")))
             {
                 m[? "Complete"] = true;
+                m[? "Name"] = NPC004;
                 ScrItemDrop(INVLAPTOP);
                 totalCash += REWARD;
             }
@@ -59,6 +63,7 @@ with(other)
             if(keyboard_check_pressed(ord("Y")))
             {
                 m[? "Complete"] = true;
+                m[? "Name"] = NPC006;
                 ScrItemDrop(INVDOC);
             }
             
@@ -70,6 +75,7 @@ with(other)
             if(keyboard_check_pressed(ord("Y")))
             {
                 m[? "Complete"] = true;
+                m[? "Name"] = NPC007;
                 ScrItemDrop(INVDOC);
                 totalCash += REWARD;
             }
@@ -82,6 +88,7 @@ with(other)
             if(keyboard_check_pressed(ord("Y")))
             {
                 m[? "Complete"] = true;
+                m[? "Name"] = NPC009;
                 ScrItemDrop(INVLETTER);
             }
             

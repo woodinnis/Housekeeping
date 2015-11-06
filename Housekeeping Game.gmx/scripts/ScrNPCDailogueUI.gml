@@ -11,14 +11,10 @@ if(instance_exists(ObjNPCParent))
 {
     // Which NPC is being touched (show me on the dolly where the NPC touched you)
     NPC = instance_nearest(ObjPlayerParent.x,ObjPlayerParent.y, ObjNPCParent);
-    
-    show_debug_message(NPC.NPCName);
           
     // Is the player currently touching an NPC
     if(NPC.touchingPlayer)//position_meeting(ObjPlayerParent.x,ObjPlayerParent.y,NPC))
-    {
-        show_debug_message("george");
-            
+    {       
         // Set font, colour, alignment
         draw_set_font(fontMessages);
         draw_set_colour(c_white);
@@ -55,8 +51,10 @@ if(instance_exists(ObjNPCParent))
                             draw_text(talkX,talkY,"My favourite necklace fell off somewhere in the hotel. Return it to me, and I'll see that you're rewarded.");
                         }
                     }
-                    else
+                    else if(m[? "Name"] == NPCName)
                         draw_text(talkX,talkY,"Thank you for finding my jewels");
+                    else
+                        draw_text(talkX,talkY,"Have you found my necklace?");
                         
                     break;
                 }
@@ -93,8 +91,10 @@ if(instance_exists(ObjNPCParent))
                             draw_text(talkX,talkY,"I think someone took my laptop out of my room. If you see it, could you tell me?");
                         }
                     }
-                    else
+                    else if(m[? "Name"] == NPCName)
                         draw_text(talkX,talkY,"Thank you for returning my laptop to me");
+                    else 
+                        draw_text(talkX,talkY,"I still haven't found my laptop.");
                         
                     break;
                 }
@@ -134,9 +134,11 @@ if(instance_exists(ObjNPCParent))
                             draw_text(talkX,talkY,"I've misplaced some documents in one of these rooms. Help me find them.");
                         }
                     }
-                    else
+                    else if(m[? "Name"] == NPCName)
                         draw_text(talkX,talkY,"These documents will help bring down a corporate evil.");
-                        
+                    else 
+                        draw_text(talkX,talkY,"Have you seen my documents?");
+                            
                     break;
                 }
                 case NPC007:    // Man in Suit
@@ -159,8 +161,10 @@ if(instance_exists(ObjNPCParent))
                             draw_text(talkX,talkY,"I'm looking for a young man who's staying at this hotel. He's trying to steal corporate secrets");
                         }
                     }
+                    else if(m[? "Name"] == NPCName)
+                        draw_text(talkX,talkY,"BigCorp thanks you for returning these important documents.");
                     else
-                        draw_text(talkX,talkY,"I'm looking for a young co-worker of mine who's staying at this hotel.");
+                        draw_text(talkX,talkY,"Have you run into my suspect yet?");
                         
                     break;
                 }
