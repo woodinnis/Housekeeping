@@ -32,7 +32,7 @@ event_inherited();
 
 pathSpeed = 0;
 
-NPCName = NPC007;
+NPCName = NPC006;
 NPCMission = 3;
 </string>
           </argument>

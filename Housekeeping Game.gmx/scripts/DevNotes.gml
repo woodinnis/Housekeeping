@@ -992,3 +992,12 @@ NPC Mission Dialogue
 - Cleared the Mission Dialogue roadblock. Added touchingPlayer bool to NPCParent scripts.
     NPCDialogueUI now searches for instance_nearest, then checks touchingPlayer.
     Remainder of script is largely unchanged.
+    
+// November 06, 2015 //
+
+Mission implementation stage 1
+- NPC dialogue for missions 1-3, 5: NPC001-004, 006,007,009 implemented.
+- Basic testing completed with simple objects. Full dialogue tree remains to be tested
+    Once a basic interaction system can be put in place in the inventory, this can be
+    tested further.
+- All mission objects placed in level and tested

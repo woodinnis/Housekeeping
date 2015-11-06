@@ -12,9 +12,27 @@ if(!is_real(other.Value))
 {
     switch(other.Value)
     {
-        case LET3:
+        case JEWELVAL:
         {
             m = missionList[| 0];
+            m[? "Key Object"] = true;
+            break;
+        }
+        case LAPTOPVAL:
+        {
+            m = missionList[| 1];
+            m[? "Key Object"] = true;
+            break;
+        }
+        case DOC1:
+        {
+            m = missionList[| 2];
+            m[? "Key Object"] = true;
+            break;
+        }
+        case LET3:
+        {
+            m = missionList[| 4];
             m[? "Key Object"] = true;
             break;   
         }

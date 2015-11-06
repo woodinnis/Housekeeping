@@ -4,20 +4,11 @@
 
 var talkX = 0;
 var talkY = 0;
-//var NPCTest;
 
 // Verify instance of NPCParent
 if(instance_exists(ObjNPCParent))
 {
-/*    
-    c = instance_number(ObjNPCParent)
-    for(i = 0; i < c; i++)
-        NPCTest[i] = instance_find(ObjNPCParent,i);
-    
-    for(i = 0; i < c; i++)
-        show_debug_message(NPCTest[i].NPCName);
-*/  
-
+    // Which NPC is being touched (show me on the dolly where the NPC touched you)
     NPC = instance_nearest(ObjPlayerParent.x,ObjPlayerParent.y, ObjNPCParent);
     
     show_debug_message(NPC.NPCName);
@@ -26,9 +17,6 @@ if(instance_exists(ObjNPCParent))
     if(NPC.touchingPlayer)//position_meeting(ObjPlayerParent.x,ObjPlayerParent.y,NPC))
     {
         show_debug_message("george");
-        
-        // Which NPC is being touched (show me on the dolly where the NPC touched you)
-//        NPC = instance_nearest(ObjPlayerParent.x,ObjPlayerParent.y, ObjNPCParent);
             
         // Set font, colour, alignment
         draw_set_font(fontMessages);
@@ -71,6 +59,8 @@ if(instance_exists(ObjNPCParent))
                 {
                     m = missionList[| 0];
                     if(m[? "Key Object"])
+                        draw_text(talkX,talkY,"That's a nice necklace you have there. I'll take it off your hands for a few bucks.");
+                    else
                         draw_text(talkX,talkY,"Out of my Way!");
                         
                     break;
@@ -97,10 +87,21 @@ if(instance_exists(ObjNPCParent))
                         
                     break;
                 }
-                case NPC004:    // Hoodie Guy 
+                case NPC004:    // Hoodie Guy
+                {
+                    m = missionList[| 1];
+                    if(!m[? "Complete"])
+                    {
+                        if(m[? "Started"])
+                        {
+                            if(m[? "Key Object"])
+                                draw_text(talkX,talkY,"Would you be interested in selling that laptop? I'm offering a good price.")
+                        }
+                    }
                     break;   
+                }
                 case NPC006:    // Whistleblower
-                 {
+                {
                     m = missionList[| 2];
                     if(!m[? "Complete"])
                     {
@@ -122,7 +123,27 @@ if(instance_exists(ObjNPCParent))
                     break;
                 }
                 case NPC007:    // Man in Suit
+                {
+                    m = missionList[| 2];
+                    if(!m[? "Complete"])
+                    {
+                        if(m[? "Started"])
+                        {
+                            if(m[? "Key Object"])
+                                draw_text(talkX,talkY,"That looks like the portfolio I'm after. Will you hand it over?");
+                            else 
+                                draw_text(talkX,talkY,"Have you run into my suspect yet?");
+                        }
+                        else
+                        {
+                            draw_text(talkX,talkY,"I'm looking for a young man who's staying at this hotel. He's trying to steal corporate secrets");
+                        }
+                    }
+                    else
+                        draw_text(talkX,talkY,"I'm looking for a young co-worker of mine who's staying at this hotel.");
+                        
                     break;
+                }
                 case NPC009:    // Old man in hallway
                 {
                     m = missionList[| 4];

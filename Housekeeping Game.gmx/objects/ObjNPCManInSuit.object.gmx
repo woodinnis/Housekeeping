@@ -30,8 +30,10 @@
 */
 event_inherited();
 
-NPCName = NPC008;
+NPCName = NPC007;
 NPCMission = 3;
+
+pathSpeed = 0;
 </string>
           </argument>
         </arguments>

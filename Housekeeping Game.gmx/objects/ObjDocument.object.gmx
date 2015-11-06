@@ -28,6 +28,7 @@
             <string>event_inherited();
 Key = INVDOC;
 Value = choose(DOC1,DOC2,DOC3);
+Price = 0;
 </string>
           </argument>
         </arguments>

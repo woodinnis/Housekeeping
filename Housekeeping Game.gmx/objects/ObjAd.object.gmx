@@ -28,6 +28,7 @@
             <string>event_inherited();
 Key = INVAD;
 Value = choose(AD1,AD2,AD3,AD4,AD5,AD6);
+Price = 0;
 </string>
           </argument>
         </arguments>
