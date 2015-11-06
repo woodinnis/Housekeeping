@@ -1,67 +1,96 @@
-//drawNPCDialogue = true;
-
 /*
-*   When player collides with an NPC, perform checks for mission dialogue
-*
+*   Perform mission checks and verify player input for each NPC
+*/
 
 with(other)
 {
-    // If the player has not yet met the NPC
-    if(!NPCMet)
+    // Actions to perform on first encounter with each NPC
+    switch(NPCName)
     {
-        // Actions to perform on first encounter with each NPC
-        switch(NPCName)
+        case NPC001:    // Lobby Woman
         {
-            case NPC001:    // Old Man in the hallway
+            m = missionList[| 0];
+            if(keyboard_check_pressed(ord("Y")))
             {
-                m = missionList[| 0];
-                if(m[? "Key Object"])
-                    show_debug_message("That looks like the letter I'm looking for");
-                else
-                    show_debug_message("I'm looking for a letter from my wife.");
-                break;
+                m[? "Complete"] = true;
+                ScrItemDrop(INVJEWELS);
+                totalCash += REWARD;
             }
-            case NPC002:    // Maintenance guy
-            {
-                show_debug_message("MAINTENANCE!");
-                break;
-            }
-            default:
-                break;
+            
+            break;
         }
-        NPCMet = true;      // Set the NPC as having been met
-    }
-    // If the player has already met the NPC
-    else
-    {
-        // Actions to perform on subsequent encounters with each NPC
-        switch(NPCName)
+        case NPC002:    // Maintenance guy
         {
-            case NPC001:    // Old man in hallway
+            m = missionList[| 0];
+            if(keyboard_check_pressed(ord("Y")))
             {
-                m = missionList[| 0];
-                if(!m[? "Complete"])
-                {
-                    if(m[? "Started"])
-                    {
-                        if(m[? "Key Object"])
-                            show_debug_message("That looks like the letter I'm looking for");
-                        else 
-                            show_debug_message("I'm still looking for my letter. Have you seen it?");
-                    }
-                }
-                else
-                    show_debug_message("Thank you for finding my letter");
-                    
-                break;
+                m[? "Complete"] = true;
+                ScrItemDrop(INVJEWELS);
             }
-            case NPC002:    // Maintenance Guy
-            {
-                show_debug_message("Out of my Way!");
-                break;
-            }
-            default:
-                break;
+            
+            break;
         }
+        case NPC003:    // Laptop guy
+        {
+            m = missionList[| 1];
+            if(keyboard_check_pressed(ord("Y")))
+            {
+                m[? "Complete"] = true;
+                ScrItemDrop(INVLAPTOP);
+            }
+            
+            break;
+        }
+        case NPC004:    // Hoodie guy
+        {
+            m = missionList[| 1];
+            if(keyboard_check_pressed(ord("Y")))
+            {
+                m[? "Complete"] = true;
+                ScrItemDrop(INVLAPTOP);
+                totalCash += REWARD;
+            }
+            
+            break;
+        }
+        case NPC006:    // Whistleblower
+        {
+            m = missionList[| 2];
+            if(keyboard_check_pressed(ord("Y")))
+            {
+                m[? "Complete"] = true;
+                ScrItemDrop(INVDOC);
+            }
+            
+            break;
+        }
+        case NPC007:    // Man in suit
+        {
+            m = missionList[| 2];
+            if(keyboard_check_pressed(ord("Y")))
+            {
+                m[? "Complete"] = true;
+                ScrItemDrop(INVDOC);
+                totalCash += REWARD;
+            }
+            
+            break;
+        }
+        case NPC009:    // Old man in hallway
+        {
+            m = missionList[| 4];
+            if(keyboard_check_pressed(ord("Y")))
+            {
+                m[? "Complete"] = true;
+                ScrItemDrop(INVLETTER);
+            }
+            
+            break;
+        }
+        case NPC010:    // Ad person
+        default:
+            break;
+            
     }
+    NPCMet = true;      // Set the NPC as having been met
 }

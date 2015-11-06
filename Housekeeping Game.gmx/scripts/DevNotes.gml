@@ -1001,3 +1001,10 @@ Mission implementation stage 1
     Once a basic interaction system can be put in place in the inventory, this can be
     tested further.
 - All mission objects placed in level and tested
+
+Mission implementation stage 2
+- All missions can be completed with a redementary [Y/N] keyboard input.
+- "Y" marks the mission as complete and removes the key item from inventory. "N" does
+    nothing. Currently however, the test for completion affects any NPC within a mission
+    structure. This means that giving a key object to one NPC will yield a positive
+    response from all NPCs in that mission tree.

@@ -4,6 +4,7 @@
 
 var talkX = 0;
 var talkY = 0;
+var replyY = 0;
 
 // Verify instance of NPCParent
 if(instance_exists(ObjNPCParent))
@@ -27,6 +28,7 @@ if(instance_exists(ObjNPCParent))
         // Set x/y to follow the NPC
         talkX = (NPC.x / (room_width / view_wview[0]));
         talkY = (NPC.y / (room_height / view_hview[0]));
+        replyY = talkY + 20;
 
         with(NPC)
         {
@@ -41,8 +43,11 @@ if(instance_exists(ObjNPCParent))
                         if(m[? "Started"])
                         {
                             if(m[? "Key Object"])
+                            {
                                 draw_text(talkX,talkY,"Is that my necklace you have?");
-                            else 
+                                draw_text(talkX, replyY, "Can I have it back? Y/N");
+                            }
+                            else
                                 draw_text(talkX,talkY,"Have you found my necklace?");
                         }
                         else
@@ -58,8 +63,11 @@ if(instance_exists(ObjNPCParent))
                 case NPC002:    // Maintenance Guy
                 {
                     m = missionList[| 0];
-                    if(m[? "Key Object"])
+                    if(!m[? "Complete"] && m[? "Key Object"])
+                    {
                         draw_text(talkX,talkY,"That's a nice necklace you have there. I'll take it off your hands for a few bucks.");
+                        draw_text(talkX, replyY, "Can I buy it? Y/N");
+                    }
                     else
                         draw_text(talkX,talkY,"Out of my Way!");
                         
@@ -73,7 +81,10 @@ if(instance_exists(ObjNPCParent))
                         if(m[? "Started"])
                         {
                             if(m[? "Key Object"])
+                            {
                                 draw_text(talkX,talkY,"Is that my laptop?!");
+                                draw_text(talkX, replyY, "Please, give it to me! Y/N");
+                            }
                             else 
                                 draw_text(talkX,talkY,"I still haven't found my laptop.");
                         }
@@ -95,7 +106,10 @@ if(instance_exists(ObjNPCParent))
                         if(m[? "Started"])
                         {
                             if(m[? "Key Object"])
-                                draw_text(talkX,talkY,"Would you be interested in selling that laptop? I'm offering a good price.")
+                            {
+                                draw_text(talkX,talkY,"Would you be interested in selling that laptop?")
+                                draw_text(talkX, replyY, "I'm offering a good price. Y/N");
+                            }
                         }
                     }
                     break;   
@@ -108,7 +122,10 @@ if(instance_exists(ObjNPCParent))
                         if(m[? "Started"])
                         {
                             if(m[? "Key Object"])
+                            {
                                 draw_text(talkX,talkY,"Those look like my documents.");
+                                draw_text(talkX, replyY, "Can I look at them? Y/N");
+                            }
                             else 
                                 draw_text(talkX,talkY,"Have you seen my documents?");
                         }
@@ -130,7 +147,10 @@ if(instance_exists(ObjNPCParent))
                         if(m[? "Started"])
                         {
                             if(m[? "Key Object"])
-                                draw_text(talkX,talkY,"That looks like the portfolio I'm after. Will you hand it over?");
+                            {
+                                draw_text(talkX,talkY,"That looks like the portfolio I'm after.");
+                                draw_text(talkX, replyY, "Will you hand it over? Y/N");
+                            }
                             else 
                                 draw_text(talkX,talkY,"Have you run into my suspect yet?");
                         }
@@ -152,7 +172,10 @@ if(instance_exists(ObjNPCParent))
                         if(m[? "Started"])
                         {
                             if(m[? "Key Object"])
+                            {
                                 draw_text(talkX,talkY,"That looks like the letter I'm looking for");
+                                draw_text(talkX, replyY, "Is it? Y/N");
+                            }
                             else 
                                 draw_text(talkX,talkY,"I'm still looking for my letter. Have you seen it?");
                         }
