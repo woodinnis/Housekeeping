@@ -8,10 +8,12 @@
 if(position_meeting(x,y,ObjPlayerParent))
 {
     path_speed = 0;     // Stop moving
+    touchingPlayer = true;
 }
 else
 {
     path_speed = pathSpeed;
+    touchingPlayer = false;
 }
 
 if(NPCMet)

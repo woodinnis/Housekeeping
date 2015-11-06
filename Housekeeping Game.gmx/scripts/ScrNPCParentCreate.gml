@@ -7,3 +7,5 @@ image_speed = 0;
 NPCName = "";
 NPCMission = 0;
 NPCMet = false;
+
+touchingPlayer = false;

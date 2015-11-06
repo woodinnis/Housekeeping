@@ -985,3 +985,10 @@ Mission dialogue stalled
     Collision and Debug tests have been run, and the variable is being assigned correctly
     but for some as yet undetermined reason only values for NPC001 and NPC005 are being
     read by NPCDialogueUI, and used in the switch statement.
+    
+// Novemeber 05, 2015 //
+
+NPC Mission Dialogue
+- Cleared the Mission Dialogue roadblock. Added touchingPlayer bool to NPCParent scripts.
+    NPCDialogueUI now searches for instance_nearest, then checks touchingPlayer.
+    Remainder of script is largely unchanged.

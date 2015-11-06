@@ -4,15 +4,31 @@
 
 var talkX = 0;
 var talkY = 0;
+//var NPCTest;
 
 // Verify instance of NPCParent
 if(instance_exists(ObjNPCParent))
 {
+/*    
+    c = instance_number(ObjNPCParent)
+    for(i = 0; i < c; i++)
+        NPCTest[i] = instance_find(ObjNPCParent,i);
+    
+    for(i = 0; i < c; i++)
+        show_debug_message(NPCTest[i].NPCName);
+*/  
+
+    NPC = instance_nearest(ObjPlayerParent.x,ObjPlayerParent.y, ObjNPCParent);
+    
+    show_debug_message(NPC.NPCName);
+          
     // Is the player currently touching an NPC
-    if(position_meeting(ObjNPCParent.x,ObjNPCParent.y,ObjPlayerParent))
+    if(NPC.touchingPlayer)//position_meeting(ObjPlayerParent.x,ObjPlayerParent.y,NPC))
     {
+        show_debug_message("george");
+        
         // Which NPC is being touched (show me on the dolly where the NPC touched you)
-        NPC = instance_position(ObjNPCParent.x,ObjNPCParent.y, ObjNPCParent);
+//        NPC = instance_nearest(ObjPlayerParent.x,ObjPlayerParent.y, ObjNPCParent);
             
         // Set font, colour, alignment
         draw_set_font(fontMessages);
@@ -21,14 +37,12 @@ if(instance_exists(ObjNPCParent))
         draw_set_valign(fa_middle);
     
         // Set x/y to follow the NPC
-        talkX = (ObjNPCParent.x / (room_width / view_wview[0]));
-        talkY = (ObjNPCParent.y / (room_height / view_hview[0])); 
-        
-        show_debug_message(NPC.NPCName);
-        
+        talkX = (NPC.x / (room_width / view_wview[0]));
+        talkY = (NPC.y / (room_height / view_hview[0]));
+
         with(NPC)
         {
-            // Actions to perform on subsequent encounters with each NPC*/
+            // Actions to perform on subsequent encounters with each NPC
             switch(NPCName)
             {
                 case NPC001:    // Woman in lobby
@@ -83,7 +97,8 @@ if(instance_exists(ObjNPCParent))
                         
                     break;
                 }
-                case NPC004:    // Hoodie Guy
+                case NPC004:    // Hoodie Guy 
+                    break;   
                 case NPC006:    // Whistleblower
                  {
                     m = missionList[| 2];
@@ -131,6 +146,7 @@ if(instance_exists(ObjNPCParent))
                     break;
                 }
                 case NPC010:    // Ad Person
+                    break;
                 default:
                     break;
             }
