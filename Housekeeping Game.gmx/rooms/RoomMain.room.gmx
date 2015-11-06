@@ -140,14 +140,15 @@
     <instance objName="ObjBarrier" x="352" y="576" name="inst_C34D98BC" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="ObjBarrier" x="160" y="384" name="inst_294A406D" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="ObjBarrier" x="480" y="576" name="inst_012A270E" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjLaptop" x="1184" y="320" name="inst_BEFD5A18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjNPCOldMan" x="848" y="512" name="inst_EFB73593" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjNPCMaintenanceGuy" x="1392" y="496" name="inst_EA03DDDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjLetter" x="880" y="336" name="inst_F8A9C01E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjNPCLaptopGuy" x="912" y="496" name="inst_4694BFFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjNPCWhistleblower" x="912" y="256" name="inst_7C10F4A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjNPCManInSuit" x="608" y="688" name="inst_9174227C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjNecklace" x="1968" y="256" name="inst_0F525146" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ObjSpawnPt" x="576" y="512" name="inst_C9C2179F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ObjSpawnPt" x="640" y="512" name="inst_DCAEEC50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ObjSpawnPt" x="704" y="512" name="inst_75922C26" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ObjSpawnPt" x="768" y="512" name="inst_5EE3E18C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ObjSpawnPt" x="512" y="512" name="inst_6A93B1C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="BGWall" x="0" y="464" w="16" h="16" xo="0" yo="0" id="10002658" name="inst_B8042B52" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

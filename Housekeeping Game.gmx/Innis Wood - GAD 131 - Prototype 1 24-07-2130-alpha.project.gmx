@@ -75,7 +75,6 @@
         <sprite>sprites\MessSm2</sprite>
         <sprite>sprites\MessSm3</sprite>
         <sprite>sprites\MessSm4</sprite>
-        <sprite>sprites\MessSm5</sprite>
         <sprite>sprites\MessSm6</sprite>
       </sprites>
       <sprite>sprites\MessSm</sprite>
@@ -98,7 +97,6 @@
       </sprites>
     </sprites>
     <sprites name="Evidence">
-      <sprite>sprites\SprEvidenceLaptop</sprite>
       <sprite>sprites\SprEvidenceShirt</sprite>
       <sprite>sprites\SprEvidenceDocs</sprite>
       <sprite>sprites\SprEvidencePhone</sprite>
@@ -120,10 +118,12 @@
       <sprite>sprites\SprRoomDoor</sprite>
       <sprite>sprites\SprElevator</sprite>
     </sprites>
-    <sprites name="Items">
+    <sprites name="Mission Items">
       <sprite>sprites\SprTowels</sprite>
       <sprite>sprites\SprBleach</sprite>
       <sprite>sprites\SprSheets</sprite>
+      <sprite>sprites\SprEvidenceLaptop</sprite>
+      <sprite>sprites\MessSm5</sprite>
       <sprite>sprites\SprDocument</sprite>
       <sprite>sprites\SprLetter</sprite>
       <sprite>sprites\SprAd</sprite>
@@ -201,8 +201,8 @@
       <script>scripts\drawRect.gml</script>
       <script>scripts\alignUI.gml</script>
     </scripts>
-    <scripts name="Evidence">
-      <script>scripts\ScrEvidenceLMB.gml</script>
+    <scripts name="Mission Items">
+      <script>scripts\ScrMissionItemLMB.gml</script>
     </scripts>
     <scripts name="Clerk">
       <script>scripts\ScrClerkCreate.gml</script>
@@ -299,8 +299,8 @@
       <object>objects\ObjClerk</object>
       <object>objects\ObjPerson</object>
     </objects>
-    <objects name="Evidence">
-      <object>objects\ObjEvidenceParent</object>
+    <objects name="Mission Items">
+      <object>objects\ObjMissionItemParent</object>
       <object>objects\ObjTowels</object>
       <object>objects\ObjSheets</object>
       <object>objects\ObjBleach</object>

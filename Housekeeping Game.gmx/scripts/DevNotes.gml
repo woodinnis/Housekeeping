@@ -1012,3 +1012,8 @@ Mission implementation stage 2
 Mission implementation stage 3
 - Missions now use the "Name" key to set and check which NPC has completed a mission.
     Dialogue branches accordingly. Tested.
+    
+Mission implementation stage 4
+- Mission Key Object spawn points configured. Spawn points can be placed anywhere in
+    the game and will spawn only Key Objects that have not yet been collected by the
+    player.
