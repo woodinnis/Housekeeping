@@ -1027,4 +1027,9 @@ Mission implementation stage 4.1
 UI Improvements
 - Reimplemented drawRect and alignUI called from NPCDrawUI. Minor adjustments to
     variables used in NPCDrawUI now attach the text to the center-top of the GUI.
+- TXTDRAWBUFFER added to make spacing more adjustible as fonts change.
+
+UI Button Step 1
+- Created drawButton() for GUI button creation using sprites. Buttons are not currently
+    interactive, and only use placeholder sprites. However, the function has been tested,
     and sprites appear where desired.
