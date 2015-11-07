@@ -1021,3 +1021,10 @@ Mission implementation stage 4
 Mission implementation stage 4.1
 - Spawn point randomization configured. Key Objects will spawn at a randomly selected
     spawn point, instead of in order of placement.
+    
+// November 07, 2015 //
+
+UI Improvements
+- Reimplemented drawRect and alignUI called from NPCDrawUI. Minor adjustments to
+    variables used in NPCDrawUI now attach the text to the center-top of the GUI.
+    and sprites appear where desired.

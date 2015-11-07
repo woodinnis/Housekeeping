@@ -5,7 +5,7 @@ HUDBufferY = 80;    // Buffer for HUD elements on screen
 spriteBufferX = 60; // Buffer for Sprites on screen
 spriteBufferY = 80; // Buffer for Sprites on screen
 
-// Coordinates for centering text on screen
+// Coordinates screen center
 centerX = window_get_width()/2;
 centerY = window_get_height()/2;
 topThird = window_get_height()/3;

@@ -16,15 +16,14 @@ if(instance_exists(ObjNPCParent))
     if(NPC.touchingPlayer)//position_meeting(ObjPlayerParent.x,ObjPlayerParent.y,NPC))
     {       
         // Set font, colour, alignment
-        draw_set_font(fontMessages);
-        draw_set_colour(c_white);
-        draw_set_halign(fa_center);
+        drawRect()
+        alignUI();
         draw_set_valign(fa_middle);
     
-        // Set x/y to follow the NPC
-        talkX = (NPC.x / (room_width / view_wview[0]));
-        talkY = (NPC.y / (room_height / view_hview[0]));
-        replyY = talkY + 20;
+        talkX = centerX;
+        talkY = drawRectY + TXTDRAWBUFFER;
+        replyY = talkY + TXTDRAWBUFFER;
+        drawButton(400,400,BTN001);
 
         with(NPC)
         {
@@ -48,7 +47,7 @@ if(instance_exists(ObjNPCParent))
                         }
                         else
                         {
-                            draw_text(talkX,talkY,"My favourite necklace fell off somewhere in the hotel. Return it to me, and I'll see that you're rewarded.");
+                            draw_text(talkX,talkY,"My favourite necklace fell off somewhere in the hotel. #Return it to me, and I'll see that you're rewarded.");
                         }
                     }
                     else if(m[? "Name"] == NPCName)
@@ -63,7 +62,7 @@ if(instance_exists(ObjNPCParent))
                     m = missionList[| 0];
                     if(!m[? "Complete"] && m[? "Key Object"])
                     {
-                        draw_text(talkX,talkY,"That's a nice necklace you have there. I'll take it off your hands for a few bucks.");
+                        draw_text(talkX,talkY,"That's a nice necklace you have there. #I'll take it off your hands for a few bucks.");
                         draw_text(talkX, replyY, "Can I buy it? Y/N");
                     }
                     else
@@ -88,7 +87,7 @@ if(instance_exists(ObjNPCParent))
                         }
                         else
                         {
-                            draw_text(talkX,talkY,"I think someone took my laptop out of my room. If you see it, could you tell me?");
+                            draw_text(talkX,talkY,"I think someone took my laptop out of my room. #If you see it, could you tell me?");
                         }
                     }
                     else if(m[? "Name"] == NPCName)
@@ -131,7 +130,7 @@ if(instance_exists(ObjNPCParent))
                         }
                         else
                         {
-                            draw_text(talkX,talkY,"I've misplaced some documents in one of these rooms. Help me find them.");
+                            draw_text(talkX,talkY,"I've misplaced some documents in one of these rooms. #Help me find them.");
                         }
                     }
                     else if(m[? "Name"] == NPCName)
@@ -158,7 +157,7 @@ if(instance_exists(ObjNPCParent))
                         }
                         else
                         {
-                            draw_text(talkX,talkY,"I'm looking for a young man who's staying at this hotel. He's trying to steal corporate secrets");
+                            draw_text(talkX,talkY,"I'm looking for a young man who's staying at this hotel. #He's trying to steal corporate secrets");
                         }
                     }
                     else if(m[? "Name"] == NPCName)

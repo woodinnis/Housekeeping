@@ -190,7 +190,6 @@
     <scripts name="HUD-UI">
       <script>scripts\ScrHUD.gml</script>
       <script>scripts\ScrScoreUI.gml</script>
-      <script>scripts\ScrClueUI.gml</script>
       <script>scripts\ScrTimerUI.gml</script>
       <script>scripts\ScrNPCDailogueUI.gml</script>
       <script>scripts\ScrClerkUI.gml</script>
@@ -199,6 +198,7 @@
       <script>scripts\ScrIntroUI.gml</script>
       <script>scripts\ScrInventoryDraw.gml</script>
       <script>scripts\drawRect.gml</script>
+      <script>scripts\drawButton.gml</script>
       <script>scripts\alignUI.gml</script>
     </scripts>
     <scripts name="Mission Items">
@@ -341,12 +341,13 @@
     <room>rooms\RoomRoomLg</room>
     <room>rooms\RoomMain</room>
   </rooms>
-  <constants number="82">
+  <constants number="85">
     <constant name="INTROMSG1">"It's the height of the Cold War. You are MI6's finest,#working undercover in Paris's poshest hotel.#Work with your partner at the front desk#to take on the Soviet threat."</constant>
     <constant name="INTROMSG2">"Get assignments from your partner at the front desk.#Help prevent a war##Click to continue"</constant>
     <constant name="INTROMSG3">"Move with the mouse or keyboard.##Click to interact with people or objects."</constant>
     <constant name="PLAYERSPEED">5</constant>
     <constant name="MOUSEMOVEBUFFER">40</constant>
+    <constant name="TXTDRAWBUFFER">40</constant>
     <constant name="ISCLEANSET">25</constant>
     <constant name="EVIDENCERANDOM">25</constant>
     <constant name="DONOTDISTURB">"A Sign On The Door Reads #'Do Not Disturb'"</constant>
@@ -424,6 +425,8 @@
     <constant name="NPC009SPEED">2</constant>
     <constant name="NPC010SPEED">0</constant>
     <constant name="REWARD">100</constant>
+    <constant name="BTN001">"YES"</constant>
+    <constant name="BTN002">"NO"</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
