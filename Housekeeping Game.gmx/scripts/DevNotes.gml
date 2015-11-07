@@ -877,3 +877,147 @@ Resource management basics implemented
 Optional arguments
 - Fixed a small bug in ItemDrop that was preventing the use of single-argument calls
     All items can now be removed from inventory.
+    
+// October 29, 2015 //
+
+Mission Pickups
+- Added objects, sprites, and macros for mission pickups. All Mission pickups are
+    currently parented to EvidenceParent to use click-to-add inventory function.
+    
+Pathing
+- Two paths created to use for mission NPCs. Pathing has been tested with placeholder
+    objects, and is functional both absolute and relative.
+    
+// October 30, 2015 //
+
+Beginning of Daily shifts and escalation
+- Modified the former messCount variable into cleanCount. Will now track # of items
+    cleaned. All functional script and object references to messCount have been
+    adjusted or removed. cleanCount added to DEBUG.
+    
+Massive code cleanup
+- Removed several blocks of unused and obsolete code in preparation for adding new
+    functionality. Primarily UI and/or old mission variables. Tested for functionality.
+- Added a new variable/Macro combo for shiftTime. This will be used for shift timers.
+
+UI Elements
+- cleanCount has been made global to facilitate easier HUD integration.
+- cleanCount now increments with each valid LMB click on a Room object. This has been 
+    tested both using DEBUG, and a basic draw_text on the HUD.
+    
+Progress checking
+- ScoreUI has been rewritten to display cleanCount in top left corner of the screen.
+- Several more small blocks of unused code have been removed.
+- All LEVEL macros have been adjusted to appropriate values for the new system.
+
+Money system
+- A basic money system has been implemented. Globale variable totalCash has been added
+    and a starting amount has been set with the STARTCASH Macro. Price values have been
+    given to cleaning items. Values are deducted in EvidenceLMB. Tested successfully.
+    
+Earning money
+- A simple timer has been implemented (ObjTimer) which uses Macro SHIFTTIME* to set
+    its alarm. A Macro WAGE has also been created. When Timer has counted down, the 
+    value of cleanCount is multiplied by the value of WAGE and added to totalCash.
+    cleanCount is reset, and the player is sent to RoomFrontDesk.
+    
+// November 02, 2015 //
+
+Shifts
+- Rewrote much of ObjTimer to better facilitate the shift mechanic. Player can now go
+    back to FrontDesk to purchase more supplies without resetting the shift timer.
+- All player code and logic for shift restart has been moved to the timer.
+
+Escalation
+- Repurposed OverlordStep as TimerNewLevel
+- Added a check in TimerStep for cleanCount >= LEVEL* This gives the player a bonus
+    to totalCash if true, as well as throwing a switch for TimerNewLevel to increment
+    LEVEL*
+- Added a function to DEBUG to manually adjust the value of cleanCount (press "S")
+
+Shift Length
+- TimerNewLevel converted to NewLevel()
+- The newLevel switch in TimerStep has been replaced with a call to NewLevel(). The
+    function performs all the same operations. NewLevel also now adjusts the value of
+    shiftTime when the player reaches certain milestones.
+    
+// November 03, 2015 //
+
+Mission NPCs
+- ClueParent has been repurposed as NPCParent
+- Created PlayerNPCCollision to handle structured mission events when colliding with NPCs
+    The code checks if player has had a previous collision, and tests which NPC is being 
+    collided with. Operations can be expanded considerably. Tested for basic functionality.
+    
+Letter Mission
+- Basic functionality of "Old Man in the Hallway" implemented and tested. Colliding with
+    the NPC once triggers a message requesting help. Colliding again, when the item has
+    been found triggers another message.
+    
+Mission Checks
+- Rewrote mission checks to use a ds_list/map set. Each mission's details are entered into
+    a map, which is then placed in a list. The list is used to check the status of various
+    key mission details for later game functions.
+- Letter mission has been rewritten to use this new setup.
+
+NPC Dialogue
+- All NPC dialogue has been moved to ScrNPCDialogueUI in ObjGUI
+- Pathed NPCs will now stop moving on contact with the player. This is the first step
+    to a proper set of conditions for started and completed missions. All tests in 
+    the dialogue tree currently work, but setting the conditions based on player action
+    is still a problem.
+    
+// November 04, 2015 //
+
+Mission Dialogue Tree
+- NPC dialogue conditions have been properly worked out. Booleans are set and tested in
+    the correct events, and can now be used in NPCDialogueUI as seen fit.
+- Native event scripts from ObjEventNPCParent have been given their own scripts and folder
+
+NPC Objects
+- Objects have been created for all current Mission NPCs Macros for names, and path speeds
+    have also been created.
+- Path settings moved to the individual create event of each NPC, and pathSpeed variable added.
+
+Mission dialogue stalled
+- While trying to implement missions and mission dialogue I've discovered that the NPCName
+    variable is inconsistently being read by the switch statement in NPCDialogueUI.
+    Collision and Debug tests have been run, and the variable is being assigned correctly
+    but for some as yet undetermined reason only values for NPC001 and NPC005 are being
+    read by NPCDialogueUI, and used in the switch statement.
+    
+// Novemeber 05, 2015 //
+
+NPC Mission Dialogue
+- Cleared the Mission Dialogue roadblock. Added touchingPlayer bool to NPCParent scripts.
+    NPCDialogueUI now searches for instance_nearest, then checks touchingPlayer.
+    Remainder of script is largely unchanged.
+    
+// November 06, 2015 //
+
+Mission implementation stage 1
+- NPC dialogue for missions 1-3, 5: NPC001-004, 006,007,009 implemented.
+- Basic testing completed with simple objects. Full dialogue tree remains to be tested
+    Once a basic interaction system can be put in place in the inventory, this can be
+    tested further.
+- All mission objects placed in level and tested
+
+Mission implementation stage 2
+- All missions can be completed with a redementary [Y/N] keyboard input.
+- "Y" marks the mission as complete and removes the key item from inventory. "N" does
+    nothing. Currently however, the test for completion affects any NPC within a mission
+    structure. This means that giving a key object to one NPC will yield a positive
+    response from all NPCs in that mission tree.
+    
+Mission implementation stage 3
+- Missions now use the "Name" key to set and check which NPC has completed a mission.
+    Dialogue branches accordingly. Tested.
+    
+Mission implementation stage 4
+- Mission Key Object spawn points configured. Spawn points can be placed anywhere in
+    the game and will spawn only Key Objects that have not yet been collected by the
+    player.
+    
+Mission implementation stage 4.1
+- Spawn point randomization configured. Key Objects will spawn at a randomly selected
+    spawn point, instead of in order of placement.

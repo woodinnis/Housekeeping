@@ -12,20 +12,16 @@ if(debug)
 {
     if(keyboard_check_pressed(ord("P")))
     {
-        ObjOverlord.messNum = 0;    // Clean room
+        ObjOverlord.cleanCount = 0;    // Clean room
     }
     if(keyboard_check_pressed(ord("S")))
     {
-        ObjOverlord.drawSolution = true;    // Set victory conditions to true
+        cleanCount = get_integer("Set Number of Cleaned Items", 0)
     }
     
     if(keyboard_check_pressed(ord("E")))
     {
         showEvidence = true;
-    }
-    if(keyboard_check_pressed(vk_space))
-    {
-        script_execute(ScrEvidencePlace(5));
     }
     if(keyboard_check_pressed(vk_escape))
     {

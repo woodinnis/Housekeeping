@@ -1,25 +1,27 @@
 randomize();
 
 // Variables for the HUD to keep track of cleaning
-messCollected = true;    //false;   // Boolean for HUD use, set to true when the first ObjMess is collected
-messNum = 0;             // Used for HUD to count total number of ObjMess collected by the player
+globalvar cleanCount;
+globalvar drawNPCDialogue;
+messCollected = true;    // Boolean for HUD use, set to true when the first ObjMess is collected
+cleanCount = 0;          // Used for HUD to count total number of Obj collected by the player
 messType = "";           // Used for setting the image index of ObjMessLg/Md/Sm
 messVar = "";            // Used for setting the image index of ObjMessLg/Md/Sm
-drawNotClean = false;
+drawNPCDialogue = false;
 clockTick = 0;
 
 
 // Game level variable
 globalvar currentLevel;
-globalvar currentScore;
-globalvar currentCrime;
+globalvar shiftTime;
+globalvar totalCash;
+globalvar shiftStart;
+globalvar missionList;
 currentLevel = LEVEL001;    // Set Starting level to 001
-currentScore = 0;           // Set Starting score to 0;
-currentCrime = CRIME000;      // Set Starting crime the player is inventigating
-
-currentGoal = SCORE001;     // Set Starting goal
-enteredRoom = false;        // Checkin to see if the player has entered a room
-
+shiftTime = SHIFTTIME01;    // Set Shift length the player has to work (in minutes)
+totalCash = STARTCASH;      // Set the amount of money available to the player at game start
+shiftStart = true;          // Set the player's shift status to started
+missionList = ds_list_create();
 
 lvlNum = 1.0;
 

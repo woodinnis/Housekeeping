@@ -1,20 +1,33 @@
 /*
-*   This function was created to spawn mission-specific evidence.
-*   It should be repurposed to perform a similar operation in the new
-*   non-mission focused game
+*   Check the missionList to see if the Key Object of each mission has been found
+*   If not, spawn the key Object on one of the available spawn points
+*
+*   Check the spawn point before creating an instance to see if it is already occupied
+*   Mark the spawn point as occupied after instance creation
 */
 
-//  Only spawn a new piece of evidence if none currently exists and none is on screen.
-if(!instance_exists(ObjEvidenceParent))
+// Retrieve missionList
+n = ds_list_size(missionList);
+
+num = instance_number(ObjSpawnPt)
+iAm = instance_find(ObjSpawnPt, (irandom(num - 1)));
+
+for(i = 0; i < n; i++)
 {
-    if(!ObjOverlord.drawShirt && !ObjOverlord.drawDocs && !ObjOverlord.drawNote)
-    {    
-        spawnMe = FuncEvidence(currentCrime)
+    m = missionList[| i];
+    if(!m[? "Key Object"])  // Check if Key Object has been found
+    {
+        o = asset_get_index(m[? "Object"]);     // Determine index of Object
         
-        if(spawnMe != 0)
+        if(!instance_exists(o))     // Check if an instance already exists
         {
-            // Spawn a piece of evidence at the current mouse location
-            instance_create(window_view_mouse_get_x(0),window_view_mouse_get_y(0),spawnMe);
+            if(!iAm.isOccupied)     // Check if spawn point is occupied
+            {
+                if(instance_exists(iAm))
+                    instance_create(iAm.x,iAm.y,o);
+                    
+                iAm.isOccupied = true;  // Mark spawn point as occupied
+            }
         }
     }
 }

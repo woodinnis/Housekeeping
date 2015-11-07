@@ -1,4 +1,4 @@
-// Remove objects from the screen when players click
+/* Remove objects from the screen when players click
 if(shirtFound == true)
 {
     drawShirt = false;

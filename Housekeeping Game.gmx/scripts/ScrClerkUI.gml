@@ -1,4 +1,6 @@
-// UI Elements for the clerk, and mission briefings
+/*
+*    UI Elements for the front desk clerk.
+*/
 
 if(ObjOverlord.clerkSpeak)
 {
