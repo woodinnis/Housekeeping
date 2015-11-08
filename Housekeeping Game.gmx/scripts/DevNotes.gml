@@ -1033,3 +1033,9 @@ UI Button Step 1
 - Created drawButton() for GUI button creation using sprites. Buttons are not currently
     interactive, and only use placeholder sprites. However, the function has been tested,
     and sprites appear where desired.
+    
+UI Button Step 2
+- Started adding mouse interactivity to drawButton, using point_in_rect, and device_mouse
+    Currently coordinates are sticking to the roomspace, rather than to the view space.
+    I'll tackle this later using view_h/wview, but the correct formula will need some time
+    to work out.

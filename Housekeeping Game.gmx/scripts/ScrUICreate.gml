@@ -1,5 +1,5 @@
 // UI creation code
-drawDND = false     // Setting for the do not disturb sign
+btnYes = false;     // Setting for the do not disturb sign
 HUDBufferX = 60;    // Buffer for HUD elements on screen
 HUDBufferY = 80;    // Buffer for HUD elements on screen
 spriteBufferX = 60; // Buffer for Sprites on screen

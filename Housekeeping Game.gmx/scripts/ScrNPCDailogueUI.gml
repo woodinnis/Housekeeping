@@ -23,6 +23,8 @@ if(instance_exists(ObjNPCParent))
         talkX = centerX;
         talkY = drawRectY + TXTDRAWBUFFER;
         replyY = talkY + TXTDRAWBUFFER;
+        
+        btnYes = drawButton(talkX - (TXTDRAWBUFFER*2), replyY + TXTDRAWBUFFER, BTN001);
 
         with(NPC)
         {

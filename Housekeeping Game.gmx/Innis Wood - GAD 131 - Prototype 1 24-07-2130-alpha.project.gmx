@@ -188,18 +188,19 @@
       <script>scripts\ScrMessCreate.gml</script>
     </scripts>
     <scripts name="HUD-UI">
+      <script>scripts\ScrUICreate.gml</script>
       <script>scripts\ScrHUD.gml</script>
       <script>scripts\ScrScoreUI.gml</script>
       <script>scripts\ScrTimerUI.gml</script>
       <script>scripts\ScrNPCDailogueUI.gml</script>
       <script>scripts\ScrClerkUI.gml</script>
       <script>scripts\ScrVictoryUI.gml</script>
-      <script>scripts\ScrUICreate.gml</script>
       <script>scripts\ScrIntroUI.gml</script>
       <script>scripts\ScrInventoryDraw.gml</script>
       <script>scripts\drawRect.gml</script>
       <script>scripts\drawButton.gml</script>
       <script>scripts\alignUI.gml</script>
+      <script>scripts\ScrButtonUIStep.gml</script>
     </scripts>
     <scripts name="Mission Items">
       <script>scripts\ScrMissionItemLMB.gml</script>
