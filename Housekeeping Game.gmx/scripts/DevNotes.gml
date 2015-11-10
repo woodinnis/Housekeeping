@@ -1045,3 +1045,7 @@ UI Button Step 2
 HUD Elements
 - Added a pop-up message about how to use the elevator. Message shows on mouse-over, and
     stops displaying after the first use of the elevator.
+    
+UI Button Step 3
+- drawButton now checks gui_x/y_mouse and returns True/False. A T/F check has been added
+    to PlayerNPCCollision. Tests using NPC001 have proven successful.

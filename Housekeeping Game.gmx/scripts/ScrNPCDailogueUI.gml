@@ -6,6 +6,9 @@ var talkX = 0;
 var talkY = 0;
 var replyY = 0;
 
+btnYes = false;
+btnNo = false;
+
 // Verify instance of NPCParent
 if(instance_exists(ObjNPCParent))
 {
@@ -24,8 +27,9 @@ if(instance_exists(ObjNPCParent))
         talkY = drawRectY + TXTDRAWBUFFER;
         replyY = talkY + TXTDRAWBUFFER;
         
-//        btnYes = drawButton(talkX - (TXTDRAWBUFFER*2), replyY + TXTDRAWBUFFER, BTN001);
-
+        btnYes = drawButton(talkX - (TXTDRAWBUFFER*2), replyY + TXTDRAWBUFFER, BTN001);
+        btnNo = drawButton(talkX + (TXTDRAWBUFFER*2), replyY + TXTDRAWBUFFER, BTN001);
+        
         with(NPC)
         {
             // Actions to perform on subsequent encounters with each NPC
