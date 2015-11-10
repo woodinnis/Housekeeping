@@ -1,4 +1,6 @@
 // Perform basic operations moving from one room to another
+
+
 switch(room)
 {
     case RoomMenu:
@@ -8,15 +10,26 @@ switch(room)
     }
     case RoomFrontDesk:
     {
-        //room_goto(RoomHallway);
-        room_goto(RoomMain);
+        if(doorEnter)
+            room_goto(RoomMain);
         break;
     }
     case RoomMain:
     {
-        room_goto(RoomFrontDesk)
+        if(doorEnter)
+            room_goto(RoomFrontDesk)
         break;
     }
+}
+
+
+// Mark the elevator as used
+if(room != RoomMenu)
+{   
+    ObjUI.elevatorTouched = true;   
+}
+
+/*
     case RoomHallway:
     {
         // Go to the Front Desk
@@ -44,8 +57,4 @@ switch(room)
         break;
 }
 
-// Mark the elevator as used
-if(room != RoomMenu)
-{   
-    ObjUI.elevatorTouched = true;   
-}
+

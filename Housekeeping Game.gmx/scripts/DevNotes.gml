@@ -1049,3 +1049,8 @@ HUD Elements
 UI Button Step 3
 - drawButton now checks gui_x/y_mouse and returns True/False. A T/F check has been added
     to PlayerNPCCollision. Tests using NPC001 have proven successful.
+    
+UI Button Step 4
+- Player movement is now restricted while using a drawRect box. This allows players to
+    interact with buttons without accidentally moving to a new place on screen, or to 
+    a new room.
