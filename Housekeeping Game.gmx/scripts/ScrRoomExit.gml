@@ -44,10 +44,8 @@ switch(room)
         break;
 }
 
-// Turn off any full screen displays that may still be visible
+// Mark the elevator as used
 if(room != RoomMenu)
 {   
-    ObjOverlord.drawShirt = false;
-    ObjOverlord.drawDocs = false;
-    ObjOverlord.drawNote = false;
+    ObjUI.elevatorTouched = true;   
 }

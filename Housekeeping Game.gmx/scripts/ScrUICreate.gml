@@ -31,3 +31,6 @@ hours = 9;
 minutes = 0;
 
 AmPm = 1;
+
+// UI Warnings and markers
+elevatorTouched = false;

@@ -24,7 +24,7 @@ if(instance_exists(ObjNPCParent))
         talkY = drawRectY + TXTDRAWBUFFER;
         replyY = talkY + TXTDRAWBUFFER;
         
-        btnYes = drawButton(talkX - (TXTDRAWBUFFER*2), replyY + TXTDRAWBUFFER, BTN001);
+//        btnYes = drawButton(talkX - (TXTDRAWBUFFER*2), replyY + TXTDRAWBUFFER, BTN001);
 
         with(NPC)
         {

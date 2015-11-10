@@ -1039,3 +1039,9 @@ UI Button Step 2
     Currently coordinates are sticking to the roomspace, rather than to the view space.
     I'll tackle this later using view_h/wview, but the correct formula will need some time
     to work out.
+    
+// Novemeber 10, 2015 //
+
+HUD Elements
+- Added a pop-up message about how to use the elevator. Message shows on mouse-over, and
+    stops displaying after the first use of the elevator.
