@@ -1054,3 +1054,7 @@ UI Button Step 4
 - Player movement is now restricted while using a drawRect box. This allows players to
     interact with buttons without accidentally moving to a new place on screen, or to 
     a new room.
+    
+UI Button Step 5
+- Yes/No confirmation buttons now only display when player is in a position to complete
+    a mission. This prevents players from prematurely completing missions.
