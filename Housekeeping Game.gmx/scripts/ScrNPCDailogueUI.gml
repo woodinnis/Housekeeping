@@ -218,6 +218,10 @@ if(instance_exists(ObjNPCParent))
 
 talkX = argument0;
 replyY = argument1;
+
 btnYes = drawButton(talkX - (TXTDRAWBUFFER*2), replyY + TXTDRAWBUFFER, BTN001);
-btnNo = drawButton(talkX + (TXTDRAWBUFFER*2), replyY + TXTDRAWBUFFER, BTN001);
+draw_text(talkX - (TXTDRAWBUFFER*2), replyY + TXTDRAWBUFFER,"YES");
+
+btnNo = drawButton(talkX + (TXTDRAWBUFFER*2), replyY + TXTDRAWBUFFER, BTN002);
+draw_text(talkX + (TXTDRAWBUFFER*2), replyY + TXTDRAWBUFFER,"NO");
 
