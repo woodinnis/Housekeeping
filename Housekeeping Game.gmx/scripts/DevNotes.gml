@@ -1021,3 +1021,54 @@ Mission implementation stage 4
 Mission implementation stage 4.1
 - Spawn point randomization configured. Key Objects will spawn at a randomly selected
     spawn point, instead of in order of placement.
+    
+// November 07, 2015 //
+
+UI Improvements
+- Reimplemented drawRect and alignUI called from NPCDrawUI. Minor adjustments to
+    variables used in NPCDrawUI now attach the text to the center-top of the GUI.
+- TXTDRAWBUFFER added to make spacing more adjustible as fonts change.
+
+UI Button Step 1
+- Created drawButton() for GUI button creation using sprites. Buttons are not currently
+    interactive, and only use placeholder sprites. However, the function has been tested,
+    and sprites appear where desired.
+    
+UI Button Step 2
+- Started adding mouse interactivity to drawButton, using point_in_rect, and device_mouse
+    Currently coordinates are sticking to the roomspace, rather than to the view space.
+    I'll tackle this later using view_h/wview, but the correct formula will need some time
+    to work out.
+    
+// Novemeber 10, 2015 //
+
+HUD Elements
+- Added a pop-up message about how to use the elevator. Message shows on mouse-over, and
+    stops displaying after the first use of the elevator.
+    
+UI Button Step 3
+- drawButton now checks gui_x/y_mouse and returns True/False. A T/F check has been added
+    to PlayerNPCCollision. Tests using NPC001 have proven successful.
+    
+UI Button Step 4
+- Player movement is now restricted while using a drawRect box. This allows players to
+    interact with buttons without accidentally moving to a new place on screen, or to 
+    a new room.
+    
+UI Button Step 5
+- Yes/No confirmation buttons now only display when player is in a position to complete
+    a mission. This prevents players from prematurely completing missions.
+    
+UI Button Step 5.1
+- Yes/No buttons have been labelled, and the "No" sprite has been switched to more clearly
+    distinguish the two.
+    
+// November 11, 2015 //
+UI Button Step 6
+- "No" button can now be given basic functionality. REFUSE added to macro list, and is
+    used to give ? "Name" a value when "No" is clicked. This is also the value to check
+    for when looking for a negative player response.
+    
+UI Button Step 7
+- "No" button and REFUSE responses now set for all NPCs. ?"Name" resets correctly.
+- NPC dialogue entries moved to individual sub-scripts for organizational purposes.
