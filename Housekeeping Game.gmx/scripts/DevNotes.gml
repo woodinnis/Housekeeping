@@ -1068,3 +1068,7 @@ UI Button Step 6
 - "No" button can now be given basic functionality. REFUSE added to macro list, and is
     used to give ? "Name" a value when "No" is clicked. This is also the value to check
     for when looking for a negative player response.
+    
+UI Button Step 7
+- "No" button and REFUSE responses now set for all NPCs. ?"Name" resets correctly.
+- NPC dialogue entries moved to individual sub-scripts for organizational purposes.

@@ -35,6 +35,10 @@ with(other)
                 m[? "Name"] = NPC002;
                 ScrItemDrop(INVJEWELS);
             }
+            else if(keyboard_check_pressed(ord("N")) || btnNo)
+            {
+                m[? "Name"] = REFUSE;
+            }
             
             break;
         }
@@ -46,6 +50,10 @@ with(other)
                 m[? "Complete"] = true;
                 m[? "Name"] = NPC003;
                 ScrItemDrop(INVLAPTOP);
+            }
+            else if(keyboard_check_pressed(ord("N")) || btnNo)
+            {
+                m[? "Name"] = REFUSE;
             }
             
             break;
@@ -60,6 +68,10 @@ with(other)
                 ScrItemDrop(INVLAPTOP);
                 totalCash += REWARD;
             }
+            else if(keyboard_check_pressed(ord("N")) || btnNo)
+            {
+                m[? "Name"] = REFUSE;
+            }
             
             break;
         }
@@ -71,6 +83,10 @@ with(other)
                 m[? "Complete"] = true;
                 m[? "Name"] = NPC006;
                 ScrItemDrop(INVDOC);
+            }
+            else if(keyboard_check_pressed(ord("N")) || btnNo)
+            {
+                m[? "Name"] = REFUSE;
             }
             
             break;
@@ -85,6 +101,10 @@ with(other)
                 ScrItemDrop(INVDOC);
                 totalCash += REWARD;
             }
+            else if(keyboard_check_pressed(ord("N")) || btnNo)
+            {
+                m[? "Name"] = REFUSE;
+            }
             
             break;
         }
@@ -96,6 +116,10 @@ with(other)
                 m[? "Complete"] = true;
                 m[? "Name"] = NPC009;
                 ScrItemDrop(INVLETTER);
+            }
+            else if(keyboard_check_pressed(ord("N")) || btnNo)
+            {
+                m[? "Name"] = REFUSE;
             }
             
             break;

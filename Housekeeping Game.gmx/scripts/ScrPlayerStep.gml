@@ -1,8 +1,25 @@
 /*
 *   Perform code on each frame
 *   
-*
+*/
 
+// Reset "Name" key in the missionList if it has been refused
+if(ds_exists(missionList, ds_type_list))
+{
+    if(!place_meeting(x,y,ObjNPCParent))
+    {
+        n = ds_list_size(missionList)
+        for(i = 0; i < n; i++)
+        {
+            m = missionList[| i];
+            if(m[? "Name"] == REFUSE)
+            {     
+                m[? "Name"] = "0";
+            }
+        }
+    }
+}
+/*
 if(!shiftStart)
 {
     room_goto(RoomFrontDesk);
@@ -11,7 +28,7 @@ if(!shiftStart)
     cleanCount = 0;
 }
 
-/*
+
 *   Intro UI and Clerk interaction scripting.
 *   These could both be moved into their own scripts if/when they are
 *   reimplemented

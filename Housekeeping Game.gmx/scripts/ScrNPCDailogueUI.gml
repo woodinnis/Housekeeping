@@ -105,7 +105,7 @@ if(!m[? "Complete"])
         if(m[? "Key Object"])
         {
             if(m[? "Name"] == REFUSE)
-                draw_text(talkX,talkY,"alsuh");
+                draw_text(talkX,talkY,"My husband bought me that necklace!");
             else
             {
                 draw_text(talkX,talkY,"Is that my necklace you have?");
@@ -136,9 +136,14 @@ replyY = argument3;
 
 if(!m[? "Complete"] && m[? "Key Object"])
 {
-    draw_text(talkX,talkY,"That's a nice necklace you have there. #I'll take it off your hands for a few bucks.");
-    draw_text(talkX, replyY, "Can I buy it? Y/N");
-    buttons(talkX,replyY);
+    if(m[? "Name"] == REFUSE)
+        draw_text(talkX, talkY, "Fine! It's an ugly necklace anyway!");
+    else
+    {
+        draw_text(talkX,talkY,"That's a nice necklace you have there. #I'll take it off your hands for a few bucks.");
+        draw_text(talkX, replyY, "Can I buy it? Y/N");
+        buttons(talkX,replyY);
+    }
 }
 else
     draw_text(talkX,talkY,"Out of my Way!");
@@ -157,9 +162,14 @@ if(!m[? "Complete"])
     {
         if(m[? "Key Object"])
         {
-            draw_text(talkX,talkY,"Is that my laptop?!");
-            draw_text(talkX, replyY, "Please, give it to me! Y/N");
-            buttons(talkX,replyY);
+            if(m[? "Name"] == REFUSE)
+                draw_text(talkX, talkY, "It's critical that you return it to me!");
+            else
+            {
+                draw_text(talkX,talkY,"Is that my laptop?!");
+                draw_text(talkX, replyY, "Please, give it to me! Y/N");
+                buttons(talkX,replyY);
+            }
         }
         else 
             draw_text(talkX,talkY,"I still haven't found my laptop.");
@@ -188,12 +198,19 @@ if(!m[? "Complete"])
     {
         if(m[? "Key Object"])
         {
-            draw_text(talkX,talkY,"Would you be interested in selling that laptop?")
-            draw_text(talkX, replyY, "I'm offering a good price. Y/N");
-            buttons(talkX,replyY);
+            if(m[? "Name"] == REFUSE)
+                draw_text(talkX,talkY,"I really suggest you reconsider");
+            else
+            {
+                draw_text(talkX,talkY,"Would you be interested in selling that laptop?")
+                draw_text(talkX, replyY, "I'm offering a good price. Y/N");
+                buttons(talkX,replyY);
+            }
         }
     }
 }
+else
+    draw_text(talkX, talkY, "...");
 
 #define NPC006Dia
 ///NPC006Dia(Mission Entry, x, y1, y2)
@@ -209,9 +226,14 @@ if(!m[? "Complete"])
     {
         if(m[? "Key Object"])
         {
-            draw_text(talkX,talkY,"Those look like my documents.");
-            draw_text(talkX, replyY, "Can I look at them? Y/N");
-            buttons(talkX,replyY);
+            if(m[? "Name"] == REFUSE)
+                draw_text(talkX, talkY, "The consequenses are on you then!");
+            else
+            {
+                draw_text(talkX,talkY,"Those look like my documents.");
+                draw_text(talkX, replyY, "Can I look at them? Y/N");
+                buttons(talkX,replyY);
+            }
         }
         else 
             draw_text(talkX,talkY,"Have you seen my documents?");
@@ -241,9 +263,14 @@ if(!m[? "Complete"])
     {
         if(m[? "Key Object"])
         {
-            draw_text(talkX,talkY,"That looks like the portfolio I'm after.");
-            draw_text(talkX, replyY, "Will you hand it over? Y/N");
-            buttons(talkX,replyY);
+            if(m[? "Name"] == REFUSE)
+                draw_text(talkX, talkY, "Who are you working for?");
+            else
+            {
+                draw_text(talkX,talkY,"That looks like the portfolio I'm after.");
+                draw_text(talkX, replyY, "Will you hand it over? Y/N");
+                buttons(talkX,replyY);
+            }
         }
         else 
             draw_text(talkX,talkY,"Have you run into my suspect yet?");
@@ -273,9 +300,14 @@ if(!m[? "Complete"])
     {
         if(m[? "Key Object"])
         {
-            draw_text(talkX,talkY,"That looks like the letter I'm looking for");
-            draw_text(talkX, replyY, "Is it? Y/N");
-            buttons(talkX,replyY);
+            if(m[? "Name"] == REFUSE)
+                draw_text(talkX, talkY, "That's a shame. It's the last letter she ever sent me.")
+            else
+            {
+                draw_text(talkX,talkY,"That looks like the letter I'm looking for");
+                draw_text(talkX, replyY, "Is it? Y/N");
+                buttons(talkX,replyY);
+            }
         }
         else 
             draw_text(talkX,talkY,"I'm still looking for my letter. Have you seen it?");
