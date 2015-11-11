@@ -19,6 +19,10 @@ with(other)
                 ScrItemDrop(INVJEWELS);
                 totalCash += REWARD;
             }
+            else if(keyboard_check_pressed(ord("N")) || btnNo)
+            {
+                m[? "Name"] = REFUSE;
+            }
             
             break;
         }

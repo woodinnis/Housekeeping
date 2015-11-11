@@ -1062,3 +1062,9 @@ UI Button Step 5
 UI Button Step 5.1
 - Yes/No buttons have been labelled, and the "No" sprite has been switched to more clearly
     distinguish the two.
+    
+// November 11, 2015 //
+UI Button Step 6
+- "No" button can now be given basic functionality. REFUSE added to macro list, and is
+    used to give ? "Name" a value when "No" is clicked. This is also the value to check
+    for when looking for a negative player response.

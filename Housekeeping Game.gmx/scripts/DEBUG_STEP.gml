@@ -21,7 +21,9 @@ if(debug)
     
     if(keyboard_check_pressed(ord("E")))
     {
-        showEvidence = true;
+        m = missionList[| 0];
+        m[? "Key Object"] = true;
+        ScrItemAdd(INVJEWELS,JEWELVAL);
     }
     if(keyboard_check_pressed(vk_escape))
     {
