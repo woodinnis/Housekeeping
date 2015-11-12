@@ -335,4 +335,3 @@ draw_text(talkX - (TXTDRAWBUFFER*2), replyY + TXTDRAWBUFFER,"YES");
 
 btnNo = drawButton(talkX + (TXTDRAWBUFFER*2), replyY + TXTDRAWBUFFER, BTN002);
 draw_text(talkX + (TXTDRAWBUFFER*2), replyY + TXTDRAWBUFFER,"NO");
-
