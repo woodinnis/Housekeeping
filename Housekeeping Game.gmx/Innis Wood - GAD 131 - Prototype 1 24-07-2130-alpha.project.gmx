@@ -95,6 +95,8 @@
         <sprite>sprites\ClueSm2</sprite>
         <sprite>sprites\ClueSm3</sprite>
       </sprites>
+      <sprite>sprites\SprNPCLobbyWoman</sprite>
+      <sprite>sprites\SprNPCHoodieGuy</sprite>
     </sprites>
     <sprites name="Evidence">
       <sprite>sprites\SprEvidenceShirt</sprite>

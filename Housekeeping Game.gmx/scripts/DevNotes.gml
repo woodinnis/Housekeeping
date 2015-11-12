@@ -1072,3 +1072,9 @@ UI Button Step 6
 UI Button Step 7
 - "No" button and REFUSE responses now set for all NPCs. ?"Name" resets correctly.
 - NPC dialogue entries moved to individual sub-scripts for organizational purposes.
+
+NPC Sprites
+- Started creating new sprites for the NPCs. Working to make them look as similar to 
+    the PC as possible. Currently using stock images, separating chunks of colour into
+    layers and using a normal colour overlay.
+- LobbyWoman, HoodieGuy sprites completed and tested
