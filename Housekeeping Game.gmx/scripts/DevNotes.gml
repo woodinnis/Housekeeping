@@ -1078,3 +1078,10 @@ NPC Sprites
     the PC as possible. Currently using stock images, separating chunks of colour into
     layers and using a normal colour overlay.
 - LobbyWoman, HoodieGuy sprites completed and tested
+
+// November 12, 2015 //
+
+NPC Sprites
+- Remaining NPC sprites completed and tested
+- AdPerson has not been given a new sprite. A new branch dealing with all of the details
+    of AdPerson will be started at some point in future.

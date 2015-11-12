@@ -97,6 +97,11 @@
       </sprites>
       <sprite>sprites\SprNPCLobbyWoman</sprite>
       <sprite>sprites\SprNPCHoodieGuy</sprite>
+      <sprite>sprites\SprNPCOldMan</sprite>
+      <sprite>sprites\SprNPCMaintenanceGuy</sprite>
+      <sprite>sprites\SprNPCLaptopGuy</sprite>
+      <sprite>sprites\SprNPCWhistleblower</sprite>
+      <sprite>sprites\SprNPCManInSuit</sprite>
     </sprites>
     <sprites name="Evidence">
       <sprite>sprites\SprEvidenceShirt</sprite>
