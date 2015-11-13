@@ -152,6 +152,7 @@
     <sprite>sprites\spr_border</sprite>
     <sprite>sprites\spr_items</sprite>
     <sprite>sprites\SprLiftSign</sprite>
+    <sprite>sprites\SprDialogueBox</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BG_tester</background>
@@ -348,7 +349,7 @@
     <room>rooms\RoomRoomLg</room>
     <room>rooms\RoomMain</room>
   </rooms>
-  <constants number="88">
+  <constants number="89">
     <constant name="INTROMSG1">"Welcome to Hotel Classy # It's your first day as a member of the housekeeping staff!"</constant>
     <constant name="INTROMSG2">" Feel free to interact with hotel guests. #But make sure to clean all the rooms."</constant>
     <constant name="INTROMSG3">"Pick up your cleaning supplies from the Front Desk, #and start your shift."</constant>
@@ -437,6 +438,7 @@
     <constant name="BTN001">"YES"</constant>
     <constant name="BTN002">"NO"</constant>
     <constant name="REFUSE">"nope"</constant>
+    <constant name="DIALOGUESCALE">0.25</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

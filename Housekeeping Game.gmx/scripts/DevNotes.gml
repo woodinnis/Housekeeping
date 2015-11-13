@@ -1105,3 +1105,8 @@ Clerk UI
 - Players now get a brief tutorial about purchasing supplies when they first click on
     FrontDeskClerk. After the intro has been completed, the Clerk dialogue will display
     game stats.
+    
+Dialogue Box
+- Created a new sprite for the dialogue box
+- Rewrote most of drawRect to use a scaled sprite. The sprite scales for window size, and
+    still uses the same mouseover code to prevent unwanted movement.
