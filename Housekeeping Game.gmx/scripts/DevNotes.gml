@@ -1099,3 +1099,9 @@ Introduction message
 - The new script uses a basic button prompt (OKbutton subscript) to lead through the
     intro messages. The macros used by the script have also been rewritten to conform
     to the new theme.
+    
+Clerk UI
+- ClerkUI has been rewritten and reimplemented.
+- Players now get a brief tutorial about purchasing supplies when they first click on
+    FrontDeskClerk. After the intro has been completed, the Clerk dialogue will display
+    game stats.

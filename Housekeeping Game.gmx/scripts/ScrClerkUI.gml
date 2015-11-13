@@ -1,32 +1,74 @@
+#define ScrClerkUI
 /*
-*    UI Elements for the front desk clerk.
+*   Show a dialogue box, and text when the player clicks on the front desk clerk.
+*   
+*   After the player has been given tutorial information, the dialogue will contain
+*   basic game information (Shift length, Shift goals, Current wage...)
 */
 
-if(ObjOverlord.clerkSpeak)
-{
+var msgX = centerX;
+var msgY = drawRectY + TXTDRAWBUFFER;
+var btnY = msgY + TXTDRAWBUFFER;
 
+if(ObjOverlord.introRead && ObjOverlord.clerkRead)
+{
+    alignUI();
+    draw_set_valign(fa_top);
+    // Draw the text spoken by the clerk
+    switch(ObjOverlord.clerkSpeak)
     {
-        // Draw a rectangle behind the on-screen text
-        drawRect();
-        alignUI();
-        draw_set_valign(fa_middle);
-        // Draw the text spoken by the clerk
-        switch(currentCrime)
+        case 00:
         {
-            case CRIME000:
-            {
-                if(ObjOverlord.noteFound)
-                    sayMe = TRANSLATE000;
-                else
-                    sayMe = MISSION000;
-                draw_text(centerX,topThird,sayMe);
-                break;
-            }
-            case CRIME001:
-            case CRIME002:
-            case CRIME003:
-            default:
-                break;
+            drawRect();
+
+            draw_text(msgX, msgY, CLERKMSG00);
+            
+            ObjOverlord.clerkSpeak += ClerkButton(msgX, btnY);
+            
+            break;
         }
-    }
+        case 01:
+        {
+            drawRect();
+
+            draw_text(msgX, msgY, CLERKMSG01);
+            
+            ObjOverlord.clerkSpeak += ClerkButton(msgX, btnY);
+            
+            break;            
+        }
+        case 02:
+        {
+            drawRect();
+            
+            draw_text(msgX, msgY, CLERKMSG02);
+            
+            ObjOverlord.clerkSpeak += ClerkButton(msgX, btnY);
+            
+            break;
+        }
+        case 03:
+        default:
+        {
+            ObjOverlord.clerkRead = false;
+            ObjOverlord.clerkSpeak = 02;
+            break;
+        }
+            
+    }   
 }
+
+#define ClerkButton
+///buttons(X,Y)
+/*
+*   Draw the OK button, and progress through the messages
+*/
+
+talkX = argument0;
+replyY = argument1;
+
+btnYes = drawButton(talkX, replyY + TXTDRAWBUFFER, BTN001);
+draw_text(talkX, replyY + TXTDRAWBUFFER, "OK");
+
+if(btnYes)
+    return(1);

@@ -348,7 +348,7 @@
     <room>rooms\RoomRoomLg</room>
     <room>rooms\RoomMain</room>
   </rooms>
-  <constants number="86">
+  <constants number="88">
     <constant name="INTROMSG1">"Welcome to Hotel Classy # It's your first day as a member of the housekeeping staff!"</constant>
     <constant name="INTROMSG2">" Feel free to interact with hotel guests. #But make sure to clean all the rooms."</constant>
     <constant name="INTROMSG3">"Pick up your cleaning supplies from the Front Desk, #and start your shift."</constant>
@@ -381,7 +381,9 @@
     <constant name="SHIFTTIME02">4</constant>
     <constant name="SHIFTTIME03">6</constant>
     <constant name="SHIFTTIME04">8</constant>
-    <constant name="ENTERCHANCE">25</constant>
+    <constant name="CLERKMSG00">"Welcome to your first shift. #You'll need supplies to clean the hotel."</constant>
+    <constant name="CLERKMSG01">"Pick up bleach, sheets, and towels any time you run out."</constant>
+    <constant name="CLERKMSG02">"Today's shift is #" + string(shiftTime) + " hours."</constant>
     <constant name="SPRSCALE">15</constant>
     <constant name="MAXITEMS">12</constant>
     <constant name="MAXTOOLS">4</constant>
