@@ -1093,3 +1093,9 @@ Elevator dialogue
     checks the state of NPCParent.touchingPlayer, and reacts according. Currently only
     one NPC seems to have the desired reaction. However, NPC placement can help with
     some of the problem.
+    
+Introduction message
+- IntroUI has been reconfigured and reimplemented.
+- The new script uses a basic button prompt (OKbutton subscript) to lead through the
+    intro messages. The macros used by the script have also been rewritten to conform
+    to the new theme.

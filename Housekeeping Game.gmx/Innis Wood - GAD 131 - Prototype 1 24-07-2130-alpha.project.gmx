@@ -349,9 +349,9 @@
     <room>rooms\RoomMain</room>
   </rooms>
   <constants number="86">
-    <constant name="INTROMSG1">"It's the height of the Cold War. You are MI6's finest,#working undercover in Paris's poshest hotel.#Work with your partner at the front desk#to take on the Soviet threat."</constant>
-    <constant name="INTROMSG2">"Get assignments from your partner at the front desk.#Help prevent a war##Click to continue"</constant>
-    <constant name="INTROMSG3">"Move with the mouse or keyboard.##Click to interact with people or objects."</constant>
+    <constant name="INTROMSG1">"Welcome to Hotel Classy # It's your first day as a member of the housekeeping staff!"</constant>
+    <constant name="INTROMSG2">" Feel free to interact with hotel guests. #But make sure to clean all the rooms."</constant>
+    <constant name="INTROMSG3">"Pick up your cleaning supplies from the Front Desk, #and start your shift."</constant>
     <constant name="PLAYERSPEED">5</constant>
     <constant name="MOUSEMOVEBUFFER">40</constant>
     <constant name="TXTDRAWBUFFER">40</constant>
