@@ -1085,3 +1085,11 @@ NPC Sprites
 - Remaining NPC sprites completed and tested
 - AdPerson has not been given a new sprite. A new branch dealing with all of the details
     of AdPerson will be started at some point in future.
+    
+// November 13, 2015 //
+
+Elevator dialogue
+- A check has been added to ScrHUD to verify the player is not touching an NPC. This 
+    checks the state of NPCParent.touchingPlayer, and reacts according. Currently only
+    one NPC seems to have the desired reaction. However, NPC placement can help with
+    some of the problem.

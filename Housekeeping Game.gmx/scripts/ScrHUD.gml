@@ -14,16 +14,19 @@ var talkY = 0;
 // the mouse over it, providing instructions.
 if(!elevatorTouched)
 {
-    if(position_meeting(mouseX, mouseY, ObjElevator))
+    if(!ObjNPCParent.touchingPlayer)
     {
-        // Align text
-        drawRect();
-        alignUI();
-        draw_set_valign(fa_middle);
-        talkX = centerX;
-        talkY = drawRectY + TXTDRAWBUFFER;
-        
-        // Message
-        draw_text(talkX, talkY, "Click the Elevator Doors to go to the Main Hallway");
+        if(position_meeting(mouseX, mouseY, ObjElevator))
+        {
+            // Align text
+            drawRect();
+            alignUI();
+            draw_set_valign(fa_middle);
+            talkX = centerX;
+            talkY = drawRectY + TXTDRAWBUFFER;
+            
+            // Message
+            draw_text(talkX, talkY, "Click the Elevator Doors to go to the Main Hallway");
+        }
     }
 }
