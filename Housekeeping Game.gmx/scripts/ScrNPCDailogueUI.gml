@@ -7,6 +7,8 @@ var talkX = 0;
 var talkY = 0;
 var replyY = 0;
 
+var NPC;
+
 btnYes = false;
 btnNo = false;
 

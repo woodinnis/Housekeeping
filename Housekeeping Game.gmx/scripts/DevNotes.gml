@@ -1117,3 +1117,8 @@ Font added
 - Created and added a neon light-style font for use in game dialogues. Uses SprNeonFont
     in UICreate, and it is called UIFont internally to the UI scripts. Spacing issues
     persist, and typesetting will need to be redone for most game dialogue.
+    
+Elevator dialogue box resolved
+- Used a new var NPC in ScrHUD to distinguish the nearest NPC (same method used in NPCDialogue.
+    Testing this .touchingPlayer prevents the elevator dialogue from displaying when an NPC is
+    being talked to.
