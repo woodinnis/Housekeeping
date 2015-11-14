@@ -29,8 +29,10 @@ if(!elevatorTouched && ObjOverlord.introRead)
             talkX = centerX;
             talkY = drawRectY + TXTDRAWBUFFER;
             
+            elevatorTouched = drawButton(talkX, talkY + TXTDRAWBUFFER, BTN001);
+            
             // Message
-            draw_text(talkX, talkY, "Click the Elevator Doors to go to the Main Hallway");
+            draw_text(talkX, talkY, ELEVATOR);
         }
     }
 }

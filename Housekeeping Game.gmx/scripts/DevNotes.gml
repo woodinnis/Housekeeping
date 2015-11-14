@@ -1127,3 +1127,8 @@ Dialogue boxes
 - All FrontDesk dialogue boxes have been given conditionals to check. elevatorTouched is
     now changed to true in RoomMain, instead of != RoomMenu. Checks have been added to all
     dialogue boxes for .introRead, to prevent overlapping with the intro.
+    
+Elevator dialogue box part 2
+- Resolved elevatorTouched issue that would register .elevatorTouched at room_exit, which prevented
+    reentry to another room (for some reason). elevatorTouched is now set using a drawButton.
+    The return of T/F sets the value, which determines if the dialogue continues to show.
