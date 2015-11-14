@@ -24,7 +24,7 @@ switch(room)
 
 
 // Mark the elevator as used
-if(room != RoomMenu)
+if(room == RoomMain)
 {   
     ObjUI.elevatorTouched = true;   
 }

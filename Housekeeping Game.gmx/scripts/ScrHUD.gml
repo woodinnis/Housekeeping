@@ -14,7 +14,7 @@ var NPC;
 
 // If the elevator has not yet been used, show a message when the player first moves
 // the mouse over it, providing instructions.
-if(!elevatorTouched)
+if(!elevatorTouched && ObjOverlord.introRead)
 {
     NPC = instance_nearest(ObjPlayerParent.x,ObjPlayerParent.y, ObjNPCParent);
     

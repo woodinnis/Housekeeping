@@ -1122,3 +1122,8 @@ Elevator dialogue box resolved
 - Used a new var NPC in ScrHUD to distinguish the nearest NPC (same method used in NPCDialogue.
     Testing this .touchingPlayer prevents the elevator dialogue from displaying when an NPC is
     being talked to.
+    
+Dialogue boxes
+- All FrontDesk dialogue boxes have been given conditionals to check. elevatorTouched is
+    now changed to true in RoomMain, instead of != RoomMenu. Checks have been added to all
+    dialogue boxes for .introRead, to prevent overlapping with the intro.
