@@ -1110,3 +1110,10 @@ Dialogue Box
 - Created a new sprite for the dialogue box
 - Rewrote most of drawRect to use a scaled sprite. The sprite scales for window size, and
     still uses the same mouseover code to prevent unwanted movement.
+    
+// November 14, 2015 //
+
+Font added
+- Created and added a neon light-style font for use in game dialogues. Uses SprNeonFont
+    in UICreate, and it is called UIFont internally to the UI scripts. Spacing issues
+    persist, and typesetting will need to be redone for most game dialogue.

@@ -153,6 +153,7 @@
     <sprite>sprites\spr_items</sprite>
     <sprite>sprites\SprLiftSign</sprite>
     <sprite>sprites\SprDialogueBox</sprite>
+    <sprite>sprites\SprNeonFont</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BG_tester</background>
@@ -350,9 +351,9 @@
     <room>rooms\RoomMain</room>
   </rooms>
   <constants number="89">
-    <constant name="INTROMSG1">"Welcome to Hotel Classy # It's your first day as a member of the housekeeping staff!"</constant>
-    <constant name="INTROMSG2">" Feel free to interact with hotel guests. #But make sure to clean all the rooms."</constant>
-    <constant name="INTROMSG3">"Pick up your cleaning supplies from the Front Desk, #and start your shift."</constant>
+    <constant name="INTROMSG1">"Welcome to Hotel Classy#It's your first day as part#of the housekeeping staff!"</constant>
+    <constant name="INTROMSG2">" Feel free to interact#with hotel guests.#But be sure to clean the rooms."</constant>
+    <constant name="INTROMSG3">"Pick up cleaning supplies#from the Front Desk,#and start your shift."</constant>
     <constant name="PLAYERSPEED">5</constant>
     <constant name="MOUSEMOVEBUFFER">40</constant>
     <constant name="TXTDRAWBUFFER">40</constant>
