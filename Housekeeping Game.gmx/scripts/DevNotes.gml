@@ -1132,3 +1132,7 @@ Elevator dialogue box part 2
 - Resolved elevatorTouched issue that would register .elevatorTouched at room_exit, which prevented
     reentry to another room (for some reason). elevatorTouched is now set using a drawButton.
     The return of T/F sets the value, which determines if the dialogue continues to show.
+    
+Clerk dialogue box
+- Added a check to the Clerk's dialogue box to verify no other NPC was being touched. This
+    further prevents overlap of dialogue boxes.

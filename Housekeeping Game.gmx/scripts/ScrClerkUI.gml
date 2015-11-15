@@ -10,7 +10,9 @@ var msgX = centerX;
 var msgY = drawRectY + TXTDRAWBUFFER;
 var btnY = msgY + TXTDRAWBUFFER;
 
-if(ObjOverlord.introRead && ObjOverlord.clerkRead)
+var NPC = instance_nearest(ObjPlayerParent.x,ObjPlayerParent.y, ObjNPCParent);
+
+if(ObjOverlord.introRead && ObjOverlord.clerkRead && !NPC.touchingPlayer)
 {
     alignUI();
     draw_set_valign(fa_top);
