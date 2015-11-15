@@ -10,11 +10,15 @@ var mouseY = device_mouse_y(0);
 var talkX = 0;
 var talkY = 0;
 
+var NPC;
+
 // If the elevator has not yet been used, show a message when the player first moves
 // the mouse over it, providing instructions.
-if(!elevatorTouched)
+if(!elevatorTouched && ObjOverlord.introRead)
 {
-    if(!ObjNPCParent.touchingPlayer)
+    NPC = instance_nearest(ObjPlayerParent.x,ObjPlayerParent.y, ObjNPCParent);
+    
+    if(!NPC.touchingPlayer)
     {
         if(position_meeting(mouseX, mouseY, ObjElevator))
         {
@@ -25,8 +29,10 @@ if(!elevatorTouched)
             talkX = centerX;
             talkY = drawRectY + TXTDRAWBUFFER;
             
+            elevatorTouched = drawButton(talkX, talkY + TXTDRAWBUFFER, BTN001);
+            
             // Message
-            draw_text(talkX, talkY, "Click the Elevator Doors to go to the Main Hallway");
+            draw_text(talkX, talkY, ELEVATOR);
         }
     }
 }

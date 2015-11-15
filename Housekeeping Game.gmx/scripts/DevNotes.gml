@@ -1093,3 +1093,46 @@ Elevator dialogue
     checks the state of NPCParent.touchingPlayer, and reacts according. Currently only
     one NPC seems to have the desired reaction. However, NPC placement can help with
     some of the problem.
+    
+Introduction message
+- IntroUI has been reconfigured and reimplemented.
+- The new script uses a basic button prompt (OKbutton subscript) to lead through the
+    intro messages. The macros used by the script have also been rewritten to conform
+    to the new theme.
+    
+Clerk UI
+- ClerkUI has been rewritten and reimplemented.
+- Players now get a brief tutorial about purchasing supplies when they first click on
+    FrontDeskClerk. After the intro has been completed, the Clerk dialogue will display
+    game stats.
+    
+Dialogue Box
+- Created a new sprite for the dialogue box
+- Rewrote most of drawRect to use a scaled sprite. The sprite scales for window size, and
+    still uses the same mouseover code to prevent unwanted movement.
+    
+// November 14, 2015 //
+
+Font added
+- Created and added a neon light-style font for use in game dialogues. Uses SprNeonFont
+    in UICreate, and it is called UIFont internally to the UI scripts. Spacing issues
+    persist, and typesetting will need to be redone for most game dialogue.
+    
+Elevator dialogue box resolved
+- Used a new var NPC in ScrHUD to distinguish the nearest NPC (same method used in NPCDialogue.
+    Testing this .touchingPlayer prevents the elevator dialogue from displaying when an NPC is
+    being talked to.
+    
+Dialogue boxes
+- All FrontDesk dialogue boxes have been given conditionals to check. elevatorTouched is
+    now changed to true in RoomMain, instead of != RoomMenu. Checks have been added to all
+    dialogue boxes for .introRead, to prevent overlapping with the intro.
+    
+Elevator dialogue box part 2
+- Resolved elevatorTouched issue that would register .elevatorTouched at room_exit, which prevented
+    reentry to another room (for some reason). elevatorTouched is now set using a drawButton.
+    The return of T/F sets the value, which determines if the dialogue continues to show.
+    
+Clerk dialogue box
+- Added a check to the Clerk's dialogue box to verify no other NPC was being touched. This
+    further prevents overlap of dialogue boxes.

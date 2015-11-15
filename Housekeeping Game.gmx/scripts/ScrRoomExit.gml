@@ -12,21 +12,16 @@ switch(room)
     {
         if(doorEnter)
             room_goto(RoomMain);
+        
         break;
     }
     case RoomMain:
     {
         if(doorEnter)
             room_goto(RoomFrontDesk)
+
         break;
     }
-}
-
-
-// Mark the elevator as used
-if(room != RoomMenu)
-{   
-    ObjUI.elevatorTouched = true;   
 }
 
 /*

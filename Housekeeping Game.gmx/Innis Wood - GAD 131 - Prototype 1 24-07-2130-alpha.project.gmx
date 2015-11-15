@@ -152,6 +152,8 @@
     <sprite>sprites\spr_border</sprite>
     <sprite>sprites\spr_items</sprite>
     <sprite>sprites\SprLiftSign</sprite>
+    <sprite>sprites\SprDialogueBox</sprite>
+    <sprite>sprites\SprNeonFont</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BG_tester</background>
@@ -348,10 +350,11 @@
     <room>rooms\RoomRoomLg</room>
     <room>rooms\RoomMain</room>
   </rooms>
-  <constants number="86">
-    <constant name="INTROMSG1">"It's the height of the Cold War. You are MI6's finest,#working undercover in Paris's poshest hotel.#Work with your partner at the front desk#to take on the Soviet threat."</constant>
-    <constant name="INTROMSG2">"Get assignments from your partner at the front desk.#Help prevent a war##Click to continue"</constant>
-    <constant name="INTROMSG3">"Move with the mouse or keyboard.##Click to interact with people or objects."</constant>
+  <constants number="90">
+    <constant name="INTROMSG1">"Welcome to Hotel Classy#It's your first day as part#of the housekeeping staff!"</constant>
+    <constant name="INTROMSG2">" Feel free to interact#with hotel guests.#But be sure to clean the rooms."</constant>
+    <constant name="INTROMSG3">"Pick up cleaning supplies#from the Front Desk,#and start your shift."</constant>
+    <constant name="ELEVATOR">"Click the Elevator Doors#to go to the Main Hallway"</constant>
     <constant name="PLAYERSPEED">5</constant>
     <constant name="MOUSEMOVEBUFFER">40</constant>
     <constant name="TXTDRAWBUFFER">40</constant>
@@ -381,7 +384,9 @@
     <constant name="SHIFTTIME02">4</constant>
     <constant name="SHIFTTIME03">6</constant>
     <constant name="SHIFTTIME04">8</constant>
-    <constant name="ENTERCHANCE">25</constant>
+    <constant name="CLERKMSG00">"Welcome to your first shift. #You'll need supplies to clean the hotel."</constant>
+    <constant name="CLERKMSG01">"Pick up bleach, sheets, and towels any time you run out."</constant>
+    <constant name="CLERKMSG02">"Today's shift is #" + string(shiftTime) + " hours."</constant>
     <constant name="SPRSCALE">15</constant>
     <constant name="MAXITEMS">12</constant>
     <constant name="MAXTOOLS">4</constant>
@@ -435,6 +440,7 @@
     <constant name="BTN001">"YES"</constant>
     <constant name="BTN002">"NO"</constant>
     <constant name="REFUSE">"nope"</constant>
+    <constant name="DIALOGUESCALE">0.25</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

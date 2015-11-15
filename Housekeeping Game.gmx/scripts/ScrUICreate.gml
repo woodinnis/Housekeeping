@@ -34,3 +34,5 @@ AmPm = 1;
 
 // UI Warnings and markers
 elevatorTouched = false;
+
+UIFont = font_add_sprite(SprNeonFont, ord("!"), true, 0);

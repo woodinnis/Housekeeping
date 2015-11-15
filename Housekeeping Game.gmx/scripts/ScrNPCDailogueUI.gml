@@ -7,6 +7,8 @@ var talkX = 0;
 var talkY = 0;
 var replyY = 0;
 
+var NPC;
+
 btnYes = false;
 btnNo = false;
 
@@ -17,7 +19,7 @@ if(instance_exists(ObjNPCParent))
     NPC = instance_nearest(ObjPlayerParent.x,ObjPlayerParent.y, ObjNPCParent);
           
     // Is the player currently touching an NPC
-    if(NPC.touchingPlayer)//position_meeting(ObjPlayerParent.x,ObjPlayerParent.y,NPC))
+    if(NPC.touchingPlayer && ObjOverlord.introRead)//position_meeting(ObjPlayerParent.x,ObjPlayerParent.y,NPC))
     {       
         // Set font, colour, alignment
         drawRect()
