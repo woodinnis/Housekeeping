@@ -1136,3 +1136,7 @@ Elevator dialogue box part 2
 Clerk dialogue box
 - Added a check to the Clerk's dialogue box to verify no other NPC was being touched. This
     further prevents overlap of dialogue boxes.
+    
+Tileset
+- Retiled several areas of RoomMain to read more clearly as unique parts of a hotel (ie:
+    Hallway, Bathroom, Bedroom)

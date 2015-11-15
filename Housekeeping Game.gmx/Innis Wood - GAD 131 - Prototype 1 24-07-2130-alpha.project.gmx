@@ -167,6 +167,7 @@
     <background>background\BGMetal</background>
     <background>background\BGLiftSign</background>
     <background>background\BGMain</background>
+    <background>background\BGHallCarpet</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\pathHallway</path>
