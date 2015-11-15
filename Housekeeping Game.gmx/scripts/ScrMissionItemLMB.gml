@@ -3,10 +3,14 @@
 
 iAm = other.object_index;
 
-ScrItemAdd(Key,Value);
-
 if(!is_undefined(Price))
-    totalCash -= Price;
+{   
+    if(totalCash > 0)
+    {
+        totalCash -= Price;
+        ScrItemAdd(Key,Value);
+    }
+}
 
 if(!is_real(other.Value))
 {
@@ -39,6 +43,8 @@ if(!is_real(other.Value))
         default:
             break;
     }
+    
+    ScrItemAdd(Key,Value);
 
     with(other)
         instance_destroy();

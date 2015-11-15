@@ -1140,3 +1140,9 @@ Clerk dialogue box
 Tileset
 - Retiled several areas of RoomMain to read more clearly as unique parts of a hotel (ie:
     Hallway, Bathroom, Bedroom)
+    
+Inventory
+- Resolved an issue where players could buy infinite number of supplies
+- A check has been put in place for totalCash before purchasing an item, and the ItemAdd
+    call has been moved to inside the condition checks of both a purchase, and a now mission
+    item find (a second call was added for the mission item find).
