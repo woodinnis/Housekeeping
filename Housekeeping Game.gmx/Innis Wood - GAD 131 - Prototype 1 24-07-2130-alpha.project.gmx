@@ -385,8 +385,8 @@
     <constant name="SHIFTTIME02">4</constant>
     <constant name="SHIFTTIME03">6</constant>
     <constant name="SHIFTTIME04">8</constant>
-    <constant name="CLERKMSG00">"Welcome to your first shift. #You'll need supplies to clean the hotel."</constant>
-    <constant name="CLERKMSG01">"Pick up bleach, sheets, and towels any time you run out."</constant>
+    <constant name="CLERKMSG00">"Welcome to your first shift.#You'll need supplies#to clean the hotel."</constant>
+    <constant name="CLERKMSG01">"Pick up bleach, sheets,#and towels#any time you run out."</constant>
     <constant name="CLERKMSG02">"Today's shift is #" + string(shiftTime) + " hours."</constant>
     <constant name="SPRSCALE">15</constant>
     <constant name="MAXITEMS">12</constant>

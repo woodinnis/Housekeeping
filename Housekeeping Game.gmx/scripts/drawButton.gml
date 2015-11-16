@@ -35,8 +35,8 @@ switch(btnType)
 draw_sprite(button, 0, btnX, btnY);
 
 // Create a bounding box for the button
-x1 = btnX - sprite_get_width(button)/2;
-x2 = btnX + sprite_get_width(button)/2;
+x1 = btnX - sprite_get_width(button)//2;
+x2 = btnX + sprite_get_width(button)//2;
 y1 = btnY - sprite_get_height(button)/2;
 y2 = btnY + sprite_get_height(button)/2;
 

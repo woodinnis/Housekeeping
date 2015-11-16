@@ -1146,3 +1146,10 @@ Inventory
 - A check has been put in place for totalCash before purchasing an item, and the ItemAdd
     call has been moved to inside the condition checks of both a purchase, and a now mission
     item find (a second call was added for the mission item find).
+    
+// November 16, 2015 //
+
+UI Tweeks
+- Minor graphics and alignment tweeks to the UI.
+- Yes/No/OK buttons have been changed for ease of use. Dialogue line-breaks have been
+    adjusted for clarity inside the port-on-screen. This may continue to change in future.

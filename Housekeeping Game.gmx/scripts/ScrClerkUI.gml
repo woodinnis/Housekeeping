@@ -69,6 +69,7 @@ if(ObjOverlord.introRead && ObjOverlord.clerkRead && !NPC.touchingPlayer)
 talkX = argument0;
 replyY = argument1;
 
+draw_set_halign(fa_left);
 btnYes = drawButton(talkX, replyY + TXTDRAWBUFFER, BTN001);
 draw_text(talkX, replyY + TXTDRAWBUFFER, "OK");
 

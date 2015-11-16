@@ -68,8 +68,11 @@ switch(ObjOverlord.showIntro)
 talkX = argument0;
 replyY = argument1;
 
-btnYes = drawButton(talkX, replyY + TXTDRAWBUFFER, BTN001);
-draw_text(talkX, replyY + TXTDRAWBUFFER, "OK");
+
+
+btnYes = drawButton(talkX, replyY + (TXTDRAWBUFFER * 2), BTN001);
+draw_set_halign(fa_left);
+draw_text(talkX, replyY + (TXTDRAWBUFFER * 2), "OK");
 
 if(btnYes)
     return(1);
