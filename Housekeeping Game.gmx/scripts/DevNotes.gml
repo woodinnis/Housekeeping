@@ -1153,3 +1153,10 @@ UI Tweeks
 - Minor graphics and alignment tweeks to the UI.
 - Yes/No/OK buttons have been changed for ease of use. Dialogue line-breaks have been
     adjusted for clarity inside the port-on-screen. This may continue to change in future.
+    
+// November 18, 2015 //
+
+- Font rebuilt
+- The sprites comprising the primary game font have been re-imported. Transparency has been
+    correctly maintained, and letters now look like neon tubes. Spacing is still an issue.
+    This may be something that needs to be resolved in Photoshop.
