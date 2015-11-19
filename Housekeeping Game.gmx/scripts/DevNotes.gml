@@ -1184,3 +1184,8 @@ Player movement
     
 Sprite switch
 - Switched the Towel and Sheet sprites on the Toolbar
+
+Clock
+- Clock now only appears while on main floor. Time stops counting when player returns to lobby
+    and resumes upon return to hallway. ie: If the player leaves the hallway at 10:45 and spends
+    five "minutes" in the lobby they will return to the hallway at 10:46.
