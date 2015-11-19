@@ -1165,3 +1165,9 @@ Tool count on HUD
 - Placed the Bleach, Towel, and Sheets sprites on the HUD at a highly reduced scale. Placed
     the count-in-inventory of each item on the right of the sprite. Players no longer need
     to enter inventory to see how many tools they have.
+    
+// Novemeber 19, 2015 //
+
+Clock moved
+- The clock has been moved to improve visibility of the tool list. The text colour has been
+    returned to black, to improve visibility of the time.

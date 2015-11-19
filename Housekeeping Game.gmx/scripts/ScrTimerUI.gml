@@ -41,6 +41,7 @@ show_minutes=string_repeat("0", 2-string_length(string(minutes)))+string(minutes
 alignUI();
 draw_set_valign(fa_middle); // Align middle
 draw_set_font(fontDEBUG);   // Reset font
+draw_set_colour(c_black);
 
 if(AmPm = 1)
     draw_text(drawClockX, drawClockY, show_hours + ":" + show_minutes + "AM");

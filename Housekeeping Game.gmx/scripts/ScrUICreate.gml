@@ -21,8 +21,8 @@ drawRectWide = centerX + 260;
 drawRectHigh = topThird + 100;
 
 // Clock coordinates
-drawClockX = wide - 100;
-drawClockY = 40;
+drawClockX = wide - 60;
+drawClockY = 80;
 drawClockRad = 30
 
 // UI Timer Create
