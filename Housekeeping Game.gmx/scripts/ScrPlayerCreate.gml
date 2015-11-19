@@ -1,8 +1,9 @@
 // Set Player Variables
 touchingClerk = false;
 missionReceived = false;
+canMove = false;
 
-moveSpeed = PLAYERSPEED;
+moveSpeed = 0;
 image_speed = 0;
 
 if(room == RoomHallway)

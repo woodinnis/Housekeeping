@@ -22,13 +22,16 @@ mouseY = device_mouse_y_to_gui(0);
 draw_sprite_stretched(SprDialogueBox, 0, spriteX, spriteY, spriteW, spriteH);
 
 // While mouse is inside the rectangle, prevent player movement
-if(point_in_rectangle(mouseX, mouseY, spriteX, spriteY, spriteW, spriteH))
+if(ObjPlayerParent.canMove)
 {
-    ObjPlayerParent.moveSpeed = 0;
-    ObjDoorParent.doorEnter = false;
-}
-else
-{
-    ObjPlayerParent.moveSpeed = PLAYERSPEED;
-    ObjDoorParent.doorEnter = true;
+    if(point_in_rectangle(mouseX, mouseY, spriteX, spriteY, spriteW, spriteH))
+    {
+        ObjPlayerParent.moveSpeed = 0;
+        ObjDoorParent.doorEnter = false;
+    }
+    else
+    {
+        ObjPlayerParent.moveSpeed = PLAYERSPEED;
+        ObjDoorParent.doorEnter = true;
+    }
 }

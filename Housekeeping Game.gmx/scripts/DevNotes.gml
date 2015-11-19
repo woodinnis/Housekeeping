@@ -1153,3 +1153,39 @@ UI Tweeks
 - Minor graphics and alignment tweeks to the UI.
 - Yes/No/OK buttons have been changed for ease of use. Dialogue line-breaks have been
     adjusted for clarity inside the port-on-screen. This may continue to change in future.
+    
+// November 18, 2015 //
+
+Font rebuilt
+- The sprites comprising the primary game font have been re-imported. Transparency has been
+    correctly maintained, and letters now look like neon tubes. Spacing is still an issue.
+    This may be something that needs to be resolved in Photoshop.
+    
+Tool count on HUD
+- Placed the Bleach, Towel, and Sheets sprites on the HUD at a highly reduced scale. Placed
+    the count-in-inventory of each item on the right of the sprite. Players no longer need
+    to enter inventory to see how many tools they have.
+    
+// November 19, 2015 //
+
+Clock moved
+- The clock has been moved to improve visibility of the tool list. The text colour has been
+    returned to black, to improve visibility of the time.
+    
+Clerk dialogue
+- Dealt with an issue where clicking on towels at the front desk would cause the Clerk dialogue
+    box to pop up. This has been resolved using a nearest instance check, and should allow for
+    any future additions or adjustments to the items at the front desk.
+    
+Player movement
+- Player movement has been suspended during the introduction sequence. A new variable canMove
+    has been added to player parent and should be used to suspend player movement during
+    dialogue sequences.
+    
+Sprite switch
+- Switched the Towel and Sheet sprites on the Toolbar
+
+Clock
+- Clock now only appears while on main floor. Time stops counting when player returns to lobby
+    and resumes upon return to hallway. ie: If the player leaves the hallway at 10:45 and spends
+    five "minutes" in the lobby they will return to the hallway at 10:46.
