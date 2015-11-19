@@ -1166,8 +1166,13 @@ Tool count on HUD
     the count-in-inventory of each item on the right of the sprite. Players no longer need
     to enter inventory to see how many tools they have.
     
-// Novemeber 19, 2015 //
+// November 19, 2015 //
 
 Clock moved
 - The clock has been moved to improve visibility of the tool list. The text colour has been
     returned to black, to improve visibility of the time.
+    
+Clerk dialogue
+- Dealt with an issue where clicking on towels at the front desk would cause the Clerk dialogue
+    box to pop up. This has been resolved using a nearest instance check, and should allow for
+    any future additions or adjustments to the items at the front desk.
