@@ -1181,3 +1181,6 @@ Player movement
 - Player movement has been suspended during the introduction sequence. A new variable canMove
     has been added to player parent and should be used to suspend player movement during
     dialogue sequences.
+    
+Sprite switch
+- Switched the Towel and Sheet sprites on the Toolbar
