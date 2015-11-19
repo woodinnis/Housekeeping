@@ -1176,3 +1176,8 @@ Clerk dialogue
 - Dealt with an issue where clicking on towels at the front desk would cause the Clerk dialogue
     box to pop up. This has been resolved using a nearest instance check, and should allow for
     any future additions or adjustments to the items at the front desk.
+    
+Player movement
+- Player movement has been suspended during the introduction sequence. A new variable canMove
+    has been added to player parent and should be used to suspend player movement during
+    dialogue sequences.

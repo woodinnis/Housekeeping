@@ -54,7 +54,7 @@ switch(ObjOverlord.showIntro)
     {
         // Give player control once intro has been read
         ObjOverlord.introRead = true;
-        ObjPlayerParent.moveSpeed = PLAYERSPEED;
+        ObjPlayerParent.canMove = true;
         break;
     }
 }
