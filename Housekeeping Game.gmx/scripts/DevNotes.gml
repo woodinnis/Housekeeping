@@ -1156,7 +1156,12 @@ UI Tweeks
     
 // November 18, 2015 //
 
-- Font rebuilt
+Font rebuilt
 - The sprites comprising the primary game font have been re-imported. Transparency has been
     correctly maintained, and letters now look like neon tubes. Spacing is still an issue.
     This may be something that needs to be resolved in Photoshop.
+    
+Tool count on HUD
+- Placed the Bleach, Towel, and Sheets sprites on the HUD at a highly reduced scale. Placed
+    the count-in-inventory of each item on the right of the sprite. Players no longer need
+    to enter inventory to see how many tools they have.
