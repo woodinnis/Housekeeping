@@ -4,8 +4,8 @@
 */
 
 var msgX = centerX;
-var msgY = drawRectY + TXTDRAWBUFFER;
-var btnY = msgY + TXTDRAWBUFFER;
+var msgY = topThird;
+var btnY = (msgY*2);// + TXTDRAWBUFFER;
 
 switch(ObjOverlord.showIntro)
 {

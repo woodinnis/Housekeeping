@@ -1189,3 +1189,9 @@ Clock
 - Clock now only appears while on main floor. Time stops counting when player returns to lobby
     and resumes upon return to hallway. ie: If the player leaves the hallway at 10:45 and spends
     five "minutes" in the lobby they will return to the hallway at 10:46.
+    
+// November 21, 2015 //
+
+Dialogue Font
+- After talking to Jason, replaced the sprite-based font with a simple white Art-Deco style built-in
+    font. The alignUI function now sets text to this font.
