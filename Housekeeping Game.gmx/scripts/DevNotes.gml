@@ -1195,3 +1195,8 @@ Clock
 Dialogue Font
 - After talking to Jason, replaced the sprite-based font with a simple white Art-Deco style built-in
     font. The alignUI function now sets text to this font.
+    
+UI Buttons
+- Attempting to redesign the Yes/No/OK button structure currently in place. Buttons in the intro
+    sequence have been replaced with a "click to continue" message. Y/N buttons may prove slightly
+    more complicated.
