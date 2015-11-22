@@ -1200,3 +1200,8 @@ UI Buttons
 - Attempting to redesign the Yes/No/OK button structure currently in place. Buttons in the intro
     sequence have been replaced with a "click to continue" message. Y/N buttons may prove slightly
     more complicated.
+    
+Clerk Buttons
+- OK buttons have been replaced with "Click to Continue" in the Clerk dialogues. The first and last
+    dialogue are presenting issues. The first disappears immediately, and the ability to review the
+    last has had to be disabled.

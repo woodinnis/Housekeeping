@@ -7,8 +7,8 @@
 */
 
 var msgX = centerX;
-var msgY = drawRectY + TXTDRAWBUFFER;
-var btnY = msgY + TXTDRAWBUFFER;
+var msgY = topThird;
+var btnY = msgY * 2;//+ TXTDRAWBUFFER;
 
 var NPC = instance_nearest(ObjPlayerParent.x,ObjPlayerParent.y, ObjNPCParent);
 var INV = instance_nearest(ObjPlayerParent.x,ObjPlayerParent.y, ObjMissionItemParent);
@@ -55,8 +55,8 @@ if(ObjOverlord.introRead && ObjOverlord.clerkRead && !NPC.touchingPlayer)
             case 03:
             default:
             {
-                ObjOverlord.clerkRead = false;
-                ObjOverlord.clerkSpeak = 02;
+//                ObjOverlord.clerkRead = false;
+//                ObjOverlord.clerkSpeak = 02;
                 break;
             }
         }   // switch(ObjOverlord.clerkSpeak)
@@ -72,9 +72,9 @@ if(ObjOverlord.introRead && ObjOverlord.clerkRead && !NPC.touchingPlayer)
 talkX = argument0;
 replyY = argument1;
 
-draw_set_halign(fa_left);
-btnYes = drawButton(talkX, replyY + TXTDRAWBUFFER, BTN001);
-draw_text(talkX, replyY + TXTDRAWBUFFER, "OK");
+draw_set_halign(fa_center);
+btnYes = device_mouse_check_button_pressed(0,mb_left);//drawButton(talkX, replyY + TXTDRAWBUFFER, BTN001);
+draw_text(talkX, replyY, CONTINUE);
 
 if(btnYes)
     return(1);
