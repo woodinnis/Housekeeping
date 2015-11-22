@@ -24,10 +24,10 @@ if(instance_exists(ObjNPCParent))
         // Set font, colour, alignment
         drawRect()
         alignUI();
-        draw_set_valign(fa_middle);
+        draw_set_valign(fa_top);
     
         talkX = centerX;
-        talkY = drawRectY + TXTDRAWBUFFER;
+        talkY = topThird//drawRectY + TXTDRAWBUFFER;
         replyY = talkY + TXTDRAWBUFFER;
         
         NPCName = NPC.NPCName;
