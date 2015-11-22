@@ -1209,3 +1209,6 @@ Clerk Buttons
 NPC Y/N Buttons
 - Y/N Buttons replaced with "Left/Right Click to Continue" in the dialogue. This will not be optimal
     for a mobile platform. But this is a functional alternative until buttons can be reintegrated.
+    
+DEBUG
+- Added a feature to DEBUG to add all quest key items to inventory using the "E" key.
