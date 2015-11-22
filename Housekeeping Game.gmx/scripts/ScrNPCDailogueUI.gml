@@ -332,10 +332,10 @@ else
 talkX = argument0;
 replyY = argument1;
 
-draw_set_halign(fa_left);
+draw_set_halign(fa_center);
 
-btnYes = drawButton(talkX - (TXTDRAWBUFFER*2), replyY + (TXTDRAWBUFFER*2), BTN001);
-draw_text(talkX - (TXTDRAWBUFFER*2) , replyY + (TXTDRAWBUFFER*2),"YES");
+btnYes = device_mouse_check_button_pressed(0,mb_left)//drawButton(talkX - (TXTDRAWBUFFER*2), replyY + (TXTDRAWBUFFER*2), BTN001);
+draw_text(talkX , replyY + (TXTDRAWBUFFER),"Click for Yes");
 
-btnNo = drawButton(talkX + (TXTDRAWBUFFER*2), replyY + (TXTDRAWBUFFER*2), BTN002);
-draw_text(talkX + (TXTDRAWBUFFER*2), replyY + (TXTDRAWBUFFER*2),"NO");
+btnNo = device_mouse_check_button_pressed(0,mb_right)//drawButton(talkX + (TXTDRAWBUFFER*2), replyY + (TXTDRAWBUFFER*2), BTN002);
+draw_text(talkX , replyY + (TXTDRAWBUFFER*2),"Right Click for No");

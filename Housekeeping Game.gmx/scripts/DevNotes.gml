@@ -1205,3 +1205,7 @@ Clerk Buttons
 - OK buttons have been replaced with "Click to Continue" in the Clerk dialogues. The first and last
     dialogue are presenting issues. The first disappears immediately, and the ability to review the
     last has had to be disabled.
+    
+NPC Y/N Buttons
+- Y/N Buttons replaced with "Left/Right Click to Continue" in the dialogue. This will not be optimal
+    for a mobile platform. But this is a functional alternative until buttons can be reintegrated.
