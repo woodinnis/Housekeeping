@@ -378,7 +378,7 @@
     <constant name="ELEVATOR">"Click the Elevator Doors#to go to the Main Hallway"</constant>
     <constant name="EVIDENCE">1</constant>
     <constant name="EVIDENCERANDOM">25</constant>
-    <constant name="INTROMSG1">"Welcome to Hotel Classy#It's your first day as part of the housekeeping staff!"</constant>
+    <constant name="INTROMSG1">"Welcome to Hotel Classy#It's your first day as part of#the housekeeping staff!"</constant>
     <constant name="INTROMSG2">"Feel free to interact with hotel guests.#But be sure to clean the rooms."</constant>
     <constant name="INTROMSG3">"Pick up cleaning supplies from the Front Desk,#and start your shift."</constant>
     <constant name="INVAD">"Advertisement"</constant>

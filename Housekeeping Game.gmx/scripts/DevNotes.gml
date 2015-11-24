@@ -1233,3 +1233,7 @@ UI alignment
 - Removed the need to click a button. UI.elevatorTouched is now set the first time the player leaves
     the lobby via the elevator.
 - Adjusted v_alignment to topThird, fa_top. Message now appears at same x,y as other dialogue
+
+Buttons
+- Rebuilt button drawing script in NPCDialogueUI. Buttons now draw correctly, and return the correct
+    value when clicked.
