@@ -12,6 +12,9 @@ switch(room)
     {
         if(doorEnter)
             room_goto(RoomMain);
+            
+        if(!ObjUI.elevatorTouched)
+            ObjUI.elevatorTouched = true;
         
         break;
     }

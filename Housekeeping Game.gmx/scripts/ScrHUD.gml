@@ -33,12 +33,10 @@ if(!elevatorTouched && ObjOverlord.introRead)
             // Align text
             drawRect();
             alignUI();
-            draw_set_valign(fa_middle);
+            draw_set_valign(fa_top);
             talkX = centerX;
-            talkY = drawRectY + TXTDRAWBUFFER;
-            
-            elevatorTouched = drawButton(talkX, talkY + TXTDRAWBUFFER, BTN001);
-            
+            talkY = topThird;
+                        
             // Message
             draw_text(talkX, talkY, ELEVATOR);
         }

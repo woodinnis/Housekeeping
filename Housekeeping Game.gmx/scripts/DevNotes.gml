@@ -1227,3 +1227,9 @@ Dialogue alignment
 - Fixed an issue where dialogue was misaligned and overlapping. TXTDRAWBUFFER has been adjusted, and
     is no longer being used in drawRect. All NPC dialogues have been adjusted to use single lines with
     linebreaks for all text.
+    
+UI alignment
+- Fixed the elevator message to prevent excessive pop-ups.
+- Removed the need to click a button. UI.elevatorTouched is now set the first time the player leaves
+    the lobby via the elevator.
+- Adjusted v_alignment to topThird, fa_top. Message now appears at same x,y as other dialogue
