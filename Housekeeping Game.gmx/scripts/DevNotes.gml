@@ -1222,3 +1222,8 @@ Player Movement
     UI/UX. This has been corrected. A condition check has been added to player step, testing for
     overlord.introRead. This will set player.moveSpeed = PLAYERSPEED at every frame, hopefully
     dealing with the movement issue.
+    
+Dialogue alignment
+- Fixed an issue where dialogue was misaligned and overlapping. TXTDRAWBUFFER has been adjusted, and
+    is no longer being used in drawRect. All NPC dialogues have been adjusted to use single lines with
+    linebreaks for all text.

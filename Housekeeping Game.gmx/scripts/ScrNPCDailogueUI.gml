@@ -110,8 +110,8 @@ if(!m[? "Complete"])
                 draw_text(talkX,talkY,"My husband bought me that necklace!");
             else
             {
-                draw_text(talkX,talkY,"Is that my necklace you have?");
-                draw_text(talkX, replyY, "Can I have it back? Y/N");
+                draw_text(talkX,talkY,"Is that my necklace you have?#Can I have it back? Y/N");
+                //draw_text(talkX, replyY, "Can I have it back? Y/N");
                 buttons(talkX,replyY);
             }
         }
@@ -142,8 +142,8 @@ if(!m[? "Complete"] && m[? "Key Object"])
         draw_text(talkX, talkY, "Fine! It's an ugly necklace anyway!");
     else
     {
-        draw_text(talkX,talkY,"That's a nice necklace you have there.#I'll take it off your hands#for a few bucks.");
-        draw_text(talkX, replyY, "Can I buy it? Y/N");
+        draw_text(talkX,talkY,"That's a nice necklace you have there.#Would you sell it for a few bucks?");
+//        draw_text(talkX, replyY, "Can I buy it? Y/N");
         buttons(talkX,replyY);
     }
 }
@@ -168,8 +168,8 @@ if(!m[? "Complete"])
                 draw_text(talkX, talkY, "It's critical that you return it#to me!");
             else
             {
-                draw_text(talkX,talkY,"Is that my laptop?!");
-                draw_text(talkX, replyY, "Please, give it to me! Y/N");
+                draw_text(talkX,talkY,"Is that my laptop?!#Please, give it to me!");
+//                draw_text(talkX, replyY, "Please, give it to me! Y/N");
                 buttons(talkX,replyY);
             }
         }
@@ -204,8 +204,8 @@ if(!m[? "Complete"])
                 draw_text(talkX,talkY,"I really suggest you reconsider");
             else
             {
-                draw_text(talkX,talkY,"Would you be interested in selling#that laptop?")
-                draw_text(talkX, replyY, "I'm offering a good price. Y/N");
+                draw_text(talkX,talkY,"Would you be interested in selling#that laptop?#I'm offering a good price.")
+//                draw_text(talkX, replyY, "I'm offering a good price. Y/N");
                 buttons(talkX,replyY);
             }
         }
@@ -232,8 +232,8 @@ if(!m[? "Complete"])
                 draw_text(talkX, talkY, "The consequences are on you then!");
             else
             {
-                draw_text(talkX,talkY,"Those look like my documents.");
-                draw_text(talkX, replyY, "Can I look at them? Y/N");
+                draw_text(talkX,talkY,"Those look like my documents.#Can I look at them?");
+//                draw_text(talkX, replyY, "Can I look at them? Y/N");
                 buttons(talkX,replyY);
             }
         }
@@ -269,8 +269,8 @@ if(!m[? "Complete"])
                 draw_text(talkX, talkY, "Who are you working for?");
             else
             {
-                draw_text(talkX,talkY,"That looks like the portfolio I'm after.");
-                draw_text(talkX, replyY, "Will you hand it over? Y/N");
+                draw_text(talkX,talkY,"That looks like the portfolio I'm after.#Will you hand it over?");
+//                draw_text(talkX, replyY, "Will you hand it over? Y/N");
                 buttons(talkX,replyY);
             }
         }
@@ -306,8 +306,8 @@ if(!m[? "Complete"])
                 draw_text(talkX, talkY, "That's a shame. It's the last letter#she ever sent me.")
             else
             {
-                draw_text(talkX,talkY,"That looks like the letter I'm#looking for");
-                draw_text(talkX, replyY, "Is it? Y//N");
+                draw_text(talkX,talkY,"Is that my letter?");
+//                draw_text(talkX, replyY, "Is it? Y//N");
                 buttons(talkX,replyY);
             }
         }

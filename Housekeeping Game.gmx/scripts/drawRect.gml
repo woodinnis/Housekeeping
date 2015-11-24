@@ -12,10 +12,10 @@ spriteH = sprite_get_height(SprDialogueBox) * spriteScale;
 
 // Set sprite point-of-origin
 spriteX = centerX - (spriteW / 2);
-spriteY = (centerY - (spriteH / 2)) - TXTDRAWBUFFER;
+spriteY = centerY - (spriteH / 2);
 
 X2 = centerX + (spriteW/2);
-Y2 = (centerY + (spriteH/2));
+Y2 = centerY + (spriteH/2);
 // Mouse coordinates
 mouseX = device_mouse_x_to_gui(0);
 mouseY = device_mouse_y_to_gui(0);
