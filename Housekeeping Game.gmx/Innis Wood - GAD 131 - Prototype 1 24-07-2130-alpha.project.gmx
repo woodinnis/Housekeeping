@@ -362,8 +362,8 @@
     <constant name="BTN001">"YES"</constant>
     <constant name="BTN002">"NO"</constant>
     <constant name="CASHMSG">"Money Available: "</constant>
-    <constant name="CLERKMSG00">"Welcome to your first shift.#You'll need supplies#to clean the hotel."</constant>
-    <constant name="CLERKMSG01">"Pick up bleach, sheets,#and towels#any time you run out."</constant>
+    <constant name="CLERKMSG00">"Welcome to your first shift.#You'll need supplies to clean the hotel."</constant>
+    <constant name="CLERKMSG01">"Pick up bleach, sheets, and towels#any time you run out."</constant>
     <constant name="CLERKMSG02">"Today's shift is #" + string(shiftTime) + " hours."</constant>
     <constant name="CLUE01">2</constant>
     <constant name="CLUE02">3</constant>

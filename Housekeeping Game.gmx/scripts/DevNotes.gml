@@ -1237,3 +1237,7 @@ UI alignment
 Buttons
 - Rebuilt button drawing script in NPCDialogueUI. Buttons now draw correctly, and return the correct
     value when clicked.
+    
+Buttons
+- Rebuilt the button drawing script in ClerkUI. The button now draws correctly, allowing for properly
+    gated progress through the Clerk's dialogue.

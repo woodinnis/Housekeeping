@@ -5,10 +5,10 @@
 *   After the player has been given tutorial information, the dialogue will contain
 *   basic game information (Shift length, Shift goals, Current wage...)
 */
-
-var msgX = centerX;
-var msgY = topThird;
-var btnY = msgY * 2;//+ TXTDRAWBUFFER;
+//var sz = font_get_size(fontDialogue);
+var msgX = 0;
+var msgY = 0;
+var btnY = 0;
 
 var NPC = instance_nearest(ObjPlayerParent.x,ObjPlayerParent.y, ObjNPCParent);
 var INV = instance_nearest(ObjPlayerParent.x,ObjPlayerParent.y, ObjMissionItemParent);
@@ -17,6 +17,11 @@ if(ObjOverlord.introRead && ObjOverlord.clerkRead && !NPC.touchingPlayer)
 {
     if(!position_meeting(mouse_x, mouse_y, INV))
     {
+    
+        var msgX = centerX;
+        var msgY = topThird;
+        var btnY = msgY + TXTDRAWBUFFER;
+        
         alignUI();
         draw_set_valign(fa_top);
         // Draw the text spoken by the clerk
@@ -72,9 +77,16 @@ if(ObjOverlord.introRead && ObjOverlord.clerkRead && !NPC.touchingPlayer)
 talkX = argument0;
 replyY = argument1;
 
+// Set alignment
 draw_set_halign(fa_center);
-btnYes = device_mouse_check_button_pressed(0,mb_left);//drawButton(talkX, replyY + TXTDRAWBUFFER, BTN001);
-draw_text(talkX, replyY, CONTINUE);
+draw_set_valign(fa_middle);
+draw_set_colour(c_black);
+
+// Draw button
+btnYes = drawButton(talkX, replyY + (TXTDRAWBUFFER*2), BTN001);
+draw_text(talkX, replyY + (TXTDRAWBUFFER*2), "OK");
 
 if(btnYes)
     return(1);
+    
+//btnYes = device_mouse_check_button_pressed(0,mb_left);//
