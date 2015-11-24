@@ -57,8 +57,8 @@ if(is_undefined(sheetCount))
     sheetCount = 0;
 
 draw_sprite_stretched(SprBleach, 0, toolX - (HUDBufferX * 3), toolY, 16, 32);
-draw_text(toolX - (HUDBufferX * 2.5), toolY, "x " + string(bleachCount));
+draw_text(toolX - (HUDBufferX * 2.75), toolY, "x" + string(bleachCount));
 draw_sprite_stretched(SprTowels, 0, toolX - (HUDBufferX * 2), toolY, 16, 32);
-draw_text(toolX - (HUDBufferX * 1.5), toolY, "x " + string(towelCount));
+draw_text(toolX - (HUDBufferX * 1.75), toolY, "x" + string(towelCount));
 draw_sprite_stretched(SprSheets, 0, toolX - (HUDBufferX), toolY, 16, 32);
-draw_text(toolX - (HUDBufferX * .5), toolY, "x " + string(sheetCount));
+draw_text(toolX - (HUDBufferX * .75), toolY, "x" + string(sheetCount));

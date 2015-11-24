@@ -1241,3 +1241,6 @@ Buttons
 Buttons
 - Rebuilt the button drawing script in ClerkUI. The button now draws correctly, allowing for properly
     gated progress through the Clerk's dialogue.
+
+Toolbar
+- Adjusted toolbar alignment to work with new font.
