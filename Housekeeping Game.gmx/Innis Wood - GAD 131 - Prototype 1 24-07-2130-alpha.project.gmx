@@ -154,6 +154,7 @@
     <sprite>sprites\SprLiftSign</sprite>
     <sprite>sprites\SprDialogueBox</sprite>
     <sprite>sprites\SprNeonFont</sprite>
+    <sprite>sprites\sprite78</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BG_tester</background>

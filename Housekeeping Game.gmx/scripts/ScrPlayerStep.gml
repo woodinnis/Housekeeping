@@ -19,6 +19,10 @@ if(ds_exists(missionList, ds_type_list))
         }
     }
 }
+
+// If intro sequence has been completed set player move speed
+if(ObjOverlord.introRead)
+    moveSpeed = PLAYERSPEED;
 /*
 if(!shiftStart)
 {

@@ -1212,3 +1212,13 @@ NPC Y/N Buttons
     
 DEBUG
 - Added a feature to DEBUG to add all quest key items to inventory using the "E" key.
+
+// November 24, 2015 //
+
+Player Movement
+- Appear to have rectified the issue with player movement and dialogue boxes.
+- Removed .canMove condition from player. The bounding boxes for both drawRect, and drawButton
+    were not the correct sizes which was creating undesired functionality, and preventing important
+    UI/UX. This has been corrected. A condition check has been added to player step, testing for
+    overlord.introRead. This will set player.moveSpeed = PLAYERSPEED at every frame, hopefully
+    dealing with the movement issue.
