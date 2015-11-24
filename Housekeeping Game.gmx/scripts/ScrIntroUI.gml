@@ -5,7 +5,7 @@
 
 var msgX = centerX;
 var msgY = topThird;
-var btnY = (msgY*2);// + TXTDRAWBUFFER;
+var btnY = msgY * 2;
 
 switch(ObjOverlord.showIntro)
 {
@@ -54,7 +54,6 @@ switch(ObjOverlord.showIntro)
     {
         // Give player control once intro has been read
         ObjOverlord.introRead = true;
-        ObjPlayerParent.canMove = true;
         break;
     }
 }
@@ -70,9 +69,9 @@ replyY = argument1;
 
 
 
-btnYes = drawButton(talkX, replyY + (TXTDRAWBUFFER * 2), BTN001);
-draw_set_halign(fa_left);
-draw_text(talkX, replyY + (TXTDRAWBUFFER * 2), "OK");
+btnYes = device_mouse_check_button_pressed(0,mb_left);//drawButton(talkX, replyY + (TXTDRAWBUFFER * 2), BTN001);
+draw_set_halign(fa_center);
+draw_text(talkX, replyY, CONTINUE);
 
 if(btnYes)
     return(1);

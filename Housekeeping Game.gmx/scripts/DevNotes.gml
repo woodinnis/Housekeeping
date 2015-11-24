@@ -1195,3 +1195,52 @@ Clock
 Dialogue Font
 - After talking to Jason, replaced the sprite-based font with a simple white Art-Deco style built-in
     font. The alignUI function now sets text to this font.
+    
+UI Buttons
+- Attempting to redesign the Yes/No/OK button structure currently in place. Buttons in the intro
+    sequence have been replaced with a "click to continue" message. Y/N buttons may prove slightly
+    more complicated.
+    
+Clerk Buttons
+- OK buttons have been replaced with "Click to Continue" in the Clerk dialogues. The first and last
+    dialogue are presenting issues. The first disappears immediately, and the ability to review the
+    last has had to be disabled.
+    
+NPC Y/N Buttons
+- Y/N Buttons replaced with "Left/Right Click to Continue" in the dialogue. This will not be optimal
+    for a mobile platform. But this is a functional alternative until buttons can be reintegrated.
+    
+DEBUG
+- Added a feature to DEBUG to add all quest key items to inventory using the "E" key.
+
+// November 24, 2015 //
+
+Player Movement
+- Appear to have rectified the issue with player movement and dialogue boxes.
+- Removed .canMove condition from player. The bounding boxes for both drawRect, and drawButton
+    were not the correct sizes which was creating undesired functionality, and preventing important
+    UI/UX. This has been corrected. A condition check has been added to player step, testing for
+    overlord.introRead. This will set player.moveSpeed = PLAYERSPEED at every frame, hopefully
+    dealing with the movement issue.
+    
+Dialogue alignment
+- Fixed an issue where dialogue was misaligned and overlapping. TXTDRAWBUFFER has been adjusted, and
+    is no longer being used in drawRect. All NPC dialogues have been adjusted to use single lines with
+    linebreaks for all text.
+    
+UI alignment
+- Fixed the elevator message to prevent excessive pop-ups.
+- Removed the need to click a button. UI.elevatorTouched is now set the first time the player leaves
+    the lobby via the elevator.
+- Adjusted v_alignment to topThird, fa_top. Message now appears at same x,y as other dialogue
+
+Buttons
+- Rebuilt button drawing script in NPCDialogueUI. Buttons now draw correctly, and return the correct
+    value when clicked.
+    
+Buttons
+- Rebuilt the button drawing script in ClerkUI. The button now draws correctly, allowing for properly
+    gated progress through the Clerk's dialogue.
+
+Toolbar
+- Adjusted toolbar alignment to work with new font.

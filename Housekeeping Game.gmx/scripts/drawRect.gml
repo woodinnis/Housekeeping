@@ -12,8 +12,10 @@ spriteH = sprite_get_height(SprDialogueBox) * spriteScale;
 
 // Set sprite point-of-origin
 spriteX = centerX - (spriteW / 2);
-spriteY = (centerY - (spriteH / 2)) - TXTDRAWBUFFER;
+spriteY = centerY - (spriteH / 2);
 
+X2 = centerX + (spriteW/2);
+Y2 = centerY + (spriteH/2);
 // Mouse coordinates
 mouseX = device_mouse_x_to_gui(0);
 mouseY = device_mouse_y_to_gui(0);
@@ -22,16 +24,14 @@ mouseY = device_mouse_y_to_gui(0);
 draw_sprite_stretched(SprDialogueBox, 0, spriteX, spriteY, spriteW, spriteH);
 
 // While mouse is inside the rectangle, prevent player movement
-if(ObjPlayerParent.canMove)
+if(point_in_rectangle(mouseX, mouseY, spriteX, spriteY, X2, Y2))
 {
-    if(point_in_rectangle(mouseX, mouseY, spriteX, spriteY, spriteW, spriteH))
-    {
-        ObjPlayerParent.moveSpeed = 0;
-        ObjDoorParent.doorEnter = false;
-    }
-    else
-    {
-        ObjPlayerParent.moveSpeed = PLAYERSPEED;
-        ObjDoorParent.doorEnter = true;
-    }
+    ObjPlayerParent.moveSpeed = 0;
+    ObjDoorParent.doorEnter = false;
 }
+else
+{
+    ObjPlayerParent.moveSpeed = PLAYERSPEED;
+    ObjDoorParent.doorEnter = true;
+}
+

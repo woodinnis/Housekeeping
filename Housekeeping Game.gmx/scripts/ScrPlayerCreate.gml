@@ -1,7 +1,6 @@
 // Set Player Variables
 touchingClerk = false;
 missionReceived = false;
-canMove = false;
 
 moveSpeed = 0;
 image_speed = 0;

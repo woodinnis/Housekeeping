@@ -23,7 +23,17 @@ if(debug)
     {
         m = missionList[| 0];
         m[? "Key Object"] = true;
+        m = missionList[| 1];
+        m[? "Key Object"] = true;
+        m = missionList[| 2];
+        m[? "Key Object"] = true;
+        m = missionList[| 4];
+        m[? "Key Object"] = true;
+
         ScrItemAdd(INVJEWELS,JEWELVAL);
+        ScrItemAdd(INVLAPTOP,LAPTOPVAL);
+        ScrItemAdd(INVLETTER,LET3);
+        ScrItemAdd(INVDOC,DOC1);
     }
     if(keyboard_check_pressed(vk_escape))
     {
