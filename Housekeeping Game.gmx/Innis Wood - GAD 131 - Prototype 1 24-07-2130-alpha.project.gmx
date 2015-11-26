@@ -212,6 +212,7 @@
       <script>scripts\drawRect.gml</script>
       <script>scripts\drawButton.gml</script>
       <script>scripts\alignUI.gml</script>
+      <script>scripts\ScrFade.gml</script>
     </scripts>
     <scripts name="Mission Items">
       <script>scripts\ScrMissionItemLMB.gml</script>

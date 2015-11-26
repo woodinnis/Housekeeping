@@ -1250,3 +1250,7 @@ Toolbar
 Buttons
 - Added Macro BTN003, sprite SprButtonOK. Renamed EvidencePhone, EvidenceNote to ButtonYes, ButtonNo
 - Added BTN003 to switch in drawButton, and changed all button calls.
+
+Fade to black
+- Started working on fade-in/out. Created Fade script for UI, and have tested draw_rectangle. Not
+    currently fading properly.
