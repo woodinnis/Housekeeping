@@ -20,12 +20,18 @@ switch(btnType)
 {
     case BTN001:
     {
-        button = SprEvidencePhone;
+        button = SprButtonYes;
         break;
     }
     case BTN002:
     {
-        button = SprEvidenceNote;
+        button = SprButtonNo;
+        break;
+    }
+    case BTN003:
+    {
+        button = SprButtonOK;
+        break;
     }
     default:
         break;

@@ -1244,3 +1244,9 @@ Buttons
 
 Toolbar
 - Adjusted toolbar alignment to work with new font.
+
+// November 25, 2015 //
+
+Buttons
+- Added Macro BTN003, sprite SprButtonOK. Renamed EvidencePhone, EvidenceNote to ButtonYes, ButtonNo
+- Added BTN003 to switch in drawButton, and changed all button calls.

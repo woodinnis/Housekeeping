@@ -83,8 +83,7 @@ draw_set_valign(fa_middle);
 draw_set_colour(c_black);
 
 // Draw button
-btnYes = drawButton(talkX, replyY + (TXTDRAWBUFFER*2), BTN001);
-draw_text(talkX, replyY + (TXTDRAWBUFFER*2), "OK");
+btnYes = drawButton(talkX, replyY + (TXTDRAWBUFFER*2), BTN003);
 
 if(btnYes)
     return(1);

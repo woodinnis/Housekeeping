@@ -339,10 +339,8 @@ draw_set_colour(c_black);
 
 // Draw Buttons
 btnYes = drawButton(talkX - (TXTDRAWBUFFER*2), replyY + (TXTDRAWBUFFER*2), BTN001);
-draw_text(talkX - (TXTDRAWBUFFER*2), replyY + (TXTDRAWBUFFER*2), "Yes");
 
 btnNo = drawButton(talkX + (TXTDRAWBUFFER*2), replyY + (TXTDRAWBUFFER*2), BTN002);
-draw_text(talkX + (TXTDRAWBUFFER*2), replyY + (TXTDRAWBUFFER*2), "No");
 
 //btnYes = device_mouse_check_button_pressed(0,mb_left)
 //draw_text(talkX , replyY + (TXTDRAWBUFFER),"Click for Yes");

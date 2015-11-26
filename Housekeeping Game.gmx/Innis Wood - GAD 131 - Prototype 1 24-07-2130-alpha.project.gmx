@@ -106,8 +106,9 @@
     <sprites name="Evidence">
       <sprite>sprites\SprEvidenceShirt</sprite>
       <sprite>sprites\SprEvidenceDocs</sprite>
-      <sprite>sprites\SprEvidencePhone</sprite>
-      <sprite>sprites\SprEvidenceNote</sprite>
+      <sprite>sprites\SprButtonYes</sprite>
+      <sprite>sprites\SprButtonOK</sprite>
+      <sprite>sprites\SprButtonNo</sprite>
     </sprites>
     <sprites name="Spawns">
       <sprite>sprites\SprSpawnPt</sprite>
@@ -352,7 +353,7 @@
     <room>rooms\RoomRoomLg</room>
     <room>rooms\RoomMain</room>
   </rooms>
-  <constants number="91">
+  <constants number="92">
     <constant name="AD1">"Cheap, fast, 2-for-1 Pizza!"</constant>
     <constant name="AD2">"Brick-oven pizza. Made with organic ingredients, in the traditional style."</constant>
     <constant name="AD3">"Coin-Laundry. One-hour cycle, wash and dry! Detergent for sale at the counter."</constant>
@@ -361,6 +362,7 @@
     <constant name="AD6">"Luxury Auto Vehicle Rental Services. Call for an appointment with one of our rental agents, we will find the perfect vehicle for your needs. Chauffeurs available upon request."</constant>
     <constant name="BTN001">"YES"</constant>
     <constant name="BTN002">"NO"</constant>
+    <constant name="BTN003">"OK"</constant>
     <constant name="CASHMSG">"Money Available: "</constant>
     <constant name="CLERKMSG00">"Welcome to your first shift.#You'll need supplies to clean the hotel."</constant>
     <constant name="CLERKMSG01">"Pick up bleach, sheets, and towels#any time you run out."</constant>
