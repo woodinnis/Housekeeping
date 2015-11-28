@@ -1250,3 +1250,33 @@ Toolbar
 Buttons
 - Added Macro BTN003, sprite SprButtonOK. Renamed EvidencePhone, EvidenceNote to ButtonYes, ButtonNo
 - Added BTN003 to switch in drawButton, and changed all button calls.
+
+Fade to black
+- Started working on fade-in/out. Created Fade script for UI, and have tested draw_rectangle. Not
+    currently fading properly.
+    
+// November 27, 2015 //
+
+Inventory
+- Adjusted InventoryDraw to correctly draw a grid composed of multiple rows and columns of boxes
+- InventoryDraw still does not correctly draw inventory listings inside grid boxes. Some hardcoding
+    may be neccessary to present a functional final product.
+    
+Inventory
+- A temporary solution has been found for the alignment problem. Eliminating almost all draw_set
+    entries prior to drawing the listings has placed the text almost where it needs to be.
+    
+// November 28, 2015 //
+
+Fade to Black
+- Built ObjFade using a tutorial/example from the YoYo games forum. Fade to black is now semi-functional.
+    Backgrounds and instantiated objects are successfully covered, however DrawGUI elements are not.
+    
+Fade in
+- Redesigned Fade scripts to use a state machine.
+- Fade now fades both out and back in to rooms. A room_start event in Fade checks the fadeState and sets
+    the timer for the fade in.
+- DrawGUI objects are still not covered.
+
+Fade in
+- DrawGUI objects are now hidden until a full fade in is completed

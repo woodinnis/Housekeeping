@@ -1,10 +1,13 @@
 var width, height;
-var maxItems, maxTools;
+var maxItems, maxTools, maxWide;
 var mapFirst, mapSize;
-width = (MAXITEMS / 3) * INVSCALE;
-height = (MAXITEMS / 4) * INVSCALE;
+
+width = (MAXITEMS / 3) * INVBGSCALE;
+height = (MAXITEMS / 4) * INVBGSCALE;
 
 maxItems = MAXITEMS;
+maxWide = 5;
+
 if(isPaused)
 {
     mapFirst = ds_map_find_first(myInventory);
@@ -15,20 +18,34 @@ if(isPaused)
     draw_set_alpha(1);
 
     // Lay out the inventory boxes in rows and columns
-    for(i = 0; i < 2; i++)
+    var row = 0;
+    for(i = 0; i < maxItems; i++)
     {
-        for(j = 0; j < 1; j++)
+        for(j = 0; j < maxWide; j++)
         {
-            draw_sprite_stretched(spr_border,0,(j+0)*INVSCALE+32,(i+0)*INVSCALE+32,INVSCALE,INVSCALE);
+            draw_sprite_stretched(spr_border,0,j*INVSCALE+32,row*INVSCALE+32,INVSCALE,INVSCALE);
+            i++;
         }
+        row++;
     }
     // Display contents of inventory
     draw_set_color(c_red);
-    draw_set_font(fontMessages);
+//    draw_set_font(fontMessages);
+//    draw_set_halign(fa_center);
+//    draw_set_valign(fa_middle);
+    var mapRow = 0;
     for(i = 0; i < mapSize; i++)
     {
-        draw_text(INVITEMX, INVITEMY + i * INVSCALE, string(mapFirst));
-        draw_text(INVITEMX, (INVITEMY + i * INVSCALE) + 20, ds_map_find_value(myInventory, mapFirst));
-        mapFirst = ds_map_find_next(myInventory, mapFirst);
+        for(j = 0; j < maxWide; j++)
+        {
+            if(!is_undefined(ds_map_find_value(myInventory, mapFirst)))
+            {
+                draw_text(j * INVSCALE + 48, mapRow * INVSCALE + 48, string(mapFirst));
+                draw_text(j * INVSCALE + 48, mapRow * INVSCALE + 48 + 20, ds_map_find_value(myInventory, mapFirst));
+                mapFirst = ds_map_find_next(myInventory, mapFirst);
+            }
+            i++;
+        }
+        mapRow++;
     }
 }

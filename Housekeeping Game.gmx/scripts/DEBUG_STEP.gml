@@ -50,6 +50,10 @@ if(debug)
         ObjUI.minutes = 50;
         ObjUI.AmPm = 1;
     }
+    if(keyboard_check_pressed(ord("F")))
+    {
+        ObjUI.fadeOut = true;
+    }
     if(keyboard_check_pressed(vk_enter))
     {
         target = instance_find(ObjPerson,0);
