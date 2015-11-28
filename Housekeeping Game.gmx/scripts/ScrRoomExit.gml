@@ -5,13 +5,16 @@ switch(room)
 {
     case RoomMenu:
     {
-        room_goto(RoomFrontDesk);
+        instance_create(0,0, ObjFade);
+        destinationRoom = RoomFrontDesk;
         break;
     }
     case RoomFrontDesk:
     {
+        instance_create(0,0, ObjFade);
+        
         if(doorEnter)
-            room_goto(RoomMain);
+            destinationRoom = RoomMain;
             
         if(!ObjUI.elevatorTouched)
             ObjUI.elevatorTouched = true;
@@ -20,8 +23,10 @@ switch(room)
     }
     case RoomMain:
     {
+        instance_create(0,0, ObjFade);
+        
         if(doorEnter)
-            room_goto(RoomFrontDesk)
+            destinationRoom = RoomFrontDesk;
 
         break;
     }

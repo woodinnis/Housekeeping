@@ -156,6 +156,7 @@
     <sprite>sprites\SprDialogueBox</sprite>
     <sprite>sprites\SprNeonFont</sprite>
     <sprite>sprites\sprite78</sprite>
+    <sprite>sprites\SprFade</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BG_tester</background>
@@ -213,6 +214,8 @@
       <script>scripts\drawButton.gml</script>
       <script>scripts\alignUI.gml</script>
       <script>scripts\ScrFade.gml</script>
+      <script>scripts\ScrFadeTimer.gml</script>
+      <script>scripts\ScrFadeCreate.gml</script>
     </scripts>
     <scripts name="Mission Items">
       <script>scripts\ScrMissionItemLMB.gml</script>
@@ -345,6 +348,7 @@
     </objects>
     <object>objects\ObjMpGrid</object>
     <object>objects\ObjTimer</object>
+    <object>objects\ObjFade</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\RoomMenu</room>

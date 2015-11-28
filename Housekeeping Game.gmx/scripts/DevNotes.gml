@@ -1265,3 +1265,9 @@ Inventory
 Inventory
 - A temporary solution has been found for the alignment problem. Eliminating almost all draw_set
     entries prior to drawing the listings has placed the text almost where it needs to be.
+    
+// November 28, 2015 //
+
+Fade to Black
+- Built ObjFade using a tutorial/example from the YoYo games forum. Fade to black is now semi-functional.
+    Backgrounds and instantiated objects are successfully covered, however DrawGUI elements are not.
