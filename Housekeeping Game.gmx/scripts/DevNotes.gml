@@ -1261,3 +1261,7 @@ Inventory
 - Adjusted InventoryDraw to correctly draw a grid composed of multiple rows and columns of boxes
 - InventoryDraw still does not correctly draw inventory listings inside grid boxes. Some hardcoding
     may be neccessary to present a functional final product.
+    
+Inventory
+- A temporary solution has been found for the alignment problem. Eliminating almost all draw_set
+    entries prior to drawing the listings has placed the text almost where it needs to be.
