@@ -11,7 +11,11 @@ switch(ObjOverlord.showIntro)
 {
     case 00:
     {
-        ObjOverlord.showIntro++;
+        if(ObjFade.fadeState == inOut.out)
+        {
+            ObjOverlord.showIntro++;
+        }
+        
         break;
     }
     case 01:

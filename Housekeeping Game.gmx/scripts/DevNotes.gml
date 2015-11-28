@@ -1277,3 +1277,6 @@ Fade in
 - Fade now fades both out and back in to rooms. A room_start event in Fade checks the fadeState and sets
     the timer for the fade in.
 - DrawGUI objects are still not covered.
+
+Fade in
+- DrawGUI objects are now hidden until a full fade in is completed
