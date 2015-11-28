@@ -7,27 +7,30 @@ height = (MAXITEMS / 4) * INVBGSCALE;
 
 maxItems = MAXITEMS;
 maxWide = 5;
-
+coords = ds_list_create();
+boxX = 0;
+boxY = 0;
 if(isPaused)
 {
     mapFirst = ds_map_find_first(myInventory);
     mapSize = ds_map_size(myInventory);
-    draw_set_color(c_black);
-    draw_set_alpha(.8);
-    draw_rectangle(4,10,width,height,0);
-    draw_set_alpha(1);
+    drawRect();
+//    draw_set_color(c_black);
+//    draw_set_alpha(.8);
+//    draw_rectangle(4,10,width,height,0);
+//    draw_set_alpha(1);
 
     // Lay out the inventory boxes in rows and columns
     var row = 0;
     for(i = 0; i < maxItems; i++)
     {
-        for(j = 0; j < maxWide; j++)
+        for(j = 1; j <= maxWide; j++)
         {
-            draw_sprite_stretched(spr_border,0,j*INVSCALE+32,row*INVSCALE+32,INVSCALE,INVSCALE);
+            draw_sprite_stretched(spr_border,0,j*96,160+row*96,INVSCALE,INVSCALE);
             i++;
         }
         row++;
-    }
+   }
     // Display contents of inventory
     draw_set_color(c_red);
 //    draw_set_font(fontMessages);

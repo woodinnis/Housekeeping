@@ -1280,3 +1280,6 @@ Fade in
 
 Fade in
 - DrawGUI objects are now hidden until a full fade in is completed
+
+Inventory layout
+- Box grid layout set over a drawRect. Most numbers are hardcoded and I am out of fucks to give.
