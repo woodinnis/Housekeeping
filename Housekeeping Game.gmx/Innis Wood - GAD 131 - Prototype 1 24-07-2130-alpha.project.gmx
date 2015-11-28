@@ -354,7 +354,7 @@
     <room>rooms\RoomRoomLg</room>
     <room>rooms\RoomMain</room>
   </rooms>
-  <constants number="92">
+  <constants number="93">
     <constant name="AD1">"Cheap, fast, 2-for-1 Pizza!"</constant>
     <constant name="AD2">"Brick-oven pizza. Made with organic ingredients, in the traditional style."</constant>
     <constant name="AD3">"Coin-Laundry. One-hour cycle, wash and dry! Detergent for sale at the counter."</constant>
@@ -387,12 +387,13 @@
     <constant name="INVAD">"Advertisement"</constant>
     <constant name="INVBLEACH">"Bleach"</constant>
     <constant name="INVDOC">"Document"</constant>
-    <constant name="INVITEMX">100</constant>
-    <constant name="INVITEMY">60</constant>
+    <constant name="INVITEMX">48</constant>
+    <constant name="INVITEMY">48</constant>
     <constant name="INVJEWELS">"Necklace"</constant>
     <constant name="INVLAPTOP">"Laptop"</constant>
     <constant name="INVLETTER">"Letter"</constant>
-    <constant name="INVSCALE">128</constant>
+    <constant name="INVSCALE">64</constant>
+    <constant name="INVBGSCALE">128</constant>
     <constant name="INVSHEETS">"Bed Sheets"</constant>
     <constant name="INVTOWELS">"Bathroom Towels"</constant>
     <constant name="ISCLEANSET">25</constant>

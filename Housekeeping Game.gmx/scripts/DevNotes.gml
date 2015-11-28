@@ -1254,3 +1254,10 @@ Buttons
 Fade to black
 - Started working on fade-in/out. Created Fade script for UI, and have tested draw_rectangle. Not
     currently fading properly.
+    
+// November 27, 2015 //
+
+Inventory
+- Adjusted InventoryDraw to correctly draw a grid composed of multiple rows and columns of boxes
+- InventoryDraw still does not correctly draw inventory listings inside grid boxes. Some hardcoding
+    may be neccessary to present a functional final product.
