@@ -1271,3 +1271,9 @@ Inventory
 Fade to Black
 - Built ObjFade using a tutorial/example from the YoYo games forum. Fade to black is now semi-functional.
     Backgrounds and instantiated objects are successfully covered, however DrawGUI elements are not.
+    
+Fade in
+- Redesigned Fade scripts to use a state machine.
+- Fade now fades both out and back in to rooms. A room_start event in Fade checks the fadeState and sets
+    the timer for the fade in.
+- DrawGUI objects are still not covered.
