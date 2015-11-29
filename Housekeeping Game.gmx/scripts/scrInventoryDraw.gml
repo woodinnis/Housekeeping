@@ -26,7 +26,7 @@ if(isPaused)
     {
         for(j = 1; j <= maxWide; j++)
         {
-            draw_sprite_stretched(spr_border,0,j*96,160+row*96,INVSCALE,INVSCALE);
+            box = draw_sprite_stretched(spr_border,0,j*96,160+row*96,INVSCALE,INVSCALE);
             i++;
         }
         row++;
@@ -34,17 +34,17 @@ if(isPaused)
     // Display contents of inventory
     draw_set_color(c_red);
 //    draw_set_font(fontMessages);
-//    draw_set_halign(fa_center);
+    draw_set_halign(fa_center);
 //    draw_set_valign(fa_middle);
     var mapRow = 0;
     for(i = 0; i < mapSize; i++)
     {
-        for(j = 0; j < maxWide; j++)
+        for(j = 1; j <= maxWide; j++)
         {
             if(!is_undefined(ds_map_find_value(myInventory, mapFirst)))
             {
-                draw_text(j * INVSCALE + 48, mapRow * INVSCALE + 48, string(mapFirst));
-                draw_text(j * INVSCALE + 48, mapRow * INVSCALE + 48 + 20, ds_map_find_value(myInventory, mapFirst));
+                draw_text(j * 96 + 32, 160 + mapRow * 96, string(mapFirst));
+                draw_text(j * 96 + 32, 180 + mapRow * 96, ds_map_find_value(myInventory, mapFirst));
                 mapFirst = ds_map_find_next(myInventory, mapFirst);
             }
             i++;

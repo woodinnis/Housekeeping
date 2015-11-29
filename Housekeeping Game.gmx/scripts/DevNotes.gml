@@ -1283,3 +1283,6 @@ Fade in
 
 Inventory layout
 - Box grid layout set over a drawRect. Most numbers are hardcoded and I am out of fucks to give.
+
+Inventory layout
+- Text layout inside the inventory grid now lines up with the boxes. Most numbers are hardcoded. See above.
