@@ -7,9 +7,10 @@ height = (MAXITEMS / 4) * INVBGSCALE;
 
 maxItems = MAXITEMS;
 maxWide = 5;
-coords = ds_list_create();
-boxX = 0;
-boxY = 0;
+
+xyOffset = 96;
+itemOffset = 198;
+
 if(isPaused)
 {
     mapFirst = ds_map_find_first(myInventory);
@@ -26,7 +27,7 @@ if(isPaused)
     {
         for(j = 1; j <= maxWide; j++)
         {
-            box = draw_sprite_stretched(spr_border,0,j*96,160+row*96,INVSCALE,INVSCALE);
+            box = draw_sprite_stretched(spr_border,0,j*xyOffset,160+row*xyOffset,INVSCALE,INVSCALE);
             i++;
         }
         row++;
@@ -43,8 +44,39 @@ if(isPaused)
         {
             if(!is_undefined(ds_map_find_value(myInventory, mapFirst)))
             {
-                draw_text(j * 96 + 32, 160 + mapRow * 96, string(mapFirst));
-                draw_text(j * 96 + 32, 180 + mapRow * 96, ds_map_find_value(myInventory, mapFirst));
+                me = ds_map_find_value(myInventory, mapFirst)
+                
+                switch(me)
+                {
+                    case JEWELVAL:
+                    {
+                        draw_sprite(MessSm5,0,j * xyOffset + 32, itemOffset + mapRow * xyOffset);
+                        break
+                    }
+                    case LAPTOPVAL:
+                    {
+                        draw_sprite(SprEvidenceLaptop,0,j * xyOffset + 32, itemOffset + mapRow * xyOffset);
+                        break;
+                    }
+                    case DOC1:
+                    case DOC2:
+                    case DOC3:
+                    {
+                        draw_sprite(SprDocument,0,j * xyOffset + 32, itemOffset + mapRow * xyOffset);
+                        break;
+                    }
+                    case LET1:
+                    case LET2:
+                    case LET3:
+                    {
+                        draw_sprite(SprLetter,0,j * xyOffset + 32, itemOffset + mapRow * xyOffset);
+                        break;   
+                    }
+                    default:
+                        break;
+                }
+//                draw_text(j * xyOffset + 32, 160 + mapRow * 96, string(mapFirst));
+//                draw_text(j * 96 + 32, itemOffset + mapRow * 96, ds_map_find_value(myInventory, mapFirst));
                 mapFirst = ds_map_find_next(myInventory, mapFirst);
             }
             i++;

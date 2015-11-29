@@ -1286,3 +1286,6 @@ Inventory layout
 
 Inventory layout
 - Text layout inside the inventory grid now lines up with the boxes. Most numbers are hardcoded. See above.
+
+Inventory layout
+- Text replaced with sprites. Sprites align approximately to center of inventory grid boxes.
