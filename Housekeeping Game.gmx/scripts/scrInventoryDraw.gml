@@ -1,9 +1,11 @@
-var width, height;
-var maxItems, maxTools, maxWide;
-var mapFirst, mapSize;
+/*
+*   Draw the default backsplash, and inventory grid
+*
+*   Draw the current inventory on the inventory grid
+*/
 
-width = (MAXITEMS / 3) * INVBGSCALE;
-height = (MAXITEMS / 4) * INVBGSCALE;
+var maxItems, maxWide;
+var mapFirst, mapSize;
 
 maxItems = MAXITEMS;
 maxWide = 5;
@@ -46,35 +48,41 @@ if(isPaused)
             {
                 me = ds_map_find_value(myInventory, mapFirst)
                 
-                switch(me)
+                if(!is_real(me))
                 {
-                    case JEWELVAL:
+                    switch(me)
                     {
-                        draw_sprite(MessSm5,0,j * xyOffset + 32, itemOffset + mapRow * xyOffset);
-                        break
-                    }
-                    case LAPTOPVAL:
-                    {
-                        draw_sprite(SprEvidenceLaptop,0,j * xyOffset + 32, itemOffset + mapRow * xyOffset);
-                        break;
-                    }
-                    case DOC1:
-                    case DOC2:
-                    case DOC3:
-                    {
-                        draw_sprite(SprDocument,0,j * xyOffset + 32, itemOffset + mapRow * xyOffset);
-                        break;
-                    }
-                    case LET1:
-                    case LET2:
-                    case LET3:
-                    {
-                        draw_sprite(SprLetter,0,j * xyOffset + 32, itemOffset + mapRow * xyOffset);
-                        break;   
-                    }
-                    default:
-                        break;
-                }
+                        case JEWELVAL:
+                        {
+                            draw_sprite(MessSm5,0,j * xyOffset + 32, itemOffset + mapRow * xyOffset);
+                            break
+                        }
+                        case LAPTOPVAL:
+                        {
+                            draw_sprite(SprEvidenceLaptop,0,j * xyOffset + 32, itemOffset + mapRow * xyOffset);
+                            break;
+                        }
+                        case DOC1:
+                        case DOC2:
+                        case DOC3:
+                        {
+                            draw_sprite(SprDocument,0,j * xyOffset + 32, itemOffset + mapRow * xyOffset);
+                            break;
+                        }
+                        case LET1:
+                        case LET2:
+                        case LET3:
+                        {
+                            draw_sprite(SprLetter,0,j * xyOffset + 32, itemOffset + mapRow * xyOffset);
+                            break;   
+                        }
+                        default:
+                        {
+                            show_debug_message("waka");
+                            break;
+                        }
+                    }   // switch(me)
+                }   // if(!is_real(me)
 //                draw_text(j * xyOffset + 32, 160 + mapRow * 96, string(mapFirst));
 //                draw_text(j * 96 + 32, itemOffset + mapRow * 96, ds_map_find_value(myInventory, mapFirst));
                 mapFirst = ds_map_find_next(myInventory, mapFirst);

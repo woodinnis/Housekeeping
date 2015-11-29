@@ -13,60 +13,63 @@ var btnY = 0;
 var NPC = instance_nearest(ObjPlayerParent.x,ObjPlayerParent.y, ObjNPCParent);
 var INV = instance_nearest(ObjPlayerParent.x,ObjPlayerParent.y, ObjMissionItemParent);
 
-if(ObjOverlord.introRead && ObjOverlord.clerkRead && !NPC.touchingPlayer)
+if(room = RoomFrontDesk)
 {
-    if(!position_meeting(mouse_x, mouse_y, INV))
+    if(ObjOverlord.introRead && ObjOverlord.clerkRead && !NPC.touchingPlayer)
     {
-    
-        var msgX = centerX;
-        var msgY = topThird;
-        var btnY = msgY + TXTDRAWBUFFER;
-        
-        alignUI();
-        draw_set_valign(fa_top);
-        // Draw the text spoken by the clerk
-        switch(ObjOverlord.clerkSpeak)
+        if(!position_meeting(mouse_x, mouse_y, INV))
         {
-            case 00:
+        
+            var msgX = centerX;
+            var msgY = topThird;
+            var btnY = msgY + TXTDRAWBUFFER;
+            
+            alignUI();
+            draw_set_valign(fa_top);
+            // Draw the text spoken by the clerk
+            switch(ObjOverlord.clerkSpeak)
             {
-                drawRect();
-    
-                draw_text(msgX, msgY, CLERKMSG00);
-                
-                ObjOverlord.clerkSpeak += ClerkButton(msgX, btnY);
-                
-                break;
-            }
-            case 01:
-            {
-                drawRect();
-    
-                draw_text(msgX, msgY, CLERKMSG01);
-                
-                ObjOverlord.clerkSpeak += ClerkButton(msgX, btnY);
-                
-                break;            
-            }
-            case 02:
-            {
-                drawRect();
-                
-                draw_text(msgX, msgY, CLERKMSG02);
-                
-                ObjOverlord.clerkSpeak += ClerkButton(msgX, btnY);
-                
-                break;
-            }
-            case 03:
-            default:
-            {
-//                ObjOverlord.clerkRead = false;
-//                ObjOverlord.clerkSpeak = 02;
-                break;
-            }
-        }   // switch(ObjOverlord.clerkSpeak)
-    }   // if(!position_meeting
-}   // if(ObjOverlord.introRead
+                case 00:
+                {
+                    drawRect();
+        
+                    draw_text(msgX, msgY, CLERKMSG00);
+                    
+                    ObjOverlord.clerkSpeak += ClerkButton(msgX, btnY);
+                    
+                    break;
+                }
+                case 01:
+                {
+                    drawRect();
+        
+                    draw_text(msgX, msgY, CLERKMSG01);
+                    
+                    ObjOverlord.clerkSpeak += ClerkButton(msgX, btnY);
+                    
+                    break;            
+                }
+                case 02:
+                {
+                    drawRect();
+                    
+                    draw_text(msgX, msgY, CLERKMSG02);
+                    
+                    ObjOverlord.clerkSpeak += ClerkButton(msgX, btnY);
+                    
+                    break;
+                }
+                case 03:
+                default:
+                {
+    //                ObjOverlord.clerkRead = false;
+    //                ObjOverlord.clerkSpeak = 02;
+                    break;
+                }
+            }   // switch(ObjOverlord.clerkSpeak)
+        }   // if(!position_meeting
+    }   // if(ObjOverlord.introRead
+}   // if(RoomFrontDesk)
 
 #define ClerkButton
 ///buttons(X,Y)
