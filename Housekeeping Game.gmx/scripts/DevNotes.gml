@@ -1280,3 +1280,16 @@ Fade in
 
 Fade in
 - DrawGUI objects are now hidden until a full fade in is completed
+
+Inventory layout
+- Box grid layout set over a drawRect. Most numbers are hardcoded and I am out of fucks to give.
+
+Inventory layout
+- Text layout inside the inventory grid now lines up with the boxes. Most numbers are hardcoded. See above.
+
+Inventory layout
+- Text replaced with sprites. Sprites align approximately to center of inventory grid boxes.
+
+Inventory layout
+- Error fixed where checking the inventory while in possession of any cleaning supplies would crash the game.
+- Added a condition check in InventoryDraw to verify that the ds entry being drawn is a string, not a real.
