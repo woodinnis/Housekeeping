@@ -1293,3 +1293,9 @@ Inventory layout
 Inventory layout
 - Error fixed where checking the inventory while in possession of any cleaning supplies would crash the game.
 - Added a condition check in InventoryDraw to verify that the ds entry being drawn is a string, not a real.
+
+// November 30, 2015 //
+
+Art Assets
+- Started replacing art with more professional looking assets. Mission sprites (Laptop, Necklace, Document, Letter)
+    have now been replaced.
