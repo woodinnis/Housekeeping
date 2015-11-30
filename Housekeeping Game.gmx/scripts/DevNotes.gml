@@ -1299,3 +1299,7 @@ Inventory layout
 Art Assets
 - Started replacing art with more professional looking assets. Mission sprites (Laptop, Necklace, Document, Letter)
     have now been replaced.
+    
+Art Assets
+- Replaced button sprites (Play, Help, Yes, No, OK) with new sprites more in keeping with the Neon sign theme
+    of the dialogue box.
