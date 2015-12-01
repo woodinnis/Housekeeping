@@ -20,6 +20,15 @@ if(ds_exists(missionList, ds_type_list))
     }
 }
 
+// If the walking sound is playing,
+// stop it when the end of path has been reached.
+if(audio_is_playing(SndWalking))
+{
+    if(path_position == 1)
+    {
+        audio_stop_sound(SndWalking);
+    }
+}
 // If intro sequence has been completed set player move speed
 if(ObjOverlord.introRead)
     moveSpeed = PLAYERSPEED;

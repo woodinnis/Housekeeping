@@ -192,6 +192,7 @@
     <scripts name="Overlord">
       <script>scripts\ScrOverlordCreate.gml</script>
       <script>scripts\ScrMissionChecks.gml</script>
+      <script>scripts\ScrLMBAudio.gml</script>
       <script>scripts\ScrEvidencePlace.gml</script>
       <script>scripts\ScrOvlerlordGlobLMB.gml</script>
     </scripts>

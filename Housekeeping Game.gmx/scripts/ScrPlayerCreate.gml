@@ -5,6 +5,9 @@ missionReceived = false;
 moveSpeed = 0;
 image_speed = 0;
 
+// Set a default return value for the valid path check
+goodPath = false;
+
 if(room == RoomHallway)
 {
     startX = 0;

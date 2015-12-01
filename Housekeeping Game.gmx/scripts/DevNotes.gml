@@ -1308,3 +1308,11 @@ Sound Assets
 - Started adding sound assets into the resource library.
 - Sounds for Clerk, Bed, Toilet, Sink, Elevator Doors, and Walking have all been added. Sounds are not yet a
     part of gameplay.
+    
+// December 01, 2015 //
+
+Holy fuck, when did december happen?
+
+Sound Assets
+- All currently available sound assets have been implemented and associated with their objects/actions. Sounds are
+    not yet balanced or optimized, and some tweeking still needs to be done to the timing of some of the sounds.
