@@ -1316,3 +1316,7 @@ Holy fuck, when did december happen?
 Sound Assets
 - All currently available sound assets have been implemented and associated with their objects/actions. Sounds are
     not yet balanced or optimized, and some tweeking still needs to be done to the timing of some of the sounds.
+    
+Sound balancing
+- All currently implemented sounds have been leveled to a peak amplitude of -20dB. All new sounds should be given
+    this setting.
