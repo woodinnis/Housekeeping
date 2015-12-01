@@ -44,6 +44,7 @@
   </NewExtensions>
   <sounds name="sound">
     <sound>sound\SndClerk</sound>
+    <sound>sound\SndGameMusic</sound>
     <sounds name="Room">
       <sound>sound\SndBed</sound>
       <sound>sound\SndToilet</sound>
@@ -195,6 +196,7 @@
       <script>scripts\ScrLMBAudio.gml</script>
       <script>scripts\ScrEvidencePlace.gml</script>
       <script>scripts\ScrOvlerlordGlobLMB.gml</script>
+      <script>scripts\ScrBGMusic.gml</script>
     </scripts>
     <scripts name="MainMenu">
       <script>scripts\ScrBtnHelp.gml</script>

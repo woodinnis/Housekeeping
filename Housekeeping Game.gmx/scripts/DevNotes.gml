@@ -1320,3 +1320,8 @@ Sound Assets
 Sound balancing
 - All currently implemented sounds have been leveled to a peak amplitude of -20dB. All new sounds should be given
     this setting.
+    
+Background Music
+- Background music added (SndGameMusic)
+- Music fades in over three seconds when the player enters the lobby for the first time. An is_playing() check
+    runs to prevent duplicate instances of the background music.
