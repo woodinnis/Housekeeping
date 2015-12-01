@@ -1303,3 +1303,8 @@ Art Assets
 Art Assets
 - Replaced button sprites (Play, Help, Yes, No, OK) with new sprites more in keeping with the Neon sign theme
     of the dialogue box.
+    
+Sound Assets
+- Started adding sound assets into the resource library.
+- Sounds for Clerk, Bed, Toilet, Sink, Elevator Doors, and Walking have all been added. Sounds are not yet a
+    part of gameplay.

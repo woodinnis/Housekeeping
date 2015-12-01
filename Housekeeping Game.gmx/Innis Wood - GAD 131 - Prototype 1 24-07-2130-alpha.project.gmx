@@ -42,7 +42,18 @@
   <NewExtensions>
     <extension index="0">extensions\Quick Edit 2D Inventory</extension>
   </NewExtensions>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\SndClerk</sound>
+    <sounds name="Room">
+      <sound>sound\SndBed</sound>
+      <sound>sound\SndToilet</sound>
+      <sound>sound\SndSink</sound>
+    </sounds>
+    <sounds name="Hotel">
+      <sound>sound\SndElevatorDoors</sound>
+      <sound>sound\SndWalking</sound>
+    </sounds>
+  </sounds>
   <sprites name="sprites">
     <sprites name="MainMenu">
       <sprite>sprites\SprBtnPlay</sprite>
