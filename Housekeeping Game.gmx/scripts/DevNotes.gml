@@ -1335,3 +1335,7 @@ Voices
 
 Volume controls
 - Added volume controls for the background music. Up/Down keys will increase/decrease the BG music.
+
+Room changes
+- Movement between rooms while touching an NPC has been blocked. A check is now in place for NPC.touchingPlayer,
+    when the player is in direct contact with an NPC clicking on the elevator will no longer cause an action.
