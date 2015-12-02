@@ -3,12 +3,16 @@
 */
 
 var NPC;
+var door;
 
 // Check for a player and an NPC in the current room and set the NPC variable
 if(instance_exists(ObjPlayerParent) && instance_exists(ObjNPCParent))
     NPC = instance_nearest(ObjPlayerParent.x, ObjPlayerParent.y, ObjNPCParent);
 
-    
+// Check for a door in the current room, and set the door variable
+if(instance_exists(ObjDoorParent))
+    door = ObjDoorParent;
+
 switch(room)
 {
     case RoomMenu:
@@ -24,13 +28,15 @@ switch(room)
         // If player is not touching an NPC move between rooms
         if(!NPC.touchingPlayer)
         {
-            instance_create(0,0, ObjFade);
-            
-            if(doorEnter)
-                destinationRoom = RoomMain;
+            if(door.doorEnter)
+            {
+                instance_create(0,0, ObjFade);
                 
-            if(!ObjUI.elevatorTouched)
-                ObjUI.elevatorTouched = true;
+                destinationRoom = RoomMain;
+                    
+                if(!ObjUI.elevatorTouched)
+                    ObjUI.elevatorTouched = true;
+            }
         }
         
         break;
@@ -40,12 +46,16 @@ switch(room)
         // If player is not touching an NPC move between rooms
         if(!NPC.touchingPlayer)
         {
-            instance_create(0,0, ObjFade);
-            
-            if(doorEnter)
+            if(door.doorEnter)
+            {
+                instance_create(0,0, ObjFade);
+                
                 destinationRoom = RoomFrontDesk;
+            }
         }
         
         break;
     }
+    default:
+        break;
 }

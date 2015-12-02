@@ -5,13 +5,20 @@
 *   After the player has been given tutorial information, the dialogue will contain
 *   basic game information (Shift length, Shift goals, Current wage...)
 */
-//var sz = font_get_size(fontDialogue);
+
 var msgX = 0;
 var msgY = 0;
 var btnY = 0;
 
-var NPC = instance_nearest(ObjPlayerParent.x,ObjPlayerParent.y, ObjNPCParent);
-var INV = instance_nearest(ObjPlayerParent.x,ObjPlayerParent.y, ObjMissionItemParent);
+var NPC;
+var INV;
+
+// Verify the existance of NPC and Inventory objects in the room, and set NPC and INV variables
+if(instance_exists(ObjPlayerParent) && instance_exists(ObjNPCParent))
+{
+    NPC = instance_nearest(ObjPlayerParent.x,ObjPlayerParent.y, ObjNPCParent);
+    INV = instance_nearest(ObjPlayerParent.x,ObjPlayerParent.y, ObjMissionItemParent);
+}
 
 if(room = RoomFrontDesk)
 {

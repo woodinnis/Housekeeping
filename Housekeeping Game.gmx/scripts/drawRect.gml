@@ -23,15 +23,19 @@ mouseY = device_mouse_y_to_gui(0);
 // Scale and draw the background sprite for dialogue boxes
 draw_sprite_stretched(SprDialogueBox, 0, spriteX, spriteY, spriteW, spriteH);
 
-// While mouse is inside the rectangle, prevent player movement
-if(point_in_rectangle(mouseX, mouseY, spriteX, spriteY, X2, Y2))
+// Verify the existance of a player and a door within the current room.
+if(instance_exists(ObjPlayerParent) && instance_exists(ObjDoorParent))
 {
-    ObjPlayerParent.moveSpeed = 0;
-    ObjDoorParent.doorEnter = false;
+    // While mouse is inside the rectangle, prevent player movement
+    if(point_in_rectangle(mouseX, mouseY, spriteX, spriteY, X2, Y2))
+    {
+        show_debug_message(destinationRoom);
+        ObjPlayerParent.moveSpeed = 0;
+        ObjDoorParent.doorEnter = false;
+    }
+    else
+    {
+        ObjPlayerParent.moveSpeed = PLAYERSPEED;
+        ObjDoorParent.doorEnter = true;
+    }
 }
-else
-{
-    ObjPlayerParent.moveSpeed = PLAYERSPEED;
-    ObjDoorParent.doorEnter = true;
-}
-
