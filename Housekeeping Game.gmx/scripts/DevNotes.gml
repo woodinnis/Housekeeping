@@ -1330,3 +1330,8 @@ Voices
 - Male and female voices added
 - Stop and start commands added for walla sound. Voice sound commands are issued from the NPCDialogueUI script.
     Each NPC calls the sound individually. A single condition check stops all voice sounds.
+    
+// December 02, 2015 //
+
+Volume controls
+- Added volume controls for the background music. Up/Down keys will increase/decrease the BG music.
