@@ -39,6 +39,8 @@ if(instance_exists(ObjNPCParent))
             {
                 m = missionList[| 0];
                 NPC001Dia(m, talkX, talkY, replyY);
+                if(!audio_is_playing(SndFemaleVoice))
+                    audio_play_sound(SndFemaleVoice, 5, false);
 
                 break;
             }
@@ -46,6 +48,8 @@ if(instance_exists(ObjNPCParent))
             {
                 m = missionList[| 0];
                 NPC002Dia(m, talkX, talkY, replyY);
+                if(!audio_is_playing(SndMaleVoice))
+                    audio_play_sound(SndMaleVoice, 5, false);
 
                 break;
             }
@@ -53,6 +57,8 @@ if(instance_exists(ObjNPCParent))
             {
                 m = missionList[| 1];
                 NPC003Dia(m, talkX, talkY, replyY);
+                if(!audio_is_playing(SndMaleVoice))
+                    audio_play_sound(SndMaleVoice, 5, false);
                     
                 break;
             }
@@ -67,6 +73,8 @@ if(instance_exists(ObjNPCParent))
             {
                 m = missionList[| 2];
                 NPC006Dia(m, talkX, talkY, replyY);
+                if(!audio_is_playing(SndMaleVoice))
+                    audio_play_sound(SndMaleVoice, 5, false);
                 
                 break;
             }
@@ -74,6 +82,8 @@ if(instance_exists(ObjNPCParent))
             {
                 m = missionList[| 2];
                 NPC007Dia(m, talkX, talkY, replyY);
+                if(!audio_is_playing(SndMaleVoice))
+                    audio_play_sound(SndMaleVoice, 5, false);
                 
                 break;
             }
@@ -81,6 +91,8 @@ if(instance_exists(ObjNPCParent))
             {
                 m = missionList[| 4];
                 NPC009Dia(m, talkX, talkY, replyY);
+                if(!audio_is_playing(SndMaleVoice))
+                    audio_play_sound(SndMaleVoice, 5, false);
                 
                 break;
             }
@@ -88,7 +100,15 @@ if(instance_exists(ObjNPCParent))
                 break;
             default:
                 break;
-        }
+        }   // Switch(NPCName)
+    }   // if(NPC.touchingPlayer
+    else
+    {
+        // Stop playing any voices
+        if(audio_is_playing(SndFemaleVoice))
+            audio_stop_sound(SndFemaleVoice);
+        if(audio_is_playing(SndMaleVoice))
+            audio_stop_sound(SndMaleVoice);
     }
 }
 

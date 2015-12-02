@@ -1293,3 +1293,49 @@ Inventory layout
 Inventory layout
 - Error fixed where checking the inventory while in possession of any cleaning supplies would crash the game.
 - Added a condition check in InventoryDraw to verify that the ds entry being drawn is a string, not a real.
+
+// November 30, 2015 //
+
+Art Assets
+- Started replacing art with more professional looking assets. Mission sprites (Laptop, Necklace, Document, Letter)
+    have now been replaced.
+    
+Art Assets
+- Replaced button sprites (Play, Help, Yes, No, OK) with new sprites more in keeping with the Neon sign theme
+    of the dialogue box.
+    
+Sound Assets
+- Started adding sound assets into the resource library.
+- Sounds for Clerk, Bed, Toilet, Sink, Elevator Doors, and Walking have all been added. Sounds are not yet a
+    part of gameplay.
+    
+// December 01, 2015 //
+
+Holy fuck, when did december happen?
+
+Sound Assets
+- All currently available sound assets have been implemented and associated with their objects/actions. Sounds are
+    not yet balanced or optimized, and some tweeking still needs to be done to the timing of some of the sounds.
+    
+Sound balancing
+- All currently implemented sounds have been leveled to a peak amplitude of -20dB. All new sounds should be given
+    this setting.
+    
+Background Music
+- Background music added (SndGameMusic)
+- Music fades in over three seconds when the player enters the lobby for the first time. An is_playing() check
+    runs to prevent duplicate instances of the background music.
+    
+Voices
+- Male and female voices added
+- Stop and start commands added for walla sound. Voice sound commands are issued from the NPCDialogueUI script.
+    Each NPC calls the sound individually. A single condition check stops all voice sounds.
+    
+// December 02, 2015 //
+
+Volume controls
+- Added volume controls for the background music. Up/Down keys will increase/decrease the BG music.
+
+Room changes
+- Movement between rooms while touching an NPC has been blocked. A check is now in place for NPC.touchingPlayer,
+    when the player is in direct contact with an NPC clicking on the elevator will no longer cause an action.

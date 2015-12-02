@@ -42,7 +42,21 @@
   <NewExtensions>
     <extension index="0">extensions\Quick Edit 2D Inventory</extension>
   </NewExtensions>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\SndClerk</sound>
+    <sound>sound\SndGameMusic</sound>
+    <sound>sound\SndMaleVoice</sound>
+    <sound>sound\SndFemaleVoice</sound>
+    <sounds name="Room">
+      <sound>sound\SndBed</sound>
+      <sound>sound\SndToilet</sound>
+      <sound>sound\SndSink</sound>
+    </sounds>
+    <sounds name="Hotel">
+      <sound>sound\SndElevatorDoors</sound>
+      <sound>sound\SndWalking</sound>
+    </sounds>
+  </sounds>
   <sprites name="sprites">
     <sprites name="MainMenu">
       <sprite>sprites\SprBtnPlay</sprite>
@@ -181,8 +195,10 @@
     <scripts name="Overlord">
       <script>scripts\ScrOverlordCreate.gml</script>
       <script>scripts\ScrMissionChecks.gml</script>
+      <script>scripts\ScrLMBAudio.gml</script>
       <script>scripts\ScrEvidencePlace.gml</script>
       <script>scripts\ScrOvlerlordGlobLMB.gml</script>
+      <script>scripts\ScrBGMusic.gml</script>
     </scripts>
     <scripts name="MainMenu">
       <script>scripts\ScrBtnHelp.gml</script>
