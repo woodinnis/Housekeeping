@@ -45,6 +45,8 @@
   <sounds name="sound">
     <sound>sound\SndClerk</sound>
     <sound>sound\SndGameMusic</sound>
+    <sound>sound\SndMaleVoice</sound>
+    <sound>sound\SndFemaleVoice</sound>
     <sounds name="Room">
       <sound>sound\SndBed</sound>
       <sound>sound\SndToilet</sound>

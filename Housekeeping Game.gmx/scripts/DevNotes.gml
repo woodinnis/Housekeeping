@@ -1325,3 +1325,8 @@ Background Music
 - Background music added (SndGameMusic)
 - Music fades in over three seconds when the player enters the lobby for the first time. An is_playing() check
     runs to prevent duplicate instances of the background music.
+    
+Voices
+- Male and female voices added
+- Stop and start commands added for walla sound. Voice sound commands are issued from the NPCDialogueUI script.
+    Each NPC calls the sound individually. A single condition check stops all voice sounds.
