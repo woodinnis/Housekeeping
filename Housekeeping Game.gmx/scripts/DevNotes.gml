@@ -1347,3 +1347,9 @@ Debug 1
 Debug 1
 - Hitting "Enter" on the main menu no longer enters the main game. This has solved the issue of failure to
     fade-in.
+    
+// December 03, 2015 //
+
+Debug 1
+- Walk sound no longer continues playing if a shift ends while player is walking. A room_goto() was removed from
+    the shiftTimer code, and replaced with a roomExit() call.

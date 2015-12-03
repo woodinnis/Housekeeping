@@ -13,6 +13,10 @@ if(instance_exists(ObjPlayerParent) && instance_exists(ObjNPCParent))
 if(instance_exists(ObjDoorParent))
     door = ObjDoorParent;
 
+// Stop the walking sound
+if(audio_is_playing(SndWalking))
+    audio_stop_sound(SndWalking);
+    
 switch(room)
 {
     case RoomMenu:
