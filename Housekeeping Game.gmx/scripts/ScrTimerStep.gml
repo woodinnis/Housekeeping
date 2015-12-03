@@ -33,8 +33,6 @@ if(newShift)    // Perform if a new shift is starting
             
             // Adjust player variables
             totalCash += (cleanCount * WAGE);
-            shiftStart = true;
-            cleanCount = 0;
         }
     }
 }

@@ -61,4 +61,11 @@ if(debug)
         target.isSpy = true;
         ObjOverlord.drawSolution = true;
     }
+    if(keyboard_check_pressed(ord("M")))
+    {
+        if(audio_is_playing(SndGameMusic))
+            audio_stop_sound(SndGameMusic);
+//        else
+//            audio_play_sound(SndGameMusic, 1, true);
+    }
 }

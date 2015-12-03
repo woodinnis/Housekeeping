@@ -15,8 +15,5 @@ if(room == RoomFrontDesk || room == RoomMain)
     draw_text(setX, setY, ROOMMSG + string(cleanCount));
     
     draw_text(setX, setY + setY, CASHMSG + string(totalCash));
-    
-    if(!shiftStart)
-        draw_text(setX, setY * 3, "You Earned: $" + string(cleanCount * WAGE));
 }
 

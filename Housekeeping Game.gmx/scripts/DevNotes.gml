@@ -1371,3 +1371,7 @@ Debug 1
     
 Debug 1
 - New section added to the clerk's chat. Indicates how to access the inventory screen using SPACEBAR.
+
+Debug 1
+- Added a shift summary at the end of every shift. Shows total number of objects cleaned, and total cash earned.
+    An OK button closes the message.
