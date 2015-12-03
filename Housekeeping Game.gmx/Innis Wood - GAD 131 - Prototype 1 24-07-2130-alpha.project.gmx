@@ -374,7 +374,7 @@
     <room>rooms\RoomRoomLg</room>
     <room>rooms\RoomMain</room>
   </rooms>
-  <constants number="93">
+  <constants number="94">
     <constant name="AD1">"Cheap, fast, 2-for-1 Pizza!"</constant>
     <constant name="AD2">"Brick-oven pizza. Made with organic ingredients, in the traditional style."</constant>
     <constant name="AD3">"Coin-Laundry. One-hour cycle, wash and dry! Detergent for sale at the counter."</constant>
@@ -387,7 +387,8 @@
     <constant name="CASHMSG">"Money Available: "</constant>
     <constant name="CLERKMSG00">"Welcome to your first shift.#You'll need supplies to clean the hotel."</constant>
     <constant name="CLERKMSG01">"Pick up bleach, sheets, and towels#any time you run out."</constant>
-    <constant name="CLERKMSG02">"Today's shift is #" + string(shiftTime) + " hours."</constant>
+    <constant name="CLERKMSG02">"Press the SPACEBAR#at any time to access your inventory"</constant>
+    <constant name="CLERKMSG03">"Today's shift is #" + string(shiftTime) + " hours."</constant>
     <constant name="CLUE01">2</constant>
     <constant name="CLUE02">3</constant>
     <constant name="CLUE03">4</constant>

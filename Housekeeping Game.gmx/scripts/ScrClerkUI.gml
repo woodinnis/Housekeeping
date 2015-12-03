@@ -67,6 +67,16 @@ if(room = RoomFrontDesk)
                     break;
                 }
                 case 03:
+                {
+                    drawRect();
+                    
+                    draw_text(msgX, msgY, CLERKMSG03);
+                    
+                    ObjOverlord.clerkSpeak += ClerkButton(msgX, btnY);
+                    
+                    break;
+                }
+                case 04:
                 default:
                 {
     //                ObjOverlord.clerkRead = false;

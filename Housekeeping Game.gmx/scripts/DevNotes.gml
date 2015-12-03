@@ -1368,3 +1368,6 @@ Debug 1
 Debug 1
 - Cleaning sounds (Toilet, Sink, Bed) now only play once: when clicking a dirty object. Moved sound play commands
     to a sub-function roomSound() of roomObjectLMB.
+    
+Debug 1
+- New section added to the clerk's chat. Indicates how to access the inventory screen using SPACEBAR.
