@@ -1357,3 +1357,7 @@ Debug 1
 Debug 1
 - Clock and shift timers now run synchronously (A 1hr shift, will take 1 game hr on the UI clock). Timer was
     made non-persistent, removed from FrontDesk, and placed in Main.
+    
+Debug 1
+- Cleaning sounds(Toilet, Sink, Bed) now perform an inventory check before playing. Resource checks returning 0
+    will not play a sound.
