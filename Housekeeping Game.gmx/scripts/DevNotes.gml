@@ -1343,3 +1343,7 @@ Room changes
 Debug 1
 - Clicking on the elevator through a dialogue box no longer triggers a room transition. This appears to solve
     the fade-in issue.
+    
+Debug 1
+- Hitting "Enter" on the main menu no longer enters the main game. This has solved the issue of failure to
+    fade-in.
