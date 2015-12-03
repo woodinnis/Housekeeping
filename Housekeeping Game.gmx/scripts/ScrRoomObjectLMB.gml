@@ -48,8 +48,11 @@ if(!collision_line(x, y,ObjPlayerRoom.x,ObjPlayerRoom.y,ObjBarrier, false,true))
         }
         case "chair":
         {
-            image_index = 0;
-            cleanCount++;
+            if(image_index == 1)
+            {
+                image_index = 0;
+                cleanCount++;
+            }
             break;
         }
         default:

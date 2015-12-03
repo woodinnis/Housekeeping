@@ -1361,3 +1361,6 @@ Debug 1
 Debug 1
 - Cleaning sounds(Toilet, Sink, Bed) now perform an inventory check before playing. Resource checks returning 0
     will not play a sound.
+    
+Debug 1
+- Clicking on a cleaned chair will no longer increment cleanCount. Added an image_index check.
