@@ -20,7 +20,7 @@ if(position_meeting(mouseX, mouseY, ObjClerk))
     }
 }
 
-// Play sounds for the objects being cleaned in rooms
+/* Play sounds for the objects being cleaned in rooms
 if(position_meeting(mouseX, mouseY, ObjRoomParent))
 {
     iAm = instance_position(mouseX, mouseY, ObjRoomParent);
@@ -52,7 +52,7 @@ if(position_meeting(mouseX, mouseY, ObjRoomParent))
         }
     }
 }
-
+*/
 // Play elevator door sound
 if(position_meeting(mouseX, mouseY, ObjElevator))
 {

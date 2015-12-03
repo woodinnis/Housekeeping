@@ -1364,3 +1364,7 @@ Debug 1
     
 Debug 1
 - Clicking on a cleaned chair will no longer increment cleanCount. Added an image_index check.
+
+Debug 1
+- Cleaning sounds (Toilet, Sink, Bed) now only play once: when clicking a dirty object. Moved sound play commands
+    to a sub-function roomSound() of roomObjectLMB.
