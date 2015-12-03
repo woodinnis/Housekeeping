@@ -1353,3 +1353,7 @@ Debug 1
 Debug 1
 - Walk sound no longer continues playing if a shift ends while player is walking. A room_goto() was removed from
     the shiftTimer code, and replaced with a roomExit() call.
+    
+Debug 1
+- Clock and shift timers now run synchronously (A 1hr shift, will take 1 game hr on the UI clock). Timer was
+    made non-persistent, removed from FrontDesk, and placed in Main.
