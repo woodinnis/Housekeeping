@@ -1392,3 +1392,6 @@ Debug 1
 
 Debug 1
 - Choosing to prioritize bugs. Hard fade-in issue has been minimized.
+
+Debug 1
+- Player no longer needs to touch an NPC before using the elevator after finishing a shift

@@ -27,6 +27,7 @@ if(showSummary)
         cleanCount = 0;
         showSummary = false;
         totalCash += cash;
+        ObjDoorParent.doorEnter = true;
     }
 }
 
