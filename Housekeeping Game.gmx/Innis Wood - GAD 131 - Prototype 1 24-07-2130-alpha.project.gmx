@@ -204,8 +204,6 @@
       <script>scripts\ScrBtnHelp.gml</script>
     </scripts>
     <scripts name="Player">
-      <script>scripts\ScrPlayerHallMove.gml</script>
-      <script>scripts\ScrPlayerRoomMove.gml</script>
       <script>scripts\ScrPlayerCreate.gml</script>
       <script>scripts\ScrRoomExit.gml</script>
       <script>scripts\ScrPlayerStep.gml</script>
@@ -258,11 +256,13 @@
     <script>scripts\DEBUG_DRAW.gml</script>
     <script>scripts\DEBUG_STEP.gml</script>
     <script>scripts\FuncEvidence.gml</script>
+    <script>scripts\ScrPlayerRoomMove.gml</script>
     <scripts name="OBSOLETE">
       <scripts name="Menu">
         <script>scripts\txtBoxMouse.gml</script>
       </scripts>
       <script>scripts\ScrJSONRead.gml</script>
+      <script>scripts\ScrPlayerHallMove.gml</script>
     </scripts>
     <script>scripts\buildGrid.gml</script>
     <scripts name="Timer">

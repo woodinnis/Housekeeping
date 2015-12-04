@@ -7,7 +7,6 @@
 
 var count = 0;
 var cash = 0;
-var showSummary = false;
 
 if(!shiftStart)
 {

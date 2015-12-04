@@ -23,6 +23,8 @@ if(newShift)    // Perform if a new shift is starting
             // Relocate player if they are anywhere but the Front Desk
             if(room != RoomFrontDesk)
                 ScrRoomExit();
+                
+            showSummary = true;
             
             // If player has reached a milestone
             if(cleanCount >= currentLevel)

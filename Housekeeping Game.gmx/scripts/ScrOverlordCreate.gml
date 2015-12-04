@@ -39,6 +39,8 @@ clueMd = false;
 clueSm = false;
 
 // UI variables
+globalvar showSummary;
+showSummary = false;
 drawSolution = false
 demoVictory = false;
 

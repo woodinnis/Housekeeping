@@ -1383,3 +1383,7 @@ Debug 1
 Debug 1
 - Solved the problem of totalCash suddenly increasing dramatically at the end of a shift. Moved the incrementation
     of totalCash to ShiftSummaryUI.
+    
+Debug 1
+- Shift summary now appears correctly after a shift, while leaving the main floor. Made showSummary a globalvar,
+    set to true in TimerStep, false in ShiftSummaryUI
