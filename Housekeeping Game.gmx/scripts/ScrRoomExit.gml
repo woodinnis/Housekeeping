@@ -47,8 +47,8 @@ switch(room)
     }
     case RoomMain:
     {
-        // If player is not touching an NPC move between rooms
-        if(!NPC.touchingPlayer)
+        // If a shift has just ended, move to the Front Desk
+        if(!shiftStart)
         {
             if(door.doorEnter)
             {
@@ -57,7 +57,16 @@ switch(room)
                 destinationRoom = RoomFrontDesk;
             }
         }
-        
+        // If player is not touching an NPC move between rooms
+        else if(!NPC.touchingPlayer)
+        {
+            if(door.doorEnter)
+            {
+                instance_create(0,0, ObjFade);
+                
+                destinationRoom = RoomFrontDesk;
+            }
+        }
         break;
     }
     default:

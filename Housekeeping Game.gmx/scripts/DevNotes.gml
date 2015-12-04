@@ -1395,3 +1395,7 @@ Debug 1
 
 Debug 1
 - Player no longer needs to touch an NPC before using the elevator after finishing a shift
+
+Debug 1
+- Touching an NPC when a shift ends no longer prevents the player from returning to the Front Desk. Added a condition
+    to roomExit to check for end of shift
