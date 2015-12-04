@@ -4,8 +4,6 @@
 *   
 *   If true, change its properties to show it as cleaned, and increment cleanCount
 */
-show_debug_message(name)
-
 
 if(!collision_line(x, y,ObjPlayerRoom.x,ObjPlayerRoom.y,ObjBarrier, false,true))
 {

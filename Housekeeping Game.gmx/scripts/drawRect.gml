@@ -29,7 +29,6 @@ if(instance_exists(ObjPlayerParent) && instance_exists(ObjDoorParent))
     // While mouse is inside the rectangle, prevent player movement
     if(point_in_rectangle(mouseX, mouseY, spriteX, spriteY, X2, Y2))
     {
-        show_debug_message(destinationRoom);
         ObjPlayerParent.moveSpeed = 0;
         ObjDoorParent.doorEnter = false;
     }

@@ -78,7 +78,6 @@ if(isPaused)
                         }
                         default:
                         {
-                            show_debug_message("waka");
                             break;
                         }
                     }   // switch(me)

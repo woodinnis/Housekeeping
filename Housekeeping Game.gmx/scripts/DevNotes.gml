@@ -1399,3 +1399,7 @@ Debug 1
 Debug 1
 - Touching an NPC when a shift ends no longer prevents the player from returning to the Front Desk. Added a condition
     to roomExit to check for end of shift
+    
+Debug 1
+- Removed unneccessary debug messages from code
+- Removed "Hoodie Guy" from Front desk. Currently not functioning, and only taking up space.

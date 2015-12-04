@@ -235,7 +235,6 @@
       <script>scripts\ScrMissionItemLMB.gml</script>
     </scripts>
     <scripts name="Clerk">
-      <script>scripts\ScrClerkCreate.gml</script>
       <script>scripts\ScrClerkLMB.gml</script>
     </scripts>
     <scripts name="Person">
@@ -461,7 +460,7 @@
     <constant name="REFUSE">"nope"</constant>
     <constant name="REWARD">100</constant>
     <constant name="ROOMMSG">"Objects Cleaned: "</constant>
-    <constant name="SHIFTTIME01">.25</constant>
+    <constant name="SHIFTTIME01">1</constant>
     <constant name="SHIFTTIME02">4</constant>
     <constant name="SHIFTTIME03">6</constant>
     <constant name="SHIFTTIME04">8</constant>
