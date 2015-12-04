@@ -30,9 +30,6 @@ if(newShift)    // Perform if a new shift is starting
                 totalCash += currentLevel;
                 NewLevel();
             }
-            
-            // Adjust player variables
-            totalCash += (cleanCount * WAGE);
         }
     }
 }

@@ -1379,3 +1379,7 @@ Debug 1
 Debug 1
 - Added a memory management check to the Fade controller, destroys duplicate instances of the Fader at room start.
 - Set fader to snap to 0 and 1 at completion of fade-in and fade-out.
+
+Debug 1
+- Solved the problem of totalCash suddenly increasing dramatically at the end of a shift. Moved the incrementation
+    of totalCash to ShiftSummaryUI.
