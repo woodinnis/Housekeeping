@@ -77,6 +77,10 @@ if(room = RoomFrontDesk)
                     break;
                 }
                 case 04:
+                {
+                    ObjDoorParent.doorEnter = true;
+                    break;
+                }
                 default:
                 {
     //                ObjOverlord.clerkRead = false;

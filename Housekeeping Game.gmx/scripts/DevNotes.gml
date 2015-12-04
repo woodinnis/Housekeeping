@@ -1403,3 +1403,6 @@ Debug 1
 Debug 1
 - Removed unneccessary debug messages from code
 - Removed "Hoodie Guy" from Front desk. Currently not functioning, and only taking up space.
+
+Debug 1
+- Using the elevator after completing the Clerk dialogue no longer requires touching an NPC.
