@@ -12,7 +12,6 @@ if(!shiftStart)
 {
     count = cleanCount;
     cash = count * WAGE;
-    showSummary = true;
 }
 
 if(showSummary)
