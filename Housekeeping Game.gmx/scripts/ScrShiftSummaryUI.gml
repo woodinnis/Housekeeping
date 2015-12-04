@@ -27,6 +27,7 @@ if(showSummary)
     {
         shiftStart = true;
         cleanCount = 0;
+        showSummary = false;
     }
 }
 

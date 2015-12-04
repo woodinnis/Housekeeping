@@ -470,7 +470,7 @@
     <constant name="TXTDRAWBUFFER">30</constant>
     <constant name="WAGE">10</constant>
     <constant name="SHIFTSUMMARY01">"You Cleaned: "</constant>
-    <constant name="SHIFTSUMMARY02">"Your Earned: $"</constant>
+    <constant name="SHIFTSUMMARY02">"You Earned: $"</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

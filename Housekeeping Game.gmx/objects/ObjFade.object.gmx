@@ -113,6 +113,19 @@
 *   Check the fadeState and call the timer at the start of a room
 *   to begin the fade in
 */
+
+if(instance_number(ObjFade) &gt; 1)
+{
+    n = instance_number(ObjFade);
+    
+    for(i = 1; i &lt; n; i++)
+    {
+        die = instance_find(ObjFade, i);
+        with(die)
+            instance_destroy();
+    }
+}
+
 if(fadeState == inOut.in)
     alarm[0] = 1;
 </string>

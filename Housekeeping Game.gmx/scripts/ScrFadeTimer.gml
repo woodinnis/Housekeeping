@@ -17,6 +17,7 @@ switch(fadeState)
         {
             room_goto(destinationRoom)
             fadeState = inOut.in;
+            image_alpha = 1;
         }
         break;
     }
@@ -29,7 +30,10 @@ switch(fadeState)
             alarm[0]=1;
         }
         else    // Reset the state for fading out
+        {
             fadeState = inOut.out;
+            image_alpha = 0
+        }
             
         break;
     }

@@ -1375,3 +1375,7 @@ Debug 1
 Debug 1
 - Added a shift summary at the end of every shift. Shows total number of objects cleaned, and total cash earned.
     An OK button closes the message.
+    
+Debug 1
+- Added a memory management check to the Fade controller, destroys duplicate instances of the Fader at room start.
+- Set fader to snap to 0 and 1 at completion of fade-in and fade-out.
