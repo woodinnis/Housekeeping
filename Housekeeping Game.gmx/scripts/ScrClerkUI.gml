@@ -24,7 +24,7 @@ if(room = RoomFrontDesk)
 {
     if(ObjOverlord.introRead && ObjOverlord.clerkRead && !NPC.touchingPlayer)
     {
-        if(!position_meeting(mouse_x, mouse_y, INV))
+        if(!position_meeting(device_mouse_x(0), device_mouse_y(0), INV))
         {
         
             var msgX = centerX;

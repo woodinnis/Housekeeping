@@ -1406,3 +1406,9 @@ Debug 1
 
 Debug 1
 - Using the elevator after completing the Clerk dialogue no longer requires touching an NPC.
+
+// December 11, 2015 //
+
+Debug 1
+- All instances of mouse_x/y in functional scripts have been replaced with device_mouse_x/y
+    This should facilitate mobile functionality more easily
