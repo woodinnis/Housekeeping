@@ -1412,3 +1412,7 @@ Debug 1
 Debug 1
 - All instances of mouse_x/y in functional scripts have been replaced with device_mouse_x/y
     This should facilitate mobile functionality more easily
+    
+Debug 1
+- Several blocks of code commented out, and additions made to the default UI settings in order to perform an Android
+    test. Android platform is experiencing major GUI issues, apparently related to screen orientation and draw cordinates

@@ -1,4 +1,4 @@
-// Create menu roll-over message instances
+/* Create menu roll-over message instances
     if(!instance_exists(menuMsg0))
         Msg0 = instance_create(mouse_x,mouse_y,menuMsg0);
     if(!instance_exists(menuMsg1))

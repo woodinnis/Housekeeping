@@ -6,9 +6,32 @@ spriteBufferX = 60; // Buffer for Sprites on screen
 spriteBufferY = 10; // Buffer for Sprites on screen
 
 // Coordinates screen center
-centerX = window_get_width()/2;
-centerY = window_get_height()/2;
-topThird = window_get_height()/3;
+switch(os_type)
+{
+    case os_windows:
+    {
+        centerX = window_get_width()/2;
+        centerY = window_get_height()/2;
+        topThird = window_get_height()/3;
+        break;
+    }
+    case os_android:
+    {
+        if(display_get_orientation() == display_landscape || display_get_orientation() == display_landscape_flipped)
+        {
+            centerX = display_get_height()/2;
+            centerY = display_get_width()/2;
+            topThird = display_get_width()/3;
+        }
+        else
+        {
+            centerX = display_get_width()/2;
+            centerY = display_get_height()/2;
+            topThird = display_get_height()/3;
+        }
+        break;
+    }
+}
 
 // Width and Height of the window
 wide = window_get_width();

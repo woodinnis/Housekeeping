@@ -22,7 +22,7 @@ if(debug)
     if(position_meeting(ObjNPCParent.x,ObjNPCParent.y,ObjPlayerParent))
         draw_text(20, bottom - 150, "TOUCHING!");
     
-    if(showEvidence)
+/*    if(showEvidence)
     {
         if(ObjOverlord.shirtFound)
             draw_text(20, bottom - 130, "SHIRT!");
@@ -37,4 +37,5 @@ if(debug)
         if(room != RoomHallway && room != RoomFrontDesk)
             draw_text(20, bottom - 20, "Check True " + string(ObjOverlord.checkTrue));
     }
+*/
 }
