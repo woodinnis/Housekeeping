@@ -5,6 +5,10 @@
 *   If true, change its properties to show it as cleaned, and increment cleanCount
 */
 
+var mouseX, mouseY;
+mouseX = device_mouse_x(0);
+mouseY = device_mouse_y(0);
+
 if(!collision_line(x, y,ObjPlayerRoom.x,ObjPlayerRoom.y,ObjBarrier, false,true))
 {
     switch(name)
@@ -32,6 +36,7 @@ if(!collision_line(x, y,ObjPlayerRoom.x,ObjPlayerRoom.y,ObjBarrier, false,true))
                 if(image_index == 1)
                 {
                     roomSound();
+                    part_particles_create(Sname, mouseX, mouseY, particle1, 10);
                     image_index = 0;
                     ScrItemDrop(INVBLEACH, 1);
                     cleanCount++;
@@ -48,6 +53,7 @@ if(!collision_line(x, y,ObjPlayerRoom.x,ObjPlayerRoom.y,ObjBarrier, false,true))
                 if(image_index == 1)
                 {
                     roomSound();
+                    part_particles_create(Sname, mouseX, mouseY, particle1, 10);
                     image_index = 0;
                     ScrItemDrop(INVTOWELS, 1);
                     cleanCount++;

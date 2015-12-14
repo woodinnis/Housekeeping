@@ -1416,3 +1416,8 @@ Debug 1
 Debug 1
 - Several blocks of code commented out, and additions made to the default UI settings in order to perform an Android
     test. Android platform is experiencing major GUI issues, apparently related to screen orientation and draw cordinates
+    
+// December 14, 2015 //
+
+Particles
+- Added a sparkle particle to the game as visual feedback when the player cleans a sink or toilet

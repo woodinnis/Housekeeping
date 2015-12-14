@@ -116,6 +116,8 @@
       <sprite>sprites\SprNPCLaptopGuy</sprite>
       <sprite>sprites\SprNPCWhistleblower</sprite>
       <sprite>sprites\SprNPCManInSuit</sprite>
+      <sprite>sprites\SprNPCWomanHead</sprite>
+      <sprite>sprites\SprClerkHead</sprite>
     </sprites>
     <sprites name="Evidence">
       <sprite>sprites\SprEvidenceShirt</sprite>
@@ -224,12 +226,13 @@
       <script>scripts\ScrShiftSummaryUI.gml</script>
       <script>scripts\ScrIntroUI.gml</script>
       <script>scripts\ScrInventoryDraw.gml</script>
-      <script>scripts\drawRect.gml</script>
+      <script>scripts\drawRect_new.gml</script>
       <script>scripts\drawButton.gml</script>
       <script>scripts\alignUI.gml</script>
       <script>scripts\ScrFade.gml</script>
       <script>scripts\ScrFadeTimer.gml</script>
       <script>scripts\ScrFadeCreate.gml</script>
+      <script>scripts\drawRect.gml</script>
     </scripts>
     <scripts name="Mission Items">
       <script>scripts\ScrMissionItemLMB.gml</script>
@@ -272,6 +275,7 @@
       <script>scripts\ScrNPCParentStep.gml</script>
       <script>scripts\ScrNPCParentCreate.gml</script>
     </scripts>
+    <script>scripts\ScrParticles.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fontDEBUG</font>
