@@ -9,8 +9,6 @@ if(!is_undefined(Price))
     {
         totalCash -= Price;
         ScrItemAdd(Key,Value);
-        audio_play_sound(SndCash,5,false);
-        woosh(iAm);
     }
 }
 
@@ -50,5 +48,10 @@ if(!is_real(other.Value))
 
     with(other)
         instance_destroy();
+}
+else
+{
+    audio_play_sound(SndCash,5,false);
+    woosh(iAm);
 }
 

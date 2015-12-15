@@ -1436,3 +1436,7 @@ Audio feedback
 
 Challenge
 - Added a check for distance when the player clicks on an object. Players must now be within 25 of an object to clean it
+
+Debug
+- Fixed a bug where all pickups were playing the cash register sound, and mission pickups were not disappearing after
+    being picked up
