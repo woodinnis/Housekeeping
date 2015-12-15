@@ -15,60 +15,72 @@ if(!collision_line(x, y,ObjPlayerRoom.x,ObjPlayerRoom.y,ObjBarrier, false,true))
     {
         case "bed":
         {
-            if(ds_map_find_value(myInventory, INVSHEETS) > 0)
+            if(distance_to_object(ObjPlayerParent) < 25)
             {
-                if(image_index == 1)
+                if(ds_map_find_value(myInventory, INVSHEETS) > 0)
                 {
-                    roomSound();
-                    image_index = 0;
-                    ScrItemDrop(INVSHEETS, 1);
-                    cleanCount++;
+                    if(image_index == 1)
+                    {
+                        roomSound();
+                        image_index = 0;
+                        ScrItemDrop(INVSHEETS, 1);
+                        cleanCount++;
+                    }
+                    break;
                 }
-                break;
             }
             else
                 break;   
         }
         case "toilet":
         {
-            if(ds_map_find_value(myInventory, INVBLEACH) > 0)
+            if(distance_to_object(ObjPlayerParent) < 25)
             {
-                if(image_index == 1)
+                if(ds_map_find_value(myInventory, INVBLEACH) > 0)
                 {
-                    roomSound();
-                    part_particles_create(Sname, mouseX, mouseY, particle1, 10);
-                    image_index = 0;
-                    ScrItemDrop(INVBLEACH, 1);
-                    cleanCount++;
+                    if(image_index == 1)
+                    {
+                        roomSound();
+                        part_particles_create(Sname, mouseX, mouseY, particle1, 10);
+                        image_index = 0;
+                        ScrItemDrop(INVBLEACH, 1);
+                        cleanCount++;
+                    }
+                    break;
                 }
-                break;
             }
             else
                 break;   
         }
         case "counter":
         {
-            if(ds_map_find_value(myInventory, INVTOWELS) > 0)
+            if(distance_to_object(ObjPlayerParent) < 25)
             {
-                if(image_index == 1)
+                if(ds_map_find_value(myInventory, INVTOWELS) > 0)
                 {
-                    roomSound();
-                    part_particles_create(Sname, mouseX, mouseY, particle1, 10);
-                    image_index = 0;
-                    ScrItemDrop(INVTOWELS, 1);
-                    cleanCount++;
+                    if(image_index == 1)
+                    {
+                        roomSound();
+                        part_particles_create(Sname, mouseX, mouseY, particle1, 10);
+                        image_index = 0;
+                        ScrItemDrop(INVTOWELS, 1);
+                        cleanCount++;
+                    }
+                    break;
                 }
-                break;
             }
             else
                 break;   
         }
         case "chair":
         {
-            if(image_index == 1)
+            if(distance_to_object(ObjPlayerParent) < 25)
             {
-                image_index = 0;
-                cleanCount++;
+                if(image_index == 1)
+                {
+                    image_index = 0;
+                    cleanCount++;
+                }
             }
             break;
         }

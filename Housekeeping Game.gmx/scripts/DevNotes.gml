@@ -1433,3 +1433,6 @@ Visual feedback
     
 Audio feedback
 - Added a cash register sound which plays every time an item is purchased from the front desk
+
+Challenge
+- Added a check for distance when the player clicks on an object. Players must now be within 25 of an object to clean it
