@@ -1426,3 +1426,7 @@ Particles
 
 UI Dialogues
 - NPC heads now show up in the bottom-left corner of dialogue boxes to indicate who is being spoken to
+
+Visual feedback
+- Added a function (woosh) to create the visual effect of items being picked up and deposited in inventory when purchased
+    at the front desk

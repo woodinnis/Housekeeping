@@ -233,6 +233,7 @@
       <script>scripts\ScrFadeTimer.gml</script>
       <script>scripts\ScrFadeCreate.gml</script>
       <script>scripts\drawRect.gml</script>
+      <script>scripts\woosh.gml</script>
     </scripts>
     <scripts name="Mission Items">
       <script>scripts\ScrMissionItemLMB.gml</script>

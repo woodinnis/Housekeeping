@@ -5,10 +5,11 @@ iAm = other.object_index;
 
 if(!is_undefined(Price))
 {   
-    if(totalCash > 0)
+    if(totalCash >= Price)
     {
         totalCash -= Price;
         ScrItemAdd(Key,Value);
+        woosh(iAm);
     }
 }
 
