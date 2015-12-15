@@ -29,7 +29,7 @@ if(room = RoomFrontDesk)
         
             var msgX = centerX;
             var msgY = topThird;
-            var btnY = msgY + TXTDRAWBUFFER;
+            var btnY = msgY + TXTDRAWBUFFER + 60;
             
             alignUI();
             draw_set_valign(fa_top);
@@ -39,7 +39,9 @@ if(room = RoomFrontDesk)
                 case 00:
                 {
                     drawRect();
-        
+                    
+                    draw_sprite(SprClerkHead,0,centerX - 210, centerY + 80);
+                    
                     draw_text(msgX, msgY, CLERKMSG00);
                     
                     ObjOverlord.clerkSpeak += ClerkButton(msgX, btnY);
@@ -49,6 +51,8 @@ if(room = RoomFrontDesk)
                 case 01:
                 {
                     drawRect();
+                    
+                    draw_sprite(SprClerkHead,0,centerX - 210, centerY + 80);
         
                     draw_text(msgX, msgY, CLERKMSG01);
                     
@@ -60,6 +64,8 @@ if(room = RoomFrontDesk)
                 {
                     drawRect();
                     
+                    draw_sprite(SprClerkHead,0,centerX - 210, centerY + 80);
+                    
                     draw_text(msgX, msgY, CLERKMSG02);
                     
                     ObjOverlord.clerkSpeak += ClerkButton(msgX, btnY);
@@ -69,6 +75,8 @@ if(room = RoomFrontDesk)
                 case 03:
                 {
                     drawRect();
+                    
+                    draw_sprite(SprClerkHead,0,centerX - 210, centerY + 80);
                     
                     draw_text(msgX, msgY, CLERKMSG03);
                     

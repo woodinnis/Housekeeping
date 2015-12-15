@@ -120,6 +120,8 @@ talkX = argument1;
 talkY = argument2;
 replyY = argument3;
 
+draw_sprite(SprNPCWomanHead,0,centerX - 210, centerY + 80);
+
 if(!m[? "Complete"])
 {
     if(m[? "Started"])
@@ -156,6 +158,8 @@ talkX = argument1;
 talkY = argument2;
 replyY = argument3;
 
+draw_sprite(SprNPCMaintenanceGuy,0,centerX - 210, centerY + 80);
+
 if(!m[? "Complete"] && m[? "Key Object"])
 {
     if(m[? "Name"] == REFUSE)
@@ -177,6 +181,8 @@ m = argument0;
 talkX = argument1;
 talkY = argument2;
 replyY = argument3;
+
+draw_sprite(SprNPCLaptopGuy,0,centerX - 210, centerY + 80);
 
 if(!m[? "Complete"])
 {
@@ -242,6 +248,8 @@ talkX = argument1;
 talkY = argument2;
 replyY = argument3;
 
+draw_sprite(SprNPCWhistleblower,0,centerX - 210, centerY + 80);
+
 if(!m[? "Complete"])
 {
     if(m[? "Started"])
@@ -279,6 +287,8 @@ talkX = argument1;
 talkY = argument2;
 replyY = argument3;
 
+draw_sprite(SprNPCManInSuit,0,centerX - 210, centerY + 80);
+
 if(!m[? "Complete"])
 {
     if(m[? "Started"])
@@ -315,6 +325,8 @@ m = argument0;
 talkX = argument1;
 talkY = argument2;
 replyY = argument3;
+
+draw_sprite(SprNPCOldMan,0,centerX - 210, centerY + 80);
 
 if(!m[? "Complete"])
 {

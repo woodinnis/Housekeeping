@@ -1421,3 +1421,8 @@ Debug 1
 
 Particles
 - Added a sparkle particle to the game as visual feedback when the player cleans a sink or toilet
+
+// December 15, 2015 //
+
+UI Dialogues
+- NPC heads now show up in the bottom-left corner of dialogue boxes to indicate who is being spoken to
