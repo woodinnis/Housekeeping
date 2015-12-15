@@ -1430,3 +1430,6 @@ UI Dialogues
 Visual feedback
 - Added a function (woosh) to create the visual effect of items being picked up and deposited in inventory when purchased
     at the front desk
+    
+Audio feedback
+- Added a cash register sound which plays every time an item is purchased from the front desk

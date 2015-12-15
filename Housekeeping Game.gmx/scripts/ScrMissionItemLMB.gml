@@ -9,6 +9,7 @@ if(!is_undefined(Price))
     {
         totalCash -= Price;
         ScrItemAdd(Key,Value);
+        audio_play_sound(SndCash,5,false);
         woosh(iAm);
     }
 }

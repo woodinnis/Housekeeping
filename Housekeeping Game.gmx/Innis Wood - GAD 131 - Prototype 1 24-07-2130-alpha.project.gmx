@@ -56,6 +56,7 @@
       <sound>sound\SndElevatorDoors</sound>
       <sound>sound\SndWalking</sound>
     </sounds>
+    <sound>sound\SndCash</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="MainMenu">
