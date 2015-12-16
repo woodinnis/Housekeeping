@@ -1440,3 +1440,6 @@ Challenge
 Debug
 - Fixed a bug where all pickups were playing the cash register sound, and mission pickups were not disappearing after
     being picked up
+    
+Player limit
+- A limit has been placed on the number of tools (Bleach, Towels, Sheets) a player can hold in inventory at any one time

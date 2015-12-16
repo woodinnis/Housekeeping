@@ -1,57 +1,92 @@
-// Draw code executed when player clicks on a piece of evidence/information
-//if(device_mouse_check_button(0,mb_left))
+/*
+*   Code executed when a player clicks on a pickup object in game
+*
+*   Tools and Mission objects behave differently
+*/
 
 iAm = other.object_index;
 
-if(!is_undefined(Price))
-{   
-    if(totalCash >= Price)
-    {
-        totalCash -= Price;
-        ScrItemAdd(Key,Value);
-    }
-}
+// Variables to hold current counts of tools in inventory
+var bleachCount = ds_map_find_value(myInventory, INVBLEACH);
+var towelCount = ds_map_find_value(myInventory, INVTOWELS);
+var sheetCount = ds_map_find_value(myInventory, INVSHEETS);
 
-if(!is_real(other.Value))
+if(is_undefined(bleachCount))
+    bleachCount = 0;
+
+if(is_undefined(towelCount))
+    towelCount = 0;
+
+if(is_undefined(sheetCount))
+    sheetCount = 0;
+
+switch(iAm)
 {
-    switch(other.Value)
+    // The tools first
+    case ObjBleach:
+    case ObjTowels:
+    case ObjSheets:
     {
-        case JEWELVAL:
-        {
-            m = missionList[| 0];
-            m[? "Key Object"] = true;
-            break;
+        if(!is_undefined(Price))
+        {   
+            if(totalCash >= Price)
+            {
+                if((iAm == ObjBleach && bleachCount < MAXRESOURCE) || (iAm == ObjTowels && towelCount < MAXRESOURCE) || (iAm == ObjSheets && sheetCount < MAXRESOURCE))
+                {
+                    totalCash -= Price;
+                    audio_play_sound(SndCash,5,false);
+                    woosh(iAm);
+                    ScrItemAdd(Key, Value);
+                }
+            }
         }
-        case LAPTOPVAL:
-        {
-            m = missionList[| 1];
-            m[? "Key Object"] = true;
-            break;
-        }
-        case DOC1:
-        {
-            m = missionList[| 2];
-            m[? "Key Object"] = true;
-            break;
-        }
-        case LET3:
+        break;
+    }
+    // Then the mission objects
+    case ObjNecklace:
+    {
+        m = missionList[| 0];
+        m[? "Key Object"] = true;
+        ScrItemAdd(Key, Value);
+        instance_destroy();
+        break;
+    }
+    case ObjLaptop:
+    {
+        m = missionList[| 1];
+        m[? "Key Object"] = true;
+        ScrItemAdd(Key, Value);
+        instance_destroy();
+        break;
+    }
+    case ObjLetter:
+    {
+        if(iAm.Value == LET3)
         {
             m = missionList[| 4];
             m[? "Key Object"] = true;
-            break;   
         }
-        default:
-            break;
-    }
-    
-    ScrItemAdd(Key,Value);
-
-    with(other)
+        ScrItemAdd(Key, Value);
         instance_destroy();
-}
-else
-{
-    audio_play_sound(SndCash,5,false);
-    woosh(iAm);
+        break;   
+    }   
+    case ObjDocument:
+    {
+        if(iAm.Value == DOC1)
+        {
+            m = missionList[| 2];
+            m[? "Key Object"] = true;
+        }
+        ScrItemAdd(Key, Value);
+        instance_destroy();
+        break;
+    }
+    case ObjAd:
+    {
+        ScrItemAdd(Key, Value);
+        instance_destroy();
+    }
+    default:
+        break;
 }
 

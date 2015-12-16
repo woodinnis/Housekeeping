@@ -379,7 +379,7 @@
     <room>rooms\RoomRoomLg</room>
     <room>rooms\RoomMain</room>
   </rooms>
-  <constants number="96">
+  <constants number="97">
     <constant name="AD1">"Cheap, fast, 2-for-1 Pizza!"</constant>
     <constant name="AD2">"Brick-oven pizza. Made with organic ingredients, in the traditional style."</constant>
     <constant name="AD3">"Coin-Laundry. One-hour cycle, wash and dry! Detergent for sale at the counter."</constant>
@@ -476,6 +476,7 @@
     <constant name="WAGE">10</constant>
     <constant name="SHIFTSUMMARY01">"You Cleaned: "</constant>
     <constant name="SHIFTSUMMARY02">"You Earned: $"</constant>
+    <constant name="MAXRESOURCE">10</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
