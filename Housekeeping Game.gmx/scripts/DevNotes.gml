@@ -1457,3 +1457,6 @@ Tool display
 
 Quit function
 - Added a quit function using esc, restarts game
+
+FullScreen
+- Moved UI to Menu screen, fixed variable issues for centerX/Y and fullscreen positions of most objects

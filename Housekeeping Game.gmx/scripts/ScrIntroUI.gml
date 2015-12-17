@@ -7,58 +7,61 @@ var msgX = centerX;
 var msgY = topThird;
 var btnY = msgY * 2;
 
-switch(ObjOverlord.showIntro)
+if(room != RoomMenu)
 {
-    case 00:
+    switch(ObjOverlord.showIntro)
     {
-        if(ObjFade.fadeState == inOut.out)
+        case 00:
         {
-            ObjOverlord.showIntro++;
+            if(ObjFade.fadeState == inOut.out)
+            {
+                ObjOverlord.showIntro++;
+            }
+            
+            break;
         }
+        case 01:
+        {
+            drawRect();
+            alignUI();
+            draw_set_valign(fa_top);
         
-        break;
-    }
-    case 01:
-    {
-        drawRect();
-        alignUI();
-        draw_set_valign(fa_top);
-    
-        draw_text(msgX, msgY, INTROMSG1);
+            draw_text(msgX, msgY, INTROMSG1);
+            
+            ObjOverlord.showIntro += OKbutton(msgX, btnY);
+            
+            break;
+        }
+        case 02:
+        {
+            drawRect();
+            alignUI();
+            draw_set_valign(fa_top);
         
-        ObjOverlord.showIntro += OKbutton(msgX, btnY);
+            draw_text(msgX, msgY, INTROMSG2);
+            
+            ObjOverlord.showIntro += OKbutton(msgX, btnY);
+            
+            break;
+        }
+        case 03:
+        {
+            drawRect();
+            alignUI();
+            draw_set_valign(fa_top);
         
-        break;
-    }
-    case 02:
-    {
-        drawRect();
-        alignUI();
-        draw_set_valign(fa_top);
-    
-        draw_text(msgX, msgY, INTROMSG2);
-        
-        ObjOverlord.showIntro += OKbutton(msgX, btnY);
-        
-        break;
-    }
-    case 03:
-    {
-        drawRect();
-        alignUI();
-        draw_set_valign(fa_top);
-    
-        draw_text(msgX, msgY, INTROMSG3);
-        
-        ObjOverlord.showIntro += OKbutton(msgX, btnY);
-        
-        break;
-    }
-    case 04:
-    {
-        // Give player control once intro has been read
-        ObjOverlord.introRead = true;
-        break;
+            draw_text(msgX, msgY, INTROMSG3);
+            
+            ObjOverlord.showIntro += OKbutton(msgX, btnY);
+            
+            break;
+        }
+        case 04:
+        {
+            // Give player control once intro has been read
+            ObjOverlord.introRead = true;
+            break;
+        }
     }
 }
 

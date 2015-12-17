@@ -8,26 +8,29 @@
 var count = 0;
 var cash = 0;
 
-if(!shiftStart)
+if(room != RoomMenu)
 {
-    count = cleanCount;
-    cash = count * WAGE;
-}
-
-if(showSummary)
-{
-    alignUI();
-    drawRect();
-    draw_set_valign(fa_bottom);
-    draw_text(centerX, centerY, SHIFTSUMMARY01 + string(count) + "#" + SHIFTSUMMARY02 + string(cash));
-    
-    if(shiftButton(centerX,centerY + 40))
+    if(!shiftStart)
     {
-        shiftStart = true;
-        cleanCount = 0;
-        showSummary = false;
-        totalCash += cash;
-        ObjDoorParent.doorEnter = true;
+        count = cleanCount;
+        cash = count * WAGE;
+    }
+    
+    if(showSummary)
+    {
+        alignUI();
+        drawRect();
+        draw_set_valign(fa_bottom);
+        draw_text(centerX, centerY, SHIFTSUMMARY01 + string(count) + "#" + SHIFTSUMMARY02 + string(cash));
+        
+        if(shiftButton(centerX,centerY + 40))
+        {
+            shiftStart = true;
+            cleanCount = 0;
+            showSummary = false;
+            totalCash += cash;
+            ObjDoorParent.doorEnter = true;
+        }
     }
 }
 
