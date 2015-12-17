@@ -13,7 +13,10 @@ var talkY = 0;
 // Tool count placement
 var toolX = window_get_width();
 var toolY = HUDBufferY;
-var goto = view_xport[0];
+if(window_get_fullscreen())
+    var goto = view_wport[0] - 260;
+else
+    var goto = view_xport[0];
 
 var bleachCount = 0;
 var towelCount = 0;

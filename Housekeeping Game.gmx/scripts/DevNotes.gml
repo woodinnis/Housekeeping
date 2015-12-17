@@ -1448,3 +1448,6 @@ Player limit
 
 HUD flexibility
 - Adjusted UICreate for use with fullscreen play
+
+Tool display
+- Tool count repositioned in fullscreen mode
