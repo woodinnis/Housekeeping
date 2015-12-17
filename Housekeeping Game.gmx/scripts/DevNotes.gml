@@ -1451,3 +1451,6 @@ HUD flexibility
 
 Tool display
 - Tool count repositioned in fullscreen mode
+
+Tool display
+- Tool count now displays accurately in all rooms
