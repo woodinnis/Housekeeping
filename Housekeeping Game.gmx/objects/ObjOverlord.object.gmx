@@ -151,6 +151,7 @@
 *   Lower or increase volume using the up/down +/- keys
 */
 var vol;
+var quitYN = false;
 
 if(keyboard_check_pressed(vk_up) || keyboard_check_pressed(vk_add))
 {
@@ -169,6 +170,15 @@ if(keyboard_check_pressed(vk_down) || keyboard_check_pressed(vk_subtract))
         vol -= 0.05;
         
     audio_sound_gain(SndGameMusic, vol, 0);
+}
+
+if(keyboard_check_pressed(vk_escape))
+{
+    quitYN = show_question("Do you want to quit?");
+    if(quitYN)
+    {
+        game_restart()
+    }
 }
 </string>
           </argument>

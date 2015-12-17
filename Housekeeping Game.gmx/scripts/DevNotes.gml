@@ -1454,3 +1454,6 @@ Tool display
 
 Tool display
 - Tool count now displays accurately in all rooms
+
+Quit function
+- Added a quit function using esc, restarts game
