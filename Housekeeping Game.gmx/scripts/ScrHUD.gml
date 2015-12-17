@@ -13,6 +13,7 @@ var talkY = 0;
 // Tool count placement
 var toolX = window_get_width();
 var toolY = HUDBufferY;
+var goto = view_xport[0];
 
 var bleachCount = 0;
 var towelCount = 0;
@@ -56,9 +57,9 @@ sheetCount = ds_map_find_value(myInventory, INVSHEETS);
 if(is_undefined(sheetCount))
     sheetCount = 0;
 
-draw_sprite_stretched(SprBleach, 0, toolX - (HUDBufferX * 3), toolY, 16, 32);
-draw_text(toolX - (HUDBufferX * 2.75), toolY, "x" + string(bleachCount));
-draw_sprite_stretched(SprTowels, 0, toolX - (HUDBufferX * 2), toolY, 16, 32);
-draw_text(toolX - (HUDBufferX * 1.75), toolY, "x" + string(towelCount));
-draw_sprite_stretched(SprSheets, 0, toolX - (HUDBufferX), toolY, 16, 32);
-draw_text(toolX - (HUDBufferX * .75), toolY, "x" + string(sheetCount));
+draw_sprite_stretched(SprBleach, 0, goto + 470, toolY, 16, 32);//draw_sprite_stretched(SprBleach, 0, toolX - (HUDBufferX * 3), toolY, 16, 32);
+draw_text(goto + 485, toolY, "x" + string(bleachCount));
+draw_sprite_stretched(SprTowels, 0, goto + 530, toolY, 16, 32);
+draw_text(goto + 545, toolY, "x" + string(towelCount));
+draw_sprite_stretched(SprSheets, 0, goto + 590, toolY, 16, 32);
+draw_text(goto + 605, toolY, "x" + string(sheetCount));

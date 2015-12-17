@@ -10,9 +10,18 @@ switch(os_type)
 {
     case os_windows:
     {
-        centerX = window_get_width()/2;
-        centerY = window_get_height()/2;
-        topThird = window_get_height()/3;
+        if(window_get_fullscreen())
+        {
+            centerX = display_get_width()/2;
+            centerY = display_get_height()/2;
+            topThird = display_get_height()/3;
+        }
+        else
+        {
+            centerX = window_get_width()/2;
+            centerY = window_get_height()/2;
+            topThird = window_get_height()/3;
+        }
         break;
     }
     case os_android:

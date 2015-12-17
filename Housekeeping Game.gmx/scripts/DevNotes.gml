@@ -1443,3 +1443,8 @@ Debug
     
 Player limit
 - A limit has been placed on the number of tools (Bleach, Towels, Sheets) a player can hold in inventory at any one time
+
+// December 17, 2015 //
+
+HUD flexibility
+- Adjusted UICreate for use with fullscreen play
